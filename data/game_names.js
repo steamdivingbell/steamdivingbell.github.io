@@ -234179,6 +234179,7 @@ window.game_names = {
 	"3495380":"Idle Circles Demo",
 	"3495420":"Profane",
 	"3495440":"Mirrorandum Soundtrack",
+	"3495450":"BRELOK -\u306d\u305a\u307f\u305f\u3061\u306e\u8131\u51fa- Original Sound Track",
 	"3495500":"More Far Land",
 	"3495510":"Mutant Crisis - Tower Defense",
 	"3495520":"\u4e07\u754c\u4e4b\u5854",
@@ -236428,6 +236429,7 @@ window.game_names = {
 	"3559680":"\u5357\u74dc\u9910\u5385 Playtest",
 	"3559830":"Doki Boki International Hentai Language School ASMR-The Principal\u2019s Private Warning Just for You",
 	"3560150":"Sweet Roommate",
+	"3560840":"DACHstudio Puzzle Box - Sanguinik's hidden object tour in G\u00f6rlitz/Zgorzelec",
 	"3561470":"General Playtest",
 	"3561650":"Waifu Love - Fast Food Waifus DLC",
 	"3561700":"Waifu Love - Horny Flight Attendants DLC"
