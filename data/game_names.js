@@ -235981,6 +235981,7 @@ window.game_names = {
 	"3539480":"Back of Beyond",
 	"3539510":"Bug Hunters Demo",
 	"3539550":"Mauri Mursu's Odyssey Demo",
+	"3539560":"HauntedManager Demo",
 	"3539570":"Clap Clash",
 	"3539600":"Tales of Klodan",
 	"3539630":"Rusalka Wrath Playtest",
