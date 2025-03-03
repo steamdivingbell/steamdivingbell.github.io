@@ -222594,6 +222594,7 @@ window.game_names = {
 	"3286170":"Krax Ca-caw's Concoction Chaos",
 	"3286190":"SPACEUM",
 	"3286210":"Fear Is In The Mind Demo",
+	"3286220":"DIMAWORLD",
 	"3286240":"Pipkin Demo",
 	"3286250":"Snakes with Fists!",
 	"3286260":"Cuca: Sharp Bite Demo",
@@ -232366,6 +232367,7 @@ window.game_names = {
 	"3457300":"Guilty as Sock! Demo",
 	"3457390":"Little Wings Deliveries",
 	"3457410":"Zombie Tide Incoming Final Defense",
+	"3457420":"Investour Playtest",
 	"3457440":"Orc Hunter: Elven Archers VR Demo",
 	"3457480":"Foetality: Fetus Deletus",
 	"3457490":"Senet: Households",
@@ -235646,6 +235648,7 @@ window.game_names = {
 	"3528850":"Beamdown Demo",
 	"3528870":"Despair Dungeon",
 	"3528880":"Man vs Cats Playtest",
+	"3528900":"Turd Merge",
 	"3528910":"Assenizator",
 	"3528930":"SPACESHEEP",
 	"3528950":"Fluffy Memories",
@@ -236154,6 +236157,7 @@ window.game_names = {
 	"3542990":"Department of Gravity Management Playtest",
 	"3543010":"Cinema Story Demo",
 	"3543070":"Cordels & Spells",
+	"3543090":"Muffles' Life Sentence EPISODE 3",
 	"3543130":"Zomboard",
 	"3543200":"Propaganda vs. Zombies Demo",
 	"3543210":"re:pian",
@@ -236516,5 +236520,6 @@ window.game_names = {
 	"3562280":"Deadly Quiet Soundtrack",
 	"3562800":"Shroud of Gloom Playtest",
 	"3563380":"Mari's Magical Deliveries",
+	"3563950":"Phantom Ops",
 	"3563990":"3XTINCTION - 2URVIVE Mercenaries Pack"
 }
