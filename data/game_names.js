@@ -236144,6 +236144,7 @@ window.game_names = {
 	"3543870":"Shadows of the Blade",
 	"3543930":"There are no Orcs Demo",
 	"3543950":"Escape The Quack Demo",
+	"3543960":"\u95ee\u9898\u5076\u50cf\u7684\u517b\u6210\u8ba1\u5212",
 	"3543970":"Platzle",
 	"3543990":"BIO Fault Playtest",
 	"3544010":"The Peacemakers Demo",
