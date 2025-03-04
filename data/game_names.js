@@ -235676,6 +235676,7 @@ window.game_names = {
 	"3528250":"Planet Hoarders Demo",
 	"3528260":"Echoes of Adventure Demo",
 	"3528270":"Forgotten - The Curse of Village",
+	"3528290":"Knights in Tight Spaces - Artbook",
 	"3528310":"Dreamscape Island Demo",
 	"3528340":"Quartermain and the Cult of Cthulhu Demo",
 	"3528400":"Silent Mist",
