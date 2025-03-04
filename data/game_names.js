@@ -216251,6 +216251,7 @@ window.game_names = {
 	"3188810":"PLANTOONS",
 	"3188830":"I'm Still Here",
 	"3188840":"Space Memory: Cats",
+	"3188850":"Fight Life: Vanguard Playtest",
 	"3188880":"Crystal Edge: Retribution",
 	"3188900":"Waffle Cone Willie Demo",
 	"3188910":"Waifu",
@@ -233659,6 +233660,7 @@ window.game_names = {
 	"3482460":"BLOX Demo",
 	"3482470":"Backrooms Legends Demo",
 	"3482490":"Project Gravity",
+	"3482500":"Chosen for Tribute",
 	"3482520":"Sportvida CyberDash Demo",
 	"3482530":"Third Party President",
 	"3482540":"Tessa's Treasures: treasure hunters are closer to goddesses",
@@ -235635,6 +235637,7 @@ window.game_names = {
 	"3526170":"Stash: A Card Looter Demo",
 	"3526180":"ToDo LisT Demo",
 	"3526190":"Fightstone Amnesty Demo",
+	"3526210":"To Pixelia Playtest",
 	"3526220":"Imperiums: Fall of Rome",
 	"3526240":"Collateral Dungeon Demo",
 	"3526250":"Mik Playtest",
@@ -236070,6 +236073,7 @@ window.game_names = {
 	"3537570":"Kuma's Panty Demo",
 	"3537600":"There's No Cake Demo",
 	"3537610":"There's No Dragons Demo",
+	"3537640":"FiVe s'hIft masters",
 	"3537650":"\u5929\u964d\u795e\u5175",
 	"3537690":"Balls, Dice & Stickers",
 	"3537720":"Quantum Tank",
@@ -236677,6 +236681,7 @@ window.game_names = {
 	"3559860":"Sol Mates Playtest",
 	"3560150":"Sweet Roommate",
 	"3560170":"Yagazem Elements",
+	"3560370":"\u00c9al\u00fa",
 	"3560470":"Chains Of Reality",
 	"3560650":"Liar Game Playtest",
 	"3560690":"Astro Fighters",
@@ -236713,5 +236718,6 @@ window.game_names = {
 	"3565960":"\u0412\u0435\u0434\u044c\u043c\u044b \u0437\u043e\u0432 Demo",
 	"3566050":"Nighthawk",
 	"3566110":"Nighthawk Playtest",
-	"3566340":"Catpanion Playtest"
+	"3566340":"Catpanion Playtest",
+	"3567140":"Astromattech"
 }
