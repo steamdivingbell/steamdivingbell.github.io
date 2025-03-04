@@ -152069,6 +152069,7 @@ window.game_names = {
 	"2236490":"Lost Abroad Caf\u00e9",
 	"2236540":"Objector Demo",
 	"2236590":"Psionic Awake",
+	"2236600":"Clad In Iron: War of The Pacific 1879",
 	"2236610":"Glass Heart Demo",
 	"2236630":"\u30eb\u30a4\u30f3\u30ba\u30e1\u30a4\u30ac\u30b9 Soundtrack",
 	"2236640":"Flock of Dogs: Do You Like My Hat?",
@@ -236564,5 +236565,6 @@ window.game_names = {
 	"3563950":"Phantom Ops",
 	"3563990":"3XTINCTION - 2URVIVE Mercenaries Pack",
 	"3564220":"Desktop GOLF",
-	"3564690":"Cats Adventure Demo"
+	"3564690":"Cats Adventure Demo",
+	"3565230":"glowkeeper Demo"
 }
