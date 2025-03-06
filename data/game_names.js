@@ -236536,6 +236536,7 @@ window.game_names = {
 	"3546130":"Dominated By: Sadistic Childhood Valentine",
 	"3546170":"Boreas Demo",
 	"3546200":"\u6863\u6848\u8be1\u8ba1 Demo",
+	"3546240":"\uce58\ub974\ub178\uc758 \uce74\ub4dc\uad50\uc2e4",
 	"3546270":"Rue Valley Demo",
 	"3546280":"Roulette Dungeon Demo",
 	"3546290":"\u5fc3\u6838 Demo",
