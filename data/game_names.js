@@ -214649,6 +214649,7 @@ window.game_names = {
 	"3163160":"\u89c6\u91ce\u96f6\u70b9\uff08Tactical Shooting\uff09",
 	"3163170":"A Few Nights With Francesca",
 	"3163180":"Gregory Horror Show Soul of Roses Playtest",
+	"3163190":"pearlessential",
 	"3163210":"Tower Collapse",
 	"3163250":"44 Hidden Naomis Demo",
 	"3163270":"Temporal Purge: Z - Premium Supporters Pack",
@@ -227760,6 +227761,7 @@ window.game_names = {
 	"3371710":"Rabbit Trail",
 	"3371720":"Tangles 2 \u062a\u0634\u0627\u0628\u0643",
 	"3371730":"Yield! Fall of Rome Soundtrack",
+	"3371740":"AUM The Game",
 	"3371750":"Open Fishing 2 Demo",
 	"3371760":"Dice Legends Demo",
 	"3371770":"Funguys Swarm",
@@ -234214,6 +234216,7 @@ window.game_names = {
 	"3490970":"Hotel Tales Demo",
 	"3490990":"Echoes of the town Demo",
 	"3491000":"Cacotopia Demo",
+	"3491020":"Light Bearers 2 : Full Game DLC",
 	"3491040":"Yoshima: Hentai Simulator - Wallpaper Pack",
 	"3491050":"Yoshima: Hentai Simulator - Animation Pack",
 	"3491060":"Wild Lynx Jigsaw - Expansion Pack 1",
@@ -237193,5 +237196,6 @@ window.game_names = {
 	"3575190":"Peek",
 	"3575200":"Swifty Demo",
 	"3575650":"Dark Adelita",
+	"3576980":"encrypted_nightmares",
 	"3577320":"Fillet Fury Demo"
 }
