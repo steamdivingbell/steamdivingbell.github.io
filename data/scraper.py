@@ -6,6 +6,7 @@ All of this is automated to allow the diving bell code to be automatically updat
 from datetime import datetime, timedelta
 from pathlib import Path
 from time import sleep
+import math
 import json
 import random
 import sys
@@ -126,13 +127,33 @@ def download_app_details(game_id):
   dump_js(deleted_games, 'deleted_games.js')
   return False
 
+def meets_score_threshold(positive, total):
+  if total <= 0:
+    return False
+
+  # Matches the computation in javascript
+  perc = positive / total
+  gem_rating = perc - (perc - 0.5) * math.pow(2, -math.log10(total))
+  return gem_rating >= 0.75
+
 def download_review_details(game_id):
   """https://github.com/Revadike/InternalSteamWebAPI/wiki/Get-App-Reviews"""
   app_reviews = get(f'https://store.steampowered.com/appreviews/{game_id}?json=1&filter=summary&language=all&purchase_type=all')
+  positive = app_reviews['query_summary']['total_positive']
+  total = app_reviews['query_summary']['total_reviews']
+  
+  all_reviews = load_json('all_reviews.js')
+  all_reviews[game_id] = {'positive': positive, 'total': total}
+  dump_js(all_reviews, 'all_reviews.js')
 
   reviews = load_json('reviews.js')
-  reviews[game_id] = app_reviews['query_summary']
+  if meets_score_threshold(positive, total):
+    reviews[game_id] = {'positive': positive, 'total': total}
+  else:
+    del reviews[game_id]
   dump_js(reviews, 'reviews.js')
+
+  return meets_score_threshold
 
 ## HTML scraping ##
 
@@ -148,6 +169,8 @@ def download_similar_games(game_id):
   similar_games[game_id] = similar_to_this_game
   dump_zip(similar_games, 'similar_games.js')
 
+  return True
+
 def download_app_tags(game_id):
   soup = get_soup(f'https://store.steampowered.com/app/{game_id}')
   
@@ -162,15 +185,17 @@ def download_app_tags(game_id):
   game_tags = load_json('game_tags.js')
   game_tags[game_id] = tags_for_this_game
   dump_js(game_tags, 'game_tags.js')
+  
+  return True
 
 def refresh_game(game_id):
   print(f'Downloading data for game {game_id}')
   throttling_limit = datetime.now() + timedelta(seconds=5) # The throttling limit for app details is 40 calls per minute, so this is a reasonably generous sleep.
   try:
-    if download_app_details(game_id):
-      download_app_tags(game_id)
-      download_similar_games(game_id)
-      download_review_details(game_id)
+    _ = (download_app_details(game_id) # We always want app details, and if the app details fail to load it's an invalid game.
+      and download_review_details(game_id) # We then fetch review details -- and if that fails, it's because the game's too low rated.
+      and download_app_tags(game_id) # Then we download tags
+      and download_similar_games(game_id)) # and similar games (both of which have no failure states)
   except requests.exceptions.RequestException:
     # Any kind of network error should be considered transient -- skip this game and we'll come back later.
     traceback.print_exc(chain=False)
@@ -180,6 +205,47 @@ def refresh_game(game_id):
     sleep(sleep_for)
 
 if __name__ == '__main__':
+  all_reviews = {}
+  reviews = load_json('reviews.js')
+  game_names = load_json('game_names.js')
+  game_tags = load_json('game_tags.js')
+  similar_games = load_zip('similar_games.js')
+  for game in list(reviews.keys()):
+    positive = 0
+    total = 0
+    try:
+      positive = reviews[game]['total_positive']
+      total = reviews[game]['total_reviews']
+      all_reviews[game] = {'positive': positive, 'total': total}
+      reviews[game] = {'positive': positive, 'total': total}
+    except KeyError:
+      pass
+
+    if not meets_score_threshold(positive, total):
+      if game in reviews:
+        del reviews[game]
+      if game in game_names:
+        del game_names[game]
+      if game in game_tags:
+        del game_tags[game]
+      if game in similar_games:
+        del similar_games[game]
+  dump_json(all_reviews, 'all_reviews.js')
+  dump_js(reviews, 'reviews.js')
+  dump_js(game_names, 'game_names.js')
+  dump_js(game_tags, 'game_tags.js')
+  dump_js(similar_games, 'similar_games.js')
+  exit()
+
+
+
+
+
+
+
+
+
+
   if len(sys.argv) > 1:
     for game in sys.argv[1:]:
       print(game)
@@ -208,7 +274,7 @@ if __name__ == '__main__':
     if datetime.now() >= end_time:
       exit()
 
-  raise # TODO: Figure out how to filter by rating before we start over again
+  # TODO: Maybe we should be refreshing recent games more often?
 
   # Then, refresh games in order from where we left off
   ordered_games = sorted(list(all_games))
