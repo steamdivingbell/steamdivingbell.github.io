@@ -28963,6 +28963,7 @@ window.reviews = {
 	"2947220":{"positive":257,"total":280},
 	"2947230":{"positive":261,"total":266},
 	"2947240":{"positive":414,"total":431},
+	"2947640":{"positive":51,"total":54},
 	"2947760":{"positive":15,"total":15},
 	"2947920":{"positive":34,"total":36},
 	"2947970":{"positive":59,"total":63},
@@ -29962,6 +29963,7 @@ window.reviews = {
 	"3130340":{"positive":30,"total":33},
 	"3130820":{"positive":50,"total":51},
 	"3131510":{"positive":27,"total":28},
+	"3131680":{"positive":185,"total":187},
 	"3131910":{"positive":29,"total":29},
 	"3131950":{"positive":22,"total":23},
 	"3132040":{"positive":21,"total":22},
@@ -31109,5 +31111,7 @@ window.reviews = {
 	"3544690":{"positive":11,"total":11},
 	"3545160":{"positive":24,"total":24},
 	"3546270":{"positive":19,"total":19},
-	"3553530":{"positive":14,"total":14}
+	"3552810":{"positive":13,"total":13},
+	"3553530":{"positive":14,"total":14},
+	"3563400":{"positive":63,"total":67}
 }
