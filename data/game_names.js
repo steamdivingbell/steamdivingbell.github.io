@@ -213282,6 +213282,7 @@ window.game_names = {
 	"3138370":"Bundle of Joy",
 	"3138380":"Throneheir",
 	"3138390":"\u6771\u65b9\u8056\u6226\u5f71 \uff5e Forlorn Souls of Wicked Past Demo",
+	"3138400":"FighterZZZ",
 	"3138410":"Lost Puffin",
 	"3138420":"Mother",
 	"3138430":"A Place Far Away",
