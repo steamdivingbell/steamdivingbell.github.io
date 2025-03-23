@@ -165,9 +165,9 @@ def download_similar_games(game_id):
   for item in soup.find_all('div', {'class': 'similar_grid_item'}):
     similar_to_this_game.append(item.find('a', {'class': 'similar_grid_capsule'}).get('data-ds-appid'))
 
-  similar_games = load_zip('similar_games.js')
+  similar_games = load_json('similar_games.js')
   similar_games[game_id] = similar_to_this_game
-  dump_zip(similar_games, 'similar_games.js')
+  dump_js(similar_games, 'similar_games.js')
 
   return True
 
@@ -205,50 +205,9 @@ def refresh_game(game_id):
     sleep(sleep_for)
 
 if __name__ == '__main__':
-  all_reviews = {}
-  reviews = load_json('reviews.js')
-  game_names = load_json('game_names.js')
-  game_tags = load_json('game_tags.js')
-  similar_games = load_zip('similar_games.js')
-  for game in list(reviews.keys()):
-    positive = 0
-    total = 0
-    try:
-      positive = reviews[game]['total_positive']
-      total = reviews[game]['total_reviews']
-      all_reviews[game] = {'positive': positive, 'total': total}
-      reviews[game] = {'positive': positive, 'total': total}
-    except KeyError:
-      pass
-
-    if not meets_score_threshold(positive, total):
-      if game in reviews:
-        del reviews[game]
-      if game in game_names:
-        del game_names[game]
-      if game in game_tags:
-        del game_tags[game]
-      if game in similar_games:
-        del similar_games[game]
-  dump_json(all_reviews, 'all_reviews.js')
-  dump_js(reviews, 'reviews.js')
-  dump_js(game_names, 'game_names.js')
-  dump_js(game_tags, 'game_tags.js')
-  dump_js(similar_games, 'similar_games.js')
-  exit()
-
-
-
-
-
-
-
-
-
-
+  download_tags()
   if len(sys.argv) > 1:
     for game in sys.argv[1:]:
-      print(game)
       refresh_game(game)
     exit()
 
