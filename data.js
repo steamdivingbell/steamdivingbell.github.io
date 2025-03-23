@@ -2,6 +2,34 @@ var globalGameData = new Map()
 var globalRatingData = new Map()
 var globalTagData = new Map()
 
+// Based on my analysis from 200k games, as of 2025-03-22
+function getReviewScoreDescription(positive, total) {
+  if (total == 0) return 'No user reviews'
+  if (total < 10) return total + ' user reviews'
+  
+  var perc = positive / total
+  if (total < 50) {
+    if (perc >= 0.80) return 'Positive'
+    if (perc >= 0.70) return 'Mostly Positive'
+    if (perc >= 0.40) return 'Mixed'
+    if (perc >= 0.20) return 'Mostly Negative'
+    return 'Negative'
+  } else if (total < 500) {
+    if (perc >= 0.80) return 'Very Positive'
+    if (perc >= 0.70) return 'Mostly Positive'
+    if (perc >= 0.40) return 'Mixed'
+    if (perc >= 0.20) return 'Mostly Negative'
+    return 'Very Negative'
+  } else {
+    if (perc >= 0.95) return 'Overwhelmingly Positive'
+    if (perc >= 0.80) return 'Very Positive'
+    if (perc >= 0.70) return 'Mostly Positive'
+    if (perc >= 0.40) return 'Mixed'
+    if (perc >= 0.20) return 'Mostly Negative'
+    return 'Overwhelmingly Negative'
+  }
+}
+
 window.loadDataFiles = function() {
   // We use 'games with reviews' as our master list of valid games.
   for (var gameId in window.reviews) {
@@ -16,12 +44,17 @@ window.loadDataFiles = function() {
 
     // Secondary rating which is more fair for sparsely-rated games
     // See https://steamdb.info/blog/steamdb-rating
-    var total = data.total_reviews
-    var perc = data.total_positive / total
-    var gemRating = perc - (perc - 0.5) * Math.pow(2, -Math.log10(total + 1));
-
+    var total = data.total
+    var perc = 0.5
+    var gemRating = 0.5 // Default values in case of 0 total votes (shouldn't happen; we filter this stuff out)
+    if (total > 0) {
+      perc = data.positive / total
+      gemRating = perc - (perc - 0.5) * Math.pow(2, -Math.log10(total));
+    }
+    
+    var desc = getReviewScoreDescription(data.positive, data.total)
     globalRatingData.set(gameId, {
-      'ratingText': `${data.review_score_desc} (${Math.trunc(100 * perc)}% — ${total} ratings)`,
+      'ratingText': `${desc} (${Math.trunc(100 * perc)}% — ${total} ratings)`,
       'sortKey': gemRating,
       'isLowRated': perc < 0.80 || total < 500,
       'isHiddenGem': gemRating >= 0.80 && total < 500,
