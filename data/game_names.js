@@ -239316,6 +239316,7 @@ window.game_names = {
 	"3588890":"\u611f\u67d3\u00bd INFECT\u00bd Demo",
 	"3588930":"Pixel Transit",
 	"3589120":"Gun Paradise Demo",
+	"3589130":"Life Dash",
 	"3589140":"\u4e09\u56fd\u9635 - 99999\u5143\u5b9d",
 	"3589190":"COCOBOY",
 	"3589360":"Gennady Playtest",
