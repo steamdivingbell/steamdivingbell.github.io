@@ -150,7 +150,7 @@ def download_review_details(game_id):
   if meets_score_threshold(positive, total):
     reviews[game_id] = {'positive': positive, 'total': total}
   else:
-    del reviews[game_id]
+    reviews.pop(game_id, None) # Remove if exists
   dump_js(reviews, 'reviews.js')
 
   return meets_score_threshold
