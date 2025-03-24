@@ -234742,7 +234742,7 @@ window.game_names = {
 	"3488700":"\u6253\u5012\u6771\u4eac\u306b\u306fJimotoism",
 	"3488740":"Red & Blue",
 	"3488760":"Grow Harvest Repeat",
-	"3488770":"Camila",
+	"3488770":"Camilla(\u30ab\u30df\u30e9)",
 	"3488790":"\u71c8\u5409\u8a3a\u7642\u6240 Hiyoshi Clinic",
 	"3488800":"Juggling",
 	"3488810":"Aquarium Adventures",
