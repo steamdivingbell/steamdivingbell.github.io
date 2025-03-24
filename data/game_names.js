@@ -239576,6 +239576,7 @@ window.game_names = {
 	"3600250":"Whomers Ate My Lawn!",
 	"3600370":"Equan - The Watchful Guardian Demo",
 	"3600600":"Blood Gamble: Hanafuda Playtest",
+	"3600670":"Zombie Town Breakout",
 	"3600850":"\uace0\ud2b8 \uc11c\ubc14\uc774\ubc84 Demo",
 	"3600870":"KALPA: Cosmic Symphony - Lanota Collaboration Pack",
 	"3600960":"\u901d\u53bb\u4e4b\u7269Passenger:Gone",
