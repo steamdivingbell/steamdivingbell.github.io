@@ -239840,5 +239840,6 @@ window.game_names = {
 	"3612400":"Erannorth Renaissance Demo",
 	"3612550":"Coloring Pixels - Pastels Pack",
 	"3613950":"\u534f\u8bae\u6218\u7ebf \u8bd5\u73a9\u7248",
-	"3614550":"Supermrket: Venezia"
+	"3614550":"Supermrket: Venezia",
+	"3616510":"LifeDev Demo"
 }
