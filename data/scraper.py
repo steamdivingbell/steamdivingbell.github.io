@@ -139,8 +139,12 @@ def meets_score_threshold(positive, total):
 def download_review_details(game_id):
   """https://github.com/Revadike/InternalSteamWebAPI/wiki/Get-App-Reviews"""
   app_reviews = get(f'https://store.steampowered.com/appreviews/{game_id}?json=1&filter=summary&language=all&purchase_type=all')
-  positive = app_reviews['query_summary']['total_positive']
-  total = app_reviews['query_summary']['total_reviews']
+  try:
+    positive = app_reviews['query_summary']['total_positive']
+    total = app_reviews['query_summary']['total_reviews']
+  except KeyError:
+    print(app_reviews)
+    raise
   
   all_reviews = load_json('all_reviews.js')
   all_reviews[game_id] = {'positive': positive, 'total': total}
