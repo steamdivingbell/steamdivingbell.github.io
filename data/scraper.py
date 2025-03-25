@@ -205,7 +205,6 @@ def refresh_game(game_id):
     sleep(sleep_for)
 
 if __name__ == '__main__':
-  download_tags()
   if len(sys.argv) > 1:
     for game in sys.argv[1:]:
       refresh_game(game)
@@ -225,7 +224,7 @@ if __name__ == '__main__':
   fetched_games = set((path.stem for path in Path('app_details').glob('*.json')))
   unfetched_games = all_games - fetched_games - deleted_games
 
-  print(f'Fetched {len(fetched_games)} of {len(all_games)} ({len(deleted_games)} deleted)')
+  print(f'Found {len(fetched_games)} valid of all {len(all_games)} games ({len(deleted_games)} deleted, {len(unfetched_games)} unfetched)')
 
   # Start with refreshing unfetched games
   for game in unfetched_games:
@@ -236,14 +235,17 @@ if __name__ == '__main__':
   # TODO: Maybe we should be refreshing recent games more often?
 
   # Then, refresh games in order from where we left off
-  ordered_games = sorted(list(all_games))
+  ordered_games = list(all_games)
+  ordered_games.sort(key = lambda k: int(k)) # Our games are stored as strings in JSON. We want an actual int sort for this.
   with Path('last_fetched.txt').open('r') as f:
     last_fetched = f.read()
-    index = ordered_games.find(last_fetched)
+    index = ordered_games.index(last_fetched)
 
   while datetime.now() < end_time:
     if index >= len(ordered_games):
       index = 0 # If we get through all the games, restart from the beginning
+    else:
+      index += 1
 
     game = ordered_games[index]
     with Path('last_fetched.txt').open('w') as f:
