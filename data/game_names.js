@@ -240082,6 +240082,7 @@ window.game_names = {
 	"3612620":"Exo Digger",
 	"3612630":"Monitor State",
 	"3612670":"Love Surge",
+	"3612740":"Battlers Of Ekrasys",
 	"3612880":"The Darkest Files: Prosecutor Edition Upgrade",
 	"3612990":"Tales From The Unending Void: Season 2",
 	"3613120":"\u51fa\u644a\u5566\uff01\u9f20\u5927\u53a8\uff01",
