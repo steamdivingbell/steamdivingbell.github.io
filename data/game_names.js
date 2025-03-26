@@ -240006,6 +240006,7 @@ window.game_names = {
 	"3614960":"HARVEST",
 	"3615120":"You Shouldn't Be Here Demo",
 	"3615350":"Rustborns",
+	"3615460":"Survive The Cards Demo",
 	"3615540":"Dachs Hunter Demo",
 	"3615570":"\u6c49\u6b66\u5927\u5e1d\u4f20-\u7edd\u4ee3\u4f73\u4ebaDLC",
 	"3616140":"Jericho's Awakening",
