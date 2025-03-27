@@ -238758,6 +238758,8 @@ window.game_names = {
 	"3563190":"\u8ffd\u9003",
 	"3563220":"Sobe",
 	"3563270":"Robo Rolo",
+	"3563320":"Lizards Must Die 2 - Skin Pack \"Beast\"",
+	"3563330":"Lizards Must Die 2 - Skin Pack \"Hyperborea\"",
 	"3563340":"Lizards Must Die 2 Soundtrack",
 	"3563370":"Emperor Pigeon - Sandbox",
 	"3563380":"Mari's Magical Deliveries",
