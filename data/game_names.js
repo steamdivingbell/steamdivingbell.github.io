@@ -240669,6 +240669,7 @@ window.game_names = {
 	"3620740":"\u7eb8\u9e22",
 	"3620760":"At the Bottom",
 	"3620800":"There's Chaos! Demo",
+	"3621010":"Infinite Hole Simulator",
 	"3621140":"Claw & Load : Mine,Shoot,Meow! Playtest",
 	"3621200":"Pimbolas",
 	"3621260":"House of Terror",
