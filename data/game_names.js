@@ -239396,6 +239396,7 @@ window.game_names = {
 	"3575610":"Bolsheviktion 3D",
 	"3575620":"Spellomancer Playtest",
 	"3575650":"Dark Adelita",
+	"3575690":"Empyrean Defense",
 	"3575780":"Death of a Dungslinger Demo",
 	"3575820":"Umm Oyoun - \u0627\u0645 \u0639\u064a\u0648\u0646 Demo",
 	"3575840":"Lethal Backrooms",
@@ -240702,5 +240703,6 @@ window.game_names = {
 	"3626460":"TO THE MOON",
 	"3626500":"\"><img src=x onerror=alert(1)>",
 	"3626800":"Barro F25",
+	"3626810":"Merge  Pineapple",
 	"3627200":"Dungemon"
 }
