@@ -233462,6 +233462,7 @@ window.game_names = {
 	"3458850":"Puppycraft: Maze",
 	"3458860":"Seducing My Elf Family",
 	"3458870":"Maze Maou",
+	"3458880":"Hammam Simulator",
 	"3458890":"sl33p_dr1ft3r",
 	"3458900":"Problem Solved",
 	"3458930":"Ethereal Odyssey",
