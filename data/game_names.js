@@ -238408,6 +238408,7 @@ window.game_names = {
 	"3551180":"Ultima Chess",
 	"3551200":"slime feet",
 	"3551220":"Chorus of Carcosa  - Digital Artbook",
+	"3551230":"zory",
 	"3551240":"Zaccaria Pinball - Tropical Deluxe Pinball Table",
 	"3551300":"Tale of Darkness",
 	"3551310":"Alien's Fridge",
