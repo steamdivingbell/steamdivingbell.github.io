@@ -210147,6 +210147,7 @@ window.game_names = {
 	"3087520":"Femdom Lines: Mindbreak",
 	"3087550":"The Museum of Hauntology",
 	"3087560":"Anime Tap Clicker",
+	"3087580":"Mystic Blaze",
 	"3087590":"ff link",
 	"3087600":"The Prisoner",
 	"3087610":"Inauthentic Hummus Playtest",
