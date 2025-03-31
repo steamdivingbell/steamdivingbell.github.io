@@ -205088,6 +205088,7 @@ window.game_names = {
 	"3010260":"\u51b2\u7a812: \u95ea\u7535\u6218",
 	"3010280":"Powerplay",
 	"3010290":"Heroes of the Seven Islands",
+	"3010300":"Color Gungeon",
 	"3010310":"Dimhaven Enigmas Demo",
 	"3010320":"Warp speed: Infinity",
 	"3010330":"Apocalypse Chow",
