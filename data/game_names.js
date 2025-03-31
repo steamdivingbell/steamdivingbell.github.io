@@ -103097,6 +103097,7 @@ window.game_names = {
 	"1567490":"Alien Death Mob",
 	"1567510":"Pistol Whip OST Vol. 2",
 	"1567520":"Blackwind",
+	"1567530":"Vlad Circus: Curse of Asmodeus",
 	"1567550":"ProtoStone",
 	"1567570":"Wilbur's Quest",
 	"1567580":"7 Years' War",
