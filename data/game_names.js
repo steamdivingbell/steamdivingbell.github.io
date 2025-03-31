@@ -239561,6 +239561,7 @@ window.game_names = {
 	"3579020":"Nisukka Racing Simulation",
 	"3579030":"The Long Fall Home Playtest",
 	"3579090":"Urban Jungle Soundtrack",
+	"3579100":"Supreme War God",
 	"3579120":"\u9e21\u751f\u86cb\u86cb\u751f\u9e21 Demo",
 	"3579180":"Flip Crystal League",
 	"3579230":"GrimmVale",
