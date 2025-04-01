@@ -239436,6 +239436,7 @@ window.game_names = {
 	"3572790":"Paper 2 - Origami Refolded Soundtrack",
 	"3572800":"Duo Quest",
 	"3572820":"Crimson Theory",
+	"3572830":"\u897f\u6e38\u964d\u9b54",
 	"3572850":"Slime Guy",
 	"3572870":"Rescue Team: Attack of the Atom",
 	"3572880":"\ud504\ub9b0\uc138\uc2a4 \uba54\uc774\ucee4 : \uc608\uc5b8\uc758 \uc544\uc774\ub4e4 Playtest",
