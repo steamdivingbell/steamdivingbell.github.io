@@ -239822,6 +239822,7 @@ window.game_names = {
 	"3581580":"Kungfu2 Demo",
 	"3581590":"Santa's Hitlist CEO Edition",
 	"3581630":"Deal With The Devil Chapter: 2 - From Tuonela to Hell Demo",
+	"3581660":"Black Equation",
 	"3581680":"Fantasy Car",
 	"3581690":"Miryam: The Polluted Land Playtest",
 	"3581720":"Deep Blue: Devour and Evolve Playtest",
