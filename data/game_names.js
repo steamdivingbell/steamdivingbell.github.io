@@ -226567,6 +226567,7 @@ window.game_names = {
 	"3342050":"#7-J5Z: The Driftwood Experiment",
 	"3342080":"Arobynn: Sword of Adventure",
 	"3342090":"Second Works",
+	"3342130":"SurgePoint",
 	"3342140":"ESCAVE",
 	"3342150":"10MIN HEROES",
 	"3342160":"The Adventures of Badgersaw Demo",
@@ -238347,6 +238348,7 @@ window.game_names = {
 	"3546500":"Cascade",
 	"3546520":"UFL\u2122 AlphaTest",
 	"3546530":"Shield Strike Demo",
+	"3546540":"Aker Fern 2",
 	"3546560":"Key To Heaven Dedicated Server",
 	"3546580":"Ravengrave: Iron Bonds Demo",
 	"3546620":"Sumigami",
@@ -240814,6 +240816,7 @@ window.game_names = {
 	"3607700":"\u672b\u65e5\u6218\u59ec\uff1a\u89c9\u9192",
 	"3607710":"Go To Hell",
 	"3607720":"Atomfall Deluxe Upgrade",
+	"3607740":"Another Door Playtest",
 	"3607760":"\u6c49\u6b66\u4e13\u7528\u5957\u88c5DLC-D\u5ea6\u7a7a\u95f4\u4e13\u5c5e",
 	"3607850":"Yandere Maid~Love-Crazed Maid~",
 	"3607870":"Cassette Beasts: Acoustic Sessions",
@@ -241242,6 +241245,7 @@ window.game_names = {
 	"3623890":"Launch Dude",
 	"3623940":"gorepunk Demo",
 	"3624060":"Coil's Containment Demo",
+	"3624150":"SnakeVib",
 	"3624160":"Cardtographer Demo",
 	"3624210":"Abra-Cooking-Dabra Playtest",
 	"3624230":"The Expedition Soundtrack",
@@ -241388,6 +241392,7 @@ window.game_names = {
 	"3634390":"Serendia-Random Equip Draw Defense Demo",
 	"3634720":"Super Yapori Minigames",
 	"3635110":"REPOSE - Soundtrack",
+	"3635150":"CivRise",
 	"3635240":"Saw Counter",
 	"3635530":"NeverWards Demo",
 	"3635590":"Kalia Demo",
@@ -241399,5 +241404,6 @@ window.game_names = {
 	"3637620":"Azoth",
 	"3637730":"FIND ALL 8: The road to the Maya",
 	"3637920":"Ringer Demo",
-	"3639430":"serveur"
+	"3639430":"serveur",
+	"3640080":"EOL: End Of Line Demo"
 }
