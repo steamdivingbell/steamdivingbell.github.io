@@ -240123,6 +240123,7 @@ window.game_names = {
 	"3583490":"\u82f1\u96c4\u7ade\u8d77 Demo",
 	"3583540":"\u6c34\u6d52\u7ed8\u5377",
 	"3583560":"Rogue Wave",
+	"3583570":"The Legend of Bubble Boy",
 	"3583600":"Hentai Senpai: Kairaku no Maid Service",
 	"3583620":"Carrot Cake",
 	"3583630":"Evolits",
@@ -240690,6 +240691,7 @@ window.game_names = {
 	"3598250":"\u865b\u5883\u72c2\u6f6e-\u7570\u57df\u4ea4\u532f",
 	"3598260":"WORM OF STEEL",
 	"3598270":"End Turn",
+	"3598280":"The Lionhearted Durga",
 	"3598340":"SCHIZOPHRENIA",
 	"3598350":"The Girl in the Dark",
 	"3598420":"Sister Takes Two Dicks",
@@ -241658,6 +241660,7 @@ window.game_names = {
 	"3641290":"Kingdom Wars Playtest",
 	"3641770":"Galeid. Soundtrack",
 	"3642140":"Kubikon 3D - Warehouse DLC",
+	"3642180":"Cultivation Magic World",
 	"3642250":"Convalescent Codex: An Alchemist's Story",
 	"3643090":"Rapid Fire Girls Soundtrack",
 	"3643570":"Blossoms of Eternity Demo"
