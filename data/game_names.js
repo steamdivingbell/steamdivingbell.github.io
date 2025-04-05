@@ -172590,6 +172590,7 @@ window.game_names = {
 	"2521530":"Damocles Gaze",
 	"2521550":"Shroomchitect",
 	"2521560":"Furious Farm",
+	"2521590":"LifeRoot.bat",
 	"2521600":"Little-Known Galaxy",
 	"2521630":"Mini Settlers",
 	"2521650":"Forgotten Lectures  - Fall of a Dynasty - The Beginning",
