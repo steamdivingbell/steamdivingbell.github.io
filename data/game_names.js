@@ -232785,6 +232785,7 @@ window.game_names = {
 	"3444680":"World of Warplanes - Grumman XF4F-3 Pack",
 	"3444690":"Dying Sun",
 	"3444710":"SushiCat : Bento Demo",
+	"3444720":"The Sultan and his Harem",
 	"3444730":"Vanova's Stories Demo",
 	"3444740":"Goo Hunter",
 	"3444750":"Most Quietly",
@@ -241747,6 +241748,7 @@ window.game_names = {
 	"3642140":"Kubikon 3D - Warehouse DLC",
 	"3642180":"Cultivation Magic World",
 	"3642250":"Convalescent Codex: An Alchemist's Story",
+	"3642600":"Forest",
 	"3643090":"Rapid Fire Girls Soundtrack",
 	"3643570":"Blossoms of Eternity Demo",
 	"3647880":"demo"
