@@ -241626,6 +241626,7 @@ window.game_names = {
 	"3633260":"Stop the Blight Soundtrack",
 	"3633310":"\u5c04\u4e0d\u4e2d\u5c31\u6b7b\uff1f\u53ea\u80fd\u7784\u51c6\u75c5\u5a07\u7f8e\u5c11\u5973\u5fc3\u9632\u7684\u5f39\u73e0\u5c04\u59ec\u6e38\u620f \uff01",
 	"3633370":"Caller of the Crows Demo",
+	"3633390":"DECK COLLECTOR",
 	"3633400":"Happy Surprise Garden",
 	"3633420":"My Tiny Room",
 	"3633510":"Ctrl+Alt+Dragon: Don't Try This at Home Playtest",
