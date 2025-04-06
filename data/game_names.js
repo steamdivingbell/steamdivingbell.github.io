@@ -241656,6 +241656,7 @@ window.game_names = {
 	"3634390":"Serendia-Random Equip Draw Defense Demo",
 	"3634560":"Flip Rally Demo",
 	"3634720":"Super Yapori Minigames",
+	"3634880":"Western Death",
 	"3634890":"Greenlake Fish Tournament",
 	"3635070":"Cryptoforce",
 	"3635110":"REPOSE - Soundtrack",
