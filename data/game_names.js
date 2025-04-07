@@ -241871,6 +241871,7 @@ window.game_names = {
 	"3642140":"Kubikon 3D - Warehouse DLC",
 	"3642180":"Cultivation Magic World",
 	"3642250":"Convalescent Codex: An Alchemist's Story",
+	"3642480":"Palette Cleanser Demo",
 	"3642600":"Forest",
 	"3643090":"Rapid Fire Girls Soundtrack",
 	"3643510":"Up's and Wipes",
