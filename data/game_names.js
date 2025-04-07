@@ -61048,6 +61048,7 @@ window.game_names = {
 	"982970":"Kerbal Space Program: Breaking Ground Expansion",
 	"982980":"Project Aeronaut",
 	"982990":"Muzzleloaded",
+	"983030":"W.A.N.T.E.D",
 	"983040":"Koboomballs",
 	"983050":"Sticky Apps",
 	"983070":"Hyperborea",
