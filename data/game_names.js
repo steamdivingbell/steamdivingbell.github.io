@@ -240950,6 +240950,7 @@ window.game_names = {
 	"3604560":"Figure Shop Simulator",
 	"3604580":"The Light Of Vertical",
 	"3604600":"Liminality",
+	"3604610":"Oppidum Soundtrack",
 	"3604670":"News Company Simulator",
 	"3604750":"Dominated By: Yandere Goth Childhood Friend",
 	"3604780":"Sunken Engine",
@@ -241373,6 +241374,7 @@ window.game_names = {
 	"3618440":"Wildkeepers Rising Soundtrack",
 	"3618470":"Can't You Run?",
 	"3618480":"Journey Under The Pyramids",
+	"3618510":"Pudding UP!",
 	"3618550":"WanderersTip",
 	"3618630":"Stairs to Nowhere Playtest",
 	"3618700":"Cats Visiting Historical Times",
@@ -241441,6 +241443,7 @@ window.game_names = {
 	"3620860":"Kung Fu Addiction",
 	"3621000":"HYDROPLANT Tycoon",
 	"3621010":"Infinite Hole Simulator",
+	"3621040":"Adventures & Quests - The black Crystal",
 	"3621140":"Claw & Load : Mine,Shoot,Meow! Playtest",
 	"3621160":"Stardust Skate: Original Soundtrack",
 	"3621200":"Pimbolas",
@@ -241728,6 +241731,7 @@ window.game_names = {
 	"3634390":"Serendia-Random Equip Draw Defense Demo",
 	"3634560":"Flip Rally Demo",
 	"3634720":"Super Yapori Minigames",
+	"3634740":"A Planet of Mine MasterMine Edition Playtest",
 	"3634880":"Western Death",
 	"3634890":"Greenlake Fish Tournament",
 	"3635070":"Cryptoforce",
@@ -241802,5 +241806,6 @@ window.game_names = {
 	"3642600":"Forest",
 	"3643090":"Rapid Fire Girls Soundtrack",
 	"3643570":"Blossoms of Eternity Demo",
+	"3644310":"G.M.M Demo",
 	"3647880":"demo"
 }
