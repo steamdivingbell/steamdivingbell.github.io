@@ -67,7 +67,7 @@ function setupDropdowns() {
       entries.push([window.game_names[game], setActiveGameCallback(game)])
       if (entries.length >= 5) break
     }
-    populateDropdown('search_games', entries)
+    populateDropdown('search_games', [], entries)
   })
   gameSearch.addEventListener('input', (event) => {
     var entries = []
@@ -81,7 +81,7 @@ function setupDropdowns() {
         entries.push([game_name, setActiveGameCallback(game)])
       }
     }
-    populateDropdown('search_games', entries)
+    populateDropdown('search_games', [], entries)
   })
   gameSearch.addEventListener('blur', (event) => {
     if (event.relatedTarget != null) return // Actually a user was clicking on a list entry
@@ -89,9 +89,87 @@ function setupDropdowns() {
     gameSearchList.style.display = 'none'
     gameSearch.style.color = 'gray'
   })
+
+  var tagPosSearch = document.getElementById('search_include_input')
+  var tagPosSearchList = document.getElementById('search_include_list')
+  tagPosSearch.addEventListener('pointerdown', () => {
+    tagPosSearch.value = ''
+    tagPosSearch.style.color = 'black'
+    tagPosSearchList.style.display = null
+    populateTagDropdown()
+  })
+
+  tagPosSearch.addEventListener('input', (event) => {
+    populateTagDropdown()
+  })
+
+
+  tagPosSearch.addEventListener('blur', (event) => {
+    if (event.relatedTarget != null) return // Actually a user was clicking on a list entry
+    if (includedTags.size === 0) {
+      tagPosSearch.value = 'Include tags'
+      tagPosSearch.style.color = 'gray'
+    } else if (includedTags.size === 1) {
+      tagPosSearch.value = 'Including 1 tag'
+      tagPosSearch.style.color = 'black'
+    } else {
+      tagPosSearch.value = `Including ${includedTags.size} tags`
+      tagPosSearch.style.color = 'black'
+    }
+      
+    tagPosSearchList.style.display = 'none'
+  })
 }
 
-function populateDropdown(prefix, entries) {
+var includedTags = new Set()
+function populateTagDropdown() {
+  var filter = document.getElementById('search_include_input').value
+  var entries = Array.from(includedTags)
+  if (entries.length < 10) {
+    for (var tagId in window.tags) { // TODO: Sort?
+      if (includedTags.has(tagId)) continue
+      if (filter == null || window.tags[tagId]['name'].includes(filter)) { // TODO: toUpperCase for comparison? Helper function?
+        entries.push(tagId)
+        if (entries.length >= 10) break
+      }
+    }
+  }
+
+  for (var i = 0; i < 10; i++) {
+    var dropdownEntry = document.getElementById('search_include_' + i)
+    if (dropdownEntry == null) break
+    if (i < entries.length) {
+      dropdownEntry.style.display = null
+      dropdownEntry.innerText = window.tags[entries[i]]['name']
+      dropdownEntry.setAttribute('tagId', entries[i])
+
+      if (includedTags.has(entries[i])) {
+        dropdownEntry.style.background = 'darkblue'
+        dropdownEntry.onmouseleave = (event) => event.currentTarget.style.background = 'darkblue'
+      } else {
+        dropdownEntry.style.background = 'white'
+        dropdownEntry.onmouseleave = (event) => event.currentTarget.style.background = 'white'
+      }
+      dropdownEntry.onmouseenter = (event) => event.currentTarget.style.background = 'lightblue'
+      dropdownEntry.onpointerdown = (event) => {
+        event.preventDefault()
+        var tagId = event.currentTarget.getAttribute('tagId')
+        if (includedTags.has(tagId)) includedTags.delete(tagId)
+        else                         includedTags.add(tagId)
+        populateTagDropdown()
+      }
+    } else {
+      dropdownEntry.style.display = 'none'
+      dropdownEntry.innerText = ''
+      dropdownEntry.onclick = null
+      dropdownEntry.onmouseenter = null
+      dropdownEntry.onmouseleave = null
+    }
+  }
+
+}
+
+function populateDropdown(prefix, pinnedEntries, entries) {
   for (var i = 0; i < 10; i++) {
     var dropdownEntry = document.getElementById(prefix + '_' + i)
     if (dropdownEntry == null) break
