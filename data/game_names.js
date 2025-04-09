@@ -241386,6 +241386,7 @@ window.game_names = {
 	"3614160":"Isekai Adventurer Guild",
 	"3614170":"\u51b0\u6cb3",
 	"3614190":"Big Rigs: Over the Road Racing Soundtrack",
+	"3614220":"24 Points Grab",
 	"3614230":"Hit Idol Demo",
 	"3614240":"Moon & The Fractured Reincarnation Playtest",
 	"3614250":"Waifu Puzzle",
