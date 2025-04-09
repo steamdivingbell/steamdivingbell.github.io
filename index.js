@@ -43,18 +43,6 @@ function set(id, key, value) {
   }
 }
 
-function setActiveGameCallback(game) {
-  return () => {
-    var gameSearch = document.getElementById('search_games_input')
-    gameSearch.value = 'Search for game'
-    gameSearch.style.color = 'gray'
-    var gameSearchList = document.getElementById('search_games_list')
-    gameSearchList.style.display = 'none'
-
-    setActiveGame(game)
-  }
-}
-
 function setupDropdowns() {
   var gameSearch = document.getElementById('search_games_input')
   var gameSearchList = document.getElementById('search_games_list')
@@ -62,123 +50,179 @@ function setupDropdowns() {
     gameSearch.value = ''
     gameSearch.style.color = 'black'
     gameSearchList.style.display = null
-    var entries = []
-    for (var game of window.top_games()) {
-      entries.push([window.game_names[game], setActiveGameCallback(game)])
-      if (entries.length >= 5) break
-    }
-    populateDropdown('search_games', [], entries)
+    populateGamesDropdown()
   })
-  gameSearch.addEventListener('input', (event) => {
-    var entries = []
-    for (var game of window.top_games()) {
-      var game_name = window.game_names[game]
-      if (game_name == gameSearch.value) {
-        // Always list exact matches
-        entries.unshift([game_name, setActiveGameCallback(game)])
-        entries = entries.slice(0, 5)
-      } else if (entries.length < 5 && game_name.includes(gameSearch.value)) {
-        entries.push([game_name, setActiveGameCallback(game)])
-      }
-    }
-    populateDropdown('search_games', [], entries)
-  })
+
+  gameSearch.addEventListener('input', populateGamesDropdown)
+
   gameSearch.addEventListener('blur', (event) => {
-    if (event.relatedTarget != null) return // Actually a user was clicking on a list entry
+    if (event != null && gameSearch.contains(event.relatedTarget)) return // Actually a user was clicking on a list entry
     gameSearch.value = 'Search for game'
-    gameSearchList.style.display = 'none'
     gameSearch.style.color = 'gray'
+    gameSearchList.style.display = 'none'
   })
 
-  var tagPosSearch = document.getElementById('search_include_input')
-  var tagPosSearchList = document.getElementById('search_include_list')
-  tagPosSearch.addEventListener('pointerdown', () => {
-    tagPosSearch.value = ''
-    tagPosSearch.style.color = 'black'
-    tagPosSearchList.style.display = null
-    populateTagDropdown()
+  var includeTagSearch = document.getElementById('search_include_input')
+  var includeTagSearchList = document.getElementById('search_include_list')
+  includeTagSearch.addEventListener('pointerdown', () => {
+    includeTagSearch.value = ''
+    includeTagSearch.style.color = 'black'
+    includeTagSearchList.style.display = null
+    populateIncludeTagDropdown()
   })
 
-  tagPosSearch.addEventListener('input', (event) => {
-    populateTagDropdown()
-  })
+  includeTagSearch.addEventListener('input', populateIncludeTagDropdown)
 
-
-  tagPosSearch.addEventListener('blur', (event) => {
-    if (event.relatedTarget != null) return // Actually a user was clicking on a list entry
+  includeTagSearch.addEventListener('blur', (event) => {
+    if (includeTagSearch.contains(event.relatedTarget)) return // Actually a user was clicking on a list entry
     if (includedTags.size === 0) {
-      tagPosSearch.value = 'Include tags'
-      tagPosSearch.style.color = 'gray'
+      includeTagSearch.value = 'Include tags'
+      includeTagSearch.style.color = 'gray'
     } else if (includedTags.size === 1) {
-      tagPosSearch.value = 'Including 1 tag'
-      tagPosSearch.style.color = 'black'
+      includeTagSearch.value = 'Including 1 tag'
+      includeTagSearch.style.color = 'black'
     } else {
-      tagPosSearch.value = `Including ${includedTags.size} tags`
-      tagPosSearch.style.color = 'black'
+      includeTagSearch.value = `Including ${includedTags.size} tags`
+      includeTagSearch.style.color = 'black'
     }
       
-    tagPosSearchList.style.display = 'none'
+    includeTagSearchList.style.display = 'none'
+  })
+
+  var excludeTagSearch = document.getElementById('search_exclude_input')
+  var excludeTagSearchList = document.getElementById('search_exclude_list')
+  excludeTagSearch.addEventListener('pointerdown', () => {
+    excludeTagSearch.value = ''
+    excludeTagSearch.style.color = 'black'
+    excludeTagSearchList.style.display = null
+    populateExcludeTagDropdown()
+  })
+
+  excludeTagSearch.addEventListener('input', populateExcludeTagDropdown)
+
+  excludeTagSearch.addEventListener('blur', (event) => {
+    if (excludeTagSearch.contains(event.relatedTarget)) return // Actually a user was clicking on a list entry
+    if (excludedTags.size === 0) {
+      excludeTagSearch.value = 'Exclude tags'
+      excludeTagSearch.style.color = 'gray'
+    } else if (excludedTags.size === 1) {
+      excludeTagSearch.value = 'Excluding 1 tag'
+      excludeTagSearch.style.color = 'black'
+    } else {
+      excludeTagSearch.value = `Excluding ${excludedTags.size} tags`
+      excludeTagSearch.style.color = 'black'
+    }
+      
+    excludeTagSearchList.style.display = 'none'
   })
 }
 
-var includedTags = new Set()
-function populateTagDropdown() {
-  var filter = document.getElementById('search_include_input').value
-  var entries = Array.from(includedTags)
-  if (entries.length < 10) {
-    for (var tagId in window.tags) { // TODO: Sort?
-      if (includedTags.has(tagId)) continue
-      if (filter == null || window.tags[tagId]['name'].includes(filter)) { // TODO: toUpperCase for comparison? Helper function?
-        entries.push(tagId)
-        if (entries.length >= 10) break
-      }
+
+function populateGamesDropdown() {
+  var filter = document.getElementById('search_games_input').value
+  var entries = []
+  for (var game of window.top_games()) {
+    if (filter == null) {
+      entries.push(game)
+    } else if (window.game_names[game] == filter) { // Always list exact matches
+      entries.unshift(game)
+    } else if (window.game_names[game].toUpperCase().includes(filter.toUpperCase())) {
+      entries.push(game)
     }
   }
 
+  populateDropdown(
+    /*prefix*/'search_games',
+    /*entries*/entries,
+    /*getInnerText*/(entry) => window.game_names[entry],
+    /*isSelected*/(entry) => false,
+    /*onclick*/(entry) => {
+      var gameSearch = document.getElementById('search_games_input')
+      gameSearch.blur(null)
+      setActiveGame(entry)
+    })
+}
+
+
+var includedTags = new Set()
+var excludedTags = new Set()
+
+function populateIncludeTagDropdown() {
+  var filter = document.getElementById('search_include_input').value
+  var entries = []
+  for (var tagId in window.tags) { // TODO: Sort somehow? Maybe just alpha is enough?
+    if (includedTags.has(tagId)) {
+      entries.unshift(tagId)
+    } else if (excludedTags.has(tagId)) {
+      continue // Don't list tags in both lists at the same time
+    } else if (filter == null) {
+      entries.push(tagId)
+    } else if (window.tags[tagId]['name'].toUpperCase().includes(filter.toUpperCase())) {
+      entries.push(tagId)
+    }
+  }
+  
+  populateDropdown(
+    /*prefix*/'search_include',
+    /*entries*/entries,
+    /*getInnerText*/(entry) => window.tags[entry]['name'],
+    /*isSelected*/(entry) => includedTags.has(entry),
+    /*onclick*/(entry) => {
+      if (includedTags.has(entry)) includedTags.delete(entry)
+      else                         includedTags.add(entry)
+      populateIncludeTagDropdown()
+    })
+}
+
+function populateExcludeTagDropdown() {
+  var filter = document.getElementById('search_exclude_input').value
+  var entries = []
+  for (var tagId in window.tags) { // TODO: Sort somehow? Maybe just alpha is enough?
+    if (excludedTags.has(tagId)) {
+      entries.unshift(tagId)
+    } else if (includedTags.has(tagId)) {
+      continue // Don't list tags in both lists at the same time
+    } else if (filter == null) {
+      entries.push(tagId)
+    } else if (window.tags[tagId]['name'].toUpperCase().includes(filter.toUpperCase())) {
+      entries.push(tagId)
+    }
+  }
+  
+  populateDropdown(
+    /*prefix*/'search_exclude',
+    /*entries*/entries,
+    /*getInnerText*/(entry) => window.tags[entry]['name'],
+    /*isSelected*/(entry) => excludedTags.has(entry),
+    /*onclick*/(entry) => {
+      if (excludedTags.has(entry)) excludedTags.delete(entry)
+      else                         excludedTags.add(entry)
+      populateExcludeTagDropdown()
+    })
+}
+
+function populateDropdown(prefix, entries, getInnerText, isSelected, onclick) {
   for (var i = 0; i < 10; i++) {
-    var dropdownEntry = document.getElementById('search_include_' + i)
+    var dropdownEntry = document.getElementById(prefix + '_' + i)
     if (dropdownEntry == null) break
     if (i < entries.length) {
       dropdownEntry.style.display = null
-      dropdownEntry.innerText = window.tags[entries[i]]['name']
-      dropdownEntry.setAttribute('tagId', entries[i])
+      dropdownEntry.innerText = getInnerText(entries[i])
+      dropdownEntry.setAttribute('entry', entries[i])
 
-      if (includedTags.has(entries[i])) {
+      if (isSelected(entries[i])) {
         dropdownEntry.style.background = 'darkblue'
         dropdownEntry.onmouseleave = (event) => event.currentTarget.style.background = 'darkblue'
       } else {
         dropdownEntry.style.background = 'white'
         dropdownEntry.onmouseleave = (event) => event.currentTarget.style.background = 'white'
       }
+      if (dropdownEntry.matches(':hover')) dropdownEntry.style.background = 'lightblue' // Persist 'hover' color even as the list changes
       dropdownEntry.onmouseenter = (event) => event.currentTarget.style.background = 'lightblue'
       dropdownEntry.onpointerdown = (event) => {
         event.preventDefault()
-        var tagId = event.currentTarget.getAttribute('tagId')
-        if (includedTags.has(tagId)) includedTags.delete(tagId)
-        else                         includedTags.add(tagId)
-        populateTagDropdown()
+        onclick(event.currentTarget.getAttribute('entry'))
       }
-    } else {
-      dropdownEntry.style.display = 'none'
-      dropdownEntry.innerText = ''
-      dropdownEntry.onclick = null
-      dropdownEntry.onmouseenter = null
-      dropdownEntry.onmouseleave = null
-    }
-  }
-
-}
-
-function populateDropdown(prefix, pinnedEntries, entries) {
-  for (var i = 0; i < 10; i++) {
-    var dropdownEntry = document.getElementById(prefix + '_' + i)
-    if (dropdownEntry == null) break
-    if (i < entries.length) {
-      dropdownEntry.style.display = null
-      dropdownEntry.innerText = entries[i][0]
-      dropdownEntry.onclick = entries[i][1]
-      dropdownEntry.onmouseenter = (event) => event.currentTarget.style.background = 'lightblue'
-      dropdownEntry.onmouseleave = (event) => event.currentTarget.style.background = 'white'
     } else {
       dropdownEntry.style.display = 'none'
       dropdownEntry.innerText = ''

@@ -130,6 +130,8 @@ def download_app_details(game_id):
 def meets_score_threshold(positive, total):
   if total <= 0:
     return False
+  elif total >= 10_000:
+    return True # Games people have probably heard of get in, regardless of rating
 
   # Matches the computation in javascript
   perc = positive / total
