@@ -108,24 +108,30 @@ def download_tags():
 
 def download_app_details(game_id):
   """https://github.com/Revadike/InternalSteamWebAPI/wiki/Get-App-Details"""
+  
   try:
     app_details = get(f'https://store.steampowered.com/api/appdetails?appids={game_id}&cc=en')[game_id]
-    # Some games redirect to other games -- if the game we get back is not the one we ask for, we should not list it in our system.
-    if not app_details['success']:
-      print('Steam fetch reports non-success')
-    elif not str(app_details['data']['steam_appid']) == game_id:
-      print(f'App ID mismatch, expected {game_id}, found', app_details['data']['steam_appid'])
-    else:
-      dump_json(app_details['data'], f'app_details/{game_id}.json')
-      return True
   except requests.exceptions.JSONDecodeError:
-    traceback.print_exc(chain=False) # Treat invalid JSON as an invalid game
+    traceback.print_exc(chain=False)
+    return False # Treat invalid JSON as an invalid game
 
-  # If the game was invalid, make a note of it in deleted_games so that we don't try to fetch it again.
-  deleted_games = load_json('deleted_games.js')
-  deleted_games[game_id] = datetime.now().timestamp()
-  dump_js(deleted_games, 'deleted_games.js')
-  return False
+  # Some games redirect to other games -- if the game we get back is not the one we ask for, we should not list it in our system.
+  if not app_details['success']:
+    print('Steam fetch reports non-success')
+    return False
+  elif not str(app_details['data']['steam_appid']) == game_id:
+    print(f'App ID mismatch, expected {game_id}, found', app_details['data']['steam_appid'])
+    return False
+  
+  # As long as it's semi-valid JSON, we should save it.
+  dump_json(app_details['data'], f'app_details/{game_id}.json')
+
+  for category in app_details['data']['categories']:
+    if category['id'] in [10, 21]: # Demo or DLC
+      print(f'Game is "{category["description"]}", not including')
+      return False
+
+  return True
 
 def meets_score_threshold(positive, total):
   if total <= 0:
@@ -171,8 +177,6 @@ def download_similar_games(game_id):
   similar_games[game_id] = similar_to_this_game
   dump_js(similar_games, 'similar_games.js')
 
-  return True
-
 def download_app_tags(game_id):
   soup = get_soup(f'https://store.steampowered.com/app/{game_id}')
   
@@ -187,17 +191,23 @@ def download_app_tags(game_id):
   game_tags = load_json('game_tags.js')
   game_tags[game_id] = tags_for_this_game
   dump_js(game_tags, 'game_tags.js')
-  
-  return True
 
 def refresh_game(game_id):
   print(f'Downloading data for game {game_id}')
   throttling_limit = datetime.now() + timedelta(seconds=5) # The throttling limit for app details is 40 calls per minute, so this is a reasonably generous sleep.
   try:
-    _ = (download_app_details(game_id) # We always want app details, and if the app details fail to load it's an invalid game.
-      and download_review_details(game_id) # We then fetch review details -- and if that fails, it's because the game's too low rated.
-      and download_app_tags(game_id) # Then we download tags
-      and download_similar_games(game_id)) # and similar games (both of which have no failure states)
+    if not download_app_details(game_id): # We always want app details, and if the app details fail to load it's an invalid game.
+      # If the game was invalid, make a note of it in deleted_games so that we don't try to fetch it again.
+      deleted_games = load_json('deleted_games.js')
+      deleted_games[game_id] = datetime.now().timestamp()
+      dump_js(deleted_games, 'deleted_games.js')
+
+    elif not download_review_details(game_id): # We then fetch review details -- and if that fails, it's because the game's too low rated.
+      pass # For games which don't meet review threshold, we don't need to do any long-term marking -- the reviews might change.
+
+    else: # Then we download tags and similar games (both of which have no failure states)
+      download_app_tags(game_id)
+      download_similar_games(game_id)
   except requests.exceptions.RequestException:
     # Any kind of network error should be considered transient -- skip this game and we'll come back later.
     traceback.print_exc(chain=False)
@@ -220,6 +230,7 @@ if __name__ == '__main__':
   # Refresh static data only once per hour, when this script runs
   download_app_list()
   download_tags()
+  # TODO: https://github.com/Revadike/InternalSteamWebAPI/wiki/Get-Store-Categories might be nice so I can have icons / localization for this (eventually).
 
   all_games = set(load_json('game_names.js').keys())
   deleted_games = set(load_json('deleted_games.js').keys())

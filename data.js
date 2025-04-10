@@ -86,9 +86,13 @@ window.loadDataFiles = function() {
     })
   }
 
-  // Some games are deleted, or part of a bundle, or just not listed on Steam for whatever reason.
-  // If we weren't able to load the game's reviews while scraping, it's not publicly listed on steam,
-  // and we shouldn't recommend it to users.
+  // We do some filtering while scraping data to reduce the overall size of the database (and to avoid showing nonsense games)
+  // Specifically, we exclude:
+  // - Games which are part of a bundle
+  // - Games which are DLC or demos
+  // - Games with 0 reviews
+  // - Games with <10,000 reviews that are rated poorly (gem score < 75%)
+  // Those games will not be present in the globalRatingData (although they may be present in other listings).
   for (var game of Array.from(globalGameData.keys())) {
     if (!globalRatingData.has(game)) globalGameData.delete(game)
   }
