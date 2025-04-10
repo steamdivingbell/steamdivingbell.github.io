@@ -126,7 +126,7 @@ def download_app_details(game_id):
   # As long as it's semi-valid JSON, we should save it.
   dump_json(app_details['data'], f'app_details/{game_id}.json')
 
-  for category in app_details['data']['categories']:
+  for category in app_details['data'].get('categories', []):
     if category['id'] in [10, 21]: # Demo or DLC
       print(f'Game is "{category["description"]}", not including')
       return False
