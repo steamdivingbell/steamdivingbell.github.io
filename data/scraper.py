@@ -18,7 +18,7 @@ import zipfile
 
 
 headers = {
-  'User-Agent': 'SteamDivingBell/3.0 (https://github.com/jbzdarkid/divingbell; https://github.com/jbzdarkid/divingbell/issues)',
+  'User-Agent': 'SteamDivingBell/3.0 (https://github.com/steamdivingbell/steamdivingbell.github.io; https://github.com/steamdivingbell/steamdivingbell.github.io/issues)',
 }
 
 ## Helper methods ##
