@@ -245,7 +245,8 @@ if __name__ == '__main__':
     if datetime.now() >= end_time:
       exit()
 
-  # TODO: Maybe we should be refreshing recent games more often?
+  # TODO: Don't refresh games immediately when they come out -- just save the IDs into a 'latest_games.json' along with the current time.
+  # Then, run another loop over that structure, and any games which are >1week old get refreshed (and added to the full list).
 
   # Then, refresh games in order from where we left off
   ordered_games = list(all_games)
