@@ -61,7 +61,7 @@ window.loadDataFiles = function() {
     })
   }
 
-  // TODO: There might be more things we should weight now.
+  // TODO: There are definitely more categories we should weight now.
   var CATEGORY_WEIGHTS = {'subgenre': 4, 'viewpoint': 3, 'theme': 2, 'players': 2, 'feature': 2, 'time': 2, 'story': 2, 'genre': 2}
 
   for (var tag in window.tags) {
@@ -98,6 +98,8 @@ window.loadDataFiles = function() {
   }
 }
 
+var PRICE_FORMAT = new Intl.NumberFormat({}, {'style': 'currency', 'currency': 'USD'})
+var DATE_FORMAT = new Intl.DateTimeFormat({}, {'dateStyle': 'long'})
 function loadGameDetails(gameId) {
   return fetch(`data/app_details/${gameId}.json`)
   .then(r => r.json())
@@ -125,13 +127,15 @@ function loadGameDetails(gameId) {
     }
 
     if (r.is_free) gameDetails.price = 'Free'
-    else if (r.price_overview != null) gameDetails.price = r.price_overview.final_formatted
+    else if (r.price_overview != null) gameDetails.price = PRICE_FORMAT.format(r.price_overview.initial)
 
     if (r.platforms.windows) gameDetails.platforms.push('Windows')
     if (r.platforms.mac)     gameDetails.platforms.push('Mac')
     if (r.platforms.linux)   gameDetails.platforms.push('Linux')
 
     if (r.movies != null && r.movies.length > 0) gameDetails['video'] = r.movies[0].webm.max.replace('http://', 'https://')
+
+    if (r.release_date != null) gameDetails.releaseDate = DATE_FORMAT.format(new Date(r.release_date.date))
 
     return gameDetails
   })

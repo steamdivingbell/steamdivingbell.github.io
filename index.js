@@ -1,8 +1,10 @@
 // Other recommenders I thought of:
 // - 'Top' matches -- sort_by_tags for the top ~100/~1000 games (by some metric)
 // - 'New' matches -- sort_by_tags for games in the last week/month/year (probably year)
-// TODO: Add 'release date' to the description
 // TODO: Consider tagging app_details with the last refreshed time (not sure how I'd display that, per se)
+// TODO: Default exclude R18 tags (e.g. ['Sexual Content'], maybe 'gore'?)
+// TODO: If the currently active game is excluded by tags, how do we reload? -> I think we actually just *do nothing*.
+// TODO: Cache filtered tags in localstorage?
 window.onload = function() {
   setupDropdowns()
 
@@ -47,10 +49,10 @@ function set(id, key, value) {
 var previousGames = [] // Keep track of previous games so that we can use the 'back' button to go back.
 var pageNo = 0 // Keep track of each page of results so that we can use 'more' to get more results
 var includedTags = new Set() // Tags which must be included on all games
-var excludedTags = new Set() // Tags which must NOT be included on all games, defaults to R18 tags (TODO)
+var excludedTags = new Set() // Tags which must NOT be included on all games
 var gamesOffset = 0 // Global value which tracks how far the games dropdown is scrolled
-var includedTagOffset = 0 // Global value which tracks how far the included tags dropdwon is scrolled
-var excludedTagOffset = 0 // Global value which tracks how far the excluded tags dropdwon is scrolled
+var includedTagOffset = 0 // Global value which tracks how far the included tags dropdown is scrolled
+var excludedTagOffset = 0 // Global value which tracks how far the excluded tags dropdown is scrolled
 function setActiveGame(gameId) {
   loadAboutGame(gameId)
   pageNo = 0 // Reset back to the first page of results
@@ -277,6 +279,7 @@ function loadAboutGame(gameId) {
     set('categories', 'innerText', r.categories.join(', '))
     set('tags', 'innerText', r.tags.join(', '))
     set('rating', 'innerText', globalRatingData.get(gameId).ratingText)
+    set('releaseDate', 'innerText', r.releaseDate)
 
     var max_photos = 4
     if (r.video != null) {
@@ -500,8 +503,8 @@ function populateDropdown(prefix, entries, getInnerText, isSelected, onclick, on
       dropdownEntry.setAttribute('entry', entries[i])
 
       if (isSelected(entries[i])) {
-        dropdownEntry.style.background = 'darkblue'
-        dropdownEntry.onmouseleave = (event) => event.currentTarget.style.background = 'darkblue'
+        dropdownEntry.style.background = 'blue'
+        dropdownEntry.onmouseleave = (event) => event.currentTarget.style.background = 'blue'
       } else {
         dropdownEntry.style.background = 'white'
         dropdownEntry.onmouseleave = (event) => event.currentTarget.style.background = 'white'
