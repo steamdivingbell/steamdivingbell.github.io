@@ -93,16 +93,18 @@ def write_readme_statistics():
   for review_data in all_reviews.values():
     if review_data['total'] > 10_000:
       over_10k += 1
-    elif not meets_score_threshold(review_data['positive'], review_data['total']):
-      under_75p += 1
+    if meets_score_threshold(review_data['positive'], review_data['total']):
+      over_75p += 1
   
   contents += textwrap.dedent(f'''
     # Statistics
+    ```
     Total games in the database:  {total_games}
     Games with >10,000 reviews:   {over_10k} ({100 * over_10k / total_games} %)
-    Games with <75% review score: {under_75p} ({100 * under_75p / total_games} %)
+    Games with >75% review score: {over_75p} ({100 * over_75p / total_games} %)
     
     Last updated: {datetime.utcnow()}
+    ```
     ''')
   
   with readme.open('w') as f:
