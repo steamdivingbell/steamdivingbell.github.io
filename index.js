@@ -53,11 +53,13 @@ var excludedTags = new Set() // Tags which must NOT be included on all games
 var gamesOffset = 0 // Global value which tracks how far the games dropdown is scrolled
 var includedTagOffset = 0 // Global value which tracks how far the included tags dropdown is scrolled
 var excludedTagOffset = 0 // Global value which tracks how far the excluded tags dropdown is scrolled
+var activeGameId = 0 // Global storage of the active game so that we can reload recommenders as needed.
 function setActiveGame(gameId) {
   loadAboutGame(gameId)
   pageNo = 0 // Reset back to the first page of results
   loadImages(gameId)
   setupButtons(gameId)
+  activeGameId = gameId
 }
 
 var styles = {
@@ -450,6 +452,7 @@ function populateIncludeTagDropdown() {
     /*onclick*/(entry) => {
       if (includedTags.has(entry)) includedTags.delete(entry)
       else                         includedTags.add(entry)
+      loadImages(activeGameId) // Reload recommended games
       populateIncludeTagDropdown()
     },
     /*onwheel*/(offset) => {
@@ -485,6 +488,7 @@ function populateExcludeTagDropdown() {
     /*onclick*/(entry) => {
       if (excludedTags.has(entry)) excludedTags.delete(entry)
       else                         excludedTags.add(entry)
+      loadImages(activeGameId) // Reload recommended games
       populateExcludeTagDropdown()
     },
     /*onwheel*/(offset) => {
