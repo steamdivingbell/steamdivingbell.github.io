@@ -127,7 +127,7 @@ function loadGameDetails(gameId) {
     }
 
     if (r.is_free) gameDetails.price = 'Free'
-    else if (r.price_overview != null) gameDetails.price = PRICE_FORMAT.format(r.price_overview.initial)
+    else if (r.price_overview != null) gameDetails.price = PRICE_FORMAT.format(r.price_overview.initial / 100.0)
 
     if (r.platforms.windows) gameDetails.platforms.push('Windows')
     if (r.platforms.mac)     gameDetails.platforms.push('Mac')
