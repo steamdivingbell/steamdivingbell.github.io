@@ -21,6 +21,9 @@ import requests
 headers = {
   'User-Agent': 'SteamDivingBell/3.0 (https://github.com/steamdivingbell/steamdivingbell.github.io; https://github.com/steamdivingbell/steamdivingbell.github.io/issues)',
 }
+cookies = {
+  'birthtime': '946713600', # January 1, 2000
+}
 
 ## Helper methods ##
 
@@ -69,7 +72,7 @@ def get(url):
   return r.json()
 
 def get_soup(url):
-  r = requests.get(url, timeout=20, headers=headers)
+  r = requests.get(url, timeout=20, headers=headers, cookies=cookies)
   r.raise_for_status()
   return bs4.BeautifulSoup(r.text, 'html.parser')
 
