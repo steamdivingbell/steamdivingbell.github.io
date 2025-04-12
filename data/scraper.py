@@ -146,7 +146,18 @@ def download_tags():
 
 def download_categories():
   """https://github.com/Revadike/InternalSteamWebAPI/wiki/Get-Store-Categories"""
-  pass # TODO I don't know how I want to format this.
+  category_data = get('https://store.steampowered.com/actions/ajaxgetstorecategories')
+  
+  latest_categories = {}
+  for category in category_data:
+    latest_categories[category['categoryid']] = {
+      'name': category['name'],
+      'icon': 'https://steamstore-a.akamaihd.net/public/images/' + category['image_path'],
+    }
+
+  categories = load_json('categories.js')
+  categories |= latest_categories # Dict update operator from python 3.9
+  dump_js(categories, 'categories.js')
 
 def download_app_details(game_id):
   """https://github.com/Revadike/InternalSteamWebAPI/wiki/Get-App-Details"""
