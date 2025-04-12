@@ -10,11 +10,12 @@ import math
 import json
 import random
 import sys
+import textwrap
 import traceback
+import zipfile
 
 import bs4
 import requests
-import zipfile
 
 
 headers = {
@@ -48,7 +49,7 @@ def dump_js(data, file):
   file = Path(file)
   with file.open('w+', encoding='utf-8') as f:
     # Custom serialization which puts each top-level on its own line
-    keys = [int(key) for key in data.keys()] # TODO: Assumed dict with integer keys? Is this OK?
+    keys = [int(key) for key in data.keys()] # Note: Assumed dict with integer keys
     keys.sort()
     f.write(f'window.{file.stem} = {{\n')
     for key in keys:
@@ -71,6 +72,38 @@ def get_soup(url):
   r = requests.get(url, timeout=20, headers=headers)
   r.raise_for_status()
   return bs4.BeautifulSoup(r.text, 'html.parser')
+
+def write_readme_statistics():
+  readme = Path('../README.md')
+  with readme.open('r') as f:
+    contents = f.read()
+  contents = contents.split('# Statistics')[0]
+  
+  total_games = 0
+  for path in Path('app_details').glob('*.json'):
+    total_games += 1
+    # TODO: We could consider opening each app here for more granular statistics. It's slow, though.
+  
+  all_reviews = load_json('all_reviews.js')
+  over_10k = 0
+  under_75p = 0
+  for review_data in all_reviews.values():
+    if review_data['total'] > 10_000:
+      over_10k += 1
+    elif not meets_score_threshold(review_data['positive'], review_data['total']):
+      under_75p += 1
+  
+  contents += textwrap.dedent(f'''
+    # Statistics
+    Total games in the database:  {total_games}
+    Games with >10,000 reviews:   {over_10k} ({100 * over_10k / total_games} %)
+    Games with <75% review score: {under_75p} ({100 * under_75p / total_games} %)
+    
+    Last updated: {datetime.utcnow()}
+    ''')
+  
+  with readme.open('w') as f:
+    f.write(contents)
 
 ## Official APIs ##
 
@@ -105,6 +138,10 @@ def download_tags():
   tags = load_json('tags.js')
   tags |= latest_tags # Dict update operator from python 3.9
   dump_js(tags, 'tags.js')
+
+def download_categories():
+  """https://github.com/Revadike/InternalSteamWebAPI/wiki/Get-Store-Categories"""
+  pass # TODO I don't know how I want to format this.
 
 def download_app_details(game_id):
   """https://github.com/Revadike/InternalSteamWebAPI/wiki/Get-App-Details"""
@@ -227,29 +264,41 @@ if __name__ == '__main__':
   while end_time.minute != 40:
     end_time += timedelta(minutes=1)
 
-  # Refresh static data only once per hour, when this script runs
+  # Initially I pulled data immediately as games came out, but the data was too scarce.
+  # If we wait until the game's ID comes around, the data could be months stale.
+  # Instead, we keep the games in a small buffer for a week, so that we have relatively accurate reviews but good responsiveness for new games.
+  one_week_ago = (datetime.now() - timedelta(days=7)).timestamp()
+  pending_games = load_json('pending_games.js')
+  for game in list(pending_games):
+    if pending_games[game] < one_week_ago:
+      refresh_game(game)
+      pending_games.pop(game)
+      dump_json(pending_games, 'pending_games.js')
+    
+    if datetime.now() >= end_time:
+      exit() # In case we took too long fetching games
+
+  # Refresh static data (only once per hour)
   download_app_list()
   download_tags()
-  # TODO: https://github.com/Revadike/InternalSteamWebAPI/wiki/Get-Store-Categories might be nice so I can have icons / localization for this (eventually).
+  download_categories()
 
-  all_games = set(load_json('game_names.js').keys())
-  deleted_games = set(load_json('deleted_games.js').keys())
+  # Then, update the pending list with newly identified games
+  all_games = load_json('game_names.js')
+  deleted_games = load_json('deleted_games.js')
   fetched_games = set((path.stem for path in Path('app_details').glob('*.json')))
-  unfetched_games = all_games - fetched_games - deleted_games
 
-  print(f'Found {len(fetched_games)} valid of all {len(all_games)} games ({len(deleted_games)} deleted, {len(unfetched_games)} unfetched)')
+  for game in all_games:
+    if game in deleted_games or game in fetched_games:
+      pass # Already fetched
+    elif game not in pending_games:
+      pending_games[game] = datetime.now().timestamp()
+      dump_json(pending_games, 'pending_games.js')
 
-  # Start with refreshing unfetched games
-  for game in unfetched_games:
-    refresh_game(game)
-    if datetime.now() >= end_time:
-      exit()
-
-  # TODO: Don't refresh games immediately when they come out -- just save the IDs into a 'latest_games.json' along with the current time.
-  # Then, run another loop over that structure, and any games which are >1week old get refreshed (and added to the full list).
-
+  print(f'Found {len(fetched_games)} valid of all {len(all_games)} games ({len(deleted_games)} deleted, {len(pending_games)} unfetched)')
+  
   # Then, refresh games in order from where we left off
-  ordered_games = list(all_games)
+  ordered_games = list(all_games.keys())
   ordered_games.sort(key = lambda k: int(k)) # Our games are stored as strings in JSON. We want an actual int sort for this.
   with Path('last_fetched.txt').open('r') as f:
     last_fetched = f.read()
@@ -258,6 +307,8 @@ if __name__ == '__main__':
   while datetime.now() < end_time:
     if index >= len(ordered_games):
       index = 0 # If we get through all the games, restart from the beginning
+      print('Reached the top of the order, updating the readme statistics')
+      write_readme_statistics()
     else:
       index += 1
 
@@ -267,7 +318,7 @@ if __name__ == '__main__':
 
     if game in deleted_games: # If a game is deleted, it cannot be un-deleted (I think)
       continue
-    if game in unfetched_games: # We already fetched these above
+    if game in pending_games: # Game came out too recently to get accurate review data
       continue
 
     refresh_game(game)
