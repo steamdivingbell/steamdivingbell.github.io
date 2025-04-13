@@ -61,8 +61,27 @@ window.loadDataFiles = function() {
     })
   }
 
-  // TODO: There are definitely more categories we should weight now.
-  var CATEGORY_WEIGHTS = {'subgenre': 4, 'viewpoint': 3, 'theme': 2, 'players': 2, 'feature': 2, 'time': 2, 'story': 2, 'genre': 2}
+  // Based on the categories listed here (with some guesswork modifications)
+  // https://github.com/SteamDatabase/SteamTracking/blob/master/partner.steamgames.com/public/javascript/taxonomy_survey.js#L2071
+  var CATEGORY_WEIGHTS = {
+    'subgenre': 5, // Highly specific, e.g. "Twin stick shooter", "Souls-like"
+
+    'software_genre': 4, // Categorizes non-games, e.g. "Video Production" vs "Education"
+    'basic_timeflow': 4, // "Turn-Based" or "Realtime"
+    'players': 4, // Singleplayer vs multiplayer vs co-op
+    'viewpoint': 4, // First-Person, Third-Person, 2D, etc (seems to be a superset of "xd")
+    
+    'genre': 3,
+    'visuals': 3,
+    'mood': 3,
+    'theme': 3,
+
+    'feature': 2,
+    'level_design': 2,
+    'combat': 2,
+    'story': 2,
+    'character': 2,
+  }
 
   for (var tag in window.tags) {
     var categories = window.tags[tag].categories || []
