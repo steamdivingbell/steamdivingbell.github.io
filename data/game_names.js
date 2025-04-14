@@ -239052,6 +239052,7 @@ window.game_names = {
 	"3550820":"Mini Cozy Room : Lo-Fi Demo",
 	"3550830":"The Book of Bondmaids - Artbook",
 	"3550840":"Ship Graveyard Simulator 2 - Steam Ships DLC",
+	"3550880":"\u6b66\u9053\u6b8b\u7f16",
 	"3550900":"OLYMPUSAN",
 	"3550920":"Ball Game",
 	"3550980":"Night Club Simulator: Prolouge",
