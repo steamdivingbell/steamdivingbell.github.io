@@ -239569,6 +239569,7 @@ window.game_names = {
 	"3561020":"\u6302\u52301000\u7ea7-Idle to level 1000",
 	"3561030":"Rock Island",
 	"3561070":"Capsule Fighting",
+	"3561120":"Band Stage",
 	"3561130":"Ant Guardians Prologue",
 	"3561140":"\u4e00\u5206\u901a\u5b66",
 	"3561160":"Thrice Cursed Demo",
