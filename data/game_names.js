@@ -241314,6 +241314,7 @@ window.game_names = {
 	"3600530":"Ruins Runner",
 	"3600540":"Co-Ape : Rise Of The Monke Demo",
 	"3600600":"Blood Gamble: Hanafuda Playtest",
+	"3600610":"Together with Oneesan~Yuina's Sweet Encouragement~ DLC",
 	"3600620":"Banshee",
 	"3600660":"Beasts of Bermuda - Kaprosuchus Supporter Warpaint",
 	"3600670":"Zombie Town Breakout",
