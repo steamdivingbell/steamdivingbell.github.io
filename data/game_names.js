@@ -242536,6 +242536,7 @@ window.game_names = {
 	"3633280":"Mercator Demo",
 	"3633290":"Chained Echoes - Ashes of Elrant (Original Game Soundtrack)",
 	"3633310":"\u5c04\u4e0d\u4e2d\u5c31\u6b7b\uff1f\u53ea\u80fd\u7784\u51c6\u75c5\u5a07\u7f8e\u5c11\u5973\u5fc3\u9632\u7684\u5f39\u73e0\u5c04\u59ec\u6e38\u620f \uff01",
+	"3633340":"Summercamp",
 	"3633350":"Hunter Roulette Demo",
 	"3633370":"Caller of the Crows Demo",
 	"3633390":"DECK COLLECTOR",
@@ -242971,6 +242972,7 @@ window.game_names = {
 	"3649800":"Angel Legion-DLC Tight Leather (Purple)",
 	"3649890":"Capybaras Huddled Together",
 	"3649920":"Me resbala!",
+	"3649930":"Bokeh Adventure",
 	"3649970":"Lane Hunters Demo",
 	"3650030":"Kubikon 3D - Cyberpunk DLC",
 	"3650050":"DAY OF DRIFT",
@@ -243120,6 +243122,7 @@ window.game_names = {
 	"3664230":"Bounce Cat",
 	"3664270":"Air Fleet Soundtrack",
 	"3664310":"Captain Gazman Day Of The Rage - Rich Radio Pack",
+	"3664910":"Frantic Birdies",
 	"3664940":"The Duck Amikaze Strikes Back Demo",
 	"3667570":"AVTale Demo",
 	"3667770":"Dragonium Adventure: Corrupted Echoes"
