@@ -106834,6 +106834,7 @@ window.game_names = {
 	"1621140":"Clawfish",
 	"1621150":"Maelstrom Strategy Guide",
 	"1621151":"Maelstrom Art Book",
+	"1621170":"Dungeon Cafe",
 	"1621180":"Accident On the Simple Rd Demo",
 	"1621200":"Hot Pot",
 	"1621210":"Nemithia - Tale of the Legendary Saviors",
@@ -243318,6 +243319,7 @@ window.game_names = {
 	"3664390":"Fly Cowboy Online: Developer Support Package Orange",
 	"3664400":"Experiment 28 Demo",
 	"3664420":"\u5b88\u536b\u5730\u4e0b\u57ce Demo",
+	"3664560":"Escape From Lava",
 	"3664630":"AFK_GF",
 	"3664780":"Wildheart Gourmet - Supporter Pack",
 	"3664810":"FREST",
@@ -243339,6 +243341,7 @@ window.game_names = {
 	"3666830":"Shards of Dread",
 	"3666970":"Bugaboo Pocket Soundtrack",
 	"3667020":"Cryphora",
+	"3667280":"Masters of Gaia",
 	"3667350":"Dodgix Demo",
 	"3667420":"Jelli Nook",
 	"3667530":"Wallpaper Top",
@@ -243347,6 +243350,7 @@ window.game_names = {
 	"3667660":"Bug Off",
 	"3667770":"Dragonium Adventure: Corrupted Echoes",
 	"3667850":"Silk Roads II: Paths of Fortune",
+	"3668260":"Chinook",
 	"3670710":"Red October \u2013 Pages of Solitude",
 	"3672180":"Red October \u2013 Melodies Under the Wheels"
 }
