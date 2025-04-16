@@ -114,12 +114,10 @@ def download_app_list():
   """https://steamapi.xpaw.me/#ISteamApps/GetAppList"""
   latest_games = {}
   app_list = get('https://api.steampowered.com/ISteamApps/GetAppList/v2')['applist']['apps']
-  for game_data in app_list:
-    latest_games[str(game_data['appid'])] = game_data['name'].strip()
 
   game_names = load_json('game_names.js')
-  print('Added games: ', sorted(set(latest_games.keys()) - set(game_names.keys())))
-  game_names |= latest_games # Dict update operator from python 3.9
+  for game_data in app_list:
+    game_names[str(game_data['appid'])] = game_data['name'].strip()
   dump_js(game_names, 'game_names.js')
 
 ## Unofficial APIs ##
@@ -129,17 +127,14 @@ def download_tags():
   """https://github.com/Revadike/InternalSteamWebAPI/wiki/Get-Categories-By-Tag"""
   tag_data = get('https://steamcommunity.com/sale/ajaxgetcategoriesbytag')
 
-  latest_tags = {}
+  tags = load_json('tags.js')
   for tag_id, name in tag_data['rgTagNames'].items():
     name = name.strip()
-    latest_tags[tag_id] = {'name': name}
+    tags[tag_id] = {'name': name}
     global tag_name_to_id
     tag_name_to_id[name] = tag_id # Used by download_app_tags
   for tag_id, categories in tag_data['rgCategoriesByTag'].items():
-    latest_tags[tag_id]['categories'] = categories
-
-  tags = load_json('tags.js')
-  tags |= latest_tags # Dict update operator from python 3.9
+    tags[tag_id]['categories'] = categories
   dump_js(tags, 'tags.js')
 
 def download_categories():
