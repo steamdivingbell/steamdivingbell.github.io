@@ -109589,7 +109589,7 @@ window.game_names = {
 	"1658750":"Revelation",
 	"1658770":"Grandmaster Chess",
 	"1658790":"Lost Eidolons Demo",
-	"1658810":"The Wonderful 101: Remastered\u3000DLC2",
+	"1658810":"The Wonderful 101: RemasteredDLC2",
 	"1658830":"Vampire Slave 1",
 	"1658860":"NekoDice - \u793c\u7269\u652f\u6301 - A\u7ad9",
 	"1658870":"New Home: Medieval Village",
