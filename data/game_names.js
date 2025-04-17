@@ -161436,6 +161436,7 @@ window.game_names = {
 	"2365800":"Shogi!",
 	"2365810":"Pseudoregalia",
 	"2365820":"Neural Synapse",
+	"2365830":"Dysterra: Founder's Pack",
 	"2365840":"The Red",
 	"2365860":"The Pair Annihilation",
 	"2365870":"G-MODE\u30a2\u30fc\u30ab\u30a4\u30d6\u30b9+ \u63a2\u5075\u30fb\u7678\u751f\u5ddd\u51cc\u4ecb\u4e8b\u4ef6\u8b5a Vol.11\u300c\u3042\u306d\u306e\u58c1\u300d",
@@ -181576,6 +181577,7 @@ window.game_names = {
 	"2654320":"Conqueror's Blade - \u82f1\u52c7\u9a91\u58eb\u65f6\u88c5\u81ea\u9009\u793c\u5305",
 	"2654330":"Conqueror's Blade - \u5168\u519b\u96c6\u7ed3\u8c6a\u534e\u793c\u5305",
 	"2654340":"Conqueror's Blade - \u5168\u519b\u96c6\u7ed3\u57fa\u7840\u793c\u5305",
+	"2654350":"\u6708\u5149\u65c5\u4eba",
 	"2654360":"Prank Heart",
 	"2654380":"\u9e21\u68b0\u7eff\u6d32 Demo",
 	"2654390":"ASURAJANG Playtest",
@@ -239578,6 +239580,7 @@ window.game_names = {
 	"3558190":"GnollHack",
 	"3558200":"JNZ: Anchor Archetype",
 	"3558240":"Bonfire Barrage",
+	"3558260":"\u5948\u5e03\u7684\u5192\u9669 - Naib's Adventure",
 	"3558270":"Cygnus 13",
 	"3558300":"Fear of Hot Water Ghost",
 	"3558310":"Bring the Book back",
@@ -243037,6 +243040,7 @@ window.game_names = {
 	"3642250":"Convalescent Codex: An Alchemist's Story",
 	"3642380":"Toco",
 	"3642390":"\u5f02\u5e38:\u5f7b\u5e95\u5931\u63a7",
+	"3642420":"Codename:Twilight",
 	"3642430":"Rogue Shapes",
 	"3642450":"A Slight Chance of Sawblades Demo",
 	"3642460":"Dungeon Weiqi Demo",
@@ -243578,6 +243582,7 @@ window.game_names = {
 	"3668740":"Femdom Girlfriend 3: My Sadistic Girlfriend and Her Friend Bully Me In Their Swimsuits",
 	"3668890":"The Legend of Abdal",
 	"3668990":"Legacy - Reawakening",
+	"3669140":"hora Demo",
 	"3669270":"Forpost",
 	"3669450":"Pantheion",
 	"3669500":"Mathbits",
@@ -243597,5 +243602,6 @@ window.game_names = {
 	"3672180":"Red October \u2013 Melodies Under the Wheels",
 	"3672500":"\u8d5b\u535a\u5c0f\u5ba0oi",
 	"3672970":"The Haunted Nora Apartment",
-	"3673350":"Orbs of Duality Demo"
+	"3673350":"Orbs of Duality Demo",
+	"3675610":"Oh Tennis Demo"
 }
