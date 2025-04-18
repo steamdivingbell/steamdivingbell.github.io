@@ -1,26 +1,3 @@
-// My version of chrome is very old. These should be removed, probably. At some point.
-Set.prototype.union = Set.prototype.union || function(other) {
-  var output = new Set(this)
-  for (var elem of other) output.add(elem)
-  return output
-}
-
-Set.prototype.intersection = Set.prototype.intersection || function(other) {
-  var output = new Set()
-  for (var elem of other) {
-    if (this.has(elem)) output.add(elem)
-  }
-  return output
-}
-
-Set.prototype.difference = Set.prototype.difference || function(other) {
-  var output = new Set()
-  for (var elem of this) {
-    if (!other.has(elem)) output.add(elem)
-  }
-  return output
-}
-
 // "Default" matches, directly from steam's "more like this" recommendations
 function default_matches(baseGameId) {
   return window.similar_games[baseGameId].split(',')
@@ -129,33 +106,47 @@ function compare_candidates(gameA, gameB) {
   var tagsA = globalGameData.get(gameA).tags
   var tagsB = globalGameData.get(gameB).tags
 
-  var totalWeight = 0
-  for (var tag of tagsA.union(tagsB)) {
-    totalWeight += globalTagData.get(tag).weight
-  }
-
+  // The match weight is the intersection of the two sets, i.e. the weight of each tag in both sets.
   var matchWeight = 0
-  for (var tag of tagsA.intersection(tagsB)) {
-    matchWeight += globalTagData.get(tag).weight
+  // The total weight is the union of the two sets, i.e. the weight of each tag in either set.
+  var totalWeight = 0
+
+  for (var tag of tagsA) {
+    if (tagsB.has(tag)) {
+      matchWeight += globalTagData.get(tag).weight
+    } else {
+      totalWeight += globalTagData.get(tag).weight
+    }
+  }
+  for (var tag of tagsB) {
+    totalWeight += globalTagData.get(tag).weight
   }
 
   return matchWeight / totalWeight
 }
 
 function compare_candidates_verbose(gameA, gameB) {
+  // Compute the intersection and union of the two lists
   var tagsA = globalGameData.get(gameA).tags
   var tagsB = globalGameData.get(gameB).tags
+  var union = new Set(tagsA)
+  for (var tag of tagsB) union.add(tag)
+  var intersection = new Set()
+  for (var tag of tagsA) {
+    if (tagsB.has(tag) intersection.add(tag)
+  }
+
   var tagData = new Map()
 
   var totalWeight = 0
-  for (var tag of tagsA.union(tagsB)) {
+  for (var tag of union) {
     totalWeight += globalTagData.get(tag).weight
     var category = globalTagData.get(tag).category
     if (category != null && !tagData.has(category)) tagData.set(category, {'weight': 0, 'tags': []})
   }
 
   var matchWeight = 0
-  for (var tag of tagsA.intersection(tagsB)) {
+  for (var tag of intersection) {
     matchWeight += globalTagData.get(tag).weight
     var category = globalTagData.get(tag).category
     if (tagData.has(category)) {
