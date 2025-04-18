@@ -1,8 +1,8 @@
 // Other recommenders I thought of:
 // - 'Top' matches -- sort_by_tags for the top ~100/~1000 games (by some metric)
 // - 'New' matches -- sort_by_tags for games in the last week/month/year (probably year)
-// TODO: Consider tagging app_details with the last refreshed time (not sure how I'd display that, per se)
-// TODO: Default exclude R18 tags (e.g. ['Sexual Content'], maybe 'gore'?)
+// TODO: Default exclude R18 tags (anything in category: sex or category: mature)
+//        Thinking more, do I want tag filters to actually be category filters? Maybe for 'exclude' I want that.
 // TODO: If the currently active game is excluded by tags, how do we reload? -> I think we actually just *do nothing*.
 // TODO: Cache filtered tags in localstorage?
 window.onload = function() {
