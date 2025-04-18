@@ -133,7 +133,7 @@ function compare_candidates_verbose(gameA, gameB) {
   for (var tag of tagsB) union.add(tag)
   var intersection = new Set()
   for (var tag of tagsA) {
-    if (tagsB.has(tag) intersection.add(tag)
+    if (tagsB.has(tag)) intersection.add(tag)
   }
 
   var tagData = new Map()
