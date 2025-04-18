@@ -6,7 +6,13 @@ import statistics
 import scraper
 
 reviews = scraper.load_json('reviews.js')
+similar = scraper.load_json('similar_games.js')
+for game in list(similar.keys()):
+  if game not in reviews:
+    similar.pop(game)
+scraper.dump_js(similar, 'similar_games.js')
 
+raise
 
 def test(r):
   try:
