@@ -226324,6 +226324,7 @@ window.game_names = {
 	"3332940":"Small Spaces Demo",
 	"3332970":"Twisted Grove",
 	"3332990":"Cardbuster Playtest",
+	"3333000":"BOTO LABO",
 	"3333020":"Astronormous Survivor",
 	"3333030":"Kota`s New Journey - Supporter Pack",
 	"3333050":"Sexy Memory Puzzle - Futanari Striptease",
@@ -238791,6 +238792,7 @@ window.game_names = {
 	"3542220":"Shadows of Teotihuacan",
 	"3542240":"Prismania",
 	"3542250":"Unidentified Feline Obliterators Demo",
+	"3542260":"All Those Who Wander",
 	"3542300":"Car Cleaner Simulator",
 	"3542310":"Escape Haunted Mansion",
 	"3542340":"Bible Trivia - Legacy",
@@ -241998,6 +242000,7 @@ window.game_names = {
 	"3609480":"Service Dog Demo",
 	"3609520":"Sweet Disco",
 	"3609580":"Monster Tower",
+	"3609610":"Meat Market",
 	"3609700":"\u5c0f\u9a91\u58eb2\u9eef\u82cf\u65e7\u68a6",
 	"3609710":"Realm(\u9886\u57df)",
 	"3609720":"Sanctum Mage",
@@ -243817,6 +243820,7 @@ window.game_names = {
 	"3666200":"Quantum Resonance",
 	"3666260":"Sweet Run",
 	"3666290":"ScrapWings Demo",
+	"3666310":"Neko No Sentouki Demo",
 	"3666320":"Connected Fates",
 	"3666430":"\u6c49\u6b66\u5927\u5e1d\u4f20-\u4ed9\u4e39\u76db\u5bb4\u8d85\u7ea7\u5408\u96c6\u4e8c\uff08\u9650\u8d2d1\u6b21\uff09",
 	"3666440":"\u6c49\u6b66\u5927\u5e1d\u4f20-\u65b0\u624b\u8d85\u503c\u8865\u7ed9\u5305\uff08\u9650\u8d2d\u4e00\u6b21\uff09",
@@ -243932,6 +243936,7 @@ window.game_names = {
 	"3672670":"SiegeBorn",
 	"3672680":"Many Nights a Whisper Soundtrack",
 	"3672970":"The Haunted Nora Apartment",
+	"3673060":"How to Train Your Cock",
 	"3673250":"Operation: Sour Power Demo",
 	"3673270":"Sorter Soundtrack",
 	"3673350":"Orbs of Duality Demo",
@@ -243961,5 +243966,7 @@ window.game_names = {
 	"3678320":"\u672b\u65e5\u5361\u724c",
 	"3678350":"As We Unite",
 	"3678550":"Beek: Familiar Spirit - Remastered Soundtrack",
-	"3679330":"Pet Hero vs Zombie"
+	"3679200":"Maya Steps Out Demo",
+	"3679330":"Pet Hero vs Zombie",
+	"3680510":"Sip Fisher"
 }
