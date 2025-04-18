@@ -216,13 +216,15 @@ def download_review_details(game_id):
 def download_similar_games(game_id):
   soup = get_soup(f'https://store.steampowered.com/recommended/morelike/app/{game_id}')
 
-  # The graphics only show 9 recommendations, but the raw code has more; we take them all.
+  # The graphics only show 9 recommendations, we will use the first 10 (because I said so).
+  # An inexplicably large number of games have 75 recommendations. Yikes.
   similar_to_this_game = []
   for item in soup.find_all('div', {'class': 'similar_grid_item'}):
     similar_to_this_game.append(item.find('a', {'class': 'similar_grid_capsule'}).get('data-ds-appid'))
 
+  # For size and performance, we encode the similar games list as a single string.
   similar_games = load_json('similar_games.js')
-  similar_games[game_id] = similar_to_this_game
+  similar_games[game_id] = ','.join(similar_to_this_game[:10])
   dump_js(similar_games, 'similar_games.js')
 
 def download_app_tags(game_id):
