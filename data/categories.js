@@ -1,1 +1,2 @@
-window.categories = {}
+window.categories = {
+	"1":
