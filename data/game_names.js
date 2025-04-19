@@ -243887,6 +243887,7 @@ window.game_names = {
 	"3668180":"AmaView: Desktop GIFs",
 	"3668200":"Sanity Loops Demo",
 	"3668260":"Chinook",
+	"3668270":"Granvir: Zero Front",
 	"3668320":"Palmora",
 	"3668370":"Night Swarm",
 	"3668390":"HONORLESS! Demo",
@@ -243978,7 +243979,9 @@ window.game_names = {
 	"3678320":"\u672b\u65e5\u5361\u724c",
 	"3678350":"As We Unite",
 	"3678550":"Beek: Familiar Spirit - Remastered Soundtrack",
+	"3678580":"NOW LOADING SIMULATOR",
 	"3679200":"Maya Steps Out Demo",
 	"3679330":"Pet Hero vs Zombie",
-	"3680510":"Sip Fisher"
+	"3680510":"Sip Fisher",
+	"3680750":"Cats Ritual"
 }
