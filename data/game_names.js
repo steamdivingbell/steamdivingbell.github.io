@@ -241880,6 +241880,7 @@ window.game_names = {
 	"3605880":"Frostbite Frenzy - Elf Hat",
 	"3605890":"Frostbite Frenzy - Crown Hat",
 	"3605910":"Don't Drop Dead",
+	"3605920":"Cosmic Concealed",
 	"3606030":"Dr. Suun",
 	"3606040":"Biorage Demo",
 	"3606060":"Drift Shell",
