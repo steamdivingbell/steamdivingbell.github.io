@@ -243976,6 +243976,7 @@ window.game_names = {
 	"3670310":"Lost In The Grotto: Thievery",
 	"3670350":"BIRDCAGE Playtest",
 	"3670440":"\u5947\u8def\u8ff7\u8e2a Playtest",
+	"3670450":"Way of the Dragons Demo",
 	"3670500":"Overgrown!",
 	"3670540":"Boiiing Boiiing Playtest",
 	"3670600":"Hexitten",
