@@ -298,7 +298,7 @@ if __name__ == '__main__':
   # Refresh static data (only once per hour)
   download_app_list()
   download_tags()
-  download_categories()
+  # download_categories() # TODO: Broken somehow
 
   # Then, update the pending list with newly identified games
   all_games = load_json('game_names.js')
