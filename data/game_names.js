@@ -171156,6 +171156,7 @@ window.game_names = {
 	"2498110":"Warlordocracy Ch. 2",
 	"2498120":"Warlordocracy Ch. 3",
 	"2498130":"Warlordocracy Ch. 4",
+	"2498140":"Warlordocracy Ch. 5",
 	"2498160":"Ava's Adventure",
 	"2498170":"MedievalThief",
 	"2498180":"Causal Effect",
