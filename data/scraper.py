@@ -76,6 +76,14 @@ def get_soup(url):
   r.raise_for_status()
   return bs4.BeautifulSoup(r.text, 'html.parser')
 
+def tag_name_to_id(name):
+  tags = load_json('tags.js')
+
+  for tag_id, tag_data in tags.items():
+    if tag_data['name'] == name:
+      return tag_id
+  raise ValueError(f'Could not look up id for tag "{name}"')
+
 def write_readme_statistics():
   readme = Path('../README.md')
   with readme.open('r') as f:
@@ -124,7 +132,6 @@ def download_app_list():
 
 ## Unofficial APIs ##
 
-tag_name_to_id = {}
 def download_tags():
   """https://github.com/Revadike/InternalSteamWebAPI/wiki/Get-Categories-By-Tag"""
   tag_data = get('https://steamcommunity.com/sale/ajaxgetcategoriesbytag')
@@ -133,8 +140,6 @@ def download_tags():
   for tag_id, name in tag_data['rgTagNames'].items():
     name = name.strip()
     tags[tag_id] = {'name': name}
-    global tag_name_to_id
-    tag_name_to_id[name] = tag_id # Used by download_app_tags
   for tag_id, categories in tag_data['rgCategoriesByTag'].items():
     tags[tag_id]['categories'] = categories
   dump_js(tags, 'tags.js')
@@ -234,9 +239,8 @@ def download_app_tags(game_id):
   soup.find('div', {'class': 'popular_tags'})
   for item in soup.find_all('a', {'class': 'app_tag'}):
     # These tag IDs are in english; convert them before saving
-    global tag_name_to_id
     tag_name = item.contents[0].strip()
-    tags_for_this_game.append(tag_name_to_id[tag_name])
+    tags_for_this_game.append(tag_name_to_id(tag_name))
     
   game_tags = load_json('game_tags.js')
   game_tags[game_id] = tags_for_this_game
