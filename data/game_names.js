@@ -243513,6 +243513,7 @@ window.game_names = {
 	"3649220":"I drink Sorrel Coffee to reboot reality, but I'm being hunted by Monster Girls and armed agents - DLC 18+",
 	"3649240":"The Maze X",
 	"3649350":"My Sadistic Yandere Goth Sister and Mom Bully Me",
+	"3649370":"Doujin Fever!! Affection!",
 	"3649440":"FingertipRacing",
 	"3649480":"\u9003\u79bb\u68ee\u6797",
 	"3649610":"Before waking up (\u68a6\u9192\u8fb9\u7f18)",
