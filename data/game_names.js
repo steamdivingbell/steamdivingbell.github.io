@@ -230803,6 +230803,7 @@ window.game_names = {
 	"3405870":"Sprout Valley - Friends Forever",
 	"3405880":"MR DONALD",
 	"3405890":"birdworld Demo",
+	"3405910":"Bandido Rush",
 	"3405920":"Hidden Cats in Tokyo - Soundtrack",
 	"3405950":"Eon Rush Playtest",
 	"3405960":"Cataclysm Wars",
@@ -244118,6 +244119,7 @@ window.game_names = {
 	"3670900":"Minute Man",
 	"3671030":"Bogos Binted Demo",
 	"3671050":"Beatfinder Demo",
+	"3671380":"Sex Goddess Chronicles: Lilith's Seduction, An NSFW Porn VN Demo",
 	"3671390":"Strayed - Dinkleberg Rock Skin",
 	"3671450":"Red Light Demo",
 	"3671810":"S.S.C. Rusted Demo",
@@ -244198,6 +244200,7 @@ window.game_names = {
 	"3680510":"Sip Fisher",
 	"3680750":"Cats Ritual",
 	"3680860":"Solitary",
+	"3681440":"Sala de Juegos 3D Demo",
 	"3682370":"Breakout Season",
 	"3684400":"no brake no gain Demo"
 }
