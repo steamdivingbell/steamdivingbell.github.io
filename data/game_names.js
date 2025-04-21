@@ -73005,7 +73005,7 @@ window.game_names = {
 	"1150102":"Mizari Loves Company - Mimi Dakimakura",
 	"1150130":"\u543e\u5149\u7b14\u8bb0",
 	"1150140":"Just Spin",
-	"1150150":"Superball Demo",
+	"1150150":"Super Buckyball Tournament Demo",
 	"1150160":"KobberParty - Castle Explorer",
 	"1150180":"run vs body",
 	"1150190":"Street Fighter V - Champion Edition Upgrade Kit",
