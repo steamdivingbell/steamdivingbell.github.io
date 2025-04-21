@@ -227200,6 +227200,7 @@ window.game_names = {
 	"3347170":"Project Horizon",
 	"3347200":"Cat Gladiator",
 	"3347210":"Stage Break Idle",
+	"3347230":"ViRo - Goddess Reverie",
 	"3347240":"Tales of Valoris: Swallow's Defenders Playtest",
 	"3347250":"\u5c38\u6f6e\u6c79\u6d8c",
 	"3347260":"\u8857\u6a5f\u4e09\u570b-\u521d\u51fa\u8305\u5eec",
