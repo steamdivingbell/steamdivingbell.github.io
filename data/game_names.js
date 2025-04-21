@@ -243093,6 +243093,7 @@ window.game_names = {
 	"3634390":"Serendia-Random Equip Draw Defense Demo",
 	"3634400":"Elara",
 	"3634410":"The Gas N\u2019 Grind",
+	"3634420":"Sword Duel",
 	"3634440":"Parking Together! Demo",
 	"3634450":"Katharsi Demo",
 	"3634550":"Ninja Game",
