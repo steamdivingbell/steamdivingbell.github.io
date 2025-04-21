@@ -240287,6 +240287,7 @@ window.game_names = {
 	"3569570":"Project Dreamscape",
 	"3569590":"Newton Coin",
 	"3569610":"Garden of Love Playtest",
+	"3569660":"Everstrife",
 	"3569700":"\u7956\u5b97\u9976\u547d",
 	"3569710":"Mota of Latex",
 	"3569820":"The Demon Lord's Lover",
