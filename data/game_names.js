@@ -243800,6 +243800,7 @@ window.game_names = {
 	"3653590":"N.O.X.",
 	"3653600":"This Isn't Just Tower Defense",
 	"3653710":"CyberControl: Another Life",
+	"3653830":"LEKANO WORLD ONLINE Playtest",
 	"3653860":"Remnants Of Yore Playtest",
 	"3653900":"BelleCitique Playtest",
 	"3653910":"The Old Woman | \u7121\u8a00\u8001\u5a46",
@@ -244279,6 +244280,7 @@ window.game_names = {
 	"3680860":"Solitary",
 	"3680900":"Future War Tactics: SOF vs Alien Invasion \u2013 Turn-Based Strategy",
 	"3681440":"Sala de Juegos 3D Demo",
+	"3682120":"LabyrAInth Demo",
 	"3682370":"Breakout Season",
 	"3684400":"no brake no gain Demo"
 }
