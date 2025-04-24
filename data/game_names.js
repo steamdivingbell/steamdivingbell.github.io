@@ -244753,6 +244753,7 @@ window.game_names = {
 	"3682900":"Abelina",
 	"3683020":"Feign Soundtrack",
 	"3683030":"Anime",
+	"3683120":"Dragon Detective: A Friend from the Shadows Soundtrack",
 	"3683160":"Mad Experiments: Escape Room - Sanctuary",
 	"3683250":"Laburantitos",
 	"3683670":"Go Forward Survivors Playtest",
