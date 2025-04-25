@@ -32308,5 +32308,12 @@ window.reviews = {
 	"3594100":{"positive":39,"total":39},
 	"3597690":{"positive":206,"total":240},
 	"3599070":{"positive":133,"total":138},
-	"3601790":{"positive":275,"total":278}
+	"3601790":{"positive":275,"total":278},
+	"3605150":{"positive":43,"total":44},
+	"3606550":{"positive":10,"total":10},
+	"3607370":{"positive":74,"total":76},
+	"3609900":{"positive":22,"total":24},
+	"3610000":{"positive":11,"total":11},
+	"3612760":{"positive":11,"total":11},
+	"3613450":{"positive":14,"total":14}
 }
