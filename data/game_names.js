@@ -243644,6 +243644,7 @@ window.game_names = {
 	"3636730":"Seedovia",
 	"3636750":"DEEP DARK",
 	"3636760":"ServerBound",
+	"3636780":"Nordic Ashes Remnants of Corruption",
 	"3636790":"Find Cats 4 \u5973\u795e\u4e0e\u732b Demo",
 	"3636880":"\u5b64\u661f\u730e\u4eba\u539f\u58f0\u5e26",
 	"3636900":"Gaslamp Cases 4: The Arcane Village",
