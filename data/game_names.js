@@ -240240,6 +240240,7 @@ window.game_names = {
 	"3562270":"The Catastrophe",
 	"3562280":"Deadly Quiet Soundtrack",
 	"3562310":"Trials of interspecies Sisters~Erotic exchange with Humans~",
+	"3562320":"Masters in the Shadows",
 	"3562330":"Mass Matter",
 	"3562340":"Castle Crumble",
 	"3562360":"Legend of red",
