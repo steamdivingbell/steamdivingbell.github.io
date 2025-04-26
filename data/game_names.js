@@ -243350,6 +243350,7 @@ window.game_names = {
 	"3629760":"Tricks, Treats and Mirrors - An EoG Side Story Demo",
 	"3629810":"Nipi",
 	"3629860":"America Against Ants",
+	"3629880":"Eye of Khaos",
 	"3629890":"Bushside Rangers - Original Soundtrack",
 	"3629900":"schoolLife_GuiYu \u9ad8\u4e8c\u91cd\u5236\u7248",
 	"3629960":"El gaucho Mart\u00edn Fierro Demo",
