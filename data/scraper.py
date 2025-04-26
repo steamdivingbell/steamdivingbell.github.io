@@ -97,7 +97,7 @@ def write_readme_statistics():
   
   all_reviews = load_json('all_reviews.js')
   over_10k = 0
-  under_75p = 0
+  over_75p = 0
   for review_data in all_reviews.values():
     if review_data['total'] > 10_000:
       over_10k += 1
