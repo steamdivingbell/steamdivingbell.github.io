@@ -242839,6 +242839,7 @@ window.game_names = {
 	"3617570":"Blade vs Undead",
 	"3617600":"Knowmad",
 	"3617610":"Bosca Ceoil: The Blue Album - Donation",
+	"3617620":"My Card Is Better Than Your Card!",
 	"3617650":"BUTLER GUILLOTINE",
 	"3617690":"Bibelgame",
 	"3617700":"Indoor Baseball Demo",
