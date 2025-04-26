@@ -245302,6 +245302,7 @@ window.game_names = {
 	"3692850":"Vesperis Demo",
 	"3692860":"Kingdom Wars Demo",
 	"3692970":"\u6c89\u9ed8\u4f20\u5947",
+	"3693080":"SpecFreq Servers",
 	"3693150":"Office Bot Simulator",
 	"3693280":"Demonbyte Demo",
 	"3693380":"Ri\u0441hat Structure",
