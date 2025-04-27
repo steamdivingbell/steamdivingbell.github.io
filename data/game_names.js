@@ -245329,6 +245329,7 @@ window.game_names = {
 	"3692220":"Oaken Tower Demo",
 	"3692260":"Booster",
 	"3692310":"Sim Racing Telemetry - F1 25",
+	"3692350":"Mod Mage Mike Demo",
 	"3692560":"Critter Isle Soundtrack",
 	"3692620":"Loot profit",
 	"3692740":"Project OBSCURE",
