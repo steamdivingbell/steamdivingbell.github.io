@@ -180951,6 +180951,7 @@ window.game_names = {
 	"2644210":"Margarita (Berkeley's Maid: Remake Edition)",
 	"2644220":"Ashes of Ambition",
 	"2644230":"Critter Crossfire",
+	"2644240":"\u9b54\u795e\u5c11\u5973\u30a8\u30d4\u30bd\u30fc\u30c94 \u5c4a\u3051\u308b\u60f3\u3044",
 	"2644250":"Same Day Delivery",
 	"2644260":"\u6050\u60e7\u4e4b\u5f71",
 	"2644290":"\u4f9d\u76d6\u4e4b\u4e66-\u8bf8\u5723\u9b3c\u8282\u6269\u5c55\u5305",
