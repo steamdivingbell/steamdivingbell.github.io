@@ -245222,6 +245222,7 @@ window.game_names = {
 	"3686970":"I am Reptile Demo",
 	"3687020":"WALLS",
 	"3687040":"Birb Game Demo",
+	"3687050":"Tainted Grail: the Fall of Avalon - Supporters Pack",
 	"3687130":"Shards Reunited: Kintsugi - Expansion Pack",
 	"3687220":"Unlock Pack UK Nation",
 	"3687320":"Mystery of Myths: Mystery of the Fjords Collector's Edition",
