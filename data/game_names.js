@@ -244467,6 +244467,7 @@ window.game_names = {
 	"3651880":"KASAP",
 	"3651890":"Buried below",
 	"3651940":"Submeris",
+	"3651960":"Spider Macro Survivors",
 	"3651970":"Fantasy Grounds - Pathfinder 2 - Whispers in the Dirt - Spore War 1 of 3",
 	"3652000":"Fantasy Grounds - Pathfinder 2 RPG - Lost Omens: Divine Mysteries",
 	"3652010":"The Tower of Eden Demo",
@@ -245332,6 +245333,7 @@ window.game_names = {
 	"3680170":"Rabid Rabbits",
 	"3680240":"Pressure Point",
 	"3680260":"ARVIS Knock Out! Demo",
+	"3680360":"Corridor Exit 8 Demo",
 	"3680370":"Turbo Apex Redline",
 	"3680390":"Anatomy of the Terrible",
 	"3680400":"Lore of Terra TD",
@@ -245731,11 +245733,14 @@ window.game_names = {
 	"3702010":"\u6666\u6714 Demo",
 	"3702020":"Tycoon Land : Figurine Shop",
 	"3702370":"A Game About Mining an Asteroid",
+	"3702400":"GNOM Demo",
 	"3702640":"Shadowstrike Arrowheart",
 	"3703060":"\u3042\u308c\u3050\u308d\u3082\u308b\u3068\u3092\u304d\u304f\u30b2\u30fc\u30e0 Soundtrack",
 	"3703700":"Odd Machines: Lost Artifacts - Demo",
 	"3703710":"Once Up Demo",
 	"3704280":"Reflections of the void Demo",
 	"3704950":"WaterMeasure Demo",
-	"3705500":"Mechanoid Demo"
+	"3705490":"Bombunter",
+	"3705500":"Mechanoid Demo",
+	"3706040":"Blastforge Breach"
 }
