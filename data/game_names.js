@@ -245199,6 +245199,7 @@ window.game_names = {
 	"3679640":"\u6c49\u6b66\u5927\u5e1d\u4f20-\u5907\u7528\u5b9a\u5236DLC1",
 	"3679690":"Duskmarch",
 	"3679700":"Wizdom Academy - Supporter Pack",
+	"3679720":"Through Hell and Back Playtest",
 	"3679740":"\u041f\u0440\u043e\u0444\u0435\u0441\u0441\u043e\u0440 \u0413\u0430\u043b\u0430\u043a\u0442\u0438\u043e\u043d\u043e\u0432 \u0438 \u043d\u0430\u0447\u0430\u043b\u043e \u0440\u043e\u0431\u043e\u0430\u043f\u043e\u043a\u0430\u043b\u0438\u043f\u0441\u0438\u0441\u0430",
 	"3680080":"AI Painter",
 	"3680110":"Love Me",
