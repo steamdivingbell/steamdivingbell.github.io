@@ -243554,6 +243554,7 @@ window.game_names = {
 	"3627490":"Polariball",
 	"3627510":"Geo Blaster",
 	"3627520":"Hardpoint",
+	"3627530":"Brainrot Parade Demo",
 	"3627570":"Out of hands - Collector's Edition Upgrade Package",
 	"3627580":"Necromance",
 	"3627610":"Storytime Cats - A Twilight Tale Demo",
