@@ -296,9 +296,13 @@ if __name__ == '__main__':
       exit() # In case we took too long fetching games
 
   # Refresh static data (only once per hour)
-  download_app_list()
-  download_tags()
-  # download_categories() # TODO: Broken somehow
+  try:
+    download_app_list()
+    download_tags()
+    # download_categories() # TODO: Broken somehow
+  except requests.exceptions.RequestException:
+    # Any kind of network error should be considered transient, we'll try again next hour.
+    traceback.print_exc(chain=False)
 
   # Then, update the pending list with newly identified games
   all_games = load_json('game_names.js')
