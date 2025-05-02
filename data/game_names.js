@@ -243524,6 +243524,15 @@ window.game_names = {
 	"3626140":"Amy Hates Robots Demo",
 	"3626150":"Frequency Sync Demo",
 	"3626160":"\u30e9\u30e0\u30cd\u306e\u30b9\u30af\u30a8\u30a2\u30c0\u30f3\u30b8\u30e7\u30f3",
+	"3626170":"Megan's Adventure - always start with 10 lives",
+	"3626190":"Megan's Adventure - always start with 30 lives",
+	"3626200":"Megan's Adventure - always start with 40 lives",
+	"3626220":"Megan's Adventure - always start with 50 lives",
+	"3626230":"Megan's Adventure - always start with 60 lives",
+	"3626240":"Megan's Adventure - always start with 70 lives",
+	"3626250":"Megan's Adventure - always start with 80 lives",
+	"3626260":"Megan's Adventure - always start with 90 lives",
+	"3626270":"Megan's Adventure - always start with 100 lives",
 	"3626280":"Night Will Prevail",
 	"3626300":"Parable Academy",
 	"3626310":"HAKONIWA DEFENSE",
@@ -246199,5 +246208,6 @@ window.game_names = {
 	"3711750":"Flesh & Spirit",
 	"3711860":"Tarot Awakening",
 	"3712100":"Hack and Slash Fury - Unlock All Armors and Suits",
-	"3712560":"WeNeedNoKings Demo"
+	"3712560":"WeNeedNoKings Demo",
+	"3717810":"Dota 2 - Short Film 2025"
 }
