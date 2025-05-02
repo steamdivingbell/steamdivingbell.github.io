@@ -245422,6 +245422,7 @@ window.game_names = {
 	"3673350":"Orbs of Duality Demo",
 	"3673360":"wizbuilder!",
 	"3673390":"Unparalleled: Zero Demo",
+	"3673400":"\u65b0\u5b9d\u5cf6\u30c8\u30fc\u30a2\u306e\u65b0\u5929\u5730\u958b\u62d3\u8a18",
 	"3673470":"Fantasy Grounds - By Dawns Early Light (5e)",
 	"3673480":"Hexrite Demo",
 	"3673490":"Eldramoor: Haven in the Mist",
