@@ -245565,6 +245565,7 @@ window.game_names = {
 	"3675880":"Proximity Effect",
 	"3675910":"Astra Bestiary Demo",
 	"3675920":"RAFT Days",
+	"3675940":"picoCAD 2",
 	"3676030":"Stackoban",
 	"3676040":"Songs of Silence - Firstborn Supporter Upgrade",
 	"3676060":"half-a-cado",
