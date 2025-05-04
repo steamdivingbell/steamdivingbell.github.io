@@ -246405,6 +246405,7 @@ window.game_names = {
 	"3705830":"Zombie Liminal Fishing Demo",
 	"3705900":"POTUS Simulator",
 	"3705940":"At Sixes and Sevens",
+	"3705950":"Exiled Fighters",
 	"3705960":"\u4e0d\u7965\u4e4b\u591c\uff1a\u56de\u9b42 - \u5973\u4ec6\u5c0f\u96be",
 	"3706040":"Blastforge Breach",
 	"3706130":"Gun Dealer",
