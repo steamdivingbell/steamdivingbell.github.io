@@ -246082,6 +246082,7 @@ window.game_names = {
 	"3690520":"\u7ef4\u5179\u4e4b\u5203 Blade of Wiz Demo",
 	"3690550":"OHAYO GIANTHOOK!: Monster Fishing Adventure",
 	"3690560":"Neko Neko Love",
+	"3690570":"\u5438\u8840\u9b3c\u5927\u5c0f\u59d0\u60f3\u548c\u6211\u604b\u7231",
 	"3690660":"Carrot Time",
 	"3690670":"The Aquarium",
 	"3690720":"Growmancer",
