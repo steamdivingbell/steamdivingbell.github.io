@@ -246228,6 +246228,7 @@ window.game_names = {
 	"3696150":"\u30b5\u30ad\u30e5\u30d0\u30b9\u30af\u30a8\u30b9\u30c8 \uff5esuccubus quest\uff5e",
 	"3696160":"The Goblin Game",
 	"3696180":"Lost World Survivor",
+	"3696330":"CyberRhapsody Demo",
 	"3696690":"\u6c5f\u6e56\u9ec4\u8001\u516d Demo",
 	"3696710":"2025",
 	"3696720":"Orbitrel Playtest",
