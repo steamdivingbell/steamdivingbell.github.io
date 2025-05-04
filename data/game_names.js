@@ -245278,6 +245278,7 @@ window.game_names = {
 	"3666310":"Neko No Sentouki Demo",
 	"3666320":"Connected Fates",
 	"3666330":"Luffi: Homebound Demo",
+	"3666350":"Upgrade My Heart Demo",
 	"3666360":"Lirai Demo",
 	"3666380":"Feign - Starter Pack",
 	"3666430":"\u6c49\u6b66\u5927\u5e1d\u4f20-\u4ed9\u4e39\u76db\u5bb4\u8d85\u7ea7\u5408\u96c6\u4e8c\uff08\u9650\u8d2d1\u6b21\uff09",
