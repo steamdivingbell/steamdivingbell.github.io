@@ -226385,6 +226385,7 @@ window.game_names = {
 	"3329890":"Pixel Restorer\uff1aImage Folder 18",
 	"3329900":"Pixel Restorer\uff1aImage Folder 19",
 	"3329910":"Pixel Restorer\uff1aImage Folder 20",
+	"3329920":"Pixel Restorer\uff1aImage Folder 21",
 	"3330050":"MESS",
 	"3330060":"Virtual Campus",
 	"3330070":"Dice Art Studio",
