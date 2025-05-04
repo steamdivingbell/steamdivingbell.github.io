@@ -245601,6 +245601,7 @@ window.game_names = {
 	"3676250":"Boars in Rome",
 	"3676260":"Hordelord",
 	"3676310":"\u5f02\u661f\u5e78\u5b58\u8005 Nova Survivors",
+	"3676320":"\u68a6\u897f\u6e38ol",
 	"3676330":"NoFlash",
 	"3676430":"SHADE WALKERS",
 	"3676450":"Corridor Exit 8",
