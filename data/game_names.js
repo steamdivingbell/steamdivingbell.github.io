@@ -244092,6 +244092,7 @@ window.game_names = {
 	"3636470":"Dream Abyss: survivors",
 	"3636490":"Interactive Sex - Futanari Incest BDSM",
 	"3636510":"Into A Hearth Yonder",
+	"3636530":"Dungeon Maiden: Survivor",
 	"3636560":"KVLT Playtest",
 	"3636570":"All We Fallen Demo",
 	"3636610":"ScaleBox Demo",
