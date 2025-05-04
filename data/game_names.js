@@ -246145,6 +246145,7 @@ window.game_names = {
 	"3692860":"Kingdom Wars Demo",
 	"3692960":"\u5f52\u62fe (PhiloDeka) Demo",
 	"3692970":"\u6c89\u9ed8\u4f20\u5947",
+	"3693030":"King of Bones",
 	"3693050":"Cururu: Whispers of the Enchanted Forest",
 	"3693080":"SpecFreq Servers",
 	"3693150":"Office Bot Simulator",
