@@ -169930,6 +169930,7 @@ window.game_names = {
 	"2479210":"Swarmsign",
 	"2479220":"The Knight's Path",
 	"2479230":"Planet X3",
+	"2479240":"Grabby Lust Ghost",
 	"2479260":"Montaro 2 Demo",
 	"2479280":"Eight Winds Demo",
 	"2479290":"Computer Repair Shop",
