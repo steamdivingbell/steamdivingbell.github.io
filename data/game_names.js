@@ -244666,6 +244666,7 @@ window.game_names = {
 	"3649240":"The Maze X",
 	"3649250":"Supermrket: Primavera",
 	"3649270":"Double Trip Soundtrack",
+	"3649320":"ManaWeaver",
 	"3649350":"My Sadistic Yandere Goth Sister and Mom Bully Me",
 	"3649360":"Moon Maiden: Terror on Planet X Demo",
 	"3649370":"Doujin Fever!! Affection!",
