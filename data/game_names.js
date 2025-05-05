@@ -243533,6 +243533,7 @@ window.game_names = {
 	"3624420":"Cosmos point Demo",
 	"3624440":"Soaked Playtest",
 	"3624500":"Springbound Demo",
+	"3624510":"Blademistress Chronicles Alpha",
 	"3624520":"Dark Erosion: Endless Siege",
 	"3624530":"Brain Workout \u2013 15 Puzzles for Memory, Math & Logic | IQ Test Games",
 	"3624540":"Laser Tag Massacre Soundtrack",
