@@ -246612,6 +246612,7 @@ window.game_names = {
 	"3710490":"Escalating Duel",
 	"3710520":"Midnight Murder Club - Full Game Entitlement",
 	"3710620":"SQUASER 9",
+	"3710740":"Drone Sector Demo",
 	"3710770":"GlobalQuarantine",
 	"3711070":"BunnyDemo",
 	"3711230":"Slingshot Quest",
