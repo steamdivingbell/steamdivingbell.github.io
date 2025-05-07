@@ -246811,6 +246811,7 @@ window.game_names = {
 	"3709850":"The Archaic: UNAUTHORIZED",
 	"3710010":"\u9f8d\u795e\u7684\u65b0\u5a18\u5916\u50b3\uff1a\u795e\u793e\u7d93\u71df\u8003\u8a66\uff5e\u8003\u4e0d\u904e\u5c31\u91cd\u4fee\uff5e",
 	"3710040":"Yasha: Legends of the Demon Blade - Original Soundtrack",
+	"3710100":"ChanceLot TD: Merge Wars Demo",
 	"3710130":"Plinko Pixel",
 	"3710250":"Master of Pieces \u00a9 Jigsaw Puzzle DLC - Beautiful Nonsense 3",
 	"3710340":"Flowershop Master Yuukarin!",
