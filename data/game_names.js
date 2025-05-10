@@ -247638,6 +247638,7 @@ window.game_names = {
 	"3729300":"The Da Vinci Cryptex 2 - Demo",
 	"3729400":"Boomer Brawler",
 	"3729510":"The Da Vinci Cryptex 3 - Demo",
+	"3729650":"Cats Hidden in Chang'an",
 	"3729790":"Flowershop Master Yuukarin! Demo",
 	"3730030":"Escape Velocity Demo",
 	"3730120":"MineSweeper 3D Demo",
