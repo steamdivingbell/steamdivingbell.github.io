@@ -247622,6 +247622,7 @@ window.game_names = {
 	"3724680":"Gangsters Way",
 	"3724700":"Rogue Snake Demo",
 	"3724800":"The Shift",
+	"3724870":"MEMOLOGY: ITALIAN BRAINROT",
 	"3724880":"Battle Boss",
 	"3725030":"DON'T MOVE Demo",
 	"3725080":"Codename CURE II Dedicated Server",
