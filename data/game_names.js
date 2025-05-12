@@ -243177,6 +243177,7 @@ window.game_names = {
 	"3609170":"4STORY : The Original",
 	"3609180":"Snow Cone Demo",
 	"3609190":"ZDSimulator - Kyiv-Shevchenko Route",
+	"3609200":"ZDSimulator - ChS4 Locomotive",
 	"3609210":"ZDSimulator - 2ES5K Locomotive",
 	"3609220":"ZDSimulator - ChS8 Locomotive",
 	"3609230":"ZDSimulator - ED9M Electric Train",
@@ -246280,6 +246281,7 @@ window.game_names = {
 	"3678130":"Gutfarm",
 	"3678150":"Mech Builder 3D Demo",
 	"3678200":"Seasonala Cemetery Demo",
+	"3678240":"Engine Eternal Demo",
 	"3678310":"Drive And Unwind Demo",
 	"3678320":"\u672b\u65e5\u5361\u724c",
 	"3678330":"Underworld Tycoon",
@@ -247880,10 +247882,12 @@ window.game_names = {
 	"3733650":"Horror Night with Tung Tung Tung Sahur",
 	"3733990":"Rune Gates",
 	"3734800":"Puzzle Company",
+	"3734820":"Truco Argentino",
 	"3735070":"Mythscroll Demo",
 	"3735350":"Akeno's Veil",
 	"3736760":"Therapy Simulator Demo",
 	"3737360":"Chick Clicker Demo",
 	"3737380":"Double It Demo",
-	"3738080":"Prism Shift Demo"
+	"3738080":"Prism Shift Demo",
+	"3738520":"Punk Juice Demo"
 }
