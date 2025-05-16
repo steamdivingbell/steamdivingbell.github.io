@@ -230530,6 +230530,7 @@ window.game_names = {
 	"3391800":"The Golden Pineapple",
 	"3391810":"SQUASER 2",
 	"3391830":"\u53ec\u3057\u307e\u305b\uff01\u30ec\u30df\u30ea\u30a2\u304a\u5b22\u69d8\uff01",
+	"3391840":"Inkborn Playtest",
 	"3391850":"APE",
 	"3391860":"Black Geyser Modding Toolkit",
 	"3391890":"Strand Demo",
@@ -246789,7 +246790,9 @@ window.game_names = {
 	"3681750":"Summer Passion",
 	"3681780":"Tiny Gunmon",
 	"3681810":"Blue Protocol: Star Resonance",
+	"3681820":"MoonMiners",
 	"3681830":"Walter Adventures",
+	"3681850":"MoonMiners Playtest",
 	"3681890":"Day X",
 	"3681900":"Joyquarium Soundtrack",
 	"3681910":"BlazBlue Entropy Effect - Bullet Character Pack",
@@ -248610,6 +248613,7 @@ window.game_names = {
 	"3733110":"Borubots Demo",
 	"3733140":"Trap Ball Adventure Demo",
 	"3733200":"Command Deck Demo",
+	"3733210":"Dream Scraper",
 	"3733230":"Obgoose",
 	"3733260":"Anarchy Road Demo",
 	"3733360":"Dice To Pay Playtest",
@@ -248781,5 +248785,6 @@ window.game_names = {
 	"3747600":"MK1: Definitive Edition Upgrade",
 	"3747670":"Dinoslap",
 	"3749220":"MK1: DE Skin Pack",
-	"3749360":"Operation: Followthrough Demo"
+	"3749360":"Operation: Followthrough Demo",
+	"3749410":"Isles of Rain Demo"
 }
