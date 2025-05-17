@@ -238544,6 +238544,7 @@ window.game_names = {
 	"3520980":"Fire Hop Demo",
 	"3521000":"The Bibites: Digital Life Demo",
 	"3521010":"Grid Gladiators",
+	"3521020":"Perished Truth",
 	"3521030":"Chaotic Cute Ghost",
 	"3521050":"Horny Elf",
 	"3521060":"My Little Friends - Desktop Edition",
@@ -246796,6 +246797,7 @@ window.game_names = {
 	"3680430":"Flying Up Playtest",
 	"3680450":"Junkyard Space Agency",
 	"3680460":"Velocity Rift",
+	"3680470":"Touhou Dream Duel",
 	"3680480":"Tower Dominion - Art Book",
 	"3680490":"FIND ALL 7: Japan - Extra Level",
 	"3680510":"Sip Fisher",
@@ -248504,6 +248506,7 @@ window.game_names = {
 	"3723770":"Maiden Demo",
 	"3723780":"My Card Is Better Than Your Card! Demo",
 	"3723800":"Grind Mindset",
+	"3723840":"Tribute Clicker Demo",
 	"3723850":"Goat Mode: Activated",
 	"3723860":"The Midnight Exorcist Demo",
 	"3723930":"deathkrew",
@@ -248899,6 +248902,7 @@ window.game_names = {
 	"3741150":"Boogey's Wicked Game Playtest",
 	"3741230":"No Rest for the Weary Demo",
 	"3741340":"BKPR",
+	"3741350":"Aesop Rock's Black Hole Superette Experience",
 	"3741430":"CHAMBER X",
 	"3741470":"Lonelight",
 	"3741490":"Rotten Sails Demo",
@@ -248973,5 +248977,7 @@ window.game_names = {
 	"3749360":"Operation: Followthrough Demo",
 	"3749390":"Super Tennis Breakout Demo",
 	"3749410":"Isles of Rain Demo",
-	"3750590":"\u9c81\u73ed\u9501 Demo"
+	"3749500":"The Eternal Hunt Demo",
+	"3750590":"\u9c81\u73ed\u9501 Demo",
+	"3750630":"Ghostly Acres Demo"
 }
