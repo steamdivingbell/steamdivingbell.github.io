@@ -248818,6 +248818,7 @@ window.game_names = {
 	"3736860":"Collapse Of The Midnight Sun",
 	"3736870":"Alien Battle Champions Demo",
 	"3736880":"Scottside Demo",
+	"3737070":"Star-Coat Playtest",
 	"3737140":"Come To An End Demo",
 	"3737260":"Obsccurus Somulum Demo",
 	"3737270":"Ellingby House Soundtrack",
