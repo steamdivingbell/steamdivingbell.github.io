@@ -247542,6 +247542,7 @@ window.game_names = {
 	"3695600":"Spin Shop Simulator",
 	"3695630":"Project Landsword",
 	"3695640":"Jurassic Gym",
+	"3695950":"SAFE INSIDE",
 	"3695970":"Ejaculation Treatment by Nurse Luna with her Bursting Tits, in a Sexual Treatment Ward! \uff5e3DCG Game Animation\uff5e",
 	"3695990":"Mystery Case Files: A Crime in Reflection Collector's Edition",
 	"3696000":"Anime Dream Match: Boys",
