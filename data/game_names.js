@@ -245164,6 +245164,7 @@ window.game_names = {
 	"3643620":"One Last Toast Playtest",
 	"3643630":"Anime Fart Simulator",
 	"3643660":"Train Valley 2 - Japanese Trails",
+	"3643690":"Project C.U.R.E. Origins",
 	"3643700":"TimeParadox Demo",
 	"3643710":"hakoniwa code",
 	"3643740":"Heavy in the Hand",
