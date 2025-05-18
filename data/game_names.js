@@ -233736,6 +233736,7 @@ window.game_names = {
 	"3443190":"S.X.E. Slider: Swole Mates",
 	"3443200":"Simple Sudoku",
 	"3443210":"Race of Life Act 1 - Official Walkthrough",
+	"3443220":"Cosmic Cosmonaut Demo",
 	"3443250":"Chambers & Crops",
 	"3443260":"Threats To Humanity Demo",
 	"3443270":"Tryhard",
