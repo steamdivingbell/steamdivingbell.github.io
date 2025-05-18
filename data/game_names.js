@@ -168129,7 +168129,7 @@ window.game_names = {
 	"2453260":"\u5766\u514b\u82f1\u96c4 TankHero",
 	"2453270":"Just A Walk In The Park Playtest",
 	"2453280":"Doozie the Unicorn",
-	"2453290":"Dead Crossway Survival Zombie",
+	"2453290":"Zompell",
 	"2453310":"\u5996\u72d0\u7684\u6200\u611b\u5b78\u7a0b",
 	"2453320":"Dobuki's Epic Journey",
 	"2453330":"Midnight Heist Demo",
