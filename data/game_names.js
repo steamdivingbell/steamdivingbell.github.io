@@ -225553,6 +225553,7 @@ window.game_names = {
 	"3312820":"The Automaton of Second London",
 	"3312830":"The Duchess Curse Demo",
 	"3312840":"Stellar Archipelago Playtest",
+	"3312850":"Danchi Days Demo",
 	"3312870":"Ascending Inferno Soundtrack",
 	"3312890":"BFSH",
 	"3312900":"NO STRANGERS - COSMETICS PACK #1",
