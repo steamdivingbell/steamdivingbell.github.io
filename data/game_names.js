@@ -219287,6 +219287,7 @@ window.game_names = {
 	"3218600":"\u547d\u8fd0\u6e38\u620f2\uff1a\u767e\u5e74\u4e4b\u7ea6",
 	"3218630":"Super Woden: Rally Edge",
 	"3218640":"Star Trucker - Hallow's Eve Pack",
+	"3218650":"\u8bf7\u541b\u5165\u6b93 Demo",
 	"3218670":"Valkyrie Squad: Siege Breakers - Commander Handbook",
 	"3218680":"Touhou: Fearless Frogslayer",
 	"3218690":"Scamster Kombat",
