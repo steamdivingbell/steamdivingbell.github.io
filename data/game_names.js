@@ -249055,6 +249055,7 @@ window.game_names = {
 	"3746210":"Backrooms Bodycam",
 	"3746230":"Withering Horrors",
 	"3746360":"Blade and Madness",
+	"3746680":"Impossible Survival",
 	"3746740":"Muay Mayhem",
 	"3746770":"Negative Space Demo",
 	"3747060":"Russian Parkour Simulator",
