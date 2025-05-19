@@ -248147,6 +248147,7 @@ window.game_names = {
 	"3711830":"Savara - Webtoon",
 	"3711860":"Tarot Awakening",
 	"3711890":"Fantasy Grounds - Pathfinder 2 RPG - NPC Core",
+	"3711900":"Exot Demo",
 	"3711910":"Cursebound",
 	"3711920":"TAXI Average City",
 	"3711950":"Little Kingdom RTS",
