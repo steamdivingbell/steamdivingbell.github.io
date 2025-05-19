@@ -248760,6 +248760,7 @@ window.game_names = {
 	"3731450":"Blop",
 	"3731560":"Mommy\u2019s Slipper",
 	"3731570":"The Darkblade",
+	"3731770":"Karma Jump",
 	"3731780":"DOORKA Demo",
 	"3731790":"Arcade Boss Simulator Demo",
 	"3731820":"CON: Tale of the Darkness",
@@ -249042,5 +249043,6 @@ window.game_names = {
 	"3749500":"The Eternal Hunt Demo",
 	"3750590":"\u9c81\u73ed\u9501 Demo",
 	"3750630":"Ghostly Acres Demo",
+	"3750650":"Cats Around Us: Black Cat Demo",
 	"3751290":"\u8d85\u7d1a\u96fb\u5f71\u5927\u4ea8 Demo"
 }
