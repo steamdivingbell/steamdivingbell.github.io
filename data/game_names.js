@@ -247700,6 +247700,7 @@ window.game_names = {
 	"3699020":"RPG Maker MV - Time Elements - Castle and Catacombs",
 	"3699030":"RPG Maker MZ - Time Elements - Castle and Catacombs",
 	"3699060":"RPG Maker MZ - Another World Heroine Generator 7 for MZ",
+	"3699090":"Bubble Ghost Remake - Digital Artbook",
 	"3699100":"SAFE ZONE",
 	"3699210":"Fucking my favorite characters",
 	"3699290":"Demonheart: The Cursed Trial - Artbook",
@@ -249015,6 +249016,7 @@ window.game_names = {
 	"3739280":"Nocturne FX",
 	"3739330":"Trash Heart Demo",
 	"3739420":"Burr Puzzle",
+	"3739430":"Color A Cube - Aquatic Pack #1",
 	"3739460":"Bitbird Demo",
 	"3739550":"Life 2047 Escape Simulator Playtest",
 	"3739620":"MIDNIGHT",
@@ -249165,5 +249167,7 @@ window.game_names = {
 	"3750590":"\u9c81\u73ed\u9501 Demo",
 	"3750630":"Ghostly Acres Demo",
 	"3750650":"Cats Around Us: Black Cat Demo",
-	"3751290":"\u8d85\u7d1a\u96fb\u5f71\u5927\u4ea8 Demo"
+	"3750660":"\u79d8\u5bc6\u306eFakeRing",
+	"3751290":"\u8d85\u7d1a\u96fb\u5f71\u5927\u4ea8 Demo",
+	"3751330":"The Nest"
 }
