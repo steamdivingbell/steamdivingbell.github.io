@@ -200350,6 +200350,7 @@ window.game_names = {
 	"2934460":"Crime Boss: Rockay City - Heavy Hitters Pack",
 	"2934470":"Legends of Aden",
 	"2934480":"Zombie Tower Survivor",
+	"2934520":"Go Up",
 	"2934550":"\u7bb1\u5ead\u5c0f\u99c5\u4f1d2",
 	"2934570":"Forced Sacrifice: Lost Soul Soundtrack",
 	"2934580":"BlazeRush - Star Track",
