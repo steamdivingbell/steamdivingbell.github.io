@@ -249444,5 +249444,6 @@ window.game_names = {
 	"3757720":"Pizza Shop Simulator Demo",
 	"3758040":"Addy Demo",
 	"3758530":"ByteRogue Demo",
+	"3758660":"Dead Zone: Rebirth of Survivors Demo",
 	"3758740":"Pixel P.I. Demo"
 }
