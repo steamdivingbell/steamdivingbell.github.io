@@ -1746,7 +1746,7 @@ window.game_names = {
 	"11450":"Overlord",
 	"11460":"Clive Barker's Jericho Demo",
 	"11470":"Overlord Demo",
-	"11480":"Soldiers: Heroes of World War II",
+	"11480":"Soldiers: Heroes of World War II - Enhanced Edition",
 	"11500":"ToCA Race Driver 3",
 	"11520":"Brian Lara International Cricket 2007",
 	"11550":"Second Sight",
