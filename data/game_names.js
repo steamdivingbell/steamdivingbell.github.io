@@ -244051,7 +244051,7 @@ window.game_names = {
 	"3617340":"Eggcellent Life",
 	"3617350":"BoomerPunk",
 	"3617370":"Anomaly Runner",
-	"3617390":"\u684c\u9762\u5c0f\u519c\u573a",
+	"3617390":"\u6211\u7684\u907f\u96be\u6240",
 	"3617400":"\u8d5b\u535a\u5fcf\u6094\u5ba4",
 	"3617410":"Goblomite",
 	"3617420":"Cooperate with Yourself",
@@ -249201,6 +249201,7 @@ window.game_names = {
 	"3732840":"Slime Match Adventure",
 	"3732890":"Astrotester Demo",
 	"3732900":"Push To Win",
+	"3732920":"Agent of Veil Playtest",
 	"3732940":"Merge & Meow",
 	"3732950":"Timeline Keepers",
 	"3733040":"The Last Bloom Demo",
@@ -249722,5 +249723,6 @@ window.game_names = {
 	"3759940":"Alaska Gold Fever Demo",
 	"3760160":"Dungeon Raid: Zero Floor",
 	"3760260":"Instants Soundtrack",
-	"3761690":"git gud Demo"
+	"3761690":"git gud Demo",
+	"3763880":"Loot Shop Simulator Demo"
 }
