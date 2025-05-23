@@ -249910,6 +249910,7 @@ window.game_names = {
 	"3749820":"Stickility Demo",
 	"3749840":"DAEMON X MACHINA - Complete DLC Bundle",
 	"3750000":"Chroma Blasters Demo",
+	"3750090":"Dimensional Fold",
 	"3750360":"Horse Plinko",
 	"3750410":"\u96fe\u9690\u4e4b\u69db Demo",
 	"3750450":"\u9006\u5883\u91cd\u751f Demo",
