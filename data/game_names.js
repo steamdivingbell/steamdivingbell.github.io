@@ -246886,6 +246886,7 @@ window.game_names = {
 	"3673480":"Hexrite Demo",
 	"3673490":"Eldramoor: Haven in the Mist",
 	"3673500":"Backrooms",
+	"3673520":"100 in 1 Game Collection Demo",
 	"3673540":"AUTO-Land: Mechanical Horror",
 	"3673550":"Dark Age",
 	"3673560":"The Museum of You",
@@ -249877,6 +249878,7 @@ window.game_names = {
 	"3749550":"JDM: Japanese Drift Master - Support Pack",
 	"3749780":"Gravebound",
 	"3749820":"Stickility Demo",
+	"3749840":"DAEMON X MACHINA - Complete DLC Bundle",
 	"3750000":"Chroma Blasters Demo",
 	"3750360":"Horse Plinko",
 	"3750410":"\u96fe\u9690\u4e4b\u69db Demo",
@@ -250064,5 +250066,6 @@ window.game_names = {
 	"3764670":"Blitzkrieg Express Demo",
 	"3765330":"Unknot! Demo",
 	"3766520":"Monolith Dominion Demo",
-	"3766850":"Chiral Soundtrack"
+	"3766850":"Chiral Soundtrack",
+	"3766880":"Grapple Car Demo"
 }
