@@ -245567,6 +245567,7 @@ window.game_names = {
 	"3644630":"\u67d8\u69b4\u56e3\u5730",
 	"3644650":"Metrogether - Supporter Pack",
 	"3644660":"Shadow of the Orient Demo",
+	"3644680":"\u706b\u70e7\u57ce Demo",
 	"3644700":"\u5343\u79a7\u68a6 Playtest",
 	"3644710":"Reborn: The Evil Being",
 	"3644730":"Sea Of Radiation 2 : Deep into the Sea",
