@@ -247040,6 +247040,7 @@ window.game_names = {
 	"3675670":"Polterquest Demo",
 	"3675700":"\u738b\u56fd\u541b\u4e3b",
 	"3675720":"Seven Days Until Morning",
+	"3675760":"Staraway Playtest",
 	"3675800":"Jump Man Fire Fight Playtest",
 	"3675820":"Become the Moon Playtest",
 	"3675860":"CAS Playtest",

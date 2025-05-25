@@ -50390,7 +50390,7 @@ window.all_reviews = {
 	"965640":{"positive":121,"total":136},
 	"965650":{"positive":0,"total":0},
 	"965670":{"positive":714,"total":791},
-	"965680":{"positive":2443,"total":2536},
+	"965680":{"positive":2463,"total":2556},
 	"965700":{"positive":0,"total":0},
 	"965710":{"positive":0,"total":0},
 	"965720":{"positive":15,"total":17},
