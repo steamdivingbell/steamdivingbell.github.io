@@ -249864,6 +249864,7 @@ window.game_names = {
 	"3739420":"Burr Puzzle",
 	"3739430":"Color A Cube - Aquatic Pack #1",
 	"3739460":"Bitbird Demo",
+	"3739540":"\u4f26\u6566\u65e7\u5f71 Playtest",
 	"3739550":"Life 2047 Escape Simulator Playtest",
 	"3739570":"Ed & Edda: GRAND PRIX \u2013 Racing Champions Demo",
 	"3739610":"magnussoft\u00ae Screen Recorder Professional",
