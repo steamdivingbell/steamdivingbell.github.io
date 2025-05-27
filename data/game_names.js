@@ -227834,6 +227834,7 @@ window.game_names = {
 	"3346940":"Dough Slapping: A Touch to Desire",
 	"3346950":"Sanechek: Lost Coins",
 	"3346970":"Anatta",
+	"3346980":"August Night",
 	"3346990":"Ninja Vs. Zombies 3",
 	"3347020":"Punch Party",
 	"3347030":"Liminal Void Playtest",
@@ -237154,6 +237155,7 @@ window.game_names = {
 	"3493780":"Bygone Dreams: Prophecy",
 	"3493800":"TankOre Mining Demo",
 	"3493810":"Mountain Boy Demo",
+	"3493830":"F1\u00ae 25 Iconic Edition Upgrade",
 	"3493840":"WASD in the West",
 	"3493880":"Dylio's Adventures",
 	"3494110":"Sugardew Island - Supporter Pack",
@@ -243408,6 +243410,7 @@ window.game_names = {
 	"3601330":"Safety Check YOSHI!",
 	"3601360":"So Far Up Demo",
 	"3601370":"Don't breathe in!",
+	"3601380":"F1 25 - EA Play Trial Key",
 	"3601390":"RailGods of Hysterra - Supporter Pack",
 	"3601420":"Casino Roulette: Roulettist",
 	"3601450":"Vegas Craps by Pokerist",
@@ -250033,6 +250036,7 @@ window.game_names = {
 	"3741960":"Everybody Loves Cake Demo",
 	"3741980":"Bleakmoor House Demo",
 	"3742010":"Yuna and the Spirit Forest",
+	"3742030":"Snogbert",
 	"3742040":"The Rainbox",
 	"3742090":"\u9003\u51fa\u9b54\u6cd5\u5c11\u5973\u4e4b\u5bb6\u2606 Demo",
 	"3742110":"Dustoria",
@@ -250394,6 +250398,7 @@ window.game_names = {
 	"3754330":"Apocalypse Tale",
 	"3754340":"Bound by Bones Demo",
 	"3754510":"Crown Crusade Playtest",
+	"3754550":"Primal Glade",
 	"3754560":"Hero of Cursed Island",
 	"3754610":"Jixo: Summer Dreams Collector's Edition",
 	"3754660":"\u6784\u60f3\u5f7c\u65b9 ImagineFuture Demo",
@@ -250657,5 +250662,6 @@ window.game_names = {
 	"3772570":"ODDLI Demo",
 	"3772850":"Job Battle Simulator Demo",
 	"3772890":"Anura Demo",
-	"3773000":"No Other Alchemists Here Demo"
+	"3773000":"No Other Alchemists Here Demo",
+	"3774180":"Goblin Journal Demo"
 }
