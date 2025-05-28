@@ -250396,6 +250396,7 @@ window.game_names = {
 	"3749610":"Solve or Die Playtest",
 	"3749620":"Survivor Playtest",
 	"3749780":"Gravebound",
+	"3749790":"Go Kart Island",
 	"3749810":"Rogue Shapes Demo",
 	"3749820":"Stickility Demo",
 	"3749840":"DAEMON X MACHINA - Complete DLC Bundle",
