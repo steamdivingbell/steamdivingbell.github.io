@@ -250884,6 +250884,7 @@ window.game_names = {
 	"3755190":"G!",
 	"3755220":"Dead Zone: Bio-Weapon Simulator",
 	"3755240":"Dead Zone: Bio-Weapon Simulator Demo",
+	"3755270":"Weed Wacker Warrior Original Soundtrack",
 	"3755280":"Neon Abyss 2 Demo",
 	"3755290":"GO! GO! Beetle Roller! ~ Original Soundtrack",
 	"3755310":"32, Dandelion Drift Demo",
@@ -251262,6 +251263,7 @@ window.game_names = {
 	"3770890":"Bosslife Office Manager Demo",
 	"3770950":"Out on the Water",
 	"3770970":"Market Empire Simulator Demo",
+	"3770990":"Grind and Dine Playtest",
 	"3771060":"Beast and Cleaver Demo",
 	"3771090":"The Count of Monte Clicker Demo",
 	"3771160":"Sample Gunpowder - Locked Impact",
@@ -251384,5 +251386,6 @@ window.game_names = {
 	"3781230":"100 Cats Lost In World Find & Color Demo",
 	"3781290":"\u5bbf\u547d\u5012\u5f71\uff1a\u79d1\u901a\u4e4c\u8b66\u90e8\u7591\u6848 Demo",
 	"3781360":"\u30a2\u30b9\u30af\u30ae\u30a2 \u30ea\u30d6\u30fc\u30b9\u30c8 Demo",
+	"3781660":"Silk Roads II: Paths of Fortune Demo",
 	"3783240":"\u7070\u70ec\u5723\u9884 Demo"
 }
