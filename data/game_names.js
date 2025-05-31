@@ -243313,6 +243313,7 @@ window.game_names = {
 	"3595220":"Pioneer Racing",
 	"3595260":"Dungeon Defenders - Returnia",
 	"3595280":"Airplane Racing Championship",
+	"3595290":"Airplane Racing Championship Demo",
 	"3595300":"Galago Demo",
 	"3595310":"Sellsword Saga: Journey",
 	"3595370":"Egnima Demo",
