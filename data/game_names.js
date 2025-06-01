@@ -251143,6 +251143,7 @@ window.game_names = {
 	"3755350":"\u7231\u4e3d\u4e1d\u4e0e\u5f7c\u5cb8",
 	"3755450":"\u661f\u57df\u5feb\u6253 Demo",
 	"3755460":"Death Rabbit Demo",
+	"3755470":"Echoes from Liminality",
 	"3755480":"Unending Demo",
 	"3755530":"Find the Differences 3D Demo",
 	"3755590":"Trials of Proelium Remastered Demo",
