@@ -250858,6 +250858,7 @@ window.game_names = {
 	"3747210":"Gunsmith's Defense Demo",
 	"3747230":"Near-Mage Soundtrack",
 	"3747240":"Hoard's LLC: Limited Labyrinth Corporation Demo",
+	"3747260":"Night Shift at the Museum Demo",
 	"3747300":"Mitos.is: The Game OG",
 	"3747310":"Dwarfs Descent Demo",
 	"3747350":"A Rayuela Game Demo",
