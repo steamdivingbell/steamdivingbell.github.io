@@ -251750,6 +251750,7 @@ window.game_names = {
 	"3778710":"Whispers of the Hourglass Demo",
 	"3778730":"Psycasso\u00ae Demo",
 	"3778760":"Explosive Odds Demo",
+	"3778860":"Cordel Lands",
 	"3778970":"Hunters of Idlearth Demo",
 	"3779030":"ABYSSAL BLADE Demo",
 	"3779140":"Particle Hearts Demo",
