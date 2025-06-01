@@ -251539,6 +251539,7 @@ window.game_names = {
 	"3769670":"Finnigan Fox Demo",
 	"3769710":"\u4f2a\u88c5",
 	"3769720":"Lie to Loot",
+	"3769750":"The Forbidden Flask Demo",
 	"3769760":"Miljama horror tale Demo",
 	"3769910":"Razgovor Online Demo",
 	"3769920":"Shattered Spines Demo",
