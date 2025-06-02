@@ -251645,6 +251645,7 @@ window.game_names = {
 	"3772270":"Whispering Stacks Demo",
 	"3772300":"Zueirama 2: Desintelig\u00eancia Natural Demo",
 	"3772310":"Tree Kingdoms Demo",
+	"3772320":"Forged Into History: Speedway Odyssey Demo",
 	"3772340":"Dominated by: The Sadistic Nerd Next Door",
 	"3772400":"Resonance Tales: Alone",
 	"3772450":"Lunhowl: Coop Horror Demo",
