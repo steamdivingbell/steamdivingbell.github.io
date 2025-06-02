@@ -246946,7 +246946,7 @@ window.game_names = {
 	"3664410":"Porn and Cards Demo",
 	"3664420":"\u5b88\u536b\u5730\u4e0b\u57ce Demo",
 	"3664430":"Silver Malfeasant",
-	"3664440":"Red Rust Pioneers: Co-Op Wild West Survival",
+	"3664440":"Red Rust Pioneers: Multiplayer Western Survival Simulator",
 	"3664460":"Decide 4 God Soundtrack",
 	"3664470":"Kindergarten of hell",
 	"3664490":"SHIELD",
@@ -250572,6 +250572,7 @@ window.game_names = {
 	"3739710":"Phantom Squad Playtest",
 	"3739730":"Skull Hotel",
 	"3739780":"PROJECTA",
+	"3739800":"Cyber Farmer Demo",
 	"3739860":"Hentai House Wife",
 	"3739870":"Agent of Veil Demo",
 	"3739880":"Phero Demo",
@@ -251127,6 +251128,7 @@ window.game_names = {
 	"3754290":"Pitaya!",
 	"3754330":"Apocalypse Tale",
 	"3754340":"Bound by Bones Demo",
+	"3754500":"Mad Carnival",
 	"3754510":"Crown Crusade Playtest",
 	"3754530":"PURPLEARC",
 	"3754550":"Primal Glade",
@@ -251334,6 +251336,7 @@ window.game_names = {
 	"3760440":"Outlanders: Hunt and Survive Demo",
 	"3760480":"Wait for the Egg to Hatch",
 	"3760580":"Goblintown: Really Hard Driving Game Demo",
+	"3760600":"CarCam",
 	"3760620":"Revolver Gambit",
 	"3760650":"Teddy's Haven Demo",
 	"3760670":"Reframe Soundtrack",
@@ -251544,6 +251547,7 @@ window.game_names = {
 	"3767990":"The Shame of a Daydreamer",
 	"3768000":"\u65b9\u5bf8\u4e09\u56fd",
 	"3768020":"Doomvile Brainrot",
+	"3768040":"Together We Die Playtest",
 	"3768120":"Sands of Hope Demo",
 	"3768160":"DISCOPUP Demo",
 	"3768190":"\u5947\u5f02\u8d34\u7eb8\u7c3f Mystic Stickerbook Demo",
@@ -251873,5 +251877,6 @@ window.game_names = {
 	"3786010":"Don't Drop The Cake Demo",
 	"3787180":"For Blood And Glory Demo",
 	"3787380":"Astra Village Demo",
-	"3787700":"HARVEST Demo"
+	"3787700":"HARVEST Demo",
+	"3792340":"ValveTestApp3792340"
 }
