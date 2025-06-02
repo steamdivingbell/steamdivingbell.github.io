@@ -249035,6 +249035,7 @@ window.game_names = {
 	"3704880":"Souper Hero",
 	"3704890":"Mr. Pubblety Meows [Introduction]",
 	"3704900":"Fruits power UP!",
+	"3704930":"BurnerSphere",
 	"3704940":"Fish 'n Ships",
 	"3704950":"WaterMeasure Demo",
 	"3704970":"The Mountain And The Moron",
@@ -251244,6 +251245,7 @@ window.game_names = {
 	"3756040":"\u6563\u6b69 WALK",
 	"3756100":"Happy Pet - Soundtrack",
 	"3756160":"\u6211\u7684\u5f53\u94fa\u679c\u7136\u6709\u5927\u95ee\u9898",
+	"3756180":"Ludus Manager",
 	"3756210":"Rhya's Crusade Official Instruction Booklet",
 	"3756380":"\u4e09\u56fd\u5175\u4e34\u57ce\u4e0b",
 	"3756390":"The Czar is Dead 2 Demo",
@@ -251954,6 +251956,7 @@ window.game_names = {
 	"3783490":"Galactic Coffee Shop Demo",
 	"3783660":"Rise To Mayhem",
 	"3783720":"FluffyInn Demo",
+	"3783740":"NITRO GEN OMEGA - Original Soundtrack",
 	"3783860":"Anime Dream Match: Cats",
 	"3784050":"Atlas Hands Demo",
 	"3784160":"Silent Pit",
@@ -251975,5 +251978,7 @@ window.game_names = {
 	"3787700":"HARVEST Demo",
 	"3787950":"DRAW WORLD Demo",
 	"3788200":"Spearfishing Simulator",
+	"3788380":"Rooftop Postgirl Soundtrack",
+	"3788520":"ESCAPE Demo",
 	"3792340":"ValveTestApp3792340"
 }
