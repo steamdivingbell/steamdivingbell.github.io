@@ -252321,6 +252321,7 @@ window.game_names = {
 	"3789720":"Prism Warriors DX Demo",
 	"3789930":"Striatum Demo",
 	"3790060":"Bound Between Desks",
+	"3790150":"DOCTOR VISCERA Demo",
 	"3790270":"Terra Fighters Demo",
 	"3790440":"Dreamnest Demo",
 	"3790460":"Footsy Demo",
