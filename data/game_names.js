@@ -223128,6 +223128,8 @@ window.game_names = {
 	"3271350":"Packed!? Demo",
 	"3271360":"Into The Corner",
 	"3271370":"Monster Energy Supercross 25 - Season Pass",
+	"3271380":"Monster Energy Supercross 25 - Stars & Stripes Pack",
+	"3271390":"Monster Energy Supercross 25 - Touchdown Pack",
 	"3271400":"Marsbound",
 	"3271410":"Unfortunate Tales of Violet Demo",
 	"3271420":"Insider Trading Demo",
