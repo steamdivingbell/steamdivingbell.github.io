@@ -251216,6 +251216,7 @@ window.game_names = {
 	"3746440":"S\u00e9las Demo",
 	"3746450":"Pet Oddities: Desktop Shelter",
 	"3746460":"Can you clear up to 100 stages? Demo",
+	"3746470":"Leximorph Demo",
 	"3746480":"Galactic Outlaws Demo",
 	"3746490":"3D PUZZLE - Steampunk City",
 	"3746500":"ROOM FOOTBALL - Shipyard",
