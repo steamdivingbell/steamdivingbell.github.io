@@ -231761,6 +231761,7 @@ window.game_names = {
 	"3404750":"MICROVOLTS: Recharged - 2024 WINTER SEASON Starter Pack : Gold",
 	"3404760":"MICROVOLTS: Recharged - 2024 WINTER SEASON Starter Pack : Silver",
 	"3404770":"\u5947\u534e\u5e7b\u76f8",
+	"3404800":"Chrono Odyssey Playtest",
 	"3404860":"Executioner Girls - Xmas Basic Pack",
 	"3404870":"Executioner Girls - Xmas Deluxe Pack",
 	"3404890":"Chess Bomb",
@@ -248058,6 +248059,7 @@ window.game_names = {
 	"3681810":"Blue Protocol: Star Resonance",
 	"3681820":"MoonMiners",
 	"3681830":"Walter Adventures",
+	"3681840":"MoonMiners Demo",
 	"3681850":"MoonMiners Playtest",
 	"3681890":"Day X",
 	"3681900":"Joyquarium Soundtrack",
@@ -248991,6 +248993,7 @@ window.game_names = {
 	"3699640":"RPG Maker MV - KR Fantasy Market - Magic Tileset",
 	"3699660":"RPG Maker MZ - KR Fantasy Market - Magic Tileset",
 	"3699670":"TowerDefenseEditor Demo",
+	"3699680":"The Elevator Demo",
 	"3699720":"Prolific Mindset",
 	"3699740":"Squad Tactics Demo",
 	"3699750":"Pair A Dice Demo",
@@ -252389,6 +252392,7 @@ window.game_names = {
 	"3780130":"LivingForest Outdoors Ambulance",
 	"3780180":"Festival Journey: Venetian Masquerade Collector's Edition Demo",
 	"3780190":"LivingBattle Ambulance",
+	"3780220":"Vale's Echo Playtest",
 	"3780230":"Desktop Clicker",
 	"3780400":"Lia: Hacking Destiny Demo",
 	"3780430":"Mondrayn",
@@ -252619,5 +252623,6 @@ window.game_names = {
 	"3796770":"Goblomite Demo",
 	"3796920":"Ghost Ripper Demo",
 	"3797150":"Recyclic Demo",
-	"3797510":"Pac's Revenge Demo"
+	"3797510":"Pac's Revenge Demo",
+	"3799050":"Another Level Demo"
 }
