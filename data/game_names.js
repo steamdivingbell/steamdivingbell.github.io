@@ -252387,6 +252387,7 @@ window.game_names = {
 	"3770580":"Heroines of Swords & Spells 2 Demo",
 	"3770690":"The Orphan Train \u5b64\u513f\u5217\u8f66",
 	"3770700":"Cosmic Run",
+	"3770740":"TapPlus",
 	"3770750":"One More Run Demo",
 	"3770780":"Project Roll Demo",
 	"3770790":"SILO Demo",
@@ -252989,6 +252990,7 @@ window.game_names = {
 	"3791410":"Lunatix",
 	"3791540":"Nonogram Desserts",
 	"3791570":"Chasing Her Light Demo",
+	"3791620":"Mimi's Restaurant Helper",
 	"3791650":"Optix: Cinematography Masterclass",
 	"3791660":"Icon",
 	"3791810":"Nonogram Desserts Demo",
@@ -253088,6 +253090,7 @@ window.game_names = {
 	"3799350":"Raccateer Demo",
 	"3799400":"One Dash Star Demo",
 	"3799540":"Silver Malfeasant Demo",
+	"3799580":"Astro Grind Demo",
 	"3799640":"NPC Simulator: Heroes Need Us Demo",
 	"3799820":"Ashuk and Mashuk Demo",
 	"3799830":"Coldwake Demo",
@@ -253100,5 +253103,6 @@ window.game_names = {
 	"3800540":"Hyperspace Striker Demo",
 	"3800910":"Deadly Rehearsal Demo",
 	"3801200":"Hello Space Demo",
+	"3802040":"Super Komio Island Demo",
 	"3803090":"Insomnia Demo"
 }
