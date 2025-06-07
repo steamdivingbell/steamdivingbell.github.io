@@ -253094,6 +253094,7 @@ window.game_names = {
 	"3796770":"Goblomite Demo",
 	"3796850":"Ironweld Demo",
 	"3796920":"Ghost Ripper Demo",
+	"3796980":"Bloodright Demo",
 	"3797000":"Acornia of The Stars Demo",
 	"3797020":"Roulette Simulator 2026",
 	"3797080":"Hoppin: Buna's Adventure Demo",
