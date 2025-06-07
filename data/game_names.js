@@ -243281,6 +243281,7 @@ window.game_names = {
 	"3589350":"Hayo and the Emporium",
 	"3589360":"Gennady Playtest",
 	"3589390":"\u661f\u9645\u732b\u5496",
+	"3589430":"Heidi's Legacy",
 	"3589450":"Shadow's End Demo",
 	"3589460":"Robo Catcher",
 	"3589480":"\u3042\u307f\u3060\u304f\u3058 ~Amidakuji~",
