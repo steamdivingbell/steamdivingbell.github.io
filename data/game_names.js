@@ -222638,6 +222638,7 @@ window.game_names = {
 	"3263720":"Sweet Wedding",
 	"3263730":"\u8fd9\u662f\u6211\u7684\u516c\u53f8 Demo",
 	"3263740":"Avoidy Virus Demo",
+	"3263760":"I'm an expert",
 	"3263770":"Junk Blocks Demo",
 	"3263780":"Slay or Fall Soundtrack",
 	"3263790":"The Redstone Job Demo",
