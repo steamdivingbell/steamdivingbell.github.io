@@ -245169,6 +245169,7 @@ window.game_names = {
 	"3622250":"One-Hit Slayer! Swordog",
 	"3622260":"April Grove",
 	"3622270":"Metaball: Touchdown Pack",
+	"3622280":"Black Vultures: Prey of Greed",
 	"3622290":"Escape From Kiss",
 	"3622300":"Dark and Darker - EA#6 Seasonal Pack",
 	"3622320":"Monster Lover 2 Strategy Guide",
