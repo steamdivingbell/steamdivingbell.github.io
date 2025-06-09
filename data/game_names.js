@@ -253450,6 +253450,7 @@ window.game_names = {
 	"3794560":"\u4e00\u610f\u5b64\u884c",
 	"3794590":"Sivar Race",
 	"3794610":"Goblin Vyke",
+	"3794620":"Sails",
 	"3794640":"Fish to Dish: Idle Sushi Supporter Pack",
 	"3794680":"Cracking the Cryptic - The Sudoku Worm of Marty Sears",
 	"3794690":"Cracking the Cryptic - The Sudoku Worm of James Sinclair",
