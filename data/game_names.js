@@ -253649,6 +253649,7 @@ window.game_names = {
 	"3798420":"Paint by Words",
 	"3798510":"Desktop Clicker Demo",
 	"3798600":"Emi's Solo Ghost Hunting",
+	"3798610":"EURGAVA\u2122 - Pathforgers Demo",
 	"3798840":"Reytrieve Odyssey",
 	"3798850":"Flappy Bat 3 Demo",
 	"3798950":"Buff Climbers",
