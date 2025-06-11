@@ -241475,6 +241475,7 @@ window.game_names = {
 	"3554880":"4X4 PROGRESS - Civilization Pack II",
 	"3554890":"The Overlap",
 	"3554900":"Super Muscle Knight",
+	"3554910":"\u87ba\u9489\u4e0e\u6d6e\u57ce Playtest",
 	"3554930":"The Bright Path",
 	"3554940":"Slut Squad",
 	"3554950":"\u8c1c\u5883\u00b7AI\u5267\u672c\u6740\u4e92\u52a8\u5267\u573a",
@@ -249693,6 +249694,7 @@ window.game_names = {
 	"3704970":"The Mountain And The Moron",
 	"3704980":"Covenant of Anubis Demo",
 	"3704990":"\u5f7c\u5fb7\u6d77\u59c6\u4e4b\u5f71 Demo",
+	"3705000":"\u7b56\u7565\u57ce\u6c60II",
 	"3705010":"Snakes and Ladders Championship",
 	"3705020":"H.A.D.E.S Zero Demo",
 	"3705070":"SINGOU BREAKA \u30b7\u30f3\u30b4\u30a6\u30d6\u30ec\u30a4\u30ab Demo",
@@ -253503,6 +253505,7 @@ window.game_names = {
 	"3788180":"MineGeon: Renegades Playtest",
 	"3788190":"Story 210",
 	"3788200":"Spearfishing Simulator",
+	"3788210":"Fortress-Life",
 	"3788220":"TAMASHIKA Demo",
 	"3788270":"Story 210 Demo",
 	"3788280":"CSCD: Vietnam Mobile Police Demo",
@@ -253893,6 +253896,7 @@ window.game_names = {
 	"3805060":"Merlin VTT Playtest",
 	"3805120":"Naomi Clicker Boost DLC vol.1",
 	"3805130":"Naomi Clicker Boost DLC vol.2",
+	"3805630":"\u4e16\u754c\u6bc1\u706d\u4e03\u5929\u524d",
 	"3805670":"Thrice Kingdom",
 	"3805840":"DanceXR Discovery",
 	"3805940":"PhantomZone SemiDeus Demo",
@@ -253905,7 +253909,9 @@ window.game_names = {
 	"3807660":"Shattered Memories Demo",
 	"3807760":"Meatshift",
 	"3807880":"Where is my ship?! Demo",
+	"3808080":"Dark SlayeR",
 	"3808100":"Superhero Simulator Demo",
 	"3808510":"LivingBattle Normal AK47",
-	"3808530":"LivingForest Wood Bat With Nails"
+	"3808530":"LivingForest Wood Bat With Nails",
+	"3808570":"\u7075\u80fd\u51b2\u51fb Demo"
 }
