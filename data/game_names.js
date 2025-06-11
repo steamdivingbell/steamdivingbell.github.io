@@ -252649,6 +252649,7 @@ window.game_names = {
 	"3766710":"CLIMB IT! Demo",
 	"3766720":"TROLEU Demo",
 	"3766730":"Major Party Racing : Core",
+	"3766740":"Church Crew",
 	"3766760":"Avalone's Adventurers: My Parents were Assassinated so I've Started an Adventuring Party to Avoid a Political Marriage Demo",
 	"3766780":"Speedboat League Demo",
 	"3766790":"Requital",
@@ -253774,6 +253775,7 @@ window.game_names = {
 	"3800090":"Courier Bay Demo",
 	"3800110":"BoB - Battle of Bots",
 	"3800140":"Whispering Fog",
+	"3800260":"3XTINCTION - BROKEN MIND Mercenaries Pack",
 	"3800290":"Royal Odyssey Demo",
 	"3800360":"CrateMage Demo",
 	"3800430":"Defendrion Demo",
@@ -253812,5 +253814,7 @@ window.game_names = {
 	"3805940":"PhantomZone SemiDeus Demo",
 	"3806110":"Zaxtron EXPLUS",
 	"3806750":"Soul Gather Demo",
-	"3808100":"Superhero Simulator Demo"
+	"3808100":"Superhero Simulator Demo",
+	"3808510":"LivingBattle Normal AK47",
+	"3808530":"LivingForest Wood Bat With Nails"
 }
