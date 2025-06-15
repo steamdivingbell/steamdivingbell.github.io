@@ -183845,7 +183845,7 @@ window.game_names = {
 	"2683570":"Push The Cat with WASD",
 	"2683580":"The DarkCity",
 	"2683590":"LYMBUS",
-	"2683600":"\u5e7b\u5f71\u67aa\u795e-Phantom Killer Demo",
+	"2683600":"Bodycam Real Shoot Demo",
 	"2683610":"Pizza Delivery [zebaxx]",
 	"2683620":"Circle of Swords",
 	"2683630":"FACEMINER Playtest",
