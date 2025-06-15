@@ -253691,6 +253691,7 @@ window.game_names = {
 	"3782600":"Mumagi: Stellar Saviors Demo",
 	"3782610":"Singularity Divide",
 	"3782620":"Drawn To Power",
+	"3782630":"\u6398\u91d1\u5de5\u574a",
 	"3782640":"Culprits of a Feather",
 	"3782700":"Turn Back The Powers Of Darkness",
 	"3782710":"Touhou ~ Dreams of a Sunflower Demo",
