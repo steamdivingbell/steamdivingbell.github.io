@@ -254218,6 +254218,7 @@ window.game_names = {
 	"3795600":"Satelum",
 	"3795670":"Mine Safety",
 	"3795690":"Seasons of Chiba",
+	"3795720":"The Night Is Long",
 	"3795800":"Motel Nightmares",
 	"3795830":"Chicken Craft Demo",
 	"3795850":"MEAT ROOM",
