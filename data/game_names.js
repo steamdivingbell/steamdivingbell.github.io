@@ -254567,6 +254567,7 @@ window.game_names = {
 	"3810870":"Asteroid Requiem",
 	"3810930":"Love Mart \ud83d\uded2\u2764 Demo",
 	"3810950":"Spectator 3 Demo",
+	"3810970":"Edge Of Galaxy",
 	"3810990":"Row Away",
 	"3811040":"Femboy Streamer",
 	"3811300":"Frontier Roots",
