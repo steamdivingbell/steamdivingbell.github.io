@@ -248962,6 +248962,7 @@ window.game_names = {
 	"3687590":"Shannxi Love Story Demo",
 	"3687600":"Seeking The Guardian",
 	"3687640":"Tiny Pasture - Ribbitribbit and Quackquack DLC",
+	"3687670":"SteamPowered",
 	"3687690":"Netorare Wife -Yukiko- 20 Years After Marriage, End of The Story",
 	"3687700":"DroneWars Playtest",
 	"3687710":"Sugar Sling Showdown",
