@@ -246417,7 +246417,7 @@ window.game_names = {
 	"3638410":"Numbra",
 	"3638420":"Universal Gravitation",
 	"3638430":"CHEER SQUAD",
-	"3638440":"Goblin Girl DeliveryService",
+	"3638440":"Goblita's Delivery Service",
 	"3638460":"\u6c49\u6b66\u4e13\u7528\u5b9a\u5236DLC-D\u5ea6\u7a7a\u95f4\u65b0\uff08\u975e\u5356\u54c1\uff09",
 	"3638470":"\u6c49\u6b66\u4e13\u7528\u5b9a\u5236DLC-Jack\u65b0\uff08\u975e\u5356\u54c1\uff09",
 	"3638480":"Astral Hunter: Homebound Playtest",
@@ -252517,6 +252517,7 @@ window.game_names = {
 	"3754260":"Checkout Midnight",
 	"3754280":"Shape Sender Deluxe Demo",
 	"3754290":"Pitaya!",
+	"3754320":"Project DAR",
 	"3754330":"Apocalypse Tale",
 	"3754340":"Bound by Bones Demo",
 	"3754370":"Resist Mutants",
@@ -254832,6 +254833,7 @@ window.game_names = {
 	"3816400":"Carpark",
 	"3816620":"Desk Paws - Supporter Pack",
 	"3816780":"Tower! Simulator 3 - EGCC Airport",
+	"3816840":"Inside the Light Switcher's Mind Playtest",
 	"3816920":"Nightfall Caf\u00e9",
 	"3816980":"REMATCH (Original Game Soundtrack)",
 	"3817060":"Samurai Explorer",
@@ -254850,6 +254852,7 @@ window.game_names = {
 	"3819920":"Femboy Streamer Demo",
 	"3820020":"Silent Stay",
 	"3820780":"Voodoo Fishin' Demo",
+	"3820910":"Ant Workers Simulator",
 	"3821930":"Joe and the lost pixels Demo",
 	"3822870":"SPACE HOLE"
 }
