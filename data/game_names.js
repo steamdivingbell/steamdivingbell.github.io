@@ -165642,6 +165642,7 @@ window.game_names = {
 	"2417710":"The Siege of Jeomdo",
 	"2417730":"The Night Of The Inquisitor",
 	"2417740":"Our Last Dayz Demo",
+	"2417760":"Last Command - Honest pack",
 	"2417770":"The Bridge Curse 2: The Extrication Demo",
 	"2417780":"The picture of  Cafe au lait Demo",
 	"2417790":"Clear Mosaic",
@@ -213223,6 +213224,7 @@ window.game_names = {
 	"3121810":"ALARIC",
 	"3121840":"Hentailive - Business Couple",
 	"3121850":"UHILANT",
+	"3121860":"Nocturnal Whispers",
 	"3121890":"Erased",
 	"3121930":"Dimon The Witch's Pervert Assistant",
 	"3121940":"Monsters of Moldred Playtest",
@@ -237513,6 +237515,7 @@ window.game_names = {
 	"3489870":"Trainz Plus DLC - Pro Train: Amtrak P42DC Heritage Loco Bundle",
 	"3489880":"Surgebound",
 	"3489890":"Desktop Cat Cafe Demo",
+	"3489910":"Evil eye",
 	"3489920":"ShoppingMall: Manager Simulator Demo",
 	"3489940":"Gun Store Simulator Demo",
 	"3489950":"Poltergeist Prodigy Demo",
@@ -253725,6 +253728,7 @@ window.game_names = {
 	"3778640":"Woohoo! - Game \"BingoFrenzy\"",
 	"3778660":"FrostCore",
 	"3778670":"My Fishing Desktop",
+	"3778680":"The Day in a Life of a Dayfly",
 	"3778700":"Brave New Wonders Playtest",
 	"3778710":"Whispers of the Hourglass Demo",
 	"3778720":"For Eternity",
@@ -254946,5 +254950,6 @@ window.game_names = {
 	"3822920":"Cry from the Abyss",
 	"3823500":"Dungeon Raid: Zero Floor Demo",
 	"3824070":"\u827e\u6bd4\u65af\u7269\u8bed Playtest",
+	"3824580":"NEKRO3 Demo",
 	"3824750":"Truck Parking Simulator VR Demo"
 }
