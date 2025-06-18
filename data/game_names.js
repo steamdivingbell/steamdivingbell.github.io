@@ -248558,6 +248558,7 @@ window.game_names = {
 	"3679540":"Evershade The Forgotten Mansion",
 	"3679560":"Train Jumble Demo",
 	"3679590":"Fox&Finch, jellies",
+	"3679600":"Angler's Journey",
 	"3679620":"Ghosts of Tabor - Black Ops Weapon Pack",
 	"3679630":"PAYDAY 3: Party Powder Heist",
 	"3679640":"\u6c49\u6b66\u5927\u5e1d\u4f20-\u5907\u7528\u5b9a\u5236DLC1",
