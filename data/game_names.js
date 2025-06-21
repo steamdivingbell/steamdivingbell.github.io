@@ -232215,6 +232215,7 @@ window.game_names = {
 	"3407380":"Leanna Quest",
 	"3407390":"ENDLESS\u2122 Legend 2",
 	"3407400":"Afterlove EP - Artbook",
+	"3407410":"Cyborea",
 	"3407440":"Witch 4 Hotel Christmas",
 	"3407450":"The Northern Path",
 	"3407460":"Entity: Midnight\u2019s Watcher Demo",
@@ -250900,6 +250901,7 @@ window.game_names = {
 	"3719100":"Tiris",
 	"3719110":"Broken Relic Demo",
 	"3719120":"Inside the Crow\u00b4s Nest",
+	"3719130":"Quest Within",
 	"3719160":"Late Shift - Midnight Burger",
 	"3719170":"The Last Bell",
 	"3719180":"Deedlee Doo! Carkour! Demo",
@@ -255013,6 +255015,7 @@ window.game_names = {
 	"3806370":"Nasubi Room",
 	"3806410":"Chef's Journey Demo",
 	"3806440":"I/O",
+	"3806450":"Madman's Maze",
 	"3806510":"Decade Demo",
 	"3806520":"\u7dda\u9999",
 	"3806530":"OneMore",
@@ -255339,6 +255342,7 @@ window.game_names = {
 	"3820200":"Ready, Set, Block! Demo",
 	"3820240":"\u041d\u0435 \u043f\u043e\u0434\u0433\u043b\u044f\u0434\u044b\u0432\u0430\u0439 Demo",
 	"3820330":"hazard versus",
+	"3820340":"\u8d8b\u5149\u672c\u80fd",
 	"3820360":"Santa Slides to Town Demo",
 	"3820570":"LivingBattle Simple City",
 	"3820600":"LivingForest Savage Truck",
@@ -255387,6 +255391,7 @@ window.game_names = {
 	"3823240":"Bonesaw Demo",
 	"3823250":"FAUX FABLE: Dev",
 	"3823340":"Abyss Defence",
+	"3823350":"\u4e0a\u5b66\u5a01\u9f99 Playtest",
 	"3823440":"Masquerade",
 	"3823480":"F.E.A.S.T",
 	"3823500":"Dungeon Raid: Zero Floor Demo",
@@ -255438,5 +255443,6 @@ window.game_names = {
 	"3830110":"Fluffy Memories Soundtrack",
 	"3830490":"Kanji Cats",
 	"3830510":"Motorcycle Boy",
-	"3830740":"Nin Online Playtest"
+	"3830740":"Nin Online Playtest",
+	"3830920":"Tiny Dream Home"
 }
