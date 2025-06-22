@@ -255512,6 +255512,7 @@ window.game_names = {
 	"3826300":"Unknowz",
 	"3826340":"United by Love's Heart",
 	"3826460":"Looking For Waifu",
+	"3826560":"Mayoi Shopping Street",
 	"3826680":"HELLSPRINT Demo",
 	"3826840":"No One Here But Me",
 	"3826880":"Tezcatlipoca Soundtrack",
