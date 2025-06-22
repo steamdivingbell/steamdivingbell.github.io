@@ -254480,6 +254480,7 @@ window.game_names = {
 	"3790250":"Eloquent",
 	"3790270":"Terra Fighters Demo",
 	"3790300":"Crownless Duelist",
+	"3790370":"SCP: CB Multiplayer Reborn Dedicated Server",
 	"3790390":"\u7ed9\u5b83\u72318 Demo",
 	"3790420":"ReCharge RC: High Voltage Demo",
 	"3790440":"Dreamnest Demo",
