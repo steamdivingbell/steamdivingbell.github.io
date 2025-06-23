@@ -20149,7 +20149,7 @@ window.reviews = {
 	"1825930":{"positive":219,"total":246},
 	"1825941":{"positive":23,"total":23},
 	"1825970":{"positive":57,"total":62},
-	"1826060":{"positive":111,"total":120},
+	"1826060":{"positive":117,"total":126},
 	"1826090":{"positive":32,"total":32},
 	"1826140":{"positive":2717,"total":2915},
 	"1826480":{"positive":18,"total":19},
