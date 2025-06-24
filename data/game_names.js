@@ -242746,6 +242746,7 @@ window.game_names = {
 	"3572010":"Dice & Figurines: Business Life Simulator Demo",
 	"3572020":"KONKONKON",
 	"3572030":"Motamo",
+	"3572040":"Motamo \u2013 Pack de soutien",
 	"3572050":"CatTrigger Horror Collection",
 	"3572060":"Raining Cats and Dogs",
 	"3572080":"Acornia of The Stars",
