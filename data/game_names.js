@@ -255606,6 +255606,7 @@ window.game_names = {
 	"3823310":"Might of Spells",
 	"3823340":"Abyss Defence",
 	"3823350":"\u4e0a\u5b66\u5a01\u9f99 Playtest",
+	"3823380":"Getting Inside: Soundtrack",
 	"3823440":"Masquerade",
 	"3823480":"F.E.A.S.T",
 	"3823500":"Dungeon Raid: Zero Floor Demo",
