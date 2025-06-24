@@ -242145,6 +242145,7 @@ window.game_names = {
 	"3561570":"\u516c\u4e3b\u8bf7\u653e\u5fc3",
 	"3561580":"Hauntrick",
 	"3561590":"Hentai Tales: Isekai Uncle Reversal",
+	"3561600":"Fortress Connected",
 	"3561610":"Horde Arena",
 	"3561620":"Love Hospital",
 	"3561640":"SHARP FISTS",
