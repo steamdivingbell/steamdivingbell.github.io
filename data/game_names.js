@@ -145890,6 +145890,7 @@ window.game_names = {
 	"2148980":"Rikua Playtest",
 	"2148990":"Waste It",
 	"2149000":"Zombies",
+	"2149010":"Little Nightmares Enhanced Edition",
 	"2149030":"Diluvian Winds Demo",
 	"2149040":"Overboss Demo",
 	"2149070":"Cosplay Collection",
