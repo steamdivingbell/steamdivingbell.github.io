@@ -252401,6 +252401,7 @@ window.game_names = {
 	"3745680":"Star Conflict - Tales of the ancients. Phase one",
 	"3745690":"Star Conflict - Tales of the ancients. Phase one (Deluxe edition)",
 	"3745720":"Rogue Tactics Demo",
+	"3745760":"Star Conflict: Drag\u2019thir. Weapon of victory",
 	"3745820":"\u9664\u7075\u4e8b\u52a1\u6240 Playtest",
 	"3745850":"Luna & Sol: Nightmare Ward",
 	"3745860":"Space Revolver",
