@@ -182093,6 +182093,7 @@ window.game_names = {
 	"2657060":"Teardown: Folkrace",
 	"2657070":"Teardown: Season Pass",
 	"2657080":"Teardown: Quilez R0113R Robot",
+	"2657100":"Teardown: The Greenwash Gambit",
 	"2657120":"My Sexy Neighbor \ud83d\udd1e",
 	"2657130":"Wormswarm",
 	"2657140":"Animal Falling",
@@ -251826,6 +251827,7 @@ window.game_names = {
 	"3734590":"Your Shots Count Demo",
 	"3734600":"Leftovers KO! - Digital Artbook",
 	"3734620":"Mine Of Madness",
+	"3734630":"Immoral-Bathhouse",
 	"3734640":"Tower! Simulator 3 - KCLE Airport",
 	"3734650":"\u724c\u4e4b\u52c7\u8005 : \u8ffd\u5149\u7eaa Demo",
 	"3734730":"Jury - Episode 3: Knives & Dark Desires",
@@ -254023,6 +254025,7 @@ window.game_names = {
 	"3777560":"BallStack",
 	"3777570":"Fatal Gaming Demo",
 	"3777580":"Planes of Fear Demo",
+	"3777590":"Blade Song",
 	"3777710":"SweetDreams: Electra",
 	"3777720":"GreenSome Demo",
 	"3777730":"\u0421hoo-\u0421hoose - Wallpapers Pack",
@@ -254354,6 +254357,7 @@ window.game_names = {
 	"3785380":"Darkness in the Forest",
 	"3785420":"A Tale of Fortunate Lust",
 	"3785430":"Bojan Demo",
+	"3785440":"Fluffy Kitchen Saga Playtest",
 	"3785450":"Cozy Beach Demo",
 	"3785460":"The Face Horror Game Demo",
 	"3785470":"Capcom Fighting Collection \uff3bOriginal Soundtrack\uff3d",
@@ -255722,5 +255726,6 @@ window.game_names = {
 	"3830880":"Space Memory: Chinchillas",
 	"3830920":"Tiny Dream Home",
 	"3830950":"Consortium's Fall Demo",
-	"3833750":"Numachina Demo"
+	"3833750":"Numachina Demo",
+	"3834310":"Guitarist's Reference Demo"
 }
