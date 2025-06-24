@@ -252603,6 +252603,7 @@ window.game_names = {
 	"3749470":"Mage Tower Massacre Demo",
 	"3749500":"The Eternal Hunt Demo",
 	"3749520":"Baradroid - Lost Data: Director\u2019s Cut",
+	"3749530":"Schrott Demo",
 	"3749540":"Steampunk Idle Spinner",
 	"3749550":"JDM: Japanese Drift Master - Support Pack",
 	"3749610":"Solve or Die Playtest",
