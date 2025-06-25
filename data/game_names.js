@@ -255256,6 +255256,7 @@ window.game_names = {
 	"3806010":"Polarium",
 	"3806020":"Wild Tower Demo",
 	"3806050":"Virago: Herstory 2",
+	"3806070":"Contestant 345",
 	"3806080":"Bodacious Babes: Fantasy",
 	"3806090":"Command-\u03a9 Omega",
 	"3806100":"ThreeKingdoms",
@@ -255782,6 +255783,7 @@ window.game_names = {
 	"3826290":"\u7ec4\u957f\uff01\u6028\u5ff5\u8bf7\u67e5\u6536\uff01",
 	"3826300":"Unknowz",
 	"3826340":"United by Love's Heart",
+	"3826380":"Lunaton: Rescue mission",
 	"3826460":"Looking For Waifu",
 	"3826560":"Mayoi Shopping Street",
 	"3826660":"Coloring Pixels - Gothic Pack",
@@ -255823,5 +255825,6 @@ window.game_names = {
 	"3832020":"Desktank - Full Tank Upgrade",
 	"3832440":"Hungry for Applez Playtest",
 	"3833750":"Numachina Demo",
-	"3834310":"Guitarist's Reference Demo"
+	"3834310":"Guitarist's Reference Demo",
+	"3842060":"Stickforge Mod Uploader"
 }
