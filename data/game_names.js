@@ -212302,7 +212302,7 @@ window.game_names = {
 	"3106600":"Unto Deepest Depths",
 	"3106610":"Turmoil - Deeper Underground",
 	"3106620":"Please Smile",
-	"3106650":"T.D.Z. 4 Heart of Pripyat",
+	"3106650":"T.D.Z. 4 Chapter 1 - Arrival",
 	"3106660":"Until Oblivion",
 	"3106670":"Saturday Super Day",
 	"3106680":"Roman Legacy: Speed Trials",
@@ -256038,6 +256038,7 @@ window.game_names = {
 	"3827530":"Retro Meadow Demo",
 	"3827560":"Cubenen Gardens: Befriend",
 	"3827750":"Decklings Playtest",
+	"3828290":"Kick Yourself On",
 	"3828350":"Spirit Whisperer Conversation With Kamiko",
 	"3828370":"Lake of Darkness",
 	"3828410":"LvL50 Playtest",
@@ -256115,5 +256116,6 @@ window.game_names = {
 	"3838060":"High Above Playtest",
 	"3838180":"Cave Crusade Demo",
 	"3838550":"The Mine Demo",
+	"3838600":"Grow Garden: A Cozy Garden Game",
 	"3842060":"Stickforge Mod Uploader"
 }
