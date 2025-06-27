@@ -256254,5 +256254,6 @@ window.game_names = {
 	"3840940":"Delta 78: O Passageiro Demo",
 	"3841360":"Stickdown! Demo",
 	"3841410":"BLOCK+HOLE Demo",
-	"3842060":"Stickforge Mod Uploader"
+	"3842060":"Stickforge Mod Uploader",
+	"3846870":"Stickforge Dedicated Server"
 }
