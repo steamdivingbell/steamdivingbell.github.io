@@ -218857,6 +218857,7 @@ window.game_names = {
 	"3204980":"Master of Pieces \u00a9 Jigsaw Puzzle DLC -  Fairy Tales",
 	"3204990":"Floor 9 Demo",
 	"3205000":"\u7570\u5909\u9ebb\u96c0",
+	"3205020":"Coven: All Powerful",
 	"3205030":"F1\u00ae Manager 2024: Historical Livery Pack",
 	"3205040":"F1\u00ae Manager 2024: Abstract Livery Pack",
 	"3205050":"Mega City Parkour",
