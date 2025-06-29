@@ -256317,6 +256317,7 @@ window.game_names = {
 	"3830770":"Bug Bane",
 	"3830780":"\u4e0b\u4e00\u6bb5\u8def\u9014 The Next Journey Of Life",
 	"3830810":"Fantasy Legend. The Frozen Century",
+	"3830860":"Legend of the Moon: Those Who Crossed",
 	"3830870":"Parcel Peaks",
 	"3830880":"Space Memory: Chinchillas",
 	"3830920":"Tiny Dream Home",
