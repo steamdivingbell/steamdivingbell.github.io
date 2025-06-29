@@ -256233,6 +256233,7 @@ window.game_names = {
 	"3825300":"Love in the Time of Spellphage",
 	"3825410":"Snake Eyes",
 	"3825450":"Wumbrik",
+	"3825470":"Ta-Miu",
 	"3825500":"HARD VOID Demo",
 	"3825530":"GAYA - The Mystery Playtest",
 	"3825570":"\u670b\u670b\u52a8\u7269\u6751 Playtest",
