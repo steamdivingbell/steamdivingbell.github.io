@@ -253820,6 +253820,7 @@ window.game_names = {
 	"3768040":"Together We Die Playtest",
 	"3768060":"Happy Piggy 2",
 	"3768070":"Hunt: Showdown 1896 - Port Sulphur Band - The Fool",
+	"3768080":"\u5c0f\u6e7f\u7684\u590f\u65e5\u6218\u6597",
 	"3768090":"Noon Stone Demo",
 	"3768100":"Hunt: Showdown 1896 - Port Sulphur Band - Let Us Prey",
 	"3768110":"Stepfight",
