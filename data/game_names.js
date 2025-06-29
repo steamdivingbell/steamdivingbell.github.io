@@ -256125,6 +256125,7 @@ window.game_names = {
 	"3822170":"Mythical Haven",
 	"3822210":"\u65b9\u5bf8\u4e09\u56fd Playtest",
 	"3822240":"Strange island",
+	"3822250":"MINI EXPEDITION",
 	"3822280":"Gyre Demo",
 	"3822320":"Dream Hollow",
 	"3822330":"Jumbling Raccoons",
