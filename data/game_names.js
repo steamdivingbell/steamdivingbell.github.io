@@ -222312,6 +222312,7 @@ window.game_names = {
 	"3255600":"Poly Fire",
 	"3255610":"Tower of Silence",
 	"3255620":"ROMANCE OF THE THREE KINGDOMS 8 REMAKE Scenario \"Tiger Generals of the Three Kingdoms, Locked in Battle!\"",
+	"3255640":"ONIGIRI RUN",
 	"3255650":"Infinite Zombie Tide",
 	"3255660":"Requiem For a Lost World",
 	"3255670":"Hemocrypt",
