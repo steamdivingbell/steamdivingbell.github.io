@@ -256064,6 +256064,7 @@ window.game_names = {
 	"3816890":"Still It Runs",
 	"3816920":"Nightfall Caf\u00e9",
 	"3816980":"REMATCH (Original Game Soundtrack)",
+	"3816990":"Rage Fishing",
 	"3817050":"SlimeCraft",
 	"3817060":"Samurai Explorer",
 	"3817090":"Vigil",
