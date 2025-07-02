@@ -255782,6 +255782,7 @@ window.game_names = {
 	"3805640":"Coma Control Playtest",
 	"3805660":"YELLOW*DEMON Demo",
 	"3805670":"Thrice Kingdom",
+	"3805690":"The Last Chance",
 	"3805700":"Fantasy Grounds - Deadlands: the Weird West Oversized Action Deck",
 	"3805710":"Treasure Tiger",
 	"3805720":"Bonds of the Zodiac Demo",
