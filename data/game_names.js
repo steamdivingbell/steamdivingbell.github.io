@@ -256741,6 +256741,7 @@ window.game_names = {
 	"3840030":"Exitless Playtest",
 	"3840120":"Star Legacy",
 	"3840290":"SoulFeast(\u7075\u9b42\u76db\u5bb4)",
+	"3840310":"\u661f\u9645\u9b54\u6cd5\u4f7f-FromTheStars- Demo",
 	"3840320":"Pochard Jamie",
 	"3840450":"Trooops Playtest",
 	"3840560":"Ad SHOOt\uff08\u30a2\u30c9\u30b7\u30e5\u30fc\uff09 Soundtrack",
