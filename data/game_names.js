@@ -248450,6 +248450,7 @@ window.game_names = {
 	"3668530":"Quadra Break",
 	"3668550":"\u631a\u7231\u89e3\u4f53\u4e4b\u56e0",
 	"3668560":"Happy Island Fantasy",
+	"3668590":"Trilogy of the Moon - The First Fate",
 	"3668610":"Shattered Lands Demo (\u7834\u788e\u4e4b\u5730)",
 	"3668620":"The Heretics Playtest",
 	"3668630":"\u3061\u3085\u30fc\u3061\u3085\u30fc\u30d1\u30f3\u30b1\u30fc\u30ad",
@@ -256794,5 +256795,6 @@ window.game_names = {
 	"3846500":"Tiny Company Demo",
 	"3846870":"Stickforge Dedicated Server",
 	"3846980":"The Black Signal Original Game Soundtrack",
-	"3847340":"Joyful Masks Demo"
+	"3847340":"Joyful Masks Demo",
+	"3847500":"Cozy Catch"
 }
