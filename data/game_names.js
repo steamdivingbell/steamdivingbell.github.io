@@ -246889,6 +246889,7 @@ window.game_names = {
 	"3638700":"inKonbini Demo",
 	"3638730":"Aircraft Wars",
 	"3638750":"Seed's End",
+	"3638760":"Taiko no Tatsujin: Rhythm Festival - Timeless Hits Pack",
 	"3638770":"MOBILE SUIT GUNDAM BATTLE OPERATION 2 - Value Token Pack Volume 9",
 	"3638810":"\u62ed\u5893\u4ee5\u5f85 OH\uff1fME Demo",
 	"3638820":"\u98ce\u6708\u91cd\u4e66\uff1a\u91d1\u74f6\u6885",
