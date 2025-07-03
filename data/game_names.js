@@ -251936,6 +251936,7 @@ window.game_names = {
 	"3729040":"Fight Dirty Demo",
 	"3729050":"The Da Vinci Cryptex - Demo",
 	"3729060":"UK Border Simulator",
+	"3729090":"Deceit 2 - Legacy Bundle",
 	"3729130":"\u7834\u73af\u8005 Demo",
 	"3729140":"Umibiki",
 	"3729160":"Wasteland Shop Simulator",
