@@ -32764,7 +32764,7 @@ window.reviews = {
 	"3435100":{"positive":63,"total":68},
 	"3435260":{"positive":129,"total":140},
 	"3435600":{"positive":125,"total":139},
-	"3437030":{"positive":17,"total":17},
+	"3437030":{"positive":15,"total":15},
 	"3437060":{"positive":36,"total":40},
 	"3437260":{"positive":21,"total":23},
 	"3438040":{"positive":150,"total":169},
