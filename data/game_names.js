@@ -236959,6 +236959,7 @@ window.game_names = {
 	"3475730":"\u5bc4\u751f\u30c8\u30f3\u30cd\u30eb",
 	"3475740":"SUR5 - Survivor Pack",
 	"3475750":"FLOWorlds",
+	"3475770":"\u5143\u5361\u724c\u4e4b\u80cc\u5305\u4f20\u8bf4 Meta Card Backpack Legend",
 	"3475820":"Infinity Islets - Nightshade Supporter Upgrade",
 	"3475830":"BLUMA Demo",
 	"3475840":"Deep In Snow",
@@ -253971,6 +253972,7 @@ window.game_names = {
 	"3765460":"Dragons Reef VR",
 	"3765530":"Only Down: Into the Abyss",
 	"3765540":"DAY OF THE RISING DEAD",
+	"3765550":"DodgeShow-2\u4ee3-\u827e\u6b27\u5c3c\u4e9a\u2160",
 	"3765570":"STUNTBOOST Demo",
 	"3765580":"Camper Van: Make it Home Soundtrack",
 	"3765590":"\u6211\u7684\u9ad8\u51b7\u5973\u53cb MY COLD GIRLFRIEND",
@@ -255970,6 +255972,7 @@ window.game_names = {
 	"3806530":"OneMore",
 	"3806550":"101 Cats Hidden in Prague",
 	"3806560":"101 Cats Hidden in Medina",
+	"3806570":"101 Cats Hidden in Osaka",
 	"3806600":"Madness of the Science Demo",
 	"3806620":"Yurei Demo",
 	"3806630":"DEFEAT THE GOBLIN KING",
@@ -257194,6 +257197,7 @@ window.game_names = {
 	"3846200":"OTHERSIDE: Untamed Words",
 	"3846230":"Hentai Senpai: Seieki Akuma-Tachi Original Soundtrack",
 	"3846310":"100 Cats Lost In Japan - Extra Content",
+	"3846360":"The Goblin Tavern",
 	"3846410":"Protocol Aegirum",
 	"3846420":"Awesome Balamir",
 	"3846500":"Tiny Company Demo",
@@ -257250,6 +257254,7 @@ window.game_names = {
 	"3850620":"The Deathmind",
 	"3850910":"Anomaly President Playtest",
 	"3851060":"\u5c0f\u591c\u602a\u5947\u7269\u8bed\u8ffd\u52a0\u7ae0\u8282\uff1a\u9b54\u5973\u72c2\u75ab\u7b2c\u56db\u5b63",
+	"3851070":"Dhadoom! Demo",
 	"3851140":"United by Love's Heart Demo",
 	"3851520":"Sophie the best titty fuck expert - Art Collection -",
 	"3851530":"Crossings Playtest",
@@ -257265,5 +257270,7 @@ window.game_names = {
 	"3854320":"\u5438\u8840\u9b3c\u5927\u5c0f\u59d0\u60f3\u548c\u6211\u604b\u7231 Demo",
 	"3854530":"Tower! Simulator 3 - KIAD Airport",
 	"3854600":"Virago World",
-	"3856330":"Warhammer 40,000: Space Marine 2 - Mod Tools"
+	"3855900":"Color a Cube - Landmarks pack #1",
+	"3856330":"Warhammer 40,000: Space Marine 2 - Mod Tools",
+	"3857720":"Arrow Dungeon Demo"
 }
