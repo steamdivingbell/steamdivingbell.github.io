@@ -256899,6 +256899,7 @@ window.game_names = {
 	"3830450":"Fooling Dead",
 	"3830490":"Kanji Cats",
 	"3830510":"Motorcycle Boy",
+	"3830520":"Compact Colonies",
 	"3830530":"Cube Hits Corner",
 	"3830650":"Lither to the Light",
 	"3830660":"Kanji Cats Demo",
