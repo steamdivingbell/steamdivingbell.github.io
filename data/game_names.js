@@ -250610,6 +250610,7 @@ window.game_names = {
 	"3704300":"FIND ALL 9: Fantasy",
 	"3704310":"Fantastic Petty Soundtrack",
 	"3704320":"Rombo",
+	"3704330":"Dwarf Boozter",
 	"3704340":"Italian Brainrot: Arena",
 	"3704360":"Some Assembly Required Demo",
 	"3704400":"Dungeon Lords",
@@ -255659,6 +255660,7 @@ window.game_names = {
 	"3797740":"The Mystic",
 	"3797750":"Idle Guy Playtest",
 	"3797760":"Gaucho Demo",
+	"3797770":"Zero Pixel Dawn",
 	"3797780":"Spinning My Wheel Demo",
 	"3797810":"Pep a Pig Demo",
 	"3797830":"Egglets",
@@ -257327,6 +257329,7 @@ window.game_names = {
 	"3847150":"Phoh: A Sleeping Soul",
 	"3847320":"sfsim Playtest",
 	"3847340":"Joyful Masks Demo",
+	"3847410":"Chronicles of Lussaria Demo",
 	"3847500":"Cozy Catch",
 	"3847670":"Kinap",
 	"3848000":"Silvercall",
@@ -257421,5 +257424,6 @@ window.game_names = {
 	"3856330":"Warhammer 40,000: Space Marine 2 - Mod Tools",
 	"3856840":"Furry Farm Playtest",
 	"3857070":"C.U.T.S",
-	"3857720":"Arrow Dungeon Demo"
+	"3857720":"Arrow Dungeon Demo",
+	"3859480":"Eclipse Below Demo"
 }
