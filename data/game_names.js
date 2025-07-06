@@ -210467,7 +210467,7 @@ window.game_names = {
 	"3077910":"King's Gambit",
 	"3077920":"\u041d\u0430\u0441\u043b\u0435\u0434\u043d\u0438\u043a\u0438 Soundtrack",
 	"3077930":"Spammerina",
-	"3077950":"INGRESS",
+	"3077950":"INGRISS",
 	"3077960":"Eternal Vampire: Dark Symphony",
 	"3077970":"Circuit Racers",
 	"3077990":"Old School Tower Defense",
