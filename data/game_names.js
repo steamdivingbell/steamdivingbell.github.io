@@ -257447,5 +257447,6 @@ window.game_names = {
 	"3857720":"Arrow Dungeon Demo",
 	"3858060":"TriMatch Demo",
 	"3859480":"Eclipse Below Demo",
-	"3859550":"Pawn.OS() Demo"
+	"3859550":"Pawn.OS() Demo",
+	"3859680":"Mad Carnival Demo"
 }
