@@ -257437,6 +257437,7 @@ window.game_names = {
 	"3851060":"\u5c0f\u591c\u602a\u5947\u7269\u8bed\u8ffd\u52a0\u7ae0\u8282\uff1a\u9b54\u5973\u72c2\u75ab\u7b2c\u56db\u5b63",
 	"3851070":"Dhadoom! Demo",
 	"3851140":"United by Love's Heart Demo",
+	"3851370":"Home for Friends: Beloved Pets Collector's Edition",
 	"3851430":"Hentai Elarin",
 	"3851490":"The Most Annoying Game Ever",
 	"3851500":"The Bigger Picture",
