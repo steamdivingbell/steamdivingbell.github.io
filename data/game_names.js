@@ -12614,7 +12614,7 @@ window.game_names = {
 	"308540":"SLEEPOVER",
 	"308560":"City Quest",
 	"308580":"Orborun",
-	"308600":"Skillshot City",
+	"308600":"Gene Shift Auto",
 	"309870":"Call of Duty: Ghosts - Blunt Force Character",
 	"309871":"Call of Duty: Ghosts - Inferno Character",
 	"309872":"Call of Duty: Ghosts - Bling Character",
