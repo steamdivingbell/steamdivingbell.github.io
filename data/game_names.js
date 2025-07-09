@@ -251589,6 +251589,7 @@ window.game_names = {
 	"3720200":"ARK Fantastic Tames - Drakelings",
 	"3720210":"Battlecaster Demo",
 	"3720230":"Super Scratch Cards Demo",
+	"3720240":"The Land of Morning Calm",
 	"3720260":"Frogdoku",
 	"3720270":"Mailstrom Closed Beta",
 	"3720280":"Mind the Clown Demo",
@@ -257604,6 +257605,7 @@ window.game_names = {
 	"3849080":"Seabed Settlers Playtest",
 	"3849110":"MoteMancer Soundtrack",
 	"3849210":"\u4e0d\u7965\u4e4b\u591c\uff1a\u56de\u9b42 - \u5154\u5973\u90ce",
+	"3849220":"\u66ae\u96e8\u6d41\u82b1Floain Plus",
 	"3849250":"Tyrano Studio - System UI Skin Plugin #1",
 	"3849270":"Boss Up Demo",
 	"3849300":"Linkshift Demo",
@@ -257712,6 +257714,7 @@ window.game_names = {
 	"3855000":"Re:Call",
 	"3855030":"Tally & Tails",
 	"3855040":"Crow Style",
+	"3855110":"Primal Blue",
 	"3855200":"Black Smith : The Gambler",
 	"3855480":"Project Judgement",
 	"3855490":"Midnight Shifts with Femboy Demo",
@@ -257772,5 +257775,6 @@ window.game_names = {
 	"3862020":"Keep on Mining! - Pickaxe skins SUPPORT PACK",
 	"3862690":"Ammo Bounce",
 	"3862760":"Wheelborne",
-	"3862800":"Rhythmic Demo"
+	"3862800":"Rhythmic Demo",
+	"3864110":"Wanderer's Waters"
 }
