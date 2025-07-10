@@ -253080,6 +253080,7 @@ window.game_names = {
 	"3745340":"Pop Cat",
 	"3745420":"NiuZhuanQianKun",
 	"3745440":"Find Cats 5 \u5929\u4f7f\u732b Demo",
+	"3745500":"Whispers from the Star Demo",
 	"3745510":"Mika's Battle S 3",
 	"3745520":"\u8c1c\u9898\u738b\u56fd Demo",
 	"3745530":"Elementallis Playtest",
