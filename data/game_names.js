@@ -252371,6 +252371,7 @@ window.game_names = {
 	"3732480":"Tele E Mezzo",
 	"3732500":"Bomb Bowling X Demo",
 	"3732510":"Rise of the White Sun - Taming the Tigers",
+	"3732530":"Venusville - Prologue",
 	"3732540":"How to Train Your Cock Demo",
 	"3732550":"Bandit Trap Demo",
 	"3732560":"KuloNiku Demo",
