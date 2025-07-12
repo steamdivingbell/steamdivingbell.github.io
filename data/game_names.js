@@ -256225,6 +256225,7 @@ window.game_names = {
 	"3802990":"Eden's Inferno",
 	"3803020":"Hiraeth Demo",
 	"3803030":"ADAPTATION",
+	"3803040":"Binary Boss",
 	"3803050":"Reflections of Life: Dream Box Collector's Edition",
 	"3803080":"City of Stories: Stephan's Journey Collector's Edition",
 	"3803090":"Insomnia Demo",
