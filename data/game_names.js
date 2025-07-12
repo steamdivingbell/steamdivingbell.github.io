@@ -254030,6 +254030,7 @@ window.game_names = {
 	"3760380":"Danger World Demo",
 	"3760400":"\u9664\u7075\u4e8b\u52a1\u6240 Demo",
 	"3760410":"Luna Tactics",
+	"3760420":"\u9762\u5305\u65e5\u8bb0 Demo",
 	"3760430":"The Dust Remains",
 	"3760440":"Outlanders: Hunt and Survive Demo",
 	"3760480":"Wait for the Egg to Hatch",
@@ -258003,6 +258004,7 @@ window.game_names = {
 	"3848340":"Splicer",
 	"3848360":"Snakez Arena",
 	"3848410":"Hillshade Farm Playtest",
+	"3848420":"Beast Trigger",
 	"3848480":"Tosbik Around The World Demo",
 	"3848510":"Clean Minesweeper",
 	"3848530":"Megan AI",
@@ -258180,6 +258182,7 @@ window.game_names = {
 	"3854580":"HEAT DEATH: Earth",
 	"3854600":"Virago World",
 	"3854610":"The Soundtrack + Artbook of GODPROOF",
+	"3854680":"Lemonade Stand Simulator",
 	"3854740":"A Forgetful Loop 2025 Update Soundtrack",
 	"3854800":"Wrongly Accused",
 	"3854870":"ShipCrafter",
@@ -258506,6 +258509,7 @@ window.game_names = {
 	"3872020":"LivingForest Green Handguard Bat Wrapped With Wire",
 	"3873210":"Reel Evil: Video Store",
 	"3873390":"Custom Key Mapping",
+	"3873630":"Wind Chill Demo",
 	"3875550":"Fritz - Dein Schachtrainer 2",
 	"3875910":"Anno 117 - Closed Beta Ubisoft Activation"
 }
