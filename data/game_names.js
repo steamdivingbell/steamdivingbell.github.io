@@ -258166,6 +258166,7 @@ window.game_names = {
 	"3854580":"HEAT DEATH: Earth",
 	"3854600":"Virago World",
 	"3854610":"The Soundtrack + Artbook of GODPROOF",
+	"3854740":"A Forgetful Loop 2025 Update Soundtrack",
 	"3854800":"Wrongly Accused",
 	"3854870":"ShipCrafter",
 	"3854880":"Sunrider Legends Tactics",
