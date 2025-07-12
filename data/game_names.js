@@ -257645,6 +257645,7 @@ window.game_names = {
 	"3837250":"\u5916\u5356\u674e\u6c34 Demo",
 	"3837310":"\u8fdc\u5f81\u53ec\u5524(\u6000\u65e7\u7248)",
 	"3837380":"Majogami",
+	"3837390":"Pikabuu: STOP!",
 	"3837410":"Nudity Beach Simulator 2025",
 	"3837420":"Wild Wordopia",
 	"3837430":"\ud314\uad18\uace8\ubaa9 (Bagua Alley)",
