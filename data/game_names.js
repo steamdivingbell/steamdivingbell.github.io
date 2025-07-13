@@ -61024,6 +61024,7 @@ window.game_names = {
 	"982190":"Halloween Girl - Art Book",
 	"982200":"The Battle of Polytopia - Aquarion Tribe",
 	"982201":"The Battle of Polytopia - Elyrion Tribe",
+	"982210":"CUBESCAPE",
 	"982220":"Globesweeper",
 	"982250":"Spoils of Plunder",
 	"982260":"Blazing Beaks Character Editor",
@@ -257076,6 +257077,7 @@ window.game_names = {
 	"3821410":"Kebab Chefs - Bakery Shop",
 	"3821460":"Quest & Quarrel - A Tavern Adventure Playtest",
 	"3821470":"Fear The Unknown - Jamie Story",
+	"3821480":"CUBESCAPE Demo",
 	"3821490":"Magical Girl Fist Fight Demo",
 	"3821510":"Bleeping Spaceships",
 	"3821520":"Space Pinball",
@@ -258562,6 +258564,7 @@ window.game_names = {
 	"3873210":"Reel Evil: Video Store",
 	"3873390":"Custom Key Mapping",
 	"3873630":"Wind Chill Demo",
+	"3873930":"CozyRPG Playtest",
 	"3875550":"Fritz - Dein Schachtrainer 2",
 	"3875910":"Anno 117 - Closed Beta Ubisoft Activation"
 }
