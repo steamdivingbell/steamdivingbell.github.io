@@ -252724,6 +252724,7 @@ window.game_names = {
 	"3736940":"Off Road Stars",
 	"3736950":"Road To Wealth Demo",
 	"3736970":"Amakta",
+	"3736990":"Tegula - Rise of the Roman Republic",
 	"3737000":"Project: AMICA Demo",
 	"3737020":"Fecal Freighter Demo",
 	"3737030":"Dodgibi",
