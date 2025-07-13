@@ -257846,6 +257846,7 @@ window.game_names = {
 	"3842330":"Dungeon Dreams Wanderers",
 	"3842340":"Third Kind",
 	"3842360":"Diesel Fury: Outgun The Universe",
+	"3842370":"Zugaran",
 	"3842380":"\u6f02\u6d41\u3001\u306e\u3061\u3001\u5ea7\u7901",
 	"3842400":"Slaves of Magic Playtest",
 	"3842420":"Cumming of Age Demo",
