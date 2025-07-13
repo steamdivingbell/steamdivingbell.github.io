@@ -258156,6 +258156,7 @@ window.game_names = {
 	"3852520":"Spread The Love",
 	"3852600":"Rake",
 	"3852650":"The Podcaster",
+	"3852690":"WISH WITCH",
 	"3852720":"Strayed - America Skin Pack",
 	"3852740":"Mazzy",
 	"3852870":"\u7b8d\u306e\u5916\u308c\u305f\u30d3\u30b9\u30af\u30c9\u30fc\u30eb\u4e00\u6ec5\u5916\u9053\u30ce\u7ae0",
