@@ -250722,6 +250722,7 @@ window.game_names = {
 	"3702250":"Star Wars Outlaws - Naboo Nobility Bundle Ubisoft Activation",
 	"3702260":"Star Wars Outlaws - Desert Nomad Bundle",
 	"3702270":"Star Wars Outlaws - Desert Nomad Bundle Ubisoft Activation",
+	"3702340":"Eydigard Supporter Pack",
 	"3702350":"The Forgotten Mine Demo",
 	"3702360":"Pact Warden",
 	"3702370":"A Game About Mining an Asteroid",
