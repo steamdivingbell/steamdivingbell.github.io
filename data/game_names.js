@@ -257577,6 +257577,7 @@ window.game_names = {
 	"3831880":"RPG Maker MZ - Doomsday Zombies",
 	"3831890":"RPG Maker MZ - KR Legendary Palaces - Cerberus Tileset",
 	"3831900":"RPG Maker MZ - Winlu Fantasy Tileset - Destroyed Exterior",
+	"3831970":"SANITY PROTOCOL",
 	"3832000":"Hidden Cats - Ice Cream Day",
 	"3832020":"Desktank - Full Tank Upgrade",
 	"3832050":"Rising Fox",
@@ -258141,6 +258142,7 @@ window.game_names = {
 	"3848360":"Snakez Arena",
 	"3848410":"Hillshade Farm Playtest",
 	"3848420":"Beast Trigger",
+	"3848440":"Mimic Sleuth",
 	"3848480":"Tosbik Around The World Demo",
 	"3848510":"Clean Minesweeper",
 	"3848520":"PROJECT LEVELS",
@@ -258338,6 +258340,7 @@ window.game_names = {
 	"3854680":"Lemonade Stand Simulator",
 	"3854740":"A Forgetful Loop 2025 Update Soundtrack",
 	"3854800":"Wrongly Accused",
+	"3854820":"Lead & Blood Demo",
 	"3854870":"ShipCrafter",
 	"3854880":"Sunrider Legends Tactics",
 	"3854910":"Brian's Redemption Demo",
@@ -258734,5 +258737,6 @@ window.game_names = {
 	"3876070":"Will of the Mountainhopper Demo",
 	"3876180":"\u4e03\u5929\u9b54\u738b",
 	"3876420":"Ship Miner Playtest",
+	"3876570":"Slackjaw (Original Game Soundtrack)",
 	"3876590":"Cozy Factory"
 }
