@@ -258958,6 +258958,7 @@ window.game_names = {
 	"3876510":"Math Party Fezgugel Demo",
 	"3876570":"Slackjaw (Original Game Soundtrack)",
 	"3876590":"Cozy Factory",
+	"3876860":"\u591a\u7c73\u8bfa\uff01 Playtest",
 	"3877060":"Relaxing Sudoku and Futushiki",
 	"3877110":"Tidehaven: Ale & Trade Playtest",
 	"3877440":"Dungeon Parkour Block Puzzle Adventure Demo",
