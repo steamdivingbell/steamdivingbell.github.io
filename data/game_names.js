@@ -248803,6 +248803,7 @@ window.game_names = {
 	"3667420":"Jelli Nook",
 	"3667450":"PalWar Demo",
 	"3667460":"Balaspire",
+	"3667470":"Balaspire Demo",
 	"3667500":"Dage Prince: Mushroom Feast With Bros",
 	"3667510":"\u91cd\u751f\u4e4b\u6211\u7528\u6296\u9634\u6210\u4e3a\u7f8e\u56fd\u7687\u5e1d",
 	"3667530":"Wallpaper Top",
