@@ -257279,6 +257279,7 @@ window.game_names = {
 	"3821870":"Thunder of the DemonKing 1st Demo",
 	"3821880":"BeetleBall Playtest",
 	"3821890":"Parallel Convergence",
+	"3821910":"The Blind Warrior",
 	"3821930":"Joe and the lost pixels Demo",
 	"3821970":"MOULD",
 	"3822000":"UNIT ZERO",
