@@ -253002,6 +253002,7 @@ window.game_names = {
 	"3739570":"Ed & Edda: GRAND PRIX \u2013 Racing Champions Demo",
 	"3739610":"magnussoft\u00ae Screen Recorder Professional",
 	"3739620":"MIDNIGHT",
+	"3739640":"Living with Temptation 2: French Confessions Demo",
 	"3739650":"Vivid Days - Demo",
 	"3739660":"Mega Dimension Ripper 9000",
 	"3739680":"DOTI TD",
