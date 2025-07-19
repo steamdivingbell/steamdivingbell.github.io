@@ -256684,6 +256684,7 @@ window.game_names = {
 	"3804660":"Cafe Dash: Cooking, Diner Game - Chocolate Lover\u2019s Set",
 	"3804670":"Cafe Dash: Cooking, Diner Game - Festive Celebration Set",
 	"3804680":"Cafe Dash: Cooking, Diner Game - Thanksgiving Dinner Set",
+	"3804720":"My Tiny Garden Demo",
 	"3804750":"\u70c2\u547d\uff1a\u6c99\u6f20\u56da\u5f92",
 	"3804830":"Lonelight Playtest",
 	"3804840":"MILF's Plaza 2",
