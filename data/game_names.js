@@ -257769,6 +257769,7 @@ window.game_names = {
 	"3827390":"Dinosaur Shakespeare 3: They Are On The Moon Now And It Escalated Quickly - Bloodcore Edition",
 	"3827510":"Cube1 vs Cube2",
 	"3827530":"Retro Meadow Demo",
+	"3827550":"Scalemarch",
 	"3827560":"Cubenen Gardens: Befriend",
 	"3827570":"Brickotori",
 	"3827580":"Kayaks Don't Climb Demo",
