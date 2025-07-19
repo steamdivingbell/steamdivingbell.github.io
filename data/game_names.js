@@ -250626,6 +250626,7 @@ window.game_names = {
 	"3697170":"Module Miner",
 	"3697180":"Dicey Heroes",
 	"3697190":"Aurum",
+	"3697200":"Euclidean Night",
 	"3697210":"\u751f\u8096\u9547\u9b42\u66f2",
 	"3697230":"Wild Tower",
 	"3697240":"Idle Cultivation",
