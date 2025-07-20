@@ -133234,7 +133234,7 @@ window.game_names = {
 	"1954350":"C21 Weapon Pack",
 	"1954360":"Uncle Heff",
 	"1954380":"\u6316\u6398\u673a\u5927\u6218\u6316\u6398\u673a / Mine Clash",
-	"1954420":"\u9ebb\u96c0\u4e00\u756a\u8857 \u00d7 OVERLORD",
+	"1954420":"\u9ebb\u96c0\u4e00\u756a\u8857",
 	"1954430":"\u3010\u65e9\u54b2\u304d\u306e\u304f\u308d\u3086\u308a\u3011\u8ffd\u52a0\u30b7\u30ca\u30ea\u30aa\u300c\u82b1\u3068\u6a39\u306e\u5185\u7dd2\u306e\u8a711\u300d",
 	"1954440":"OneShotRogue",
 	"1954520":"\u4fee\u7406\u884c Dullpain",
