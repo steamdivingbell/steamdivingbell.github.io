@@ -100498,7 +100498,7 @@ window.game_names = {
 	"1528220":"Gordian Rooms 2: A curious island",
 	"1528230":"Tabbris Yor",
 	"1528240":"Super Dirt Racers",
-	"1528260":"AdventNEON",
+	"1528260":"Advent NEON",
 	"1528270":"Gem Deeps Demo",
 	"1528280":"THE HIGHLANDS",
 	"1528290":"Across the demon realm",
