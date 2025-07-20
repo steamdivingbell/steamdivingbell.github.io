@@ -242785,6 +242785,7 @@ window.game_names = {
 	"3562530":"\u4e3b\u64ad\u4e4b\u5fc3",
 	"3562540":"Forgetmenots",
 	"3562560":"Lost Horizon: Sky Relics Playtest",
+	"3562580":"Agefield High: Rock the School",
 	"3562590":"The Button Effect Playtest",
 	"3562600":"Spirittea - Travel Guide",
 	"3562610":"The Backrooms: Escape Soundtrack",
