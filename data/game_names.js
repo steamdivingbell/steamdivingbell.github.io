@@ -256544,6 +256544,7 @@ window.game_names = {
 	"3801120":"\u8001\u53f8G -\u4e0d\u585e\u8eca\uff0c\u53ea\u585e\u4f60-",
 	"3801160":"Putt It In Orbit Demo",
 	"3801170":"War Pigeons Demo",
+	"3801180":"Wu Xing Chess",
 	"3801190":"Touching the Female Swordsman",
 	"3801200":"Hello Space Demo",
 	"3801320":"Nelli The Seer",
