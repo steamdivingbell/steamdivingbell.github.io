@@ -224141,6 +224141,7 @@ window.game_names = {
 	"3278140":"Scorching Desert Demo",
 	"3278160":"Fatal Delivery",
 	"3278170":"Pirate Survivors",
+	"3278180":"Rebellion Stryker Demo",
 	"3278190":"Project: AMICA",
 	"3278200":"Scuttle Demo",
 	"3278220":"Slender - A Crooked Manifestation Demo",
@@ -258641,6 +258642,7 @@ window.game_names = {
 	"3847290":"Fracctal TCG Playtest",
 	"3847300":"Tempest Lost",
 	"3847320":"sfsim Playtest",
+	"3847330":"Don't Stop In Red Wood",
 	"3847340":"Joyful Masks Demo",
 	"3847370":"SteelFront Playtest",
 	"3847410":"Chronicles of Lussaria Demo",
@@ -259818,6 +259820,7 @@ window.game_names = {
 	"3886660":"My wife is an office manager",
 	"3886740":"Wildwood Down Soundtrack",
 	"3886770":"\u753b\u5251",
+	"3886930":"Hentai Summer Swap 2",
 	"3887010":"Blackjack Simulator 2025",
 	"3887020":"The Nobody Woods : Lucy Demo",
 	"3887140":"GreenGrass",
@@ -259839,6 +259842,7 @@ window.game_names = {
 	"3891000":"OVERSOULS",
 	"3891090":"Fruit Mountain ORIGINAL SOUNDTRACK",
 	"3891120":"101 Dogs Hidden in Dubai",
+	"3891360":"BunnyBarTalk",
 	"3892750":"\u661f\u9645\u98de\u884c",
 	"3893110":"Hexarx Dedicated Server"
 }
