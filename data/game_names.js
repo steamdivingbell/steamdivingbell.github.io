@@ -255831,6 +255831,7 @@ window.game_names = {
 	"3787420":"Toni Island Adventure: Art/Instruction Booklet",
 	"3787430":"Money Theft 2: Heist",
 	"3787450":"Card Eater",
+	"3787460":"Warframe: Valkyr Heirloom Collection",
 	"3787470":"Hermit",
 	"3787490":"The Alters: Benchmark Tool",
 	"3787520":"Echo Protocol: Escape Room",
