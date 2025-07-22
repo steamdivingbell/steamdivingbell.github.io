@@ -259548,6 +259548,7 @@ window.game_names = {
 	"3870680":"Pica",
 	"3870700":"Barbarian Saga: The Beastmaster Playtest",
 	"3870820":"Twin Trials",
+	"3870850":"Sunfinity",
 	"3870930":"Dockside Dreams \u2013 Fish & Cook Simulator",
 	"3870960":"Lost in Loss",
 	"3870990":"Silky Road",
