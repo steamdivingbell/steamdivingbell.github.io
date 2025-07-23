@@ -257606,6 +257606,7 @@ window.game_names = {
 	"3819720":"Soulrift",
 	"3819730":"Secret Spots",
 	"3819740":"Elemental Rush Demo",
+	"3819770":"Dragon Ruins II: Aftermath",
 	"3819790":"Jackpot Dungeon",
 	"3819820":"Butterfly, Learn to Fly!",
 	"3819830":"Chicken Defense",
