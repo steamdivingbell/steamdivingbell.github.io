@@ -260546,5 +260546,6 @@ window.game_names = {
 	"3903150":"\u041f\u0443\u0442\u044c \u0411\u043e\u0433\u0430\u0442\u044b\u0440\u044f: \u041f\u0440\u043e\u043b\u043e\u0433",
 	"3903160":"Whispering Fog Demo",
 	"3903230":"Anomaly Observer Demo",
-	"3904070":"Trade Tycoon Life Simulator Demo"
+	"3904070":"Trade Tycoon Life Simulator Demo",
+	"3904680":"\u68a6\u4e4b\u7403 Playtest"
 }
