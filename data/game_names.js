@@ -256951,6 +256951,7 @@ window.game_names = {
 	"3803050":"Reflections of Life: Dream Box Collector's Edition",
 	"3803080":"City of Stories: Stephan's Journey Collector's Edition",
 	"3803090":"Insomnia Demo",
+	"3803120":"DWARRF: A Pinball Roguelike Demo",
 	"3803130":"Space Conquest AI - AIGM",
 	"3803230":"Beyond the Pitch",
 	"3803250":"Exosystem",
@@ -257065,6 +257066,7 @@ window.game_names = {
 	"3805400":"Bonds of the Zodiac",
 	"3805410":"Night of the Extinct",
 	"3805420":"A Few Quick Matches",
+	"3805450":"Legends of Hiro",
 	"3805460":"\u9a71\u90aa\u7ec3\u4e60\u751f",
 	"3805490":"Strawberry Test",
 	"3805500":"Iron Tangle Breakout",
@@ -260670,6 +260672,7 @@ window.game_names = {
 	"3903230":"Anomaly Observer Demo",
 	"3903620":"Just Another Night",
 	"3904070":"Trade Tycoon Life Simulator Demo",
+	"3904120":"go cycling",
 	"3904240":"Vault of Fallen Demo",
 	"3904680":"\u68a6\u4e4b\u7403 Playtest",
 	"3904730":"Inspector Detector Playtest"
