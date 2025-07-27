@@ -257139,6 +257139,7 @@ window.game_names = {
 	"3806410":"Chef's Journey Demo",
 	"3806440":"I/O",
 	"3806450":"Madman's Maze",
+	"3806490":"\u866b\u65cf\u5e78\u5b58\u8005\uff1a\u65e0\u5c3d\u56f4\u653b Demo",
 	"3806510":"Decade Demo",
 	"3806520":"SENKOU",
 	"3806530":"OneMore",
