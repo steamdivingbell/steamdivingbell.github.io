@@ -242162,6 +242162,7 @@ window.game_names = {
 	"3550190":"2-Headed Boy",
 	"3550200":"\u82f1\u96c4\u30a8\u30f3\u30d6\u30ec\u30e0 \uff5eHero Emblem\uff5e",
 	"3550210":"Another Lap",
+	"3550220":"Phantom Vice Auto",
 	"3550230":"Dragon Attack Mythologies: A Night Wolf Revenge Demo",
 	"3550240":"Finding Pots & Pets",
 	"3550250":"\u88c5\u673a\u5a9b",
