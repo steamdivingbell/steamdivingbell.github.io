@@ -242054,6 +242054,7 @@ window.game_names = {
 	"3548630":"Mosaica: Arboreal Demo",
 	"3548650":"Rogue Candy",
 	"3548670":"Exo-Calibre Soundtrack",
+	"3548740":"Swiftrace Canyon Demo",
 	"3548750":"Alliance Peacefighter Demo",
 	"3548760":"Hotel Abyss",
 	"3548770":"Nobody Expects Exploding Immortal Pigeon",
