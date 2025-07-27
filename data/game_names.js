@@ -260124,6 +260124,7 @@ window.game_names = {
 	"3874560":"Legend Battles: Bellona",
 	"3874570":"Slightly Overweight Superhero and the seven levels of death Demo",
 	"3874580":"Nodosis",
+	"3874660":"The Lord of the Rings: Return to Moria\u2122 Durin's Folk Expansion",
 	"3874700":"\u5996\u604b\u897f\u6e38 Demo",
 	"3874730":"Survive Society Demo",
 	"3874760":"\u5929\u5916\u6765\u5ba2",
