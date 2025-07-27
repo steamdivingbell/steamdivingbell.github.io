@@ -259371,6 +259371,7 @@ window.game_names = {
 	"3855380":"KAYAKING",
 	"3855480":"Project Judgement",
 	"3855490":"Midnight Shifts with Femboy Demo",
+	"3855510":"Mango",
 	"3855550":"CelestialWardens",
 	"3855560":"\u4fa0\u5f71\u75f4\u5251\u5f55",
 	"3855610":"Perception: Heart and Mind Demo",
