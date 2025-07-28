@@ -255074,7 +255074,7 @@ window.game_names = {
 	"3768420":"Pirate Den",
 	"3768430":"Pinballers",
 	"3768440":"Rumbral Demo",
-	"3768450":"Better Fortress 2",
+	"3768450":"Better Fortress 2 - Beta",
 	"3768460":"Astra Quest Demo",
 	"3768480":"Cauldron - Soundtrack",
 	"3768490":"Quantum Threshold",
