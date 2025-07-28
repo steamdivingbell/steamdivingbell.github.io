@@ -254183,7 +254183,7 @@ window.game_names = {
 	"3753090":"85Top",
 	"3753100":"Drift.Wav II",
 	"3753110":"Speed Surge Demo",
-	"3753120":"T2: Rok Match",
+	"3753120":"Turok 2: Rok Match",
 	"3753130":"Monster Tower Demo",
 	"3753150":"Drag'N Dungeon",
 	"3753160":"Drag'N Dungeon Demo",
