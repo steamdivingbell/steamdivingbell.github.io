@@ -260881,6 +260881,7 @@ window.game_names = {
 	"3903160":"Whispering Fog Demo",
 	"3903200":"DAMN Gravity!",
 	"3903230":"Anomaly Observer Demo",
+	"3903520":"Arm the Hero",
 	"3903580":"Titanic",
 	"3903610":"Hear The Bell Toll",
 	"3903620":"Just Another Night",
