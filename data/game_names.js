@@ -245802,6 +245802,7 @@ window.game_names = {
 	"3609260":"Idle Zombie Wave: Survivors",
 	"3609270":"Pascal's Requiem Soundtrack",
 	"3609290":"\u6708\u4e4b\u5195 Playtest",
+	"3609300":"Steel Century Groove Demo",
 	"3609310":"Wanderlust: The Magnificent Journey Demo",
 	"3609320":"Bombun",
 	"3609330":"Driftwood Diner",
