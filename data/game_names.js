@@ -260245,6 +260245,7 @@ window.game_names = {
 	"3869440":"En.Fem.E No.9 - The Factory",
 	"3869490":"GeneBreak",
 	"3869500":"VOIMA",
+	"3869510":"VOIMA Demo",
 	"3869550":"ultimate frolf chaos! - the frolfverse",
 	"3869560":"Bound in a Nutshell in Infinite Space",
 	"3869620":"The Great Villainess: Strategy of Lily - SOUNDTRACK",
@@ -261164,6 +261165,7 @@ window.game_names = {
 	"3909770":"Brew & Bloom",
 	"3909830":"Ballerspiel Playtest",
 	"3909980":"IdleZomb Playtest",
+	"3910040":"\u300a\u660e\u672b\uff1a\u6e0a\u865a\u4e4b\u57df\u300b\u5f71\u4e4b\u5203\u96f6",
 	"3910080":"Trimjob",
 	"3910520":"Psebay Demo"
 }
