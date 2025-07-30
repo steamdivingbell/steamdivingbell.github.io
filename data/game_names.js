@@ -240628,6 +240628,7 @@ window.game_names = {
 	"3526250":"Mik Playtest",
 	"3526260":"Kinetic Canvas",
 	"3526280":"Star Scum Demo",
+	"3526290":"Seasons of Solitude Playtest",
 	"3526300":"Wildermyth Soundtrack",
 	"3526310":"Odyssey Times Demo",
 	"3526320":"There's Nothing Underground Demo",
