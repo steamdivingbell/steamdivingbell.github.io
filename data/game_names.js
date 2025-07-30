@@ -259065,6 +259065,7 @@ window.game_names = {
 	"3841630":"Supporter Pack",
 	"3841640":"PANGIT",
 	"3841720":"Under the Table",
+	"3841730":"My Summer Vacation",
 	"3841740":"Delirium: Echoes of the Domino Demo",
 	"3841750":"Campfire Stories: The Giant of Green Peaks",
 	"3841760":"THE FINALS - Lotus Reaper Set",
