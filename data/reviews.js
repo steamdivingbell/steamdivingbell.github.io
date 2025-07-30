@@ -33821,9 +33821,13 @@ window.reviews = {
 	"3786930":{"positive":14,"total":14},
 	"3789840":{"positive":19,"total":19},
 	"3793930":{"positive":63,"total":67},
-	"3795670":{"positive":24,"total":24},
-	"3795920":{"positive":20,"total":20},
-	"3800340":{"positive":21,"total":23},
-	"3802400":{"positive":10,"total":10},
+	"3795560":{"positive":17,"total":17},
+	"3795670":{"positive":25,"total":25},
+	"3795920":{"positive":32,"total":33},
+	"3800340":{"positive":271,"total":295},
+	"3801320":{"positive":32,"total":33},
+	"3804070":{"positive":20,"total":20},
+	"3804190":{"positive":17,"total":18},
+	"3805710":{"positive":37,"total":38},
 	"3873650":{"positive":14,"total":14}
 }
