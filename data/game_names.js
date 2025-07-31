@@ -222215,6 +222215,7 @@ window.game_names = {
 	"3249320":"Strangler",
 	"3249330":"Colonies of The Remnant Demo",
 	"3249340":"Spire, Surge, and Sea",
+	"3249350":"Spire, Surge, and Sea Demo",
 	"3249360":"Math Dash",
 	"3249370":"Cat Warfare - Gianni Gear",
 	"3249380":"Piece by Piece",
