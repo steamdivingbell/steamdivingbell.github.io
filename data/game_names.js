@@ -261729,6 +261729,7 @@ window.game_names = {
 	"3907090":"CIVIREVIVAL",
 	"3907110":"Up Cards",
 	"3907120":"Sweet Pirate",
+	"3907210":"\u6700\u7d42\u9b54\u738b\u662f\u5cb3\u6bcd",
 	"3907280":"Toy Zombies",
 	"3907320":"Shop",
 	"3907360":"\u4e03\u5929\u9b54\u738b Soundtrack",
