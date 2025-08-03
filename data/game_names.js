@@ -259255,6 +259255,7 @@ window.game_names = {
 	"3840970":"Casey Noir and Carved Pumpkin's Latte",
 	"3841000":"Dominated by Yandere Goth Girlfriend 3: On the Beach",
 	"3841020":"Snail Mail Demo",
+	"3841040":"Lilialette's Hustle: Getting My Hands Dirty to Save My Guild",
 	"3841080":"Little One Demo",
 	"3841110":"Attorney Disbarment Adventure",
 	"3841160":"Not a Dream Job",
