@@ -261238,6 +261238,7 @@ window.game_names = {
 	"3887380":"Sweet Life ~Our happy days,until they're tainted by cuckoldry~ Demo",
 	"3887410":"Summit Drive a game by Luke Kim Demo",
 	"3887490":"City of Spells Demo",
+	"3887500":"The Last Purge",
 	"3887540":"Jump Greed",
 	"3887580":"RGB",
 	"3887600":"Hit! Spin! Watermelon Party",
