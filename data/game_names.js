@@ -261989,6 +261989,8 @@ window.game_names = {
 	"3922410":"Plantverk: Perfectly Plantastic Plant Simulator",
 	"3922760":"Claws of the Forest",
 	"3923050":"Slide Soldiers",
+	"3923280":"Word Worm",
+	"3923380":"Word Worm Demo",
 	"3923400":"from by Battlefield",
 	"3923560":"The Hero Of Pixel Spire Demo",
 	"3923870":"Beyond the Grove Demo",
