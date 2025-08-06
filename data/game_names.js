@@ -262220,6 +262220,7 @@ window.game_names = {
 	"3920630":"Galleria",
 	"3920650":"\u6211\u4eec\u6b7b\u68cb Demo",
 	"3920690":"Rock Crusher Soundtrack",
+	"3920730":"Carceri Demo",
 	"3920770":"Girls' Dorm Wars",
 	"3920830":"Maw the Moon Playtest",
 	"3920870":"The Gazebo",
@@ -262296,6 +262297,9 @@ window.game_names = {
 	"3927640":"LivingForest Baton",
 	"3928090":"Whispers Among the Poppies Demo",
 	"3928130":"Synthrun Demo",
+	"3928610":"Irradiate 235 Demo",
 	"3928620":"The Shadow Cosmos Demo",
+	"3929650":"Mafate Demo",
+	"3930270":"Undead Exile Demo",
 	"3931370":"Panic Sell - GOLD"
 }
