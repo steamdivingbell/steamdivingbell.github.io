@@ -233353,6 +233353,7 @@ window.game_names = {
 	"3413800":"Hotel Tales",
 	"3413810":"\u0130stanbul Puzzle",
 	"3413820":"\u8d5b\u535a\u7ade\u6280\u573a Demo",
+	"3413830":"Stranded at Sea",
 	"3413840":"Tolampis Trial",
 	"3413850":"FloraHive",
 	"3413860":"The Maker Way Playtest",
@@ -238083,6 +238084,7 @@ window.game_names = {
 	"3484750":"Tailor Simulator",
 	"3484760":"My First Convention Is A Trap Demo",
 	"3484780":"True Roman",
+	"3484790":"Fractal",
 	"3484800":"Hivaneph - The Legend of Elles",
 	"3484850":"Scam Centre Simulator: Under Kingdom",
 	"3484860":"\u8ff7\u96fe\u4e4b\u6751Misty Village",
@@ -259309,6 +259311,7 @@ window.game_names = {
 	"3837230":"Codename: Black Crow",
 	"3837240":"Mecharashi Playtest",
 	"3837250":"\u5916\u5356\u674e\u6c34 Demo",
+	"3837280":"Born Without Rights",
 	"3837300":"\u9006\u52ab\u884c Against Tribulation",
 	"3837310":"\u8fdc\u5f81\u53ec\u5524(\u6000\u65e7\u7248)",
 	"3837350":"Staffer Retro",
@@ -261768,6 +261771,7 @@ window.game_names = {
 	"3893700":"Dream City",
 	"3893710":"Dream City Demo",
 	"3893730":"Doomed Inheritance",
+	"3893740":"ONE BYE ONE",
 	"3893780":"\u30e4\u30f3\u30c7\u30ec\u30e1\u30a4\u30c9~Love-Crazed Maid~ Demo",
 	"3893800":"Linked Souls Playtest",
 	"3893830":"Brew or Die",
@@ -262613,6 +262617,7 @@ window.game_names = {
 	"3927350":"Skyborne Legend Playtest",
 	"3927460":"Motorcycle Ride: Infinity Demo",
 	"3927480":"Terra Pit Playtest",
+	"3927600":"Hallowed Core",
 	"3927620":"LivingBattle Car Muscle",
 	"3927640":"LivingForest Baton",
 	"3927780":"Loot & Ledger",
@@ -262660,5 +262665,6 @@ window.game_names = {
 	"3933680":"Tiny Bookshop Soundtrack",
 	"3933690":"Tiny Bookshop Digital Artbook",
 	"3934520":"The Quiet Hum of a Lonely Heart",
-	"3936810":"Echoes of Forgotten Dreams Digital Art Book"
+	"3936810":"Echoes of Forgotten Dreams Digital Art Book",
+	"3940550":"Stormgate - Ashes of Earth Campaign"
 }
