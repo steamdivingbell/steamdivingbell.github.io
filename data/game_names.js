@@ -262552,6 +262552,7 @@ window.game_names = {
 	"3918540":"Elementail DEMO",
 	"3918570":"Yes",
 	"3918610":"Hentai Train",
+	"3918620":"\u6f02\u79fb\u5c0f\u63a8\u8f66",
 	"3918710":"YGGDRA REFRAIN Demo",
 	"3918750":"Coincidences? Demo",
 	"3918910":"Dice Gambit Soundtrack",
