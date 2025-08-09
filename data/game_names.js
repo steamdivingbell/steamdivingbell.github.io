@@ -262947,6 +262947,7 @@ window.game_names = {
 	"3937340":"Barzakh: Star Gardener Playtest",
 	"3937350":"Gravehold: Survival",
 	"3937530":"Super Pinball Adventure Demo",
+	"3937840":"Galactix",
 	"3937950":"My Dear Farm",
 	"3940550":"Stormgate - Ashes of Earth Campaign",
 	"3941050":"Snogbert Demo",
