@@ -260093,6 +260093,7 @@ window.game_names = {
 	"3852040":"Chaos Chain Supporter Pack 3 DLC",
 	"3852060":"Football Academy Manager",
 	"3852130":"Akashic",
+	"3852140":"DEFEAT THE GOBLIN KING Demo",
 	"3852160":"Baito Fight!!: Part-time Devil Hunter",
 	"3852170":"Die to Survive Playtest",
 	"3852180":"Hexateria",
