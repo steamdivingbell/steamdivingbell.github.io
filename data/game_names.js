@@ -238682,6 +238682,7 @@ window.game_names = {
 	"3493110":"City Park Simulator",
 	"3493120":"Magnet Jack Soundtrack",
 	"3493130":"Rhythm Realm Demo",
+	"3493140":"Demonic",
 	"3493150":"Rival Roads Car Racing",
 	"3493160":"IZON. Demo",
 	"3493170":"Schrodinger's Cat Burglar Demo",
