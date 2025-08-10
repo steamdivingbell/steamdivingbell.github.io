@@ -261816,6 +261816,7 @@ window.game_names = {
 	"3891190":"Kero Kero Cowboy Demo",
 	"3891230":"Ondine: Prototype",
 	"3891280":"Strayed - Summer Food Pack",
+	"3891310":"Space Mantlet",
 	"3891360":"BunnyBarTalk",
 	"3891370":"\u8352\u91ce\u6c42\u751f",
 	"3891390":"Raidbound Demo",
