@@ -262618,6 +262618,7 @@ window.game_names = {
 	"3917930":"Fantasy Grounds - Solasta Campaign Rulebook",
 	"3917960":"Silent Watcher Demo",
 	"3917980":"The Demons Told Me to Make This Game Soundtrack",
+	"3918000":"RED OPS - Artbook",
 	"3918020":"Tone Demo",
 	"3918050":"Tumble Egg Playtest",
 	"3918110":"Horny Sluts in Space",
