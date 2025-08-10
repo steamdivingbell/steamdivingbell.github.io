@@ -247698,6 +247698,7 @@ window.game_names = {
 	"3635970":"Chick",
 	"3635990":"Open Fire",
 	"3636000":"Fortress Frenzy",
+	"3636040":"Plantasia Soundtrack",
 	"3636080":"Harvey's Nine Lives",
 	"3636090":"Blood Curse Legions Demo",
 	"3636100":"SHEEP",
