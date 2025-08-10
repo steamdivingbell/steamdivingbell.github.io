@@ -245385,6 +245385,7 @@ window.game_names = {
 	"3598800":"\u3068\u3076\u3001\u3068\u308a\u3002 Demo",
 	"3598810":"Viking Breaker Demo",
 	"3598820":"Viking Breaker Playtest",
+	"3598830":"Lonely Bugs",
 	"3598840":"Nightmare Journey Demo",
 	"3598850":"EvoCell BioClicker Demo",
 	"3598860":"Swann's Song",
@@ -262822,6 +262823,7 @@ window.game_names = {
 	"3922880":"SteamPanic: Last Shift",
 	"3922950":"Abandoned Passage",
 	"3922970":"Ollsgar'd Playtest",
+	"3922980":"Neon Futa Mecha-Lust Apocalypse",
 	"3923010":"VR Blasteroids Demo",
 	"3923050":"Slide Soldiers",
 	"3923160":"Realtime Screen OCR Translator",
@@ -262991,6 +262993,7 @@ window.game_names = {
 	"3931240":"Soul Scar",
 	"3931250":"Dreamcatcher 2003",
 	"3931340":"Lexis Playtest",
+	"3931350":"Genki Break! Demo",
 	"3931370":"Panic Sell - GOLD",
 	"3931490":"Tales of Tonbrook",
 	"3931560":"Pigeon Hunter Playtest",
@@ -263043,6 +263046,7 @@ window.game_names = {
 	"3937950":"My Dear Farm",
 	"3939050":"The Last Purge Demo",
 	"3940550":"Stormgate - Ashes of Earth Campaign",
+	"3940620":"Exploding Judo Federation Demo",
 	"3941050":"Snogbert Demo",
 	"3941410":"Overcome Your Fears Demo"
 }
