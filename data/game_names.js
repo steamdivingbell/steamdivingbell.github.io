@@ -241912,6 +241912,7 @@ window.game_names = {
 	"3542480":"zakon Demo",
 	"3542500":"Please, Watch The Artwork",
 	"3542510":"CatTris Demo",
+	"3542520":"Oscillation",
 	"3542540":"Calm Before the Storm",
 	"3542570":"Somniora: Chapter 1 Demo",
 	"3542600":"Rodobus Simulador",
