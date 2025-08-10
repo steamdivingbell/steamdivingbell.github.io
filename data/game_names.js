@@ -261999,6 +261999,7 @@ window.game_names = {
 	"3896070":"30 minutes until my brain dies",
 	"3896080":"FAST: Casters of Chaos",
 	"3896110":"No Food?",
+	"3896120":"Ascention Suvivor",
 	"3896140":"Blightened Demo",
 	"3896190":"Sunrider Legends Tactics OP + ED Song",
 	"3896200":"Cousin Catcher",
