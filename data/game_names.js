@@ -213401,7 +213401,7 @@ window.game_names = {
 	"3117550":"Monster Hunter Wilds - Gesture: Rearing To Go",
 	"3117560":"Monster Hunter Wilds - Gesture Set Vol. 2",
 	"3117600":"Scaler",
-	"3117620":"Robabekya",
+	"3117620":"Rob Uncle Sam",
 	"3117630":"\u661f\u306e\u3057\u308b\u3079",
 	"3117640":"Deus Mantle Demo",
 	"3117650":"Nucleuz Underground Demo",
