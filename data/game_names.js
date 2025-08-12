@@ -263163,6 +263163,7 @@ window.game_names = {
 	"3937350":"Gravehold: Survival",
 	"3937530":"Super Pinball Adventure Demo",
 	"3937840":"Galactix",
+	"3937940":"Ripperdoc Simulator",
 	"3937950":"My Dear Farm",
 	"3938090":"Bounce Cat - Support Skin",
 	"3938150":"Merlin Survivors",
