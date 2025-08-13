@@ -257994,6 +257994,7 @@ window.game_names = {
 	"3807530":"Chillout",
 	"3807550":"Mycopsychosys: Remastered",
 	"3807560":"Crimson Horn",
+	"3807570":"Coin Pusher Reloaded",
 	"3807600":"Zortch 2 Demo",
 	"3807620":"Brian's Redemption",
 	"3807630":"Chess Run",
