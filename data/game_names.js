@@ -257315,6 +257315,7 @@ window.game_names = {
 	"3795350":"\u4ec5\u4f60\u4e00\u4eba Demo",
 	"3795360":"Strange Hunting Grounds Demo",
 	"3795370":"Pintern",
+	"3795380":"\u9f8d\u606f\uff1a\u795e\u5bc2",
 	"3795390":"Thalia Demo",
 	"3795410":"Zombie Jazz",
 	"3795420":"Across the Obelisk - Spiders & Temples",
