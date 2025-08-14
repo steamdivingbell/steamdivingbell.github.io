@@ -263467,6 +263467,7 @@ window.game_names = {
 	"3928200":"Horror in the forest",
 	"3928210":"\u753b\u5251 Demo",
 	"3928240":"Starvedge Free Sample",
+	"3928260":"Meteor Strike Deluxe",
 	"3928270":"The Barber Shop",
 	"3928290":"Black Ox Demo",
 	"3928300":"Mirelaine",
