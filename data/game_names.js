@@ -263602,6 +263602,5 @@ window.game_names = {
 	"3948790":"Arctic Roll",
 	"3949850":"Fallen Demo",
 	"3949870":"Wonderdeck",
-	"3950340":"Deck of Mandate Demo",
 	"3950470":"UnrealCam Demo"
 }
