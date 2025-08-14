@@ -224681,6 +224681,7 @@ window.game_names = {
 	"3282560":"DevilReversi Demo",
 	"3282580":"Rocket Simulator Demo",
 	"3282590":"Hidalgo Demo",
+	"3282600":"Crowded - A Crow City Builder",
 	"3282620":"Rolus in the Outskirts Demo",
 	"3282640":"Insurrection Playtest",
 	"3282650":"Life Before Death",
@@ -260612,6 +260613,7 @@ window.game_names = {
 	"3857880":"Slide Hexagon",
 	"3857900":"Hentai Night Club",
 	"3857950":"HH TRAP: Reality's Glitch",
+	"3857960":"Lost in Random: The Eternal Die - Stitched in Style",
 	"3857970":"You are a Fucking Idiot!",
 	"3857980":"\u5c4b\u91cc\u6709\u4eba\uff1f",
 	"3858040":"Spiny & Chilly",
@@ -263321,6 +263323,7 @@ window.game_names = {
 	"3926390":"Cardygon",
 	"3926400":"\u661f\u8230\u9ab0\uff08Starship Dice\uff09",
 	"3926520":"Stellar Raiders Demo",
+	"3926570":"Hemomancer Playtest",
 	"3926610":"White Eternal",
 	"3926620":"Night Shift at the Gym",
 	"3926630":"Crapshoot",
@@ -263677,5 +263680,6 @@ window.game_names = {
 	"3949870":"Wonderdeck",
 	"3950340":"Deck of Mandate Demo",
 	"3950470":"UnrealCam Demo",
+	"3951030":"Return to Trahulara Demo",
 	"3956870":"STONKS-9800: Karaoke Editor"
 }
