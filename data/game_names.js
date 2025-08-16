@@ -82874,6 +82874,7 @@ window.game_names = {
 	"1282370":"GraFi Easter",
 	"1282380":"Sheepdog Simulator",
 	"1282390":"Fast Gear",
+	"1282400":"Fast Gear Demo",
 	"1282410":"Hard West 2",
 	"1282420":"Nordic Warriors Demo",
 	"1282440":"3ZENTREE - 3D NODE BASED INFORMATION SYSTEM",
