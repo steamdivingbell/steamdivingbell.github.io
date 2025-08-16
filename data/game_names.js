@@ -252845,6 +252845,7 @@ window.game_names = {
 	"3718850":"StarbaseSim Playtest",
 	"3718870":"NetDive",
 	"3718880":"Fast Hands",
+	"3718900":"\u6df7\u4e71\u4e16\u754c",
 	"3718920":"Wanna Get Lucky?",
 	"3718940":"Phoenix's Faye Playtest",
 	"3718960":"Bones: Wandering Soul",
