@@ -231214,6 +231214,7 @@ window.game_names = {
 	"3379750":"Manifest369",
 	"3379760":"\u5168\u57ce\u8ffd\u7f093-\u8b66\u65b9\u8f66\u8f86\u53054",
 	"3379770":"Quartermain and the Cult of Cthulhu",
+	"3379780":"Dash Dash Dead",
 	"3379790":"Mining Mechs - Camel Chaos",
 	"3379820":"\u7535\u7ade\u6559\u7236\u82f1\u96c4\u6269\u5c55\u5305",
 	"3379860":"Chinese Strange Stories",
