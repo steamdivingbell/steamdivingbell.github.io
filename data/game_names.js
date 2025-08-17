@@ -263877,6 +263877,7 @@ window.game_names = {
 	"3936830":"Bastionfall",
 	"3936860":"Robo Balls",
 	"3936870":"Bastionfall Demo",
+	"3936900":"Stacked!",
 	"3936920":"The Demon's Apple - Otome Game",
 	"3937070":"Lost Twins 2 Soundtrack",
 	"3937120":"Lost Twins 2 - Digital ArtBook",
@@ -264175,5 +264176,6 @@ window.game_names = {
 	"3957280":"ClassBoom Demo",
 	"3957550":"SAVEN Demo",
 	"3957820":"\u771f\u76f8\u526a\u8f91\u5e08(Redacted) Demo",
-	"3958090":"Fantasy Football Tactics Demo"
+	"3958090":"Fantasy Football Tactics Demo",
+	"3961240":"Antidote city hall Demo"
 }
