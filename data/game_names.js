@@ -245383,6 +245383,7 @@ window.game_names = {
 	"3596010":"Ballmaster Demo",
 	"3596020":"Neon Abyss 2 Alpha Playtest",
 	"3596030":"Sweepin' XS",
+	"3596040":"Time Takers",
 	"3596050":"Angel Legion-DLC Interstellar Guide D",
 	"3596070":"Book Of The Abyss Playtest",
 	"3596080":"Defense&Making Demo",
@@ -262108,6 +262109,7 @@ window.game_names = {
 	"3883600":"DOXU",
 	"3883680":"Scoundrel Solitaire",
 	"3883690":"Death Relives Soundtrack",
+	"3883700":"Time Takers Playtest",
 	"3883730":"100 Zombie Cats  - Artbook",
 	"3883750":"100 Zombie Cats Soundtrack",
 	"3883760":"Stretcher Together",
@@ -264262,6 +264264,7 @@ window.game_names = {
 	"3946670":"BLACK SECTOR",
 	"3946710":"Faint Echo Demo",
 	"3946720":"Night Club Simulator: Party King Demo",
+	"3946760":"Tictactoe Sets",
 	"3946780":"Antimatter Demo",
 	"3946790":"PIXEL PLACE",
 	"3946810":"\u6211\u4e0e\u4f60\u5171\u5ea6\u7684\u4e03\u65e5",
@@ -264356,6 +264359,7 @@ window.game_names = {
 	"3951030":"Return to Trahulara Demo",
 	"3951160":"GAZAR Demo",
 	"3951360":"3-Bit Explorer",
+	"3951450":"Escape the Void",
 	"3951470":"Farm by the Black Hole",
 	"3951510":"Paper Xian Playtest",
 	"3951570":"Find 100 Ducks and Blast Them...IN SPACE!!!",
@@ -264446,6 +264450,8 @@ window.game_names = {
 	"3959720":"Our Little Brothers",
 	"3960120":"ZeroZeta",
 	"3960440":"Space Memory: Artiodactyls",
+	"3960510":"Galacard: Ackian Archives",
 	"3960820":"Escape The Cradle Demo",
-	"3961240":"Antidote city hall Demo"
+	"3961240":"Antidote city hall Demo",
+	"3962540":"A Ragdoll Rage Game"
 }
