@@ -216022,6 +216022,7 @@ window.game_names = {
 	"3157060":"Beauty Jigsaw - Image Pack",
 	"3157070":"NecroCatic Clicker",
 	"3157160":"Cupid's Chatroom",
+	"3157170":"Data Fantasy - \u6570\u636e\u5e7b\u60f3",
 	"3157200":"Cupid's Chatroom Demo",
 	"3157220":"Cozy Desktop: Relaxing Weather and Atmosphere",
 	"3157230":"Beauty Solitaire - Image Pack",
