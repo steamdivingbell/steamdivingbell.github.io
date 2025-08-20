@@ -242152,6 +242152,7 @@ window.game_names = {
 	"3543590":"\u68a6\u5883\u8fb9\u754c Demo",
 	"3543600":"Terradune Demo",
 	"3543610":"Hepatomancy Demo",
+	"3543620":"Wiz Hunter",
 	"3543640":"\u51e1\u4eba\u795e\u5c07\u50b3",
 	"3543660":"Herald: The Interactive Period Drama \u2013 Complete Edition Demo",
 	"3543680":"Neon Apex: Beyond the Limit Demo",
@@ -255062,6 +255063,7 @@ window.game_names = {
 	"3753040":"The Bullet Hell Demo",
 	"3753050":"Facility of Rizriz",
 	"3753060":"Urban Disc Golf",
+	"3753070":"Wuilsafe: Roots",
 	"3753080":"Inn Another World",
 	"3753090":"85Top",
 	"3753100":"Drift.Wav II",
@@ -264426,6 +264428,7 @@ window.game_names = {
 	"3947360":"Hero 2048",
 	"3947400":"\u96f7\u4e9a\u7684\u82b1\u56ed\u4e16\u754c\u5927\u5192\u9669 Soundtrack",
 	"3947430":"Susurros de M\u00e9xico: La noche de la casada Demo",
+	"3947450":"LOST: Another Realm (Prologue)",
 	"3947520":"The Shadow Of Ayutthaya",
 	"3947540":"childhood friends",
 	"3947570":"You suck and I hate you: part 2",
@@ -264555,6 +264558,7 @@ window.game_names = {
 	"3953760":"Cozy Pet Life Idle Demo",
 	"3953840":"Baduk Challenge",
 	"3953860":"BURGER, NO PLEASE!",
+	"3953920":"Egg Souls Playtest",
 	"3954110":"Grand Sands",
 	"3954290":"The Search For Above Average Life",
 	"3954380":"Super Flying Vroom Vroom",
@@ -264651,5 +264655,6 @@ window.game_names = {
 	"3964320":"HER TREES : PUZZLE DREAM Demo",
 	"3964730":"Infinite Game Cartridge Collection - Green Gunner",
 	"3966400":"Den-Den: Tokyo Horror Demo",
+	"3967570":"Turning The Tide Demo",
 	"3968510":"Secrets of the Silent School Demo"
 }
