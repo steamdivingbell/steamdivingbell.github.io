@@ -232566,6 +232566,7 @@ window.game_names = {
 	"3398510":"Voices of Freedom Demo",
 	"3398520":"The Talos Principle: Reawakened Demo",
 	"3398560":"Slice & Dice: Pizza Shop Simulator",
+	"3398570":"Bunny Battle Nemesis",
 	"3398580":"SlimeClimb",
 	"3398600":"Eclipse Casino",
 	"3398610":"TRAIT Demo",
@@ -255773,6 +255774,7 @@ window.game_names = {
 	"3762840":"The Minigames Game",
 	"3762850":"\u6c49\u6b66\u5927\u5e1d\u4f20-\u865e\u59ec\u4e13\u5c5e\u98d2\u88c5DLC",
 	"3762860":"\u6c49\u6b66\u5927\u5e1d\u4f20-\u6708\u6c0f\u5973\u738b\u4e13\u5c5e\u98d2\u88c5DLC",
+	"3762880":"God of the Forge",
 	"3762890":"Shroomer Demo",
 	"3762900":"Hell's Bells",
 	"3762940":"Urban Disc Golf Playtest",
@@ -256721,6 +256723,7 @@ window.game_names = {
 	"3778300":"Super Cabbage Kabumi Demo",
 	"3778310":"Recital of the Heart Demo",
 	"3778320":"Bear Defence Situation",
+	"3778330":"Castillon Playtest",
 	"3778340":"Monday Syndrome Playtest",
 	"3778350":"Chess of Mana",
 	"3778370":"Flowerbud",
@@ -262656,6 +262659,7 @@ window.game_names = {
 	"3890120":"Cursed Presence",
 	"3890140":"Sombr\u00e1via: Herdeiro do Abismo",
 	"3890170":"Paw Loot",
+	"3890180":"Hentai Achievement Puzzle 2",
 	"3890190":"This Game Exists Now",
 	"3890210":"Bandits vs Lords",
 	"3890240":"MEATHOOK Demo",
@@ -265135,6 +265139,7 @@ window.game_names = {
 	"3962470":"Coaster Crash Course",
 	"3962540":"A Ragdoll Rage Game",
 	"3962600":"FISSURE",
+	"3962610":"The Secrets We Grow",
 	"3962640":"Mr Wonder Demo",
 	"3962830":"Game of Skill",
 	"3962910":"Goblin Clicker",
@@ -265209,5 +265214,6 @@ window.game_names = {
 	"3971360":"Wizard's Oblation Demo",
 	"3973200":"MERROR Demo",
 	"3973340":"Space Salvage: Ship Happens Demo",
-	"3973420":"Quase Rosa Demo"
+	"3973420":"Quase Rosa Demo",
+	"3973480":"Midnight Murder Maze Demo"
 }
