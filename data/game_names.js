@@ -264116,6 +264116,7 @@ window.game_names = {
 	"3923660":"Nex-Ara",
 	"3923670":"\u4e45\u7f8e\u5b50\u4e4b\u6b7b Demo",
 	"3923680":"Midnight Files",
+	"3923700":"Kokoro",
 	"3923720":"Faction Reticent",
 	"3923740":"Empty Box: \u7a7a\u76d2\u5b50",
 	"3923780":"\u98de\u8dc3\u65e7\u5c4b\u4e4b\u5899 Demo",
