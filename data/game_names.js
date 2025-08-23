@@ -46146,7 +46146,7 @@ window.game_names = {
 	"762070":"Race for the Galaxy: Brink of War",
 	"762080":"Galactic Force",
 	"762090":"Cally's Caves 4 - OST",
-	"762100":"Jerry Frog's Retro Adventure",
+	"762100":"Jerry Frog's Retro Arcade",
 	"762110":"Meow Wars: Card Battle",
 	"762120":"Nuke Babysitter Simulator | Kim Edition",
 	"762130":"Namaste Virtual Yoga Retreat",
@@ -245972,7 +245972,7 @@ window.game_names = {
 	"3603620":"\u8ff7\u9014\u732b\u7684\u5947\u5999\u65c5\u884c \u8bd5\u73a9\u7248",
 	"3603650":"Cubic Blitz",
 	"3603660":"Zui's Witch Academy",
-	"3603680":"Project Kepler: Bomb Delivery Included!",
+	"3603680":"Project Kepler: Delivery Included!",
 	"3603690":"Pool Protocol: Loop",
 	"3603750":"No Sleep For Kaname Date - From AI: THE SOMNIUM FILES Complete Soundtrack",
 	"3603770":"Through the Wall",
@@ -265390,5 +265390,6 @@ window.game_names = {
 	"3973200":"MERROR Demo",
 	"3973340":"Space Salvage: Ship Happens Demo",
 	"3973420":"Quase Rosa Demo",
-	"3973480":"Midnight Murder Maze Demo"
+	"3973480":"Midnight Murder Maze Demo",
+	"3974480":"The Girl from Arkanya Soundtrack"
 }
