@@ -263639,6 +263639,7 @@ window.game_names = {
 	"3910600":"middenmoon Playtest",
 	"3910630":"Red vs Green",
 	"3910650":"Omega Demo",
+	"3910660":"Arcabbit",
 	"3910740":"Failed Game Developer",
 	"3910770":"Arca Demo",
 	"3910870":"My Infamous Dungeon Demo",
