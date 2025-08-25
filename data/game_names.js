@@ -234501,6 +234501,7 @@ window.game_names = {
 	"3427810":"Mindbringers",
 	"3427820":"Lemonade Apocalypse: The Great Filter",
 	"3427830":"Lemonade Apocalypse: The Great Filter Playtest",
+	"3427850":"Belts of Iron",
 	"3427860":"Fast Food Manager 2",
 	"3427870":"I Will Never Fall For My Tsundere Classmate, So I Will Just Date A Background Character Instead!",
 	"3427880":"Bible Puzzle Soundtrack",
