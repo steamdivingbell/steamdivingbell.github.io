@@ -2437,7 +2437,7 @@ window.all_reviews = {
 	"64016":{"positive":15,"total":21},
 	"64017":{"positive":24,"total":31},
 	"65070":{"positive":70,"total":131},
-	"65080":{"positive":132,"total":168},
+	"65080":{"positive":134,"total":170},
 	"65100":{"positive":8,"total":8},
 	"65200":{"positive":36,"total":94},
 	"65216":{"positive":35,"total":40},
@@ -229760,6 +229760,7 @@ window.all_reviews = {
 	"3779340":{"positive":32,"total":46},
 	"3779370":{"positive":0,"total":0},
 	"3779440":{"positive":0,"total":0},
+	"3779470":{"positive":0,"total":0},
 	"3779480":{"positive":0,"total":0},
 	"3779500":{"positive":0,"total":0},
 	"3779570":{"positive":0,"total":0},
@@ -234941,5 +234942,6 @@ window.all_reviews = {
 	"3954880":{"positive":0,"total":0},
 	"3955050":{"positive":0,"total":0},
 	"3955280":{"positive":0,"total":0},
+	"3955930":{"positive":0,"total":0},
 	"3956560":{"positive":0,"total":0}
 }
