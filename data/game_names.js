@@ -264503,6 +264503,7 @@ window.game_names = {
 	"3930430":"Codename:Twilight Playtest",
 	"3930460":"\u041f\u043e\u0432\u044b\u0448\u0435\u043d\u043d\u0430\u044f \u041e\u0431\u043b\u0430\u0447\u043d\u043e\u0441\u0442\u044c - High Clouds Demo",
 	"3930480":"Dungeon Tourists",
+	"3930510":"Don't Let It Starve",
 	"3930540":"Devose Demo",
 	"3930550":"Slime Changer",
 	"3930570":"Tower of Wizard",
