@@ -265653,6 +265653,7 @@ window.game_names = {
 	"3971760":"NetDive Demo",
 	"3971840":"Hentai Age Party",
 	"3972000":"Astrohaulers - Original Soundtrack",
+	"3972150":"Project North",
 	"3972300":"\u7070\u6697\u65e5\u5e38\u4e0b\u7684\u661f\u822a\u5bb6\u4eec GreySky&StarNavigator Demo",
 	"3972660":"Apparatus: Exanimus",
 	"3972770":"Gatestriders Demo",
