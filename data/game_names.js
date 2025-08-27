@@ -249653,6 +249653,7 @@ window.game_names = {
 	"3661300":"Celldom Classic",
 	"3661310":"Hack And Climb Demo",
 	"3661330":"Angry Bean Demo",
+	"3661350":"Connect Feur",
 	"3661360":"Smush Bois",
 	"3661370":"The Dinner Demo",
 	"3661380":"Krysolov",
@@ -262901,6 +262902,7 @@ window.game_names = {
 	"3886460":"Furryville Demo",
 	"3886470":"Islets Defense Original Soundtrack",
 	"3886480":"Minefield Fractalis Demo",
+	"3886500":"BEATABLE - Beatsmith",
 	"3886510":"Chicken Run: Eggstraction - Demo",
 	"3886520":"Knightica: Prologue",
 	"3886560":"Fetish Love: NSFW Dating Sim",
@@ -265467,6 +265469,7 @@ window.game_names = {
 	"3950770":"More Sushi!",
 	"3950780":"MKS BulletML Pattern Builder",
 	"3950790":"Gangsta Style Demo",
+	"3950890":"Mole or Not",
 	"3950980":"\u5730\u7262\u997f\u5f92",
 	"3951010":"UPGRADES & ENEMIES",
 	"3951020":"Gravebound Demo",
@@ -265927,8 +265930,10 @@ window.game_names = {
 	"3969570":"Dovedays : Time Flies Demo",
 	"3969600":"\u30b6\u30fb\u30d5\u30a1\u30d6\u30eb Manga Build Roguelike Demo",
 	"3969820":"Evade State",
+	"3969840":"PAGUI -  Expansion Pack - GodGirl",
 	"3969860":"KillCam FPS",
 	"3969970":"Baller Demo",
+	"3970000":"PAGUI -  Expansion Pack - Ghost Groom",
 	"3970120":"Cascade Falls Demo",
 	"3970160":"Hermit Playtest",
 	"3970390":"The Obsessive Shadow - Chapter 2",
@@ -266000,5 +266005,6 @@ window.game_names = {
 	"3977550":"The Forever Winter - Fleshwraps Skin Pack",
 	"3977610":"DEN PAIN Soundtrack",
 	"3977870":"Messy Witch's House",
-	"3978580":"Electrician Simulator VR Smart Devices Original Soundtrack"
+	"3978580":"Electrician Simulator VR Smart Devices Original Soundtrack",
+	"3978720":"Asfalia: The Cranky Volcano Soundtrack"
 }
