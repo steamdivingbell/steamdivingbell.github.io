@@ -264916,6 +264916,7 @@ window.game_names = {
 	"3928690":"Ribbit Ranch Demo",
 	"3928700":"Shotgun Dreams Playtest",
 	"3928740":"Taste of Blood",
+	"3928750":"PKWAR",
 	"3928760":"I Fell in Love with the Mentally Unstable Depressed Goth on Campus",
 	"3928770":"High Stakes: Hot Nights",
 	"3928780":"\u8fc8\u5170\u5fb7 Demo",
