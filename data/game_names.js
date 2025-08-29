@@ -259322,6 +259322,7 @@ window.game_names = {
 	"3816090":"Bunny Bunker Demo",
 	"3816110":"Once Human - Ascend Daily Theme Pack",
 	"3816140":"Interactive Sex - Incest Twins - Episode 4",
+	"3816160":"Cursed Memory",
 	"3816170":"VHS Collection: Buried Alive",
 	"3816180":"Fail Fail Succeed",
 	"3816190":"Farming Simulator 25 - Straw Harvest Pack",
@@ -265321,6 +265322,7 @@ window.game_names = {
 	"3937650":"Fartcore",
 	"3937710":"ReUse",
 	"3937730":"Mining Platform",
+	"3937770":"PaperCars Tycoon",
 	"3937810":"Cloudy Day",
 	"3937820":"Dystopia Derby",
 	"3937840":"Galactix",
@@ -265801,6 +265803,7 @@ window.game_names = {
 	"3950670":"Fireworks Incremental",
 	"3950710":"Achilles: Survivor - Supporter Pack",
 	"3950730":"\u6574\u7406\u6574\u7406",
+	"3950750":"Spider Dynasty Demo",
 	"3950770":"More Sushi!",
 	"3950780":"MKS BulletML Pattern Builder",
 	"3950790":"Gangsta Style Demo",
@@ -266162,6 +266165,7 @@ window.game_names = {
 	"3961860":"Shadows of the Deepforge",
 	"3961880":"thefakefreedom",
 	"3961920":"Yandere Goth BDSM 3",
+	"3961940":"Liora's Price of Dignity",
 	"3961950":"Layang Atma",
 	"3961980":"Critters Breakout",
 	"3962060":"Void Inside Demo",
@@ -266559,5 +266563,6 @@ window.game_names = {
 	"3990260":"Goob Demo",
 	"3990400":"Big BEAUTIFUL Van Derby Racing",
 	"3992880":"Rush Roulette Demo",
+	"3993270":"Algoremind Demo",
 	"3995330":"\uacf5\uace0\uc18c\ub140(Gong GO Girl) Demo"
 }
