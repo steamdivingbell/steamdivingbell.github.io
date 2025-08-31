@@ -266591,6 +266591,7 @@ window.game_names = {
 	"3975810":"Isles & Tiles Soundtrack",
 	"3975930":"Road to Karatl",
 	"3975940":"ANARKO ZMEU",
+	"3975960":"Everything Store",
 	"3976130":"Foes of Legacy: Survivors",
 	"3976170":"Cube Game Server Boss",
 	"3976200":"Punch Lunch: Foodtruck Fighter",
