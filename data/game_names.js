@@ -265360,6 +265360,7 @@ window.game_names = {
 	"3936790":"The Cubes",
 	"3936800":"Hold The Mine Playtest",
 	"3936810":"Echoes of Forgotten Dreams Digital Art Book",
+	"3936820":"Warrior Mage or Rogue alike Demo",
 	"3936830":"Bastionfall",
 	"3936860":"Robo Balls",
 	"3936870":"Bastionfall Demo",
