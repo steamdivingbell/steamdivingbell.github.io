@@ -197351,6 +197351,7 @@ window.game_names = {
 	"2879370":"Blasphemous 2 - Mea Culpa",
 	"2879400":"Exosuit Demo",
 	"2879410":"Exosuit Soundtrack",
+	"2879420":"Sinister Night 2 Demo",
 	"2879430":"Plinio Needs a Hand Demo",
 	"2879440":"Shoot or Shout",
 	"2879450":"UFO BLAST Demo",
