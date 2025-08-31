@@ -252033,7 +252033,7 @@ window.game_names = {
 	"3695570":"H.A.D.E.S Zero",
 	"3695580":"Sea of Souls",
 	"3695590":"Disappeared Demo",
-	"3695600":"Spin Blade: Shop & Battle",
+	"3695600":"Spin Blade Shop Simulator",
 	"3695620":"Journey Express Playtest",
 	"3695630":"Project Landsword",
 	"3695640":"Jurassic Gym",
