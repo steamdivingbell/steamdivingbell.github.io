@@ -257659,6 +257659,7 @@ window.game_names = {
 	"3787220":"Tiny bunny - Manga Vol. 1",
 	"3787240":"MARVEL T\u014dkon: Fighting Souls",
 	"3787250":"\u5c71\u6cb3\u884c\u8005 Demo",
+	"3787260":"Dot Clicker",
 	"3787280":"\u0420\u0443\u0441\u044b \u043d\u0435 \u043f\u0440\u043e\u0442\u0438\u0432 \u042f\u0449\u0435\u0440\u043e\u043a 2 Demo",
 	"3787330":"1985 Playtest",
 	"3787340":"Trials of Valor",
