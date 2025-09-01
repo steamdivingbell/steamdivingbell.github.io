@@ -248772,6 +248772,7 @@ window.game_names = {
 	"3645080":"MEGACHESS",
 	"3645090":"Pick Up Your Masks",
 	"3645110":"Cats With Standards Demo",
+	"3645130":"Micro Titans Wrestling",
 	"3645160":"Frostpunk: 1886",
 	"3645170":"Blood Sword",
 	"3645180":"Vanakan",
