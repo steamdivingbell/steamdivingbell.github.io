@@ -92801,6 +92801,7 @@ window.game_names = {
 	"1420740":"Your amazing T-Gotchi!",
 	"1420770":"Winter Resort Simulator 2",
 	"1420780":"\u6821\u957f\u6a21\u62df\u5668-\u9ad8\u4e2d\u7bc7",
+	"1420790":"Card Chase",
 	"1420800":"Cookie Run: OvenSmash",
 	"1420810":"\u6771\u65b9\u82b1\u6620\u585a \uff5e Phantasmagoria of Flower View.",
 	"1420830":"Happy Numbers",
