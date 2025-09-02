@@ -265686,6 +265686,7 @@ window.game_names = {
 	"3944130":"Elf World Adventure 9: Summer Episode!",
 	"3944160":"Hidden Dinosaur Demo",
 	"3944190":"REBELLION PRINCESS\uff5c\u30ea\u30d9\u30ea\u30aa\u30f3 \u30d7\u30ea\u30f3\u30bb\u30b9",
+	"3944220":"Sauna Simulator Demo",
 	"3944230":"7 Dice Destroyers",
 	"3944240":"Dust & Dice",
 	"3944250":"Fragile Reflection Soundtrack",
