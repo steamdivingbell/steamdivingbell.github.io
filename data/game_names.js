@@ -267208,6 +267208,7 @@ window.game_names = {
 	"3995200":"Why's It Getting DARKER?! Demo",
 	"3995220":"Obstacle Challenge: Platform - Action Demo",
 	"3995330":"\uacf5\uace0\uc18c\ub140(Gong GO Girl) Demo",
+	"3995440":"Total Victory: World Conflict 1939-1945 Playtest",
 	"3996160":"\u4fa0\u843d\uff1a\u767e\u82b1\u6740\u5c3d Demo",
 	"3996190":"Project: Haste Demo",
 	"3996230":"AstroVoids Playtest",
