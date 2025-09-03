@@ -248529,6 +248529,7 @@ window.game_names = {
 	"3640860":"Don't Pop My Bubble",
 	"3640880":"Tamabuki",
 	"3640900":"Growmon Island",
+	"3640910":"Lily's Erotic Potion Delivery",
 	"3640970":"FEBA Gunship R",
 	"3640990":"Clash of Melodies",
 	"3641000":"The Incident at Galley House",
@@ -256242,6 +256243,7 @@ window.game_names = {
 	"3762750":"Delta Light 2 Demo",
 	"3762760":"Star Loot Demo",
 	"3762770":"Find Meow in Wild West",
+	"3762780":"Sexypath",
 	"3762790":"Terraformental",
 	"3762800":"Whatta Box?",
 	"3762810":"Triumvora Demo",
@@ -266542,6 +266544,7 @@ window.game_names = {
 	"3965520":"\u795e\u5723\u4e16\u754c",
 	"3965610":"Stickman Mayhem",
 	"3965670":"\u963f\u6ce2\u7f57\u594f\u9e23\u66f2 - Apollo Sonata",
+	"3965680":"Suddenly, The Demon Lord's Labyrinth Appears",
 	"3965710":"Seal Of Destiny",
 	"3965720":"Project Kepler: Delivery Included! - Demo",
 	"3965730":"Celestial Golf",
@@ -266711,6 +266714,7 @@ window.game_names = {
 	"3971760":"NetDive Demo",
 	"3971780":"Etude Playtest",
 	"3971790":"A Sexy Quiz Show Demo",
+	"3971830":"Aerial Battle Frame: Vernion",
 	"3971840":"Hentai Age Party",
 	"3971860":"\u30ad\u30df\u304c\u6d88\u3048\u3066\u3057\u307e\u3046\u524d\u306b",
 	"3971970":"Tomboy BDSM Girlfriend",
@@ -267049,5 +267053,6 @@ window.game_names = {
 	"3995200":"Why's It Getting DARKER?! Demo",
 	"3995220":"Obstacle Challenge: Platform - Action Demo",
 	"3995330":"\uacf5\uace0\uc18c\ub140(Gong GO Girl) Demo",
+	"3996160":"\u4fa0\u843d\uff1a\u767e\u82b1\u6740\u5c3d Demo",
 	"3996190":"Project: Haste Demo"
 }
