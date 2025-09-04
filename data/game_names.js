@@ -245478,6 +245478,7 @@ window.game_names = {
 	"3591980":"Chief Worker Playtest",
 	"3591990":"Space Rocks in Space",
 	"3592000":"\u6fc0\u60c5\u9ebb\u5c06",
+	"3592020":"Sparky Rush: Purrils in Pawsville!",
 	"3592030":"Mythmatch Playtest",
 	"3592050":"Prison Simulator: Skins Pack 01",
 	"3592060":"Dominated By Yandere Goth Girlfriend 2: Valentine's Day",
@@ -265462,6 +265463,7 @@ window.game_names = {
 	"3932170":"This Is Not A Dungeon",
 	"3932190":"Peaceful Gardens 2: Cute Cats Demo",
 	"3932270":"My Pet Store",
+	"3932280":"Oil Town Demo",
 	"3932290":"Fitforce2",
 	"3932300":"Trainz 2019 DLC - [TL] Bald Knob - Wynne",
 	"3932310":"Trainz 2022 DLC - [TL] Bald Knob - Wynne",
@@ -267299,6 +267301,7 @@ window.game_names = {
 	"3990260":"Goob Demo",
 	"3990390":"Cybordz Playtest",
 	"3990400":"Big BEAUTIFUL Van Derby Racing",
+	"3990500":"LUCIFERIANISM",
 	"3990570":"The Melty Way",
 	"3990590":"Jabby Games Pack 1",
 	"3990770":"BAKU -\u30d0\u30af- Original Sound Track",
@@ -267388,8 +267391,10 @@ window.game_names = {
 	"3998630":"Puzzle Pleasant",
 	"3998740":"Charlie\u2019s Challenge 01/100 Tower",
 	"3999040":"Devoid",
+	"3999250":"DinoSwarm Demo",
 	"3999470":"Loop My Crank Demo",
 	"3999540":"Deadcave",
 	"3999880":"Yui\u2019s Summer Vacation",
-	"4002000":"My Dream Garage Demo"
+	"4002000":"My Dream Garage Demo",
+	"4004590":"Old Ninja:UnderWorld Demo"
 }
