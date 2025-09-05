@@ -267643,6 +267643,7 @@ window.game_names = {
 	"4004040":"Rogue Cart Playtest",
 	"4004590":"Old Ninja:UnderWorld Demo",
 	"4005000":"Coloring Pixels - Playing Cards Pack",
+	"4005590":"WALKER Playtest",
 	"4006050":"What Is The Ghost Demo",
 	"4006100":"\u4f60\u7684\u53fd\u53fd Demo",
 	"4006500":"Stahldrache Demo",
