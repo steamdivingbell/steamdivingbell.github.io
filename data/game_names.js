@@ -248982,6 +248982,7 @@ window.game_names = {
 	"3646510":"Aisha\u2019s Futa Diaries",
 	"3646520":"Escape From Kiss Demo",
 	"3646530":"Blunatic",
+	"3646540":"SIGMA COALESCE: Suika Game Roguelike",
 	"3646550":"Zombie Survivors: Inventory Apocalypse",
 	"3646560":"Rainy Day",
 	"3646580":"Devil Spire Falls Demo",
