@@ -267736,6 +267736,7 @@ window.game_names = {
 	"4001710":"VEIN Soundtrack",
 	"4001910":"Maze Infinite Puzzle",
 	"4002000":"My Dream Garage Demo",
+	"4002180":"Pyrotoad Demo",
 	"4002360":"Avoid the Missiles Demo",
 	"4002600":"My Helpers",
 	"4002720":"Pastel\u2606Parade OST",
