@@ -267730,6 +267730,7 @@ window.game_names = {
 	"4000610":"Momento Pole Playtest",
 	"4000740":"Tireless pig Artbook",
 	"4000780":"Fate of the Seventh Scholar Demo",
+	"4000940":"The Ladder",
 	"4001020":"Ants March TD Demo",
 	"4001050":"Blanky Official Soundtrack",
 	"4001290":"SPELLCAST Demo",
