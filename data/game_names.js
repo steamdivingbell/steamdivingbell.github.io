@@ -267642,6 +267642,7 @@ window.game_names = {
 	"3993530":"Dungeons of Eternity Original Soundtrack",
 	"3993580":"Cartoon Survivor - Stone Age",
 	"3993730":"\u679c\u58f3\u673a\u52a8\uff1a\u949b\u57a3\u9632\u7ebf Demo",
+	"3993750":"SYNCO PATH: SECLUSION SYSTEM Demo",
 	"3993770":"Juvenate",
 	"3993830":"Sprint 0",
 	"3993890":"Ichorless",
