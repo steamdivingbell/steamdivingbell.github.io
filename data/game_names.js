@@ -264128,6 +264128,7 @@ window.game_names = {
 	"3901690":"Coup d'Koala Demo",
 	"3901700":"Hold Your Breadth DX",
 	"3901710":"Little Eternal Chronicle (Demo)",
+	"3901720":"Mouldog Demo",
 	"3901730":"\u0421\u0443\u043c\u0440\u0430\u043a Demo",
 	"3901740":"\u6708\u5706\u4e4b\u591c - \u5c0f\u732a\u5996\uff08\u613f\u671b\u4e4b\u591c\uff09",
 	"3901780":"Bone Souls",
