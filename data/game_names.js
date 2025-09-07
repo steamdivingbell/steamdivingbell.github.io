@@ -267074,6 +267074,7 @@ window.game_names = {
 	"3969810":"Galactic Pit Stop Simulator",
 	"3969820":"Evade State",
 	"3969840":"PAGUI -  Expansion Pack - GodGirl",
+	"3969850":"\u7eef\u7ea2\u7f16\u5e74\u53f2 ~ Chronicle of Scarlet ~ Soundtrack",
 	"3969860":"KillCam FPS",
 	"3969880":"Faded Solitude Demo",
 	"3969890":"\u9508\u57ce - Rust City",
