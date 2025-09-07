@@ -233526,6 +233526,7 @@ window.game_names = {
 	"3410490":"Oscuro Blossom's Glow",
 	"3410500":"Clover Town Fantasy",
 	"3410510":"Sophistry: Living Card Game Playtest",
+	"3410520":"Paper Soccer",
 	"3410530":"Dawn Awaits",
 	"3410550":"Prickle Soundtrack",
 	"3410590":"One Fine Tourney Demo",
