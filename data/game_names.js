@@ -237891,6 +237891,7 @@ window.game_names = {
 	"3474460":"Vast Haven-1 VR Experience",
 	"3474480":"Max Manos Demo",
 	"3474490":"Imperiums: Supporter\u2019s Edition",
+	"3474500":"Bubbles!",
 	"3474510":"Hopeguard",
 	"3474520":"All Abug!",
 	"3474530":"Catnip Fever Dreamland",
