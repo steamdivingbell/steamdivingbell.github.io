@@ -218499,6 +218499,7 @@ window.game_names = {
 	"3191040":"Five Nights at Restroom 2 Demo",
 	"3191050":"BRAZILIAN DRUG DEALER 3: I OPENED A PORTAL TO HELL IN THE FAVELA TRYING TO REVIVE MIT AIA I NEED TO CLOSE IT",
 	"3191060":"Cosmic Blastards Playtest",
+	"3191070":"Sova",
 	"3191080":"Spire Horizon Online Demo",
 	"3191090":"Just Wing It Demo",
 	"3191100":"\u865a\u62df\u68a6\u60f3 Demo",
