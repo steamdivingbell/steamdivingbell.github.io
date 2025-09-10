@@ -267418,6 +267418,7 @@ window.game_names = {
 	"3975350":"\u4eba\u72fc\u30d0\u30fc\u30ac\u30fc Jinro Burger",
 	"3975360":"Otherworld Live: Watch and Learn",
 	"3975380":"PunchIt!",
+	"3975430":"Deep Loop Demo",
 	"3975540":"Prompt World",
 	"3975560":"Midnight Dies Y2K",
 	"3975570":"Terminal 13",
