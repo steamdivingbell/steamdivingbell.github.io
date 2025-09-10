@@ -258769,6 +258769,7 @@ window.game_names = {
 	"3801200":"Hello Space Demo",
 	"3801270":"Oni-no-Kuni: Miozuki's Descent",
 	"3801290":"\u6253\u5de5\u4e0d\u5982\u6597\u5730\u4e3b",
+	"3801300":"Arcana Academy Demo",
 	"3801320":"Nelli The Seer",
 	"3801330":"Backrooms: Final Exam Part II",
 	"3801340":"The DvD idle game",
