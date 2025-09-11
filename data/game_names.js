@@ -249626,6 +249626,7 @@ window.game_names = {
 	"3654990":"Infra Et Intus",
 	"3655000":"DISHARMONY Soundtrack",
 	"3655010":"[ VOID ]",
+	"3655020":"BALLBOY",
 	"3655030":"Legume Of Zeldoom",
 	"3655040":"ESCAPE Protocol",
 	"3655060":"Fantasy Grounds - Portal Packs - Token Essentials: Dragons of the East",
@@ -254558,6 +254559,7 @@ window.game_names = {
 	"3732100":"Clappy Cheeks: Lust and Magic",
 	"3732120":"Abyssal Maw",
 	"3732150":"\u3053\u308d\u3055\u3093\u306e\u30db\u30fc\u30e0WAN\uff01\u30c0\u30fc\u30d3\u30fc",
+	"3732160":"Interstellar Espionage Inc. Demo",
 	"3732180":"\u7a76\u6781\u5c11\u5973 \u963f\u5c14\u7279\u65af Demo",
 	"3732190":"Last Guest",
 	"3732210":"UnderGirl: Submission Path Demo",
@@ -259728,6 +259730,7 @@ window.game_names = {
 	"3817110":"CAPTAIN FIRAT",
 	"3817130":"CritterGarden Soundtrack",
 	"3817160":"Machicanti",
+	"3817170":"SGS Avalanche",
 	"3817190":"Machicanti Demo",
 	"3817210":"Unicycle Gorilla",
 	"3817240":"Heaven Does Not Respond",
@@ -267010,6 +267013,7 @@ window.game_names = {
 	"3960270":"Siegeturtle Demo",
 	"3960280":"She Plays Dirty",
 	"3960300":"Pondlings Playtest",
+	"3960310":"Fusion Script Game Studio: iscEngine & JS-Engine",
 	"3960320":"Lottery vs Aliens Demo",
 	"3960350":"Loop! Loop! Sushi",
 	"3960360":"Maniac Mind",
@@ -267579,6 +267583,7 @@ window.game_names = {
 	"3976660":"\u5e38\u591c\u6e21\u308a\u306e\u5fcd",
 	"3976720":"Galdia Demo",
 	"3976760":"BURGER, NO PLEASE! Demo",
+	"3976810":"Space Squad Survival Demo",
 	"3976830":"Grass Toucher Demo",
 	"3976850":"Fetish Locator: S&M Studio Demo",
 	"3976870":"Rowen's Grand Adventure",
@@ -268418,5 +268423,6 @@ window.game_names = {
 	"4020440":"Overkill Squad Demo",
 	"4020900":"Lily's Erotic Potion Delivery Demo",
 	"4020910":"Shatterland Demo",
-	"4021920":"Gran Theft Lure Demo"
+	"4021920":"Gran Theft Lure Demo",
+	"4022670":"Taste of the Sea Demo"
 }
