@@ -257610,6 +257610,7 @@ window.game_names = {
 	"3780670":"V-LOVER\uff01ArtBook",
 	"3780710":"Y2ROLL Soundtrack",
 	"3780730":"Shape Blast",
+	"3780740":"HeadHunters Playtest",
 	"3780750":"Flarebound",
 	"3780780":"Countryballs: Power Protocol Demo",
 	"3780790":"\u8230\u9b42\u91cd\u6784",
