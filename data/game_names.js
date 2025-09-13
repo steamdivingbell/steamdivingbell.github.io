@@ -267633,6 +267633,7 @@ window.game_names = {
 	"3971550":"Gingerbread Chocolatier",
 	"3971560":"Piece Quest Playtest",
 	"3971600":"Eidetic Life",
+	"3971630":"Triple Swap Tower",
 	"3971650":"Lazy Witch's Factory",
 	"3971670":"On Your Notebook",
 	"3971680":"Shogi: AI\u2019s Forbidden Move",
