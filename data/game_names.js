@@ -217997,6 +217997,7 @@ window.game_names = {
 	"3183100":"Buster's Big Score",
 	"3183120":"Seduction Clicker",
 	"3183130":"Oni Onsen Polyamory",
+	"3183170":"Planet Gemini",
 	"3183200":"Touhou: Tales of the Scarlet",
 	"3183210":"EnglishVan",
 	"3183220":"Aurora Defense",
@@ -266722,6 +266723,7 @@ window.game_names = {
 	"3949650":"DecaDungeons\u2122",
 	"3949660":"Thrasher Demo",
 	"3949670":"My Giant Goth Girlfriend Is a Sadist 2",
+	"3949700":"Zombie Typing",
 	"3949720":"Catapult Girls",
 	"3949730":"Fire in the girl",
 	"3949740":"(BURIED TAPES) The Cleaner",
@@ -268499,6 +268501,7 @@ window.game_names = {
 	"3999020":"Adept",
 	"3999030":"Shifted",
 	"3999040":"Devoid",
+	"3999140":"\u660e\u955c\u6c5f\u6e56\u884c\uff1a\u6714\u98ce\u8d77 Demo",
 	"3999150":"HyperDissonance",
 	"3999170":"Ball Pool Simulator Playtest",
 	"3999190":"RovNav Demo",
@@ -268893,5 +268896,6 @@ window.game_names = {
 	"4028980":"Triple Swap Tower Demo",
 	"4029070":"War of the Western Deep Demo",
 	"4029720":"Echoes of Red Demo",
-	"4030980":"Eon's Insomnium Demo"
+	"4030980":"Eon's Insomnium Demo",
+	"4031260":"Jamp Demo"
 }
