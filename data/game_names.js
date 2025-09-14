@@ -268736,6 +268736,7 @@ window.game_names = {
 	"4005880":"DETOUR",
 	"4005890":"Plush Rangers Playtest",
 	"4005920":"Heaven Does Not Respond Demo",
+	"4006010":"Plinbo Demo",
 	"4006030":"EpochExtinction",
 	"4006050":"What Is The Ghost Demo",
 	"4006100":"\u4f60\u7684\u53fd\u53fd Demo",
