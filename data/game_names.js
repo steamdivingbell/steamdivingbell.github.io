@@ -268949,6 +268949,7 @@ window.game_names = {
 	"4024280":"Wretch Demo",
 	"4025200":"WALKER Demo",
 	"4026070":"Ctesiphon Demo",
+	"4026650":"Bharat Police Demo",
 	"4027460":"TURBOCIDE Demo",
 	"4028980":"Triple Swap Tower Demo",
 	"4029070":"War of the Western Deep Demo",
