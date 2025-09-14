@@ -268860,6 +268860,7 @@ window.game_names = {
 	"4014950":"Metal Savior Black Demo",
 	"4015030":"Kin and Quarry Demo",
 	"4015130":"Ratpack Playtest",
+	"4015140":"Qubx 2 Playtest",
 	"4015310":"Little island Demo",
 	"4015360":"Kindling Playtest",
 	"4015510":"Frozen Feathers Demo",
