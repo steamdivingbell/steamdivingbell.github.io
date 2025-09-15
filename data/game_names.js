@@ -268182,6 +268182,7 @@ window.game_names = {
 	"3984040":"SPEEDSHOT",
 	"3984070":"A.S.\u0130 : BA\u015eLANGI\u00c7 Demo",
 	"3984080":"Pumpkin Woods Demo",
+	"3984110":"STOCKWAVE ONLINE Demo",
 	"3984130":"Pyrotoad",
 	"3984160":"RING RING POCKET SLIME EDITION",
 	"3984190":"TUNESTRIKE Demo",
