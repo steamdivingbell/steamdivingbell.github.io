@@ -238831,7 +238831,7 @@ window.game_names = {
 	"3487380":"Outlawyer",
 	"3487390":"Fifth Disciple",
 	"3487410":"Idle Circles",
-	"3487420":"MakeUsWhole Demo",
+	"3487420":"Terminal Mass Demo",
 	"3487440":"\u6c5f\u57ce\u5927\u8d62\u5bb6 Demo",
 	"3487460":"A Few Days With Darlene",
 	"3487470":"TinkerShot Demo",
