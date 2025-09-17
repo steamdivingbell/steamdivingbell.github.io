@@ -262121,7 +262121,7 @@ window.game_names = {
 	"3856090":"SCRYBE",
 	"3856100":"Hentai Tales: Master, Your Sex Class Begins Now",
 	"3856110":"\u53e4\u98ce\u5973\u5b69\u52a8\u6001\u62fc\u56fe Demo",
-	"3856120":"\uc18c\ud76c",
+	"3856120":"Sohee",
 	"3856150":"Hentai Tales: Slave App - Arrogant Sisters",
 	"3856180":"Harmonic Convergence",
 	"3856190":"Zereoton Hauntings",
@@ -265355,6 +265355,7 @@ window.game_names = {
 	"3916920":"Merry Bear Demo",
 	"3916930":"Mega Deal Card Demo",
 	"3916950":"Challenger X",
+	"3916970":"SwitchTrack Demo",
 	"3917000":"Glitchfall",
 	"3917010":"CRACKED",
 	"3917020":"Pigeon Hunter",
@@ -267840,6 +267841,7 @@ window.game_names = {
 	"3969600":"\u30b6\u30fb\u30d5\u30a1\u30d6\u30eb Manga Build Roguelike Demo",
 	"3969630":"Taste of Power: Renaissance",
 	"3969640":"Penance",
+	"3969700":"RIBBITS",
 	"3969810":"Galactic Pit Stop Simulator",
 	"3969820":"Evade State",
 	"3969840":"PAGUI -  Expansion Pack - GodGirl",
@@ -269096,6 +269098,7 @@ window.game_names = {
 	"4005350":"Farmfence",
 	"4005380":"Yaks : Yet another kingdom to save",
 	"4005400":"\u6563\u4ed9\u6597\u5929\u4f20 - \u6c34\u58a8\u6c5f\u6e56\uff0c\u6587\u5b57\u4fee\u4ed9",
+	"4005490":"Nightmares",
 	"4005500":"CRU",
 	"4005510":"My Liminal Nightmare",
 	"4005520":"Ronza",
@@ -269316,6 +269319,7 @@ window.game_names = {
 	"4015910":"NSFW Solitaire - Masturbation",
 	"4015940":"POSSUM BOY!: The Ballad of Joey Virginia Demo",
 	"4015970":"Princess 8/10",
+	"4016050":"Nyx legacy",
 	"4016120":"Luna Anomaly",
 	"4016130":"Cosmonade Demo",
 	"4016140":"Zugaran Demo",
@@ -269526,5 +269530,6 @@ window.game_names = {
 	"4038200":"Raccoons to Riches Demo",
 	"4038400":"FAST: Casters of Chaos Demo",
 	"4038830":"Auto Jurassic Knights Demo",
-	"4040260":"Scope Out Demo"
+	"4040260":"Scope Out Demo",
+	"4040690":"Samurai's Odyssey Demo"
 }
