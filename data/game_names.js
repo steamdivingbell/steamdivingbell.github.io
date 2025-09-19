@@ -265735,6 +265735,7 @@ window.game_names = {
 	"3919620":"Fangs to Fields",
 	"3919640":"Firva Strings of Fate Playtest",
 	"3919670":"Perfect Liar Demo",
+	"3919680":"The Single-Eye Nightmare",
 	"3919710":"PISO 6",
 	"3919720":"Landlord Quest",
 	"3919730":"Pharaoh's Leap",
@@ -270166,6 +270167,7 @@ window.game_names = {
 	"4033740":"Frontline Command Demo",
 	"4033990":"Mimix",
 	"4034040":"\u613f\u4f60\u62ff\u4e00\u624b\u540c\u82b1\u987a May the cards lay out a straight",
+	"4034090":"Starshield Demo",
 	"4034400":"The Pipetuber's Guide to the Solar System Demo",
 	"4034530":"AXION 1986",
 	"4034630":"Banished Souls Playtest",
@@ -270211,6 +270213,7 @@ window.game_names = {
 	"4038830":"Auto Jurassic Knights Demo",
 	"4039060":"Summoner's Pieces Demo",
 	"4039580":"AstroScaper Demo",
+	"4039610":"\u042f \u043d\u0435 \u0440\u043e\u0431\u043e\u0442! Demo",
 	"4039720":"DFP - Disappear from Polizia Demo",
 	"4039740":"Veils of the Past Demo",
 	"4039750":"Prince of Darkness Jr. Demo",
@@ -270228,5 +270231,6 @@ window.game_names = {
 	"4041740":"Syrup 2: Candy Alchemy RPG Demo",
 	"4042570":"Familiar Findings Demo",
 	"4044250":"Legion: Arcane Origins Demo",
-	"4045260":"SRUSH Demo"
+	"4045260":"SRUSH Demo",
+	"4046030":"The Single-Eye Nightmare Demo"
 }
