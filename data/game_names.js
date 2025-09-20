@@ -249322,6 +249322,7 @@ window.game_names = {
 	"3647120":"\u6697\u5ba4\u7ed8\u5149",
 	"3647130":"Rogue Loops Soundtrack",
 	"3647140":"Food Cart Simulator",
+	"3647160":"Sery: Into the World of Myths Demo",
 	"3647170":"The left Behind Demo",
 	"3647190":"Hellmarch\u2122",
 	"3647210":"Tunes Playtest",
@@ -267064,6 +267065,7 @@ window.game_names = {
 	"3945660":"Sora no Kiseki the 1st - Free Sample Set Vol.1",
 	"3945690":"The Pact",
 	"3945730":"Broken Aperture Soundtrack",
+	"3945740":"Data Fantasy - \u6570\u636e\u5e7b\u60f3 Demo",
 	"3945770":"\u7ef5\u7f8a\u5c9b Demo",
 	"3945780":"Football Academy Manager Demo",
 	"3945800":"GLASS x CANNON Demo",
@@ -269244,6 +269246,7 @@ window.game_names = {
 	"3995720":"FURRY DO PORN - LOLLIPOP",
 	"3995760":"Umbral Anomaly Playtest",
 	"3995780":"Zetris Demo",
+	"3995800":"DrakkenRidge [Flatlanders Edition]",
 	"3995820":"Hard to be support",
 	"3995830":"Showdown! Mahjong Tutorial Included",
 	"3995860":"My Last 20 - Bang Character",
@@ -270108,6 +270111,7 @@ window.game_names = {
 	"4023350":"Rift Survivors Demo",
 	"4023390":"Beloved Bound Demo",
 	"4023400":"Bawk'n'Block Playtest",
+	"4023500":"Frob: The Incident",
 	"4023520":"Below the Crown Demo",
 	"4023530":"Beeing",
 	"4023560":"Catio Simulator Playtest",
@@ -270379,5 +270383,6 @@ window.game_names = {
 	"4044250":"Legion: Arcane Origins Demo",
 	"4044270":"Lady Dracula Demo",
 	"4045260":"SRUSH Demo",
-	"4046030":"The Single-Eye Nightmare Demo"
+	"4046030":"The Single-Eye Nightmare Demo",
+	"4048530":"Astro Burn Demo"
 }
