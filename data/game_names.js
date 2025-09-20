@@ -255656,6 +255656,7 @@ window.game_names = {
 	"3745310":"DEADLINE DELIVERY",
 	"3745340":"Pop Cat",
 	"3745400":"Drone District",
+	"3745410":"Super Duper Arcade",
 	"3745420":"NiuZhuanQianKun",
 	"3745430":"Rustborn - Outland Threat",
 	"3745440":"Find Cats 5 \u5929\u4f7f\u732b Demo",
