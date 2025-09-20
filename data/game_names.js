@@ -264431,6 +264431,7 @@ window.game_names = {
 	"3893930":"Infinite Einstein Tiles2",
 	"3893940":"RetroMania Wrestling - Legends Pack: The Madness Returns",
 	"3893950":"You Will Rot",
+	"3893960":"Airport Baggage Simulator Demo",
 	"3893970":"Airport Baggage Simulator Playtest",
 	"3893990":"Vampotanic",
 	"3894010":"ZDSimulator - Dnipro-Genichesk Route",
