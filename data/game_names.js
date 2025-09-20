@@ -265309,6 +265309,7 @@ window.game_names = {
 	"3911020":"Anime Art Generator",
 	"3911050":"Lunarity Playtest",
 	"3911080":"\u4e09\u5341\u516d\u751f\u8096\u8f6e\u56de 36 Zodiac Cycles",
+	"3911090":"Shadow Quest Playtest",
 	"3911100":"Out Of Water Demo",
 	"3911110":"Froggo's Adventure: Drifting Sky Demo",
 	"3911140":"BOT.VINNIK Chess Masters Academy Playtest",
