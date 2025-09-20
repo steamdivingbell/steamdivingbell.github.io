@@ -269879,6 +269879,7 @@ window.game_names = {
 	"4016240":"Crabby Fishes Playtest",
 	"4016280":"Checkmate Heroines",
 	"4016340":"The Taming Massage Parlor ~Mari's Story~ Demo",
+	"4016360":"Awakening the Knightmare Demo",
 	"4016390":"Breaking Enigma",
 	"4016410":"\u30aa\u30fc\u30d0\u30fc\u30d5\u30ed\u30fc Demo",
 	"4016490":"Crush Point Demo",
