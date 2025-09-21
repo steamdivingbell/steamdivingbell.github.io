@@ -268657,6 +268657,7 @@ window.game_names = {
 	"3980450":"\u041d\u0430\u0441\u0442\u043e\u044f\u0449\u0438\u0435 \u043f\u0430\u0437\u043b\u044b - \u041a\u0430\u043d\u044c\u043e\u043d\u044b",
 	"3980470":"Dust Walkers Playtest",
 	"3980500":"Past the Cabin",
+	"3980510":"Obelus Manor",
 	"3980520":"Super Hack Attack Demo",
 	"3980530":"Lyara Demo",
 	"3980540":"Fantasy Grounds - Traveller - Reach Adventure 9: The Hellworld Heists",
