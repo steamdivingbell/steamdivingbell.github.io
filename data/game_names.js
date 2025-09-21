@@ -268273,6 +268273,7 @@ window.game_names = {
 	"3969950":"For What",
 	"3969970":"Baller Demo",
 	"3969980":"Coloring Voxels - Computer Pack",
+	"3969990":"Ghost Hunting Journal Demo",
 	"3970000":"PAGUI -  Expansion Pack - Ghost Groom",
 	"3970010":"Ectorider",
 	"3970060":"Slots & Daggers Demo",
