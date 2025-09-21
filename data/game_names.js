@@ -269284,6 +269284,7 @@ window.game_names = {
 	"3996610":"\uc2ec\uc7a5\uc5d0 \ud574\ub85c\uc6cc",
 	"3996630":"Fitforce2 Demo",
 	"3996650":"Hop Around",
+	"3996660":"Guinea Pig Gunner",
 	"3996710":"Operation: Peons",
 	"3996720":"A Chicken In The Office",
 	"3996740":"Angel Legion-DLC Special Investigation F",
