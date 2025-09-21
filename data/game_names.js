@@ -48759,7 +48759,7 @@ window.game_names = {
 	"800720":"Space Fighters",
 	"800740":"Sprint Vector - OST",
 	"800810":"Aegis Defenders Original Soundtrack",
-	"800820":"2236 A.D.",
+	"800820":"2236 A.D. -Universal Edition-",
 	"800830":"Floogen",
 	"800840":"Jesters Poker",
 	"800860":"Omnicube",
