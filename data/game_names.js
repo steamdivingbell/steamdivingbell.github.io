@@ -190983,6 +190983,7 @@ window.game_names = {
 	"2784090":"\u661f\u754c\u8fdc\u822a Stellar Realm Voyage Demo",
 	"2784100":"Secrets Under Eco Demo",
 	"2784110":"1387: MMO Strategy Demo",
+	"2784120":"Red Riddles",
 	"2784130":"Project Carrot",
 	"2784140":"100 Cats London",
 	"2784150":"The Last Rose",
@@ -270271,6 +270272,7 @@ window.game_names = {
 	"4027920":"Put One In for Johnny Minn Demo",
 	"4027980":"No Way Out: Pixel Exorcist",
 	"4028050":"A Horror Story - The Trailer Park",
+	"4028070":"Crazy Roads",
 	"4028160":"\u5584\u826f\u90fd\u5e02 Nice City",
 	"4028260":"Blaster Bunny Sacrilege Soundtrack",
 	"4028310":"TheRISS",
@@ -270338,6 +270340,7 @@ window.game_names = {
 	"4032250":"Tiempo",
 	"4032390":"Rogum A Cat Match Puzzle Demo",
 	"4032420":"I Will Never Fall For My Tsundere Classmate, So I Will Just Date A Background Character Instead! Demo",
+	"4032440":"FUNKYHEART Demo",
 	"4032450":"Second Stellar Demo",
 	"4032460":"Concubine Demo",
 	"4032520":"Closing Doors",
@@ -270436,6 +270439,7 @@ window.game_names = {
 	"4039750":"Prince of Darkness Jr. Demo",
 	"4039940":"The Bar Souls",
 	"4040030":"The Fifth Bell",
+	"4040180":"The Bar Souls Soundtrack",
 	"4040260":"Scope Out Demo",
 	"4040510":"Soft(A)ware Demo",
 	"4040650":"Hotdog: The Videogame Demo",
@@ -270469,5 +270473,6 @@ window.game_names = {
 	"4046030":"The Single-Eye Nightmare Demo",
 	"4048530":"Astro Burn Demo",
 	"4048630":"Flipside Demo",
-	"4048920":"Trapformer Demo"
+	"4048920":"Trapformer Demo",
+	"4051200":"Guns of Salvation Demo"
 }
