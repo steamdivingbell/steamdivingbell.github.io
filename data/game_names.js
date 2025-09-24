@@ -213021,6 +213021,7 @@ window.game_names = {
 	"3106950":"Futariuum's Gate - Utility Pack.",
 	"3106960":"Futariuum's Gate - Art Pack.",
 	"3106990":"Romancing Jan",
+	"3107000":"Bladesong Demo",
 	"3107010":"Hentai Direct-Her Demo",
 	"3107020":"Shadows of The Lost",
 	"3107030":"Alchemickal",
@@ -264420,6 +264421,7 @@ window.game_names = {
 	"3890650":"Reign of Victory",
 	"3890660":"Rachel's Journal",
 	"3890670":"Antero Sudoku",
+	"3890680":"69 Seconds Later",
 	"3890690":"Abyssal Drift Demo",
 	"3890700":"Line Cutter: Bizzare Holiday Rush Demo",
 	"3890720":"Yaminer",
@@ -265583,6 +265585,7 @@ window.game_names = {
 	"3912680":"meryem's world",
 	"3912690":"\u76d2\u5b50\u9762\u5305\u574a Playtest",
 	"3912710":"War of Banners Demo",
+	"3912720":"CYBERSUSHI",
 	"3912740":"UnrealCam",
 	"3912780":"\u4e0a\u5143\u957f\u5e72\u884c Demo",
 	"3912800":"Blood Vow: Survive the Night Playtest",
@@ -270455,6 +270458,7 @@ window.game_names = {
 	"4019230":"GASTROVENTURE: Traditional Kitchen Diaries",
 	"4019240":"2nd EVE Demo",
 	"4019290":"Give Me Back! Demo",
+	"4019300":"DCS: F/A-18C & F-14B Operation Iron Tide Campaign by Sandman Simulations",
 	"4019330":"Basket Bots Demo",
 	"4019440":"Wanderer's Deck",
 	"4019450":"OROBOROS",
@@ -270906,6 +270910,7 @@ window.game_names = {
 	"4036650":"Hentai Love",
 	"4036660":"Lumen the Red Panda",
 	"4036670":"Maid Cafe Simulator",
+	"4036740":"Edge",
 	"4036820":"Cosmic Run Demo",
 	"4036860":"Ape Drop Playtest",
 	"4036990":"Takara Cards Soundtrack",
@@ -271109,5 +271114,6 @@ window.game_names = {
 	"4052900":"Tool",
 	"4053870":"Holy Justice: Galaxy Outcast Demo",
 	"4053910":"Bist Squad Demo",
-	"4054520":"Only DWARVES DIG Proper HOLES Demo"
+	"4054520":"Only DWARVES DIG Proper HOLES Demo",
+	"4060110":"I want to run away from my goth mommy... or do I? Demo"
 }
