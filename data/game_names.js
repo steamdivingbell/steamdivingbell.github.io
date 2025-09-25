@@ -257722,6 +257722,7 @@ window.game_names = {
 	"3774850":"Rice & Rest Demo",
 	"3774880":"The Light Switch Demo",
 	"3774890":"Hell Clock: Supporter Pack Edition",
+	"3774910":"Hell Clock: Cursed War",
 	"3774920":"Coloring Voxels Soundtrack",
 	"3774940":"One Last Clip",
 	"3774950":"100 Cats Lost In Space Find & Color",
