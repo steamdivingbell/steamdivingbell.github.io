@@ -244346,6 +244346,7 @@ window.game_names = {
 	"3566920":"GOAL3",
 	"3566930":"My Pet Femboy",
 	"3566940":"Galactic Pawns",
+	"3566950":"\u7476\u5149",
 	"3566960":"BOX HUSTLE Demo",
 	"3566990":"Sports Adventure\uff1a5in1",
 	"3567000":"\u6d17\u5c4b\u4eba",
