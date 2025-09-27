@@ -271616,6 +271616,7 @@ window.game_names = {
 	"4042630":"Pinball Dream Demo",
 	"4042860":"Armored Brigade II: Scandinavia",
 	"4042890":"Cops&Crooks Playtest",
+	"4042920":"Izakaya Izakoza",
 	"4042930":"Legends of Amberland III Demo",
 	"4043060":"Magic Regrowth Demo",
 	"4043100":"Anthill Village Demo",
