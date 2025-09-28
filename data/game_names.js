@@ -268798,6 +268798,7 @@ window.game_names = {
 	"3967820":"Push Push",
 	"3967830":"Dying Reign Demo",
 	"3967840":"Bunny's Tea Time Demo",
+	"3967870":"Huntsman Demo",
 	"3967880":"Lightbody",
 	"3967900":"The Last Prisoner Soundtrack",
 	"3967930":"Escape from 8-Bit High Demo",
