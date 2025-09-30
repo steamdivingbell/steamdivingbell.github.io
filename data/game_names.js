@@ -271624,6 +271624,7 @@ window.game_names = {
 	"4030450":"Halloween Trouble 7: The Apprentice",
 	"4030650":"Feed the Cannibals",
 	"4030660":"\u82b1\u57ce\u79d8\u4e8b",
+	"4030720":"ANTHEM#9 Demo",
 	"4030730":"\u6027\u9a0e\u58eb\u7269\u8a9e~\u8feb\u5bb3\u9a0e\u58eb\u7684\u6deb\u617e\u8cb4\u65cf~ Demo",
 	"4030740":"\u72fc\u4eba\u4e4c\u6258\u90a6 WEREWOLF UTOPIA",
 	"4030800":"Elena's Temptation of Devoted Service!! Demo",
