@@ -263984,6 +263984,7 @@ window.game_names = {
 	"3876180":"\u4e03\u5929\u9b54\u738b",
 	"3876210":"Hermit Demo",
 	"3876220":"Gaucho and the Grassland Soundtrack",
+	"3876240":"Minor Deity",
 	"3876270":"Fantasy Grounds - The Ruined Abbey of St. Clewyd",
 	"3876280":"Prison Boss Prohibition - Toucan Pack",
 	"3876290":"Prison Boss Prohibition - Free Pack 2",
