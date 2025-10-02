@@ -271610,6 +271610,7 @@ window.game_names = {
 	"4021960":"Desktop Town Demo",
 	"4021980":"Gnomes Garden: Mask of The Rat King",
 	"4022000":"Die or Die Demo",
+	"4022010":"Tichu by Spectrum",
 	"4022020":"INNERWHY DEMO",
 	"4022040":"Nightmare Defense",
 	"4022050":"Turbo 16",
