@@ -119650,6 +119650,7 @@ window.game_names = {
 	"1772070":"Unveiled",
 	"1772080":"SimRail - The Railway Simulator Demo",
 	"1772090":"F.I.S.T.: Soundtrack",
+	"1772130":"Mik - Legacy",
 	"1772140":"PuckOFF Demo",
 	"1772150":"Knight vs Giant: The Broken Excalibur Demo",
 	"1772160":"Nonlinear System Tools",
@@ -247695,6 +247696,7 @@ window.game_names = {
 	"3618570":"The Detective's Apprentice",
 	"3618580":"Impartial Demo",
 	"3618590":"Combo Overload",
+	"3618600":"Olinda Fighters",
 	"3618630":"Stairs to Nowhere Playtest",
 	"3618640":"ESC4PE!",
 	"3618650":"Office Tycoon",
@@ -254773,7 +254775,7 @@ window.game_names = {
 	"3725700":"The T\u016bn-G\u0101st of Oakshaw",
 	"3725710":"Supermarket Simulator Deluxe",
 	"3725730":"Kaire",
-	"3725750":"Phantom Quests",
+	"3725750":"Satanic Puppeteer Orchestra: Phantom Quests",
 	"3725770":"Arcade Boss Simulator",
 	"3725780":"Mystery Box 2: Evolution - Demo",
 	"3725790":"Crown Legion Playtest",
@@ -272623,6 +272625,7 @@ window.game_names = {
 	"4046610":"\u964d\u672c\u589e\u6548 Playtest",
 	"4046630":"Ookami Okami Demo",
 	"4046640":"Beihai 2010 Demo",
+	"4046660":"Polly's Gone Demo",
 	"4046760":"Erden: The Climb",
 	"4046800":"Big Band Survivors Demo",
 	"4046810":"BLACK SECTOR Demo",
@@ -273267,6 +273270,7 @@ window.game_names = {
 	"4071670":"Clinch Legends Demo",
 	"4071690":"Pasture Palette Demo",
 	"4071960":"Towerfolk Demo",
+	"4071970":"Wolf with Inn Demo",
 	"4072370":"excellent Demo",
 	"4072430":"Idle Tycoon Manufacturing - OST",
 	"4072530":"WonderLang Polyglot Demo",
@@ -273303,5 +273307,6 @@ window.game_names = {
 	"4078580":"OVERCAT Demo",
 	"4078860":"Drift Gang Demo",
 	"4079040":"Castle And Cursor Demo",
-	"4080340":"Wrangle Ranch Demo"
+	"4080340":"Wrangle Ranch Demo",
+	"4080510":"The Corn Maze: Rebirth Demo"
 }
