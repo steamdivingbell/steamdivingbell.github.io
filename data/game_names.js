@@ -272896,6 +272896,7 @@ window.game_names = {
 	"4060900":"7 Nights with Vroombi Demo",
 	"4060920":"Coloring Pixels - Halloween 7 Pack",
 	"4060990":"The Bold Bogey",
+	"4061000":"Aurum Demo",
 	"4061020":"Legend of Ursinia Playtest",
 	"4061060":"The Mare Show Soundtrack",
 	"4061080":"Asantria Demo",
@@ -273085,6 +273086,7 @@ window.game_names = {
 	"4075490":"Hide Zone Demo",
 	"4075550":"Haunted: Village Demo",
 	"4075810":"Paperwork Demo",
+	"4076150":"Car Factory Empire Demo",
 	"4077170":"Herbal Haven Demo",
 	"4077540":"Obelus Manor Demo",
 	"4078580":"OVERCAT Demo"
