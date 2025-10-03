@@ -272858,6 +272858,7 @@ window.game_names = {
 	"4052660":"The Butcher's Village\u2122: Prologue",
 	"4052700":"Kill Ralph Demo",
 	"4052720":"Slime Changer Demo",
+	"4052730":"NutShot Playtest",
 	"4052740":"The Anubis Treasure Demo",
 	"4052780":"The Invasive Plant",
 	"4052800":"Quetzal Demo",
