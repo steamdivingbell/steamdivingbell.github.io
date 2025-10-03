@@ -267129,6 +267129,7 @@ window.game_names = {
 	"3928780":"\u8fc8\u5170\u5fb7 Demo",
 	"3928800":"Elena's Temptation of Devoted Service!!",
 	"3928820":"Calling Depths",
+	"3928830":"THE CUBE, SAVE US Demo",
 	"3928840":"Mini PacRunner",
 	"3928860":"\u7591\u5f71\u4e4b\u95f4Shadows of Allegation",
 	"3928870":"Great Escape",
@@ -273089,6 +273090,7 @@ window.game_names = {
 	"4058050":"Soulsworn",
 	"4058070":"\u5f02\u5ba0\u7269\u8bed\uff1a\u684c\u9762\u6536\u5bb9\u6240 Demo",
 	"4058090":"Strange Brew Playtest",
+	"4058110":"ReSoul:Jack Demo",
 	"4058140":"The Funskin Project Demo",
 	"4058150":"Fear The Reaper Playtest",
 	"4058260":"Block States",
@@ -273403,6 +273405,7 @@ window.game_names = {
 	"4072430":"Idle Tycoon Manufacturing - OST",
 	"4072460":"Crownguard",
 	"4072530":"WonderLang Polyglot Demo",
+	"4072650":"What Was Found at Ravenhill",
 	"4072870":"The shaved ice shop Demo",
 	"4072910":"Allen Demo",
 	"4072990":"Timber Panic Demo",
@@ -273446,5 +273449,6 @@ window.game_names = {
 	"4081530":"Alley Cats Idle Demo",
 	"4082050":"AshBall Demo",
 	"4082500":"Stellar Archipelago Demo",
-	"4082880":"Many Mini Typing Games Demo"
+	"4082880":"Many Mini Typing Games Demo",
+	"4083480":"Towers Heritage Demo"
 }
