@@ -255710,6 +255710,7 @@ window.game_names = {
 	"3739280":"Nocturne FX",
 	"3739290":"MASH VP! Re:VISION - Bridging to Emotion",
 	"3739300":"Cat Squeeze",
+	"3739320":"Cat Squeeze Playtest",
 	"3739330":"Trash Heart Demo",
 	"3739340":"The White Sea",
 	"3739350":"\u91cd\u751f\u4e4b\u6211\u5728\u897f\u6e38\u5f53\u5996\u602a",
