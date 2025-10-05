@@ -261742,6 +261742,7 @@ window.game_names = {
 	"3835870":"Harbingers",
 	"3835880":"Phantom Feline",
 	"3835890":"Delia: The Traveling Witch",
+	"3835910":"\u6572\u6572\u6572\u597d\u8fd0",
 	"3835920":"Blaster Bunny Chronicles Soundtrack",
 	"3835930":"Overtime\uff1fNo Way\uff01",
 	"3835940":"All of her",
