@@ -273621,6 +273621,7 @@ window.game_names = {
 	"4072530":"WonderLang Polyglot Demo",
 	"4072550":"Dunestake Demo",
 	"4072650":"What Was Found at Ravenhill",
+	"4072660":"WonderLang Demo",
 	"4072860":"My Car My Life Demo",
 	"4072870":"The shaved ice shop Demo",
 	"4072910":"Allen Demo",
@@ -273700,5 +273701,6 @@ window.game_names = {
 	"4082480":"GORE Demo",
 	"4082500":"Stellar Archipelago Demo",
 	"4082880":"Many Mini Typing Games Demo",
-	"4083480":"Towers Heritage Demo"
+	"4083480":"Towers Heritage Demo",
+	"4083660":"Zombie Protocol Demo"
 }
