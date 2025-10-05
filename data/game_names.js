@@ -260490,6 +260490,7 @@ window.game_names = {
 	"3814590":"Wasteland Horror Radio: Episode 1 - The Radio",
 	"3814600":"MIX IT! RELOADED Demo",
 	"3814610":"FastFly",
+	"3814620":"SKERDA ARMOR",
 	"3814630":"\u3051\u3093\u7389\u3067\u304d\u305f\uff01VR",
 	"3814650":"Curyeux",
 	"3814660":"Fantasy  Journey",
@@ -272375,6 +272376,7 @@ window.game_names = {
 	"4034630":"Banished Souls Playtest",
 	"4034680":"MY WIFE IS A MAID",
 	"4034700":"The Silent Bunker",
+	"4034710":"Minesweeper Sonar Demo",
 	"4034720":"Arcane Rift",
 	"4034750":"Shape Blast Demo",
 	"4034760":"Campanion",
@@ -273725,6 +273727,7 @@ window.game_names = {
 	"4082480":"GORE Demo",
 	"4082500":"Stellar Archipelago Demo",
 	"4082880":"Many Mini Typing Games Demo",
+	"4083030":"Square Game Demo",
 	"4083480":"Towers Heritage Demo",
 	"4083660":"Zombie Protocol Demo"
 }
