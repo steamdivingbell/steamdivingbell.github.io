@@ -273639,6 +273639,7 @@ window.game_names = {
 	"4070500":"SOS (Save Our Ship) Demo",
 	"4070560":"Crimson Furnace",
 	"4070650":"Angelo Demo",
+	"4070660":"\u30d2\u30ed\u30a4\u30c3\u30af\u30bd\u30f3\u30b0\u30b9\uff01\u30ea\u30d7\u30ed\u30c7\u30e5\u30fc\u30b9\u30aa\u30ea\u30b8\u30ca\u30eb\u30b5\u30a6\u30f3\u30c9\u30c8\u30e9\u30c3\u30af",
 	"4070750":"Mary's House",
 	"4071100":"\u65e9\u82d7\u306e\u4fe1\u4ef0\u738b\u3078\u306e\u9053",
 	"4071110":"Chaos The Devil Playtest",
