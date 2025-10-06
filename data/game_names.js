@@ -256318,6 +256318,7 @@ window.game_names = {
 	"3748490":"Fields of Fortune Demo",
 	"3748500":"Supercat Survivors: Meow or Die - Supercat Squad",
 	"3748510":"Cronos: The New Dawn Soundtrack",
+	"3748530":"Cronos: The New Dawn - Preorder Bonus",
 	"3748540":"Cronos: The New Dawn - Deluxe Edition Upgrade",
 	"3748550":"Cronos: The New Dawn - Artbook",
 	"3748560":"Lammana Demo",
