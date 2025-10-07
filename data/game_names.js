@@ -262097,6 +262097,7 @@ window.game_names = {
 	"3841220":"Midnight Crane",
 	"3841230":"Just Keep Looting Demo",
 	"3841240":"AstroRage2049",
+	"3841250":"The Adventure of Ravi 'n' Navi",
 	"3841260":"Frame Sense Trainer",
 	"3841270":"UnHolY PraYeR",
 	"3841280":"Mechanical Chess: Real-time",
@@ -273847,6 +273848,7 @@ window.game_names = {
 	"4074550":"Road Less Traveled",
 	"4074740":"Black Jacket Playtest",
 	"4074880":"Pixel Survivors : Defense Demo",
+	"4074940":"My Hidden Journey",
 	"4074960":"Rise of the Gorecats",
 	"4074970":"Cinema Manager Simulator Demo",
 	"4074980":"Pair Panic: Rematch Demo",
@@ -273912,6 +273914,7 @@ window.game_names = {
 	"4080510":"The Corn Maze: Rebirth Demo",
 	"4080910":"Rockoon Demo",
 	"4080990":"Deadly Delivery Demo",
+	"4081110":"Mycopsychosys: Project Jupiter Demo",
 	"4081320":"Zoo Life Simulator Demo",
 	"4081530":"Alley Cats Idle Demo",
 	"4081650":"Mate'Morphosis Demo",
@@ -273939,5 +273942,6 @@ window.game_names = {
 	"4087810":"MEAT MAN Demo",
 	"4088040":"Pizza Restaurant Together Demo",
 	"4088630":"Atrium Mortis Demo",
+	"4089100":"Astrolite Demo",
 	"4089420":"Feed the Lie Demo"
 }
