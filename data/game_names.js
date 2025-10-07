@@ -250131,6 +250131,7 @@ window.game_names = {
 	"3654040":"Tomboy: Trapped by Orcs",
 	"3654050":"VelesScary",
 	"3654060":"\u767e\u967d\u5e2b",
+	"3654070":"\u7eb8\u9e22-\u6570\u5b57\u8bbe\u5b9a\u96c6\uff08\u7b80\u4f53\u4e2d\u6587\u7248\uff09",
 	"3654080":"\u7eb8\u9e22\u6570\u5b57\u6d77\u62a5\u4e0e\u52a8\u6001\u58c1\u7eb8",
 	"3654130":"Levania",
 	"3654160":"Seer's Gambit: Dawn of Unlikely Heroes",
@@ -273145,6 +273146,7 @@ window.game_names = {
 	"4050680":"In The Middle Of",
 	"4050690":"GRIBOUILLE",
 	"4050720":"INFERIAE Demo",
+	"4050780":"Royal Jest Demo",
 	"4050830":"BatteryNote Original Soundtrack",
 	"4050870":"I Sell Lemonade Demo",
 	"4050890":"Jam's Adjustable Mirrors Demo",
@@ -273992,5 +273994,6 @@ window.game_names = {
 	"4088630":"Atrium Mortis Demo",
 	"4089100":"Astrolite Demo",
 	"4089420":"Feed the Lie Demo",
+	"4090510":"Ticking Together Demo",
 	"4090870":"SeekOut Demo"
 }
