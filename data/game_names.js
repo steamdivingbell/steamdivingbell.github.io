@@ -273563,6 +273563,7 @@ window.game_names = {
 	"4054680":"Floorball League 2010",
 	"4054760":"MoonLost",
 	"4054770":"Murky Demo",
+	"4054790":"Beatrix",
 	"4054800":"Femdom Girlfriend 7: Big-Breasted Bully",
 	"4054820":"Murder Mystery Stories",
 	"4054830":"Parking Tycoon 2 Demo",
