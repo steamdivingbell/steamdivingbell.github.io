@@ -273618,6 +273618,7 @@ window.game_names = {
 	"4049600":"Haggle Battle Demo",
 	"4049610":"Backpack Survivor",
 	"4049620":"Weasel Wes's Cycling Simulator",
+	"4049630":"FISH\u00b3: FIRST CATCH Demo",
 	"4049690":"Restaurant Scramble Demo",
 	"4049710":"Bloom",
 	"4049740":"Soulmon Playtest",
