@@ -200030,6 +200030,7 @@ window.game_names = {
 	"2916440":"Bodacious Babes: Holidays",
 	"2916460":"Speedway Survival",
 	"2916470":"WC Dream",
+	"2916480":"Cat President: 3rd-Rate Candidate",
 	"2916490":"Trillenium",
 	"2916510":"Wizard of Legend 2 Demo",
 	"2916520":"Forgebeast Playtest",
