@@ -270705,6 +270705,7 @@ window.game_names = {
 	"3986310":"DexSweeper Demo",
 	"3986320":"Food Truck Story",
 	"3986340":"When the Embers Wake",
+	"3986350":"Frogshot",
 	"3986360":"Exorcide INC.",
 	"3986390":"Draco and the Seven Scales Demo",
 	"3986410":"Shifting Sands",
