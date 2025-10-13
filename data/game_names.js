@@ -253824,6 +253824,7 @@ window.game_names = {
 	"3708350":"WTF: Waifu Tactical Force Playtest",
 	"3708380":"Monster Blast Infinity",
 	"3708400":"Word Mesh",
+	"3708420":"Of Ash and Steel Demo",
 	"3708440":"Legends of Savvarah: Flowers and Scorpions Soundtrack",
 	"3708460":"\u96ea\u666f\u82b1 -Sekka the Gleam-",
 	"3708470":"Horny Studio \ud83c\udfa8",
