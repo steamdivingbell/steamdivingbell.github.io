@@ -265750,6 +265750,7 @@ window.game_names = {
 	"3897790":"Null Anchor",
 	"3897810":"Eurekas",
 	"3897830":"Frog Knight",
+	"3897840":"Rustic City",
 	"3897850":"Hyperspace Hub Manager",
 	"3897860":"Survivors Last Stand Demo",
 	"3897870":"Gemion Function Playtest",
