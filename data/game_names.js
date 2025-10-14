@@ -256341,6 +256341,7 @@ window.game_names = {
 	"3745880":"Neon Dystopia",
 	"3745890":"Zenvader Demo",
 	"3745900":"Marbies Party Demo",
+	"3745910":"The Ashen Baron",
 	"3745920":"Safeguard Saga",
 	"3745930":"Interactive Sex - Incest Daughters - Episode 3",
 	"3745940":"Ready, Set, Block! Playtest",
