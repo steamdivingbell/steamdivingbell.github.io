@@ -267589,6 +267589,7 @@ window.game_names = {
 	"3929700":"Pixel Formation",
 	"3929710":"Lone Pine Playtest",
 	"3929720":"BONEMARROW",
+	"3929740":"Tom Clancy's Splinter Cell: Pandora Tomorrow",
 	"3929760":"Incredicer",
 	"3929800":"Populus",
 	"3929810":"The Queen Soul",
@@ -273863,6 +273864,7 @@ window.game_names = {
 	"4050580":"Toxoplasma",
 	"4050610":"100 ROOMS",
 	"4050630":"Retro Soccer Manager Sim 89",
+	"4050640":"Only Up: BRAINROT TOGETHER Demo",
 	"4050660":"Defectant Demo",
 	"4050680":"In The Middle Of",
 	"4050690":"GRIBOUILLE",
@@ -274141,6 +274143,7 @@ window.game_names = {
 	"4056800":"Gold Mining Simulator - Gems & Glory",
 	"4056830":"romance.exe DEMO",
 	"4056850":"Snemovna",
+	"4056900":"Field of Glory: Kingdoms - Burghers and Bombards",
 	"4056910":"Parnitha: Patient 66",
 	"4056950":"Watcher's Eye",
 	"4056970":"Live Wallpaper",
@@ -274963,6 +274966,7 @@ window.game_names = {
 	"4077860":"Pulse Demo",
 	"4077950":"Degeons Project Demo",
 	"4078050":"Seeker: Quest Soundtrack",
+	"4078110":"Suncraft",
 	"4078120":"\u00c0 La Mine Demo",
 	"4078180":"Xeno Girlfriend 4",
 	"4078270":"Laundering Simulator Demo",
@@ -275076,6 +275080,7 @@ window.game_names = {
 	"4082640":"Penance Demo",
 	"4082650":"HellBit Demo",
 	"4082670":"Outdoor Cumshot VR",
+	"4082690":"Wood and Flesh: Chapter 2 Demo",
 	"4082700":"KillCam Blablublas Battle Royale Demo",
 	"4082710":"The Attraction of Spell",
 	"4082770":"Speakeasy Simulator Demo",
@@ -275327,5 +275332,6 @@ window.game_names = {
 	"4099470":"Nightfall Caf\u00e9 Demo",
 	"4100040":"Luminaya Demo",
 	"4101620":"Hand Cannon: Janky Reality Demo",
-	"4102320":"Atomic Age Demo"
+	"4102320":"Atomic Age Demo",
+	"4103010":"Splinter Cell Pandora Tomorrow - Ubisoft Activation"
 }
