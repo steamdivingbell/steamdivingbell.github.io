@@ -273858,6 +273858,7 @@ window.game_names = {
 	"4048460":"Coins Only! Demo",
 	"4048490":"Wetter",
 	"4048530":"Astro Burn Demo",
+	"4048550":"Zombie Diner Simulator \ud83e\udd69 \ud83d\udc80",
 	"4048560":"Stock Market Simulator",
 	"4048570":"Potions of Veldenkeep Demo",
 	"4048590":"Magical Greenhouse Demo",
