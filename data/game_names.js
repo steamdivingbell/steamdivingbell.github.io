@@ -269811,6 +269811,7 @@ window.game_names = {
 	"3965920":"\u5341\u516d\u5f20\u9ebb\u5c06\u5199\u771f\u9986",
 	"3965930":"Puzzle Parasite",
 	"3965970":"Sin hotel",
+	"3965980":"\u8537\u8587\u4e4b\u5b50 Demo",
 	"3966010":"Soul Demon Hunters",
 	"3966030":"My Teacher",
 	"3966060":"LET IT DIE: INFERNO Demo",
