@@ -276038,6 +276038,7 @@ window.game_names = {
 	"4106400":"The Final Flame Demo",
 	"4106460":"Wicked Cabins Demo",
 	"4106480":"Angel's Dreams Demo",
+	"4107470":"Goblin Goopmaxxing",
 	"4107700":"Starbrew Station Playtest",
 	"4107750":"Shutter Story Demo",
 	"4107860":"Sophie: The Girl From The Zone - Progression Assistant",
