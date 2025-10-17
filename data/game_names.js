@@ -75974,6 +75974,7 @@ window.game_names = {
 	"1188330":"Classic Sudoku",
 	"1188360":"Terminal Conflict: Eyes Only Edition",
 	"1188400":"WARRIOR SPIRIT",
+	"1188410":"Mouseward",
 	"1188420":"\u5931\u843d\u7684\u738b\u5ea7TCG",
 	"1188430":"Deep, In the  Forest",
 	"1188460":"Gravity Escape",
