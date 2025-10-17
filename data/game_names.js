@@ -249620,6 +249620,7 @@ window.game_names = {
 	"3643630":"Anime Fart Simulator",
 	"3643640":"CozyMeow Demo",
 	"3643660":"Train Valley 2 - Japanese Trails",
+	"3643680":"Fear Bounds",
 	"3643690":"Project C.U.R.E. Origins",
 	"3643700":"TimeParadox Demo",
 	"3643710":"hakoniwa code",
