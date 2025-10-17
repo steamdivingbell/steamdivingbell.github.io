@@ -275720,6 +275720,7 @@ window.game_names = {
 	"4092490":"Pogo Panic Demo",
 	"4092520":"Echo 91 Demo",
 	"4092530":"Fantasy Grounds - Savage Worlds - Horror Companion Action Deck",
+	"4092540":"My Giant Sexy Sensei Bullies Me 6",
 	"4092550":"Darkenstein 3D Soundtrack",
 	"4092570":"Off Course Demo",
 	"4092590":"Generation Exile Soundtrack",
