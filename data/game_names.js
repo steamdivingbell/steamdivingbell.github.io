@@ -154056,7 +154056,7 @@ window.game_names = {
 	"2256300":"no brake no gain",
 	"2256320":"Spooky Halloween Musically Rigging Pack",
 	"2256340":"Final Remedy",
-	"2256350":"Spectral Possession",
+	"2256350":"Phantom Pursuit",
 	"2256360":"Shooting Saucer",
 	"2256370":"Sleepy Time Jack",
 	"2256380":"Yokai Art: Survival",
@@ -168655,7 +168655,7 @@ window.game_names = {
 	"2453880":"Yao-guai Hunter Mod Uploader",
 	"2453920":"Amygdala",
 	"2453940":"GateTail Demo",
-	"2453950":"MACHINES OF MADNESS",
+	"2453950":"Rogue Machina",
 	"2453970":"No Stone Unturned Prologue",
 	"2453980":"super world run - bosses",
 	"2454000":"Rafting Frenzy",
@@ -263670,6 +263670,7 @@ window.game_names = {
 	"3861490":"Puzzling Robot in the Dungeon",
 	"3861500":"Stranglehold of the Elite",
 	"3861510":"UGOMEKU NOTE",
+	"3861520":"Gather CCG",
 	"3861550":"BARABIZNA Demo",
 	"3861560":"Planet Drop",
 	"3861570":"Wima Magicamia -Cute Girls Magic Battle 3DTPS Ep-1- Demo",
@@ -276131,5 +276132,6 @@ window.game_names = {
 	"4109600":"Requisition VR: Hunt & Extract",
 	"4109620":"Chaosborn Demo",
 	"4109900":"hongshui river",
-	"4110070":"MALCADE Demo"
+	"4110070":"MALCADE Demo",
+	"4110160":"Haunt Hunter Demo"
 }
