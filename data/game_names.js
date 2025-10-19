@@ -268010,6 +268010,8 @@ window.game_names = {
 	"3934090":"100 Cyprus Cats Soundtrack",
 	"3934100":"100 Cyprus Cats - Artbook",
 	"3934110":"Car Race Simulator",
+	"3934130":"100 Dubai Cats Soundtrack",
+	"3934140":"100 Dubai Cats  - Artbook",
 	"3934150":"Shoplifter: No Escape",
 	"3934170":"Blood Moon Massacre Beta",
 	"3934180":"Don Memo",
