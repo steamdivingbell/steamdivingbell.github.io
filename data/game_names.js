@@ -275190,6 +275190,7 @@ window.game_names = {
 	"4070690":"HeroesSagaZero",
 	"4070720":"\u5922\u5e7b\u685c\u697c\u95a3 Demo",
 	"4070750":"Mary's House",
+	"4070770":"\u8282\u594f\u52c7\u8005 Demo",
 	"4070800":"Full Moon Guildhouse Simulator Demo",
 	"4070830":"Moon Garden Optimizer Demo",
 	"4070960":"\u5e7f\u4e1c\u7231\u60c5\u6545\u4e8b Demo",
