@@ -275219,6 +275219,7 @@ window.game_names = {
 	"4071740":"Bad Dream: Afterlife Soundtrack",
 	"4071750":"Lac Viet Journey Demo",
 	"4071770":"Rampart",
+	"4071830":"\u7a76\u6781\u5c11\u5973\u963f\u5c14\u7279\u65af-\u9ad8\u6e05\u827a\u672f\u8d44\u4ea7\u5305",
 	"4071840":"Rune Fighters",
 	"4071850":"Turbo Carnage Demo",
 	"4071900":"Pixel Combat Shooter Playtest",
