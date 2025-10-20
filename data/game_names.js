@@ -266081,7 +266081,7 @@ window.game_names = {
 	"3901570":"Telenet Shooting Collection Granada Soundtrack",
 	"3901580":"\u95c7\u3086\u304f\u541b\u306b\u82b1\u675f\u3092 Demo",
 	"3901600":"TinyRealm",
-	"3901640":"GBVSR \u8ffd\u52a0\u30ad\u30e3\u30e9\u30af\u30bf\u30fc\u30bb\u30c3\u30c8\u300c\u30e1\u30b0\u300d",
+	"3901640":"GBVSR - Additional Character Set (Meg)",
 	"3901650":"GBVSR - Character Costume: Unadulterated Amour (Belial)",
 	"3901660":"GBVSR - Color Set: Battle Pass Pack 5",
 	"3901670":"GBVSR - Weapon Skin Set: Battle Pass Pack 5",
