@@ -276222,7 +276222,7 @@ window.game_names = {
 	"4095870":"Spellatro Demo",
 	"4095880":"Rogue Pirates Demo",
 	"4095920":"Sinister Outbreak Demo",
-	"4096010":"Pomelo &amp;amp; Friends: Sevilla Demo",
+	"4096010":"Pomelo & Friends: Sevilla Demo",
 	"4096020":"Neural: Forbidden",
 	"4096040":"Insider Trading Playtest",
 	"4096060":"Insanitation Demo",
