@@ -276276,6 +276276,7 @@ window.game_names = {
 	"4105400":"TetrEscape Playtest",
 	"4105470":"We Are Gum",
 	"4105500":"Agent Pigeon 7",
+	"4105510":"Desktop Waifu",
 	"4105540":"Fossil Quest",
 	"4105600":"HAFO: Horse Around, Find Out",
 	"4105640":"Women Rule! A Reverse World Romance",
@@ -276296,6 +276297,7 @@ window.game_names = {
 	"4106480":"Angel's Dreams Demo",
 	"4106520":"SEARCH ALL - BONES",
 	"4106530":"PUNCH FOREVER",
+	"4106720":"SWAPMEAT: Rare & Questionable Cuts",
 	"4107280":"CROWDED. FOLLOWED. Original Soundtrack",
 	"4107470":"Goblin Goopmaxxing",
 	"4107700":"Starbrew Station Playtest",
@@ -276338,5 +276340,6 @@ window.game_names = {
 	"4112570":"Femdom Hero",
 	"4113150":"Hentai World Town",
 	"4113910":"Hentai Witch",
-	"4114030":"The Riftbreaker - Dedicated Server"
+	"4114030":"The Riftbreaker - Dedicated Server",
+	"4114550":"MILF CRIMSON DESIRE"
 }
