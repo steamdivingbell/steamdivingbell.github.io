@@ -276555,6 +276555,7 @@ window.game_names = {
 	"4112570":"Femdom Hero",
 	"4113150":"Hentai World Town",
 	"4113180":"Money Theft 3 Last Mission",
+	"4113340":"Idunn's Grace - A Hero's Tale",
 	"4113410":"Sad Virus Deathland",
 	"4113570":"Scarface\u2122: The World Is Yours (2006)",
 	"4113910":"Hentai Witch",
