@@ -21104,7 +21104,7 @@ window.reviews = {
 	"1907440":{"positive":70,"total":76},
 	"1907460":{"positive":63,"total":70},
 	"1907590":{"positive":1670,"total":1891},
-	"1907700":{"positive":337,"total":416},
+	"1907700":{"positive":337,"total":414},
 	"1907980":{"positive":110,"total":114},
 	"1908080":{"positive":12,"total":12},
 	"1908150":{"positive":16,"total":16},
