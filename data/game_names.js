@@ -277449,6 +277449,7 @@ window.game_names = {
 	"4118750":"LWT American sunset - Southwestern Sexcapades",
 	"4118780":"Stickys",
 	"4118800":"Trap Golf",
+	"4118830":"The Little Witch's Jump",
 	"4118860":"Farmch Revolution",
 	"4118890":"Tower! Simulator 3 - LFPG Airport",
 	"4118930":"\u9a6c\u52a0\u7235\u7684\u4e00\u5c01\u4fe1",
