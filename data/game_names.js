@@ -275617,6 +275617,7 @@ window.game_names = {
 	"4064920":"Sex Game - Threesome - Episode 5",
 	"4064960":"The Ice Cream Shop",
 	"4064970":"Goblin Dungeons: Digital Artbook",
+	"4064980":"\u6211\u7684\u4e8c\u6b21\u5143\u5973\u53cb",
 	"4065000":"\u81f4\u547d\u6765\u8bbf",
 	"4065010":"Forget Her",
 	"4065020":"Angel Legion-DLC Sexy Maid (Black)",
@@ -277224,6 +277225,7 @@ window.game_names = {
 	"4102040":"1998: The Toll Keeper Story Original Soundtrack",
 	"4102070":"Cartel State",
 	"4102090":"1998: The Toll Keeper Story Digital Artbook",
+	"4102170":"\u9493\u9c7c\u724c Demo",
 	"4102210":"Sex Game - Naughty Girls - Episode 9",
 	"4102260":"Before Exit: Gas Station Soundtrack",
 	"4102300":"SpookY2K Demo",
@@ -277794,5 +277796,6 @@ window.game_names = {
 	"4133040":"Trail of Stars Soundtrack",
 	"4133650":"Trick or Truth Demo",
 	"4133750":"Unbound Drift Playtest",
-	"4135670":"Vault of the Vanquished Demo"
+	"4135670":"Vault of the Vanquished Demo",
+	"4139870":"Geo Fighters Demo"
 }
