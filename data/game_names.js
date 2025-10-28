@@ -276813,6 +276813,7 @@ window.game_names = {
 	"4091260":"Fights in Tight Spaces - DLC3",
 	"4091270":"Moon and Fang Demo",
 	"4091320":"Under The Red Sky Demo",
+	"4091350":"\u7bb1\u5ead\u9752\u6625 Demo",
 	"4091360":"Keep Demo",
 	"4091370":"Heroes Hooray Survivors",
 	"4091380":"\u30ca\u30f3\u30d7\u30ecRelax 1+2+3+4+5 -Soundtrack-",
