@@ -275253,6 +275253,7 @@ window.game_names = {
 	"4051230":"Defense of the Offensive King",
 	"4051240":"Lyre Demo",
 	"4051250":"\u6346\u7ed1\u65e5\u8bb0",
+	"4051260":"Static Signal",
 	"4051290":"Tape Man",
 	"4051300":"\u4f2a\u4eba\u5973\u53cb\u53c8\u600e\u4e48\u4e86\uff1f",
 	"4051310":"Blood West: Endless West",
