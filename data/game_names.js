@@ -195667,6 +195667,7 @@ window.game_names = {
 	"2849110":"Reverse Collapse: Code Name Bakery-Deluxe Edition Upgrade Pack",
 	"2849120":"Reverse Collapse: Code Name Bakery : Soundtrack",
 	"2849130":"Shadows Over Harken",
+	"2849170":"Temple of Egmelitia",
 	"2849180":"The Book of Outcasts",
 	"2849190":"I Want To Be Happy",
 	"2849200":"ChipWits Demo",
@@ -273472,6 +273473,7 @@ window.game_names = {
 	"4017930":"I Have an Item",
 	"4017970":"Filtration Demo",
 	"4017980":"The Reflex Lab Demo",
+	"4017990":"Terminal",
 	"4018000":"MOCView",
 	"4018010":"I Have an Item Playtest",
 	"4018040":"Liminal Shroud Playtest",
@@ -278777,5 +278779,6 @@ window.game_names = {
 	"4144400":"Withered Haven Demo",
 	"4144710":"ROCK PAPER SCISSORS PARTY Demo",
 	"4144810":"Ghostforged",
-	"4144830":"Bonfire (Desktop Mascot)"
+	"4144830":"Bonfire (Desktop Mascot)",
+	"4147790":"Zoomageddon Demo"
 }
