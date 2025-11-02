@@ -278596,6 +278596,7 @@ window.game_names = {
 	"4129490":"SUBNET 13",
 	"4129540":"Anime Dream Match: Reptiles",
 	"4129570":"Final Orbit",
+	"4129600":"\u56e2\u5b50\u8ff7\u4f60\u5c4b",
 	"4129680":"Pulse of the Neon Soul Demo",
 	"4129730":"MIRAI #167 Playtest",
 	"4129780":"Max Overeater",
