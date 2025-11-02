@@ -278774,6 +278774,7 @@ window.game_names = {
 	"4140590":"ShrednSpread Demo",
 	"4140620":"Crusader",
 	"4140710":"CaffiNation",
+	"4140790":"Super Shootin Star",
 	"4141060":"Aphantasia",
 	"4141150":"Hidden Cats in Spooky Village Soundtrack",
 	"4141220":"Caveman Caravan Soundtrack",
