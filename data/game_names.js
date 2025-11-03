@@ -252379,6 +252379,7 @@ window.game_names = {
 	"3679830":"Pixel Cross Stitch - Summer Pack 3",
 	"3679870":"CaLLMara",
 	"3679880":"Spaceship Scavenger",
+	"3679900":"GUNtai",
 	"3679920":"Favela Defender",
 	"3679930":"Factory Planner",
 	"3679940":"Flappy Harpy Daddy",
@@ -278877,6 +278878,7 @@ window.game_names = {
 	"4144710":"ROCK PAPER SCISSORS PARTY Demo",
 	"4144810":"Ghostforged",
 	"4144830":"Bonfire (Desktop Mascot)",
+	"4146170":"Relapse",
 	"4146700":"Cosmic Commandos",
 	"4147790":"Zoomageddon Demo"
 }
