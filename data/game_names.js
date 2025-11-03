@@ -265826,6 +265826,7 @@ window.game_names = {
 	"3887670":"\u68b5\u9ad83D\u753b\u4f5c Van Gogh 3D Paintings",
 	"3887680":"inZOI : Island Getaway",
 	"3887690":"cozycult Demo",
+	"3887700":"Girls' Frontline",
 	"3887710":"JellyFish",
 	"3887720":"\u523b\u75d5\u4e4b\u5c7f\uff1a\u6696\u6d0b\u4e0a\u7684\u9057\u5b64",
 	"3887730":"\u751f\u8096\u9547\u9b42\u66f2 Demo",
