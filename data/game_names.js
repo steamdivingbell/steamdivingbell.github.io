@@ -275821,6 +275821,7 @@ window.game_names = {
 	"4059510":"LI Dong Demo",
 	"4059520":"Tiny little royale",
 	"4059530":"HyperChineseChess\u5373\u65f6\u8c61\u68cb\uff1a\u65e7\u68cb\u65b0\u5f08",
+	"4059540":"HyperChineseChess\u5373\u65f6\u8c61\u68cb\uff1a\u65e7\u68cb\u65b0\u5f08 Soundtrack",
 	"4059560":"Tingus Goose Demo",
 	"4059580":"Urban Paranoia Demo",
 	"4059590":"Indonesian Dominatrixes Are the Best",
