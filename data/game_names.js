@@ -200558,6 +200558,7 @@ window.game_names = {
 	"2922590":"Dark Land Chronicle: The Fallen Elf",
 	"2922600":"Chooing",
 	"2922610":"Ruby Dreams: Immortal Promise",
+	"2922630":"Chicken Chicken",
 	"2922680":"The Aquarians",
 	"2922690":"Catale",
 	"2922710":"Beneath the Cardboard: Be Happy",
@@ -273270,6 +273271,7 @@ window.game_names = {
 	"4012520":"Nocternum",
 	"4012540":"Infinite Pathways",
 	"4012550":"My Giant Sexy Sensei Bullies Me 2",
+	"4012570":"Metro Dungeon",
 	"4012600":"Before I Come In",
 	"4012610":"Ballshit OST",
 	"4012620":"\u7334\u54e5\u5feb\u8dd1",
@@ -275424,6 +275426,7 @@ window.game_names = {
 	"4051550":"Tai Chi Fusion",
 	"4051580":"Playrooms Demo",
 	"4051640":"KartOne",
+	"4051650":"The 5th Realm",
 	"4051660":"LASERPITIUM Demo",
 	"4051680":"QUEEN'S GUARD",
 	"4051720":"Rat lines",
@@ -278793,6 +278796,7 @@ window.game_names = {
 	"4127760":"MY WIFE SERVES THE KING",
 	"4127770":"Parasomnia: No REM Demo",
 	"4127790":"UNDYING: Kowloon in Red",
+	"4127810":"Glory Survivor",
 	"4127820":"Five Levels of Love",
 	"4127910":"Kars Out Playtest",
 	"4127950":"Deliverance",
@@ -279115,5 +279119,6 @@ window.game_names = {
 	"4148780":"Divine Gambit Playtest",
 	"4149130":"Birdteeth Demo",
 	"4149300":"THRASHER Soundtrack",
+	"4149520":"Asynchronauts Playtest",
 	"4151160":"Beak the hunter"
 }
