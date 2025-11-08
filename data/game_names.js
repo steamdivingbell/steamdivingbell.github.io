@@ -278633,6 +278633,7 @@ window.game_names = {
 	"4109830":"Escape The Wojak",
 	"4109850":"Grand Donald Trump Simulator",
 	"4109900":"hongshui river",
+	"4109940":"Burrow",
 	"4109990":"KonKer Battles",
 	"4110040":"Explosive Odds - Spooky Pack",
 	"4110070":"MALCADE Demo",
