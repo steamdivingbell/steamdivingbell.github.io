@@ -272279,6 +272279,7 @@ window.game_names = {
 	"3991180":"Cartoon Survivor - Mayan",
 	"3991190":"Cartoon Survivor - Ice Age",
 	"3991210":"Survive From Museum",
+	"3991230":"A Good Day Fishing Playtest",
 	"3991280":"Empire\u2019s Supreme Command",
 	"3991290":"\u9006\u9053\uff08\u3055\u304b\u3069\u3046\uff09 SAKA-DOH\uff1aTHE REVERSAL ARTS",
 	"3991300":"\u9ab8\u30ce\u87ba\u65cb",
