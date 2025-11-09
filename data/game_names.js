@@ -279443,6 +279443,7 @@ window.game_names = {
 	"4133240":"Flowglift Demo",
 	"4133270":"Rocket Rally Soundtrack",
 	"4133280":"\u9752\u86d9\u98de\u8dc3 Frog Leap",
+	"4133310":"Bungle Blast",
 	"4133340":"Soko Spectacle Demo",
 	"4133460":"Sol and the Endless Orbit",
 	"4133470":"Sol and the Endless Orbit Demo",
