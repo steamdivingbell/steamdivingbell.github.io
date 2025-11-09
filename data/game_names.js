@@ -255435,6 +255435,7 @@ window.game_names = {
 	"3723610":"Together in Forgotten Lands: Chapter One",
 	"3723630":"Kathy Rain 2: Soothsayer Original Soundtrack",
 	"3723640":"Prenecrotic: The Cursed School VR",
+	"3723650":"Yandere Sacrifice",
 	"3723660":"Supermrket: Barcelona!!",
 	"3723670":"Drowned in Hell Demo",
 	"3723680":"Your Another Wife",
