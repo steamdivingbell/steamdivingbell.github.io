@@ -279941,6 +279941,7 @@ window.game_names = {
 	"4157420":"Deep Hunger",
 	"4157480":"\u4eba\u751f\u8ba1\u5212 Project Life Playtest",
 	"4157570":"ONLYUP SNOW Demo",
+	"4157600":"\u4eba\u751f\u8ba1\u5212 Project Life Demo",
 	"4157670":"Not My Child",
 	"4157690":"Dreaded Conquest",
 	"4158120":"\ud83e\udd54 Not So Hot Potato: 2025 Final Boss \ud83e\udd54 Demo",
