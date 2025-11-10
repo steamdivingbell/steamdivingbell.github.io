@@ -279193,6 +279193,7 @@ window.game_names = {
 	"4123760":"Football Life",
 	"4123820":"Rituals of Lust and Sin \u2014 Music of Pagan Desire",
 	"4123850":"Cropdeck Demo",
+	"4123860":"Nightmarise",
 	"4123890":"Pallet Jack Racing",
 	"4123930":"Eternal Legend",
 	"4123940":"Kafein",
