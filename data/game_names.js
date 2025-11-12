@@ -280071,6 +280071,7 @@ window.game_names = {
 	"4147330":"Sunset Racing Demo",
 	"4147360":"Nekomancer of Nowhere Soundtrack",
 	"4147370":"Mount Taishan in Shandong",
+	"4147690":"Fugitive Free Rider",
 	"4147780":"Protecting seagrass \u4fdd\u62a4\u6d77\u8349",
 	"4147790":"Zoomageddon Demo",
 	"4147810":"Emojification",
