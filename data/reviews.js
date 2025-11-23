@@ -21523,7 +21523,7 @@ window.reviews = {
 	"1941110":{"positive":225,"total":231},
 	"1941410":{"positive":463,"total":549},
 	"1941420":{"positive":41,"total":41},
-	"1941540":{"positive":16274,"total":22720},
+	"1941540":{"positive":16820,"total":23491},
 	"1941590":{"positive":163,"total":188},
 	"1941780":{"positive":7556,"total":8542},
 	"1941820":{"positive":10,"total":10},
