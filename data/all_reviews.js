@@ -145791,7 +145791,7 @@ window.all_reviews = {
 	"2374560":{"positive":0,"total":2},
 	"2374570":{"positive":23,"total":34},
 	"2374580":{"positive":9,"total":11},
-	"2374590":{"positive":166,"total":167},
+	"2374590":{"positive":172,"total":174},
 	"2374610":{"positive":6,"total":9},
 	"2374620":{"positive":1,"total":1},
 	"2374650":{"positive":0,"total":0},
