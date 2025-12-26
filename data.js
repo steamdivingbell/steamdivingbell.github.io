@@ -155,7 +155,6 @@ function loadGameDetails(gameId) {
     if (r.movies != null && r.movies.length > 0) {
       gameDetails['video'] = {
         'webm': (r.movies[0].webm ? r.movies[0].webm.max.replace('http://', 'https://') : null),
-        // 'hls': r.movies[0].hls_h264,
         'dash': r.movies[0].dash_h264,
       }
     }

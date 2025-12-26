@@ -263,17 +263,18 @@ function setupButtons(gameId) {
   })
 }
 
+var dashPlayer = null
 function loadAboutGame(gameId) {
   // If this game is already loaded, don't reload it (it causes a flicker and restarts the video)
   if (document.getElementById('open-app').href == `steam://store/${gameId}`) return
 
-  set('game-title', 'innerText', globalGameData.get(gameId).name)
-
-  set('open-web', 'href', `https://store.steampowered.com/app/${gameId}?utm_campaign=steamdivingbell`)
-  set('open-app', 'href', `steam://store/${gameId}`)
-
   loadGameDetails(gameId)
   .then(r => {
+    // Some of this data is actually known before the game details load, but for the sake of argument we're doing it here (to mask the load lag).
+    set('game-title', 'innerText', globalGameData.get(gameId).name)
+    set('open-web', 'href', `https://store.steampowered.com/app/${gameId}?utm_campaign=steamdivingbell`)
+    set('open-app', 'href', `steam://store/${gameId}`)
+
     set('short-description', 'innerText', r.description)
     set('genres', 'innerText', r.genres.join(', '))
     set('price', 'innerText', r.price)
@@ -287,13 +288,15 @@ function loadAboutGame(gameId) {
     if (r.video != null) {
       set('video', 'display', null)
       if (r.video.dash != null) {
-        var url = r.video.dash
-        var player = dashjs.MediaPlayer().create()
-        player.initialize(document.getElementById('video'), url, true)
-
-        // set('video-dash', 'src', r.video.dash)
+        if (dashPlayer == null) {
+          dashPlayer = dashjs.MediaPlayer().create()
+          dashPlayer.initialize(document.getElementById('video'))
+        }
+        dashPlayer.attachSource(r.video.dash)
       } else if (r.video.webm != null) {
+        if (dashPlayer) dashPlayer.reset() // Avoid warnings for dashPlayer trying to play a webp.
         set('video', 'src', r.video.webm)
+        set('video', 'autoplay', true)
       }
       max_photos--
     } else {
