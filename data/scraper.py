@@ -89,12 +89,12 @@ def write_readme_statistics():
   with readme.open('r') as f:
     contents = f.read()
   contents = contents.split('# Statistics')[0]
-  
+
   total_games = 0
   for path in Path('app_details').glob('*.json'):
     total_games += 1
     # TODO: We could consider opening each app here for more granular statistics. It's slow, though.
-  
+
   all_reviews = load_json('all_reviews.js')
   over_10k = 0
   over_75p = 0
@@ -103,18 +103,18 @@ def write_readme_statistics():
       over_10k += 1
     if meets_score_threshold(review_data['positive'], review_data['total']):
       over_75p += 1
-  
+
   contents += textwrap.dedent(f'''
     # Statistics
     ```
     Total games in the database:  {total_games}
     Games with >10,000 reviews:   {over_10k} ({100 * over_10k / total_games} %)
     Games with >75% review score: {over_75p} ({100 * over_75p / total_games} %)
-    
+
     Last updated: {datetime.utcnow()}
     ```
     ''')
-  
+
   with readme.open('w') as f:
     f.write(contents)
 
@@ -147,7 +147,7 @@ def download_tags():
 def download_categories():
   """https://github.com/Revadike/InternalSteamWebAPI/wiki/Get-Store-Categories"""
   category_data = get('https://store.steampowered.com/actions/ajaxgetstorecategories')
-  
+
   latest_categories = {}
   for category in category_data:
     latest_categories[category['categoryid']] = {
@@ -161,7 +161,7 @@ def download_categories():
 
 def download_app_details(game_id):
   """https://github.com/Revadike/InternalSteamWebAPI/wiki/Get-App-Details"""
-  
+
   try:
     app_details = get(f'https://store.steampowered.com/api/appdetails?appids={game_id}&cc=en')[game_id]
   except requests.exceptions.JSONDecodeError:
@@ -175,7 +175,7 @@ def download_app_details(game_id):
   elif not str(app_details['data']['steam_appid']) == game_id:
     print(f'App ID mismatch, expected {game_id}, found', app_details['data']['steam_appid'])
     return False
-  
+
   # As long as it's semi-valid JSON, we should save it.
   dump_json(app_details['data'], f'app_details/{game_id}.json')
 
@@ -202,7 +202,7 @@ def download_review_details(game_id):
   app_reviews = get(f'https://store.steampowered.com/appreviews/{game_id}?json=1&filter=summary&language=all&purchase_type=all')
   positive = app_reviews['query_summary'].get('total_positive', 0)
   total = app_reviews['query_summary'].get('total_reviews', 0)
-  
+
   all_reviews = load_json('all_reviews.js')
   all_reviews[game_id] = {'positive': positive, 'total': total}
   dump_js(all_reviews, 'all_reviews.js')
@@ -234,14 +234,14 @@ def download_similar_games(game_id):
 
 def download_app_tags(game_id):
   soup = get_soup(f'https://store.steampowered.com/app/{game_id}')
-  
+
   tags_for_this_game = []
   soup.find('div', {'class': 'popular_tags'})
   for item in soup.find_all('a', {'class': 'app_tag'}):
     # These tag IDs are in english; convert them before saving
     tag_name = item.contents[0].strip()
     tags_for_this_game.append(tag_name_to_id(tag_name))
-    
+
   game_tags = load_json('game_tags.js')
   game_tags[game_id] = tags_for_this_game
   dump_js(game_tags, 'game_tags.js')
@@ -291,7 +291,7 @@ if __name__ == '__main__':
       refresh_game(game)
       pending_games.pop(game)
       dump_json(pending_games, 'pending_games.js')
-    
+
     if datetime.now() >= end_time:
       exit() # In case we took too long fetching games
 
@@ -317,7 +317,7 @@ if __name__ == '__main__':
       dump_json(pending_games, 'pending_games.js')
 
   print(f'Found {len(fetched_games)} valid of all {len(all_games)} games ({len(deleted_games)} deleted, {len(pending_games)} unfetched)')
-  
+
   # Then, refresh games in order from where we left off
   ordered_games = list(all_games.keys())
   ordered_games.sort(key = lambda k: int(k)) # Our games are stored as strings in JSON. We want an actual int sort for this.

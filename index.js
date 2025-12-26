@@ -5,6 +5,11 @@
 //        Thinking more, do I want tag filters to actually be category filters? Maybe for 'exclude' I want that.
 // TODO: If the currently active game is excluded by tags, how do we reload? -> I think we actually just *do nothing*.
 // TODO: Cache filtered tags in localstorage?
+// TODO: Images are breaking on some newer games, since the static 'header.jpg' isn't a static url anymore. For example:
+//   https://store.steampowered.com/app/3654570/Cube_Mind/
+//   has a 'game_header_image_full' url of:
+//   https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3654570/928f2894a49b21bd9b8556ef53d4ad5c21c58b08/header.jpg?t=1765304615
+//   I can get these while scraping, but that means I'd need to store them somewhere...
 window.onload = function() {
   setupDropdowns()
 
@@ -79,7 +84,7 @@ function setImageCard(loc, data) {
   set(loc + '-title', 'innerText', recommender)
   set(loc + '-title', 'href', 'https://store.steampowered.com/app/' + gameId)
   set(loc + '-image', 'src', `https://cdn.akamai.steamstatic.com/steam/apps/${gameId}/header.jpg`)
-  
+
   if (gameId == null) return // Ran out of recommendations
 
   var gameName = globalGameData.get(gameId).name
@@ -302,7 +307,7 @@ function loadAboutGame(gameId) {
     } else {
       set('video', 'display', 'none')
       set('video', 'src', '')
-    }      
+    }
 
     for (var i = 0; i < 4; i++) {
       if (i < max_photos && r.screenshots.length > i) {
@@ -320,7 +325,7 @@ function loadAboutGame(gameId) {
 function setupDropdowns() {
   var gameSearch = document.getElementById('search_games_input')
   var gameSearchList = document.getElementById('search_games_list')
-  gameSearch.addEventListener('pointerdown', () => {
+  gameSearch.addEventListener('focus', () => {
     gameSearch.value = ''
     gameSearch.style.color = 'black'
     gameSearchList.style.display = null
@@ -342,7 +347,7 @@ function setupDropdowns() {
 
   var includeTagSearch = document.getElementById('search_include_input')
   var includeTagSearchList = document.getElementById('search_include_list')
-  includeTagSearch.addEventListener('pointerdown', () => {
+  includeTagSearch.addEventListener('focus', () => {
     includeTagSearch.value = ''
     includeTagSearch.style.color = 'black'
     includeTagSearchList.style.display = null
@@ -367,13 +372,13 @@ function setupDropdowns() {
       includeTagSearch.value = `Including ${includedTags.size} tags`
       includeTagSearch.style.color = 'black'
     }
-      
+
     includeTagSearchList.style.display = 'none'
   })
 
   var excludeTagSearch = document.getElementById('search_exclude_input')
   var excludeTagSearchList = document.getElementById('search_exclude_list')
-  excludeTagSearch.addEventListener('pointerdown', () => {
+  excludeTagSearch.addEventListener('focus', () => {
     excludeTagSearch.value = ''
     excludeTagSearch.style.color = 'black'
     excludeTagSearchList.style.display = null
@@ -398,7 +403,7 @@ function setupDropdowns() {
       excludeTagSearch.value = `Excluding ${excludedTags.size} tags`
       excludeTagSearch.style.color = 'black'
     }
-      
+
     excludeTagSearchList.style.display = 'none'
   })
 }
@@ -454,7 +459,7 @@ function populateIncludeTagDropdown() {
       entries.push(tagId)
     }
   }
-  
+
   populateDropdown(
     /*prefix*/'search_include',
     /*entries*/entries,
@@ -490,7 +495,7 @@ function populateExcludeTagDropdown() {
       entries.push(tagId)
     }
   }
-  
+
   populateDropdown(
     /*prefix*/'search_exclude',
     /*entries*/entries,
