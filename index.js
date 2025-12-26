@@ -10,6 +10,8 @@
 //   has a 'game_header_image_full' url of:
 //   https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3654570/928f2894a49b21bd9b8556ef53d4ad5c21c58b08/header.jpg?t=1765304615
 //   I can get these while scraping, but that means I'd need to store them somewhere...
+// TODO: Refreshing the page while typing in a textbox seems to leave lingering artifacts (colored gray).
+// TODO: When you exhaust the games list, there should be something smart(er) we do as a placeholder for 'null'. Not sure OTOH.
 window.onload = function() {
   setupDropdowns()
 
@@ -119,7 +121,7 @@ ${gameName} is a "default" match, since it is directly recommended by ${baseGame
 
 // Check to see if there are globally included/excluded tags, and filter games based on that
 function matchesUserTags(gameId) {
-  if (!window.globalGameData.has(gameId)) return true // TODO: vacuously true for now
+  if (!window.globalGameData.has(gameId)) return false // Invalid games shouldn't show up
   var tags = window.globalGameData.get(gameId).tags
   if (includedTags.size > 0 && !includedTags.intersection(tags).size > 0) return false
   if (excludedTags.size > 0 && excludedTags.intersection(tags).size > 0) return false
