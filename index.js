@@ -286,7 +286,15 @@ function loadAboutGame(gameId) {
     var max_photos = 4
     if (r.video != null) {
       set('video', 'display', null)
-      set('video', 'src', r.video)
+      if (r.video.dash != null) {
+        var url = r.video.dash
+        var player = dashjs.MediaPlayer().create()
+        player.initialize(document.getElementById('video'), url, true)
+
+        // set('video-dash', 'src', r.video.dash)
+      } else if (r.video.webm != null) {
+        set('video', 'src', r.video.webm)
+      }
       max_photos--
     } else {
       set('video', 'display', 'none')

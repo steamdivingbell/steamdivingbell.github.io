@@ -152,7 +152,13 @@ function loadGameDetails(gameId) {
     if (r.platforms.mac)     gameDetails.platforms.push('Mac')
     if (r.platforms.linux)   gameDetails.platforms.push('Linux')
 
-    if (r.movies != null && r.movies.length > 0) gameDetails['video'] = r.movies[0].webm.max.replace('http://', 'https://')
+    if (r.movies != null && r.movies.length > 0) {
+      gameDetails['video'] = {
+        'webm': (r.movies[0].webm ? r.movies[0].webm.max.replace('http://', 'https://') : null),
+        // 'hls': r.movies[0].hls_h264,
+        'dash': r.movies[0].dash_h264,
+      }
+    }
 
     if (r.release_date != null) gameDetails.releaseDate = DATE_FORMAT.format(new Date(r.release_date.date))
 
