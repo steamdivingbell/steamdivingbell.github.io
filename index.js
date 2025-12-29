@@ -1,17 +1,17 @@
 // Other recommenders I thought of:
-// - 'Top' matches -- sort_by_tags for the top ~100/~1000 games (by some metric)
+// - 'Top' matches -- sort_by_tags for the top ~100/~1000 games (by tags)
 // - 'New' matches -- sort_by_tags for games in the last week/month/year (probably year)
 // TODO: Default exclude R18 tags (anything in category: sex or category: mature)
 //        Thinking more, do I want tag filters to actually be category filters? Maybe for 'exclude' I want that.
 // TODO: If the currently active game is excluded by tags, how do we reload? -> I think we actually just *do nothing*.
 // TODO: Cache filtered tags in localstorage?
-// TODO: Images are breaking on some newer games, since the static 'header.jpg' isn't a static url anymore. For example:
-//   https://store.steampowered.com/app/3654570/Cube_Mind/
-//   has a 'game_header_image_full' url of:
-//   https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3654570/928f2894a49b21bd9b8556ef53d4ad5c21c58b08/header.jpg?t=1765304615
-//   I can get these while scraping, but that means I'd need to store them somewhere...
-// TODO: Refreshing the page while typing in a textbox seems to leave lingering artifacts (colored gray).
-// TODO: When you exhaust the games list, there should be something smart(er) we do as a placeholder for 'null'. Not sure OTOH.
+// TODO: When you exhaust the games list, there should be something smart(er) we do as a placeholder for 'null'. Not sure OTOH. Probably just a placeholder image.
+// TODO: download_categories() is broken somehow?
+// TODO: Case study: "12140" is deleted, has no app_details, but the store page exists?
+// TODO: Once I'm done with this, audit data['type'] == 'game'
+//   apparently this can be 'advertising' or 'episode'. Worth getting a full list and making some decisions re: empty descriptions.
+// TODO: Audit for games named 'Playtest' which  aren't deleted.
+
 window.onload = function() {
   setupDropdowns()
 
