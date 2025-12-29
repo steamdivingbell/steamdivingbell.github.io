@@ -82,6 +82,14 @@ function gem_matches(baseGameId) {
   return sort_games_by_tags(games, baseGameId)
 }
 
+// "Top" is for games from the top 1,000 games (based on adjusted gem rating), then sorted by tags.
+function top_matches(baseGameId) {
+  var games = top_games()
+  var existingIndex = games.indexOf(baseGameId)
+  if (existingIndex != -1) games.splice(existingIndex, 1) // Don't try to recommend ourself :)
+  return sort_games_by_tags(games, baseGameId)
+}
+
 function top_games() {
   // Order games by adjusted gem rating, ignoring games with <500 reviews
   var games = []
@@ -91,7 +99,6 @@ function top_games() {
   games.sort((a, b) => Math.sign(window.globalRatingData.get(b).sortKey - window.globalRatingData.get(a).sortKey))
   return games
 }
-
 
 // Used in many places for tie breaks, also used directly for the tag recommender
 function sort_games_by_tags(games, baseGameId) {

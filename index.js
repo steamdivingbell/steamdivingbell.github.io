@@ -1,6 +1,7 @@
 // Other recommenders I thought of:
-// - 'Top' matches -- sort_by_tags for the top ~100/~1000 games (by tags)
 // - 'New' matches -- sort_by_tags for games in the last week/month/year (probably year)
+//    This requires me to have another index based on release date (sigh). Very doable but takes MORE WORK.
+// TODO: Top is implemented but it's awkward to have >4 recommenders.
 // TODO: Default exclude R18 tags (anything in category: sex or category: mature)
 //        Thinking more, do I want tag filters to actually be category filters? Maybe for 'exclude' I want that.
 // TODO: If the currently active game is excluded by tags, how do we reload? -> I think we actually just *do nothing*.
@@ -10,7 +11,7 @@
 // TODO: Case study: "12140" is deleted, has no app_details, but the store page exists?
 // TODO: Once I'm done with this, audit data['type'] == 'game'
 //   apparently this can be 'advertising' or 'episode'. Worth getting a full list and making some decisions re: empty descriptions.
-// TODO: Audit for games named 'Playtest' which  aren't deleted.
+// TODO: Audit for games named 'Playtest' which aren't deleted.
 
 window.onload = function() {
   setupDropdowns()
@@ -75,6 +76,7 @@ var styles = {
   'Similar tags':   'background: darkgreen;   color: white; font-weight: bold; font-size: 20px',
   'Loose match':    'background: sienna;      color: white; font-weight: bold; font-size: 20px',
   'Reverse match':  'background: darkmagenta; color: white; font-weight: bold; font-size: 20px',
+  'Top match':      'background: turqouise;   color: white; font-weight: bold; font-size: 20px',
   'Default match':  'background: darkred;     color: white; font-weight: bold; font-size: 20px',
 }
 
@@ -106,12 +108,15 @@ It is commonly recommended by games which are recommended by ${baseGameName}.`,
     'Reverse match': `Reverse match
 ${gameName} is a reverse "more like this" match for ${baseGameName},
 i.e. ${baseGameName} is recommended by ${gameName}.`,
+    'Top match': `Top match
+${gameName} is one of the 1000 top rated games, and has several tags in common with ${baseGameName}:
+${compare_candidates_verbose(baseGameId, gameId)}`,
     'Default match': `Default match
 ${gameName} is a "default" match, since it is directly recommended by ${baseGameName}.`,
   }[recommender]
   set(loc + '-image', 'title', titleText)
 
-  if (recommender == 'Hidden gem' || recommender == 'Similar tags') {
+  if (['Hidden gem', 'Similar tags', 'Top match'].includes(recommender)) {
     var perc = Math.round(100 * compare_candidates(baseGameId, gameId)) + '%'
     set(loc + '-note', 'innerText', perc)
   } else {
@@ -133,14 +138,16 @@ function loadImages(baseGameId) {
   var r_tags = document.getElementById('r_tags').className == 'toggle'
   var r_loose = document.getElementById('r_loose').className == 'toggle'
   var r_reverse = document.getElementById('r_reverse').className == 'toggle'
+  var r_top = document.getElementById('r_top').className == 'toggle'
 
-  var num_enabled = (r_gems ? 1 : 0) + (r_tags ? 1 : 0) + (r_loose ? 1 : 0) + (r_reverse ? 1 : 0)
-  var per_category = [12, 8, 4, 3, 2][num_enabled]
+  var num_enabled = (r_gems ? 1 : 0) + (r_tags ? 1 : 0) + (r_loose ? 1 : 0) + (r_reverse ? 1 : 0) + (r_top ? 1 : 0)
+  var per_category = num_enabled == 0 ? 8 : Math.ceil(8 / num_enabled)
 
   var gems = gem_matches(baseGameId)
   var tags = tag_matches(baseGameId)
   var loose = loose_matches(baseGameId)
   var reverse = reverse_matches(baseGameId)
+  var top_ = top_matches(baseGameId)
   var similar = default_matches(baseGameId)
 
   var shownGames = new Set()
@@ -194,6 +201,18 @@ function loadImages(baseGameId) {
         }
       }
     }
+    if (r_top) {
+      for (var i = 0; i < per_category; i++) {
+        if (matches.length == 8) break
+        if (top_.length == 0) break
+        var gameId = top_.shift()
+        if (shownGames.has(gameId) || !matchesUserTags(gameId)) i--
+        else {
+          matches.push([gameId, 'Top match', baseGameId])
+          shownGames.add(gameId)
+        }
+      }
+    }
     // Fallback to Steam's recommendations if we run out of our recommenders
     for (var i = 0; /**/; i++) {
       if (matches.length == 8) break
@@ -220,10 +239,11 @@ function loadImages(baseGameId) {
   setImageCard('ml', matches[7])
 
   // Setup alt text for the various dynamic buttons
-  set('r_gems', 'title', (r_gems ? 'Disable' : 'Enable') + ' the "Gems" recommender')
-  set('r_tags', 'title', (r_tags ? 'Disable' : 'Enable') + ' the "Tags" recommender')
-  set('r_loose', 'title', (r_loose ? 'Disable' : 'Enable') + ' the "Loose" recommender')
-  set('r_reverse', 'title', (r_reverse ? 'Disable' : 'Enable') + ' the "Reverse" recommender')
+  set('r_gems',     'title', (r_gems    ? 'Disable' : 'Enable') + ' the "Gems" recommender')
+  set('r_tags',     'title', (r_tags    ? 'Disable' : 'Enable') + ' the "Tags" recommender')
+  set('r_loose',    'title', (r_loose   ? 'Disable' : 'Enable') + ' the "Loose" recommender')
+  set('r_reverse',  'title', (r_reverse ? 'Disable' : 'Enable') + ' the "Reverse" recommender')
+  set('r_top',      'title', (r_top     ? 'Disable' : 'Enable') + ' the "Top" recommender')
 
   if (pageNo > 0) { // If there are still previous pages
     set('back', 'title', `Previous results for ${globalGameData.get(baseGameId).name}`)
@@ -255,6 +275,7 @@ function setupButtons(gameId) {
   set('r_tags', 'click', toggleRecommender)
   set('r_loose', 'click', toggleRecommender)
   set('r_reverse', 'click', toggleRecommender)
+  set('r_top', 'click', toggleRecommender)
 
   set('back', 'click', () => {
     if (pageNo > 0) { // If there are previous pages of results, go to them
