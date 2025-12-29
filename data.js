@@ -164,3 +164,9 @@ function loadGameDetails(gameId) {
     return gameDetails
   })
 }
+
+window.getHeaderImage = function(gameId) {
+  if (window.header_images[gameId] != null) return window.header_images[gameId]
+
+  return `https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/${gameId}/header.jpg`
+}

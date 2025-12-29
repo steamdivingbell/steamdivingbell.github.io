@@ -85,7 +85,7 @@ function setImageCard(loc, data) {
   set(loc + '-cell', 'style', styles[recommender])
   set(loc + '-title', 'innerText', recommender)
   set(loc + '-title', 'href', 'https://store.steampowered.com/app/' + gameId)
-  set(loc + '-image', 'src', `https://cdn.akamai.steamstatic.com/steam/apps/${gameId}/header.jpg`)
+  set(loc + '-image', 'src', window.getHeaderImage(gameId))
 
   if (gameId == null) return // Ran out of recommendations
 
