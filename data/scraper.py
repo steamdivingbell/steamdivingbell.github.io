@@ -183,8 +183,35 @@ def download_app_details(game_id):
     if category['id'] in [10, 21]: # Demo or DLC
       print(f'Game is "{category["description"]}", not including')
       return False
+    elif app_details['data'].get('detailed_description', '') == '':
+      print(f'Game has no description, not including (probably a playtest)')
+      return False
 
   return True
+
+def check_header_image(game_id):
+  # The 'expected' value for header images is something like
+  # https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/400/header.jpg?t=1766153485
+  # Sometimes this does not resolve and we must use the "full" path, e.g.
+  # https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3654570/928f2894a49b21bd9b8556ef53d4ad5c21c58b08/header.jpg?t=1766153485
+  # In the latter case, save a link to the image so we can show it without loading app data.
+  expected_header = f'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/{game_id}/header.jpg'
+  r = requests.head(expected_header, allow_redirects=False)
+  if r.status_code == 200:
+    return # Header exists as expected
+  elif 300 <= r.status_code <= 399:
+    return # Invalid game, not sure why we got here
+  elif r.status_code == 404:
+    actual_header = load_json(f'app_details/{game_id}.json')['header_image']
+
+    print(f'{game_id} is using a custom header image')
+
+    header_images = load_json('header_images.js')
+    header_images[game_id] = actual_header
+    dump_js(header_images, 'header_images.js')
+  else:
+    r.raise_for_status() # wtf
+
 
 def meets_score_threshold(positive, total):
   if total <= 0:
@@ -251,17 +278,15 @@ def refresh_game(game_id):
   throttling_limit = datetime.now() + timedelta(seconds=5) # The throttling limit for app details is 40 calls per minute, so this is a reasonably generous sleep.
   try:
     if not download_app_details(game_id): # We always want app details, and if the app details fail to load it's an invalid game.
-      # If the game was invalid, make a note of it in deleted_games so that we don't try to fetch it again.
-      deleted_games = load_json('deleted_games.js')
-      deleted_games[game_id] = datetime.now().timestamp()
-      dump_js(deleted_games, 'deleted_games.js')
+      delete_game(game_id)
 
     elif not download_review_details(game_id): # We then fetch review details -- and if that fails, it's because the game's too low rated.
       pass # For games which don't meet review threshold, we don't need to do any long-term marking -- the reviews might change.
 
-    else: # Then we download tags and similar games (both of which have no failure states)
+    else: # Then we download other metadata which has no failure state
       download_app_tags(game_id)
       download_similar_games(game_id)
+      check_header_image(game_id)
   except requests.exceptions.RequestException:
     # Any kind of network error should be considered transient -- skip this game and we'll come back later.
     traceback.print_exc(chain=False)
@@ -269,6 +294,20 @@ def refresh_game(game_id):
   sleep_for = (throttling_limit - datetime.now()).total_seconds()
   if sleep_for > 0:
     sleep(sleep_for)
+
+def delete_game(game_id):
+  # If the game was invalid, make a note of it in deleted_games so that we don't try to fetch it again.
+  deleted_games = load_json('deleted_games.js')
+  deleted_games[game_id] = datetime.now().timestamp()
+  dump_js(deleted_games, 'deleted_games.js')
+  
+  # Also, remove it from the list of 'reviewed' games, so it won't show up in the system.
+  # Note that (rarely) games with 10k+ reviews will be deleted; I am choosing to not list them since their steam pages are down.
+  
+  reviews = load_json('reviews.js')
+  if game_id in reviews:
+    reviews.pop(game_id)
+    dump_js(reviews, 'reviews.js')
 
 if __name__ == '__main__':
   if len(sys.argv) > 1:
