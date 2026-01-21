@@ -226781,7 +226781,7 @@ window.all_reviews = {
 	"3660630":{"positive":0,"total":0},
 	"3660650":{"positive":0,"total":0},
 	"3660690":{"positive":4,"total":4},
-	"3660700":{"positive":304,"total":541},
+	"3660700":{"positive":334,"total":600},
 	"3660720":{"positive":0,"total":0},
 	"3660740":{"positive":0,"total":0},
 	"3660790":{"positive":6,"total":14},
