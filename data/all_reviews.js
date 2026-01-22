@@ -228029,7 +228029,7 @@ window.all_reviews = {
 	"3690450":{"positive":0,"total":0},
 	"3690460":{"positive":67,"total":94},
 	"3690470":{"positive":7,"total":9},
-	"3690490":{"positive":0,"total":0},
+	"3690490":{"positive":78,"total":80},
 	"3690510":{"positive":0,"total":0},
 	"3690530":{"positive":0,"total":2},
 	"3690550":{"positive":0,"total":0},
