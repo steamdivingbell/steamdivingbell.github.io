@@ -8380,7 +8380,7 @@ window.reviews = {
 	"971780":{"positive":13,"total":13},
 	"972160":{"positive":102,"total":109},
 	"972390":{"positive":46,"total":53},
-	"972660":{"positive":47648,"total":50130},
+	"972660":{"positive":48513,"total":51043},
 	"972740":{"positive":240,"total":293},
 	"972850":{"positive":26,"total":29},
 	"972960":{"positive":23,"total":23},
