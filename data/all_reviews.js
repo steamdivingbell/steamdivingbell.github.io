@@ -74150,7 +74150,7 @@ window.all_reviews = {
 	"1311510":{"positive":100,"total":106},
 	"1311540":{"positive":217,"total":265},
 	"1311560":{"positive":0,"total":0},
-	"1311570":{"positive":329,"total":337},
+	"1311570":{"positive":345,"total":355},
 	"1311600":{"positive":0,"total":0},
 	"1311610":{"positive":3,"total":3},
 	"1311640":{"positive":260,"total":279},
