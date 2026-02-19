@@ -16202,7 +16202,7 @@ window.reviews = {
 	"1724300":{"positive":41,"total":47},
 	"1724320":{"positive":377,"total":442},
 	"1724440":{"positive":376,"total":446},
-	"1724770":{"positive":597,"total":712},
+	"1724770":{"positive":604,"total":724},
 	"1724810":{"positive":15,"total":15},
 	"1724980":{"positive":39,"total":42},
 	"1725430":{"positive":21,"total":21},
