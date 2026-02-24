@@ -122912,7 +122912,7 @@ window.all_reviews = {
 	"2012630":{"positive":23,"total":23},
 	"2012640":{"positive":0,"total":0},
 	"2012650":{"positive":11,"total":17},
-	"2012670":{"positive":258,"total":299},
+	"2012670":{"positive":265,"total":307},
 	"2012680":{"positive":0,"total":0},
 	"2012690":{"positive":11,"total":11},
 	"2012710":{"positive":6,"total":6},
