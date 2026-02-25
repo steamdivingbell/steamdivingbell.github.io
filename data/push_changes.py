@@ -3,7 +3,7 @@ This python script commits and pushes the changes afer the main script (scraper.
 It used to be an inline bash script until it got too complicated.
 """
 import subprocess
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 from scraper import load_json
@@ -30,7 +30,7 @@ print('All files validated')
 git('config', '--global', 'user.email', 'steam-diving-bell@noreply.github.com')
 git('config', '--global', 'user.name', 'SteamDivingBellBot')
 git('add', '-A')
-git('commit', '-am', f'Updated game data on {datetime.utcnow()}')
+git('commit', '-am', f'Updated game data on {datetime.now(timezone.utc)}')
 
 try:
   git('push')
@@ -38,4 +38,9 @@ except subprocess.CalledProcessError as e:
   print(e)
   git('fetch', 'origin', 'master')
   git('rebase', 'origin/master', '-Xtheirs') # Merge with master but our changes lose (we're just a stupid bot)
-  git('push')
+  git('log', '--oneline', '-n', '10')
+  try:
+    git('push')
+  except subprocess.CalledProcessError as e2:
+    print(e2)
+    exit(1)
