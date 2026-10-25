@@ -1,0 +1,4 @@
+[submodule "data/app_details"]
+	path = data/app_details
+	url = https://github.com/steamdivingbell/divingbell-data
+	branch = main
