@@ -66,8 +66,8 @@ def dump_json(data, file):
   with file.open('w+', encoding='utf-8') as f:
     json.dump(data, f, sort_keys=True, separators=(',', ':'))
 
-def get(url):
-  r = requests.get(url, timeout=20, headers=headers)
+def get(url, **params):
+  r = requests.get(url, params=params, timeout=20, headers=headers)
   r.raise_for_status()
   return r.json()
 
@@ -120,10 +120,15 @@ def write_readme_statistics():
 
 ## Official APIs ##
 
-def download_app_list():
-  """https://steamapi.xpaw.me/#ISteamApps/GetAppList"""
-  latest_games = {}
-  app_list = get('https://api.steampowered.com/ISteamApps/GetAppList/v2')['applist']['apps']
+def download_app_list(last_fetched):
+  """https://partner.steamgames.com/doc/webapi/IStoreService#GetAppList"""
+  params = {
+    'key': API_KEY,
+    'include_dlc': True,
+    'include_software': True,
+    'last_appid': last_fetched,
+  }
+  app_list = get(f'https://api.steampowered.com/IStoreService/GetAppList/v1', **params)['response']['apps']
 
   game_names = load_json('game_names.js')
   for game_data in app_list:
@@ -334,9 +339,14 @@ if __name__ == '__main__':
     if datetime.now() >= end_time:
       exit() # In case we took too long fetching games
 
+  # The app list (in the latest steam APIs) now requires a 'last_appid', instead of randomly returning a sample.
+  # We are re-using the 'refresh' app ID for fetching.
+  with Path('last_fetched.txt').open('r') as f:
+    last_fetched = f.read()
+
   # Refresh static data (only once per hour)
   try:
-    download_app_list()
+    download_app_list(last_fetched)
     download_tags()
     # download_categories() # TODO: Broken somehow
   except requests.exceptions.RequestException:
@@ -360,9 +370,7 @@ if __name__ == '__main__':
   # Then, refresh games in order from where we left off
   ordered_games = list(all_games.keys())
   ordered_games.sort(key = lambda k: int(k)) # Our games are stored as strings in JSON. We want an actual int sort for this.
-  with Path('last_fetched.txt').open('r') as f:
-    last_fetched = f.read()
-    index = ordered_games.index(last_fetched)
+  index = ordered_games.index(last_fetched)
 
   while datetime.now() < end_time:
     game = ordered_games[index]
