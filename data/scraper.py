@@ -25,7 +25,6 @@ headers = {
 cookies = {
   'birthtime': '946713600', # January 1, 2000
 }
-API_KEY = os.environ['STEAM_API_KEY']
 
 ## Helper methods ##
 
@@ -125,7 +124,7 @@ def write_readme_statistics():
 def download_app_list(last_fetched):
   """https://partner.steamgames.com/doc/webapi/IStoreService#GetAppList"""
   params = {
-    'key': API_KEY,
+    'key': os.environ['STEAM_API_KEY'],
     'include_dlc': True,
     'include_software': True,
     'last_appid': last_fetched,
@@ -160,7 +159,7 @@ def download_categories():
 
   latest_categories = {}
   for category in category_data:
-    latest_categories[category['categoryid']] = {
+    latest_categories[str(category['categoryid'])] = {
       'name': category['name'],
       'icon': 'https://steamstore-a.akamaihd.net/public/images/' + category['image_path'],
     }
