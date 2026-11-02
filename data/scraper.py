@@ -8,6 +8,7 @@ from pathlib import Path
 from time import sleep
 import math
 import json
+import os
 import random
 import sys
 import textwrap
@@ -24,6 +25,7 @@ headers = {
 cookies = {
   'birthtime': '946713600', # January 1, 2000
 }
+API_KEY = os.environ['STEAM_API_KEY']
 
 ## Helper methods ##
 
@@ -146,7 +148,10 @@ def download_tags():
     name = name.strip()
     tags[tag_id] = {'name': name}
   for tag_id, categories in tag_data['rgCategoriesByTag'].items():
-    tags[tag_id]['categories'] = categories
+    if tag_id not in tags:
+      print(f'WARNING: Tag ID {tag_id} was not found in rgTagNames!')
+    else:
+      tags[tag_id]['categories'] = categories
   dump_js(tags, 'tags.js')
 
 def download_categories():
@@ -348,7 +353,7 @@ if __name__ == '__main__':
   try:
     download_app_list(last_fetched)
     download_tags()
-    # download_categories() # TODO: Broken somehow
+    download_categories()
   except requests.exceptions.RequestException:
     # Any kind of network error should be considered transient, we'll try again next hour.
     traceback.print_exc(chain=False)

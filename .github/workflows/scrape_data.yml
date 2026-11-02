@@ -28,6 +28,8 @@ jobs:
     - run: python -u scraper.py
       working-directory: data
       timeout-minutes: 120
+      env:
+        STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
     - name: Commit game data
       if: ${{ always() }}
       run: python -u push_changes.py
