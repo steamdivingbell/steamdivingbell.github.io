@@ -70,7 +70,10 @@ def dump_json(data, file):
 def get(url, **params):
   r = requests.get(url, params=params, timeout=20, headers=headers)
   r.raise_for_status()
-  return r.json()
+  try:
+    return r.json()
+  except:
+    raise ValueError(f'Response from {url} was not in JSON:\n{r.text}')
 
 def get_soup(url):
   r = requests.get(url, timeout=20, headers=headers, cookies=cookies)
@@ -221,7 +224,6 @@ def check_header_image(game_id):
   else:
     r.raise_for_status() # wtf
 
-
 def meets_score_threshold(positive, total):
   if total <= 0:
     return False
@@ -235,7 +237,12 @@ def meets_score_threshold(positive, total):
 
 def download_review_details(game_id):
   """https://github.com/Revadike/InternalSteamWebAPI/wiki/Get-App-Reviews"""
-  app_reviews = get(f'https://store.steampowered.com/appreviews/{game_id}?json=1&filter=summary&language=all&purchase_type=all')
+  params = {
+    'filter': 'summary',
+    'purchase_type': 'all',
+    'language': 'all',
+  }
+  app_reviews = get(f'https://store.steampowered.com/ajaxappreviews/{game_id}', **params)
   positive = app_reviews['query_summary'].get('total_positive', 0)
   total = app_reviews['query_summary'].get('total_reviews', 0)
 
