@@ -1,12 +1,18 @@
 ﻿name: Scrape game data
 on:
-  schedule:
-    - cron: '42 * * * *' # Runs 42 minutes past the hour, every hour
+  # Disabled due to inconsistencies in the github triggering.
+  # schedule:
+  #  - cron: '42 * * * *' # Runs 42 minutes past the hour, every hour
   workflow_dispatch:
 permissions:
   contents: write
   pages: write
   id-token: write
+
+# Delay each task until the next one, so that the requeued task doesn't stomp on this one.
+concurrency:
+  group: scrape
+  cancel-in-progress: false
 
 jobs:
   run:
@@ -38,3 +44,12 @@ jobs:
       with:
         path: .
     - uses: actions/deploy-pages@main
+
+    # The github cron triggers are not working consistently, but it's not a VM capacity issue (somehow).
+    # Instead, just requeue this task at the end, and the concurrency group will wait for the current run before starting it.
+    # If github's infra goes down, I can restart the loop by manual trigger (probably).
+    - name: Requeue CI
+      run: gh workflow run scrape_data.yml --ref ${{ github.ref_name }}
+      env:
+        GH_TOKEN: ${{ github.token }}
+        GH_REPO: ${{ github.repository }}
