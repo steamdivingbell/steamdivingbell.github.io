@@ -5,9 +5,10 @@ on:
   #  - cron: '42 * * * *' # Runs 42 minutes past the hour, every hour
   workflow_dispatch:
 permissions:
+  actions: write
   contents: write
-  pages: write
   id-token: write
+  pages: write
 
 # Delay each task until the next one, so that the requeued task doesn't stomp on this one.
 concurrency:
