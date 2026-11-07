@@ -10,14 +10,13 @@ permissions:
   id-token: write
   pages: write
 
-# Delay each task until the next one, so that the requeued task doesn't stomp on this one.
-concurrency:
-  group: scrape
-  cancel-in-progress: false
-
 jobs:
   run:
     runs-on: ubuntu-latest
+    # Delay each task until the next one, so that the requeued task doesn't stomp on this one.
+    concurrency:
+      group: scrape
+      cancel-in-progress: false
 
     steps:
     - uses: actions/checkout@main
@@ -54,6 +53,14 @@ jobs:
     needs: run
 
     steps:
+    - uses: actions/checkout@main
+    - uses: actions/checkout@main
+      with:
+        repository: steamdivingbell/divingbell-data
+        ref: main
+        path: data/app_details
+        fetch-depth: 1
+        token: ${{ secrets.DIVINGBELL_DATA_TOKEN }} # This repo is private. This will also allow us to push to it.
     - uses: actions/upload-pages-artifact@main
       with:
         path: .
