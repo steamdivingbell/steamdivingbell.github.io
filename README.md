@@ -16,26 +16,18 @@ The current state of this project is:
 
 Much like the original, this code is under the MIT license -- see [the license](https://github.com/jbzdarkid/divingbell/blob/master/LICENSE.md) for details.
 
-This repo also contains the raw data files (in the `data/` folder), which have been download and/or scraped from Steam.
-All the usual legally gray areas about scraping aside, please don't assume that I own any scraped data.
+This repo relies on data which has been download and/or scraped from Steam.
+Please don't assume that I own any scraped data. Please don't re-use the data *from* this repo -- I've provided my [scraping script](data/scraper.py) for anyone who wants to replicate my work.
 
 # An overview
-This project is a web app that helps you find new games on steam. The basic idea is that you select one game, and diving bell will give you 8 recommendations (in a square around the selected game). You can hover those games to get some details, or you can click on one to "dive in", in which case the game you clicked becomes selected and 
+This project is a web app that helps you find new games on steam. The basic idea is that you select one game, and diving bell will give you 8 recommendations (in a square around the selected game). You can hover those games to get some details, or you can click on one to "dive in", in which case the game you clicked becomes selected and the process repeats.
 
 ## Extra features from the original
-1. First and most importantly, I've updated the database with the latest games. You can see some statistics below, but it's a helluva lot bigger than the original 34,600 games from 2019. (that said, I have reduced the database to only the 'popular' games for performance reasons, so it's really around the same size.)
-2. Secondly, the app is now capable of tag filtering. This helps further scope the massive list of games -- if you don't want to see horror games, you don't have to.
-3. (More to come)
-
-
-
-
-
-
-
-
-
-
+1. I've updated the database with the latest games. You can see some statistics below -- in the end, I had to filter down the games to get something that still gave reasonable suggestions.
+2. The app is now capable of tag filtering. This helps further scope the massive list of games -- if you don't want to see horror games, you don't have to.
+3. (more to come)
+<!-- The app is now HTML-native so it is more accessible and reactive to other layouts (i.e. mobile) -->
+<!-- Once I have the 'new' filter working, that should go here too -->
 
 
 
