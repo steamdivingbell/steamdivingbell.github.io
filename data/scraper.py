@@ -242,7 +242,11 @@ def download_review_details(game_id):
     'purchase_type': 'all',
     'language': 'all',
   }
+
   app_reviews = get(f'https://store.steampowered.com/ajaxappreviews/{game_id}', **params)
+  if not app_reviews['success']:
+    return False # Transient issue, skip the game. This does not mark it as deleted.
+
   positive = app_reviews['query_summary'].get('total_positive', 0)
   total = app_reviews['query_summary'].get('total_reviews', 0)
 
