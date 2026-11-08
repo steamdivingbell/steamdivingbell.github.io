@@ -43,7 +43,7 @@ function set(id, key, value) {
       elem.onmouseleave = () => { clearTimeout(timer) }
     }
   } else if (key == 'click') {
-    elem.onpointerdown = value
+    elem.onclick = value
   } else if (key == 'style') {
     elem.style = value
   } else if (key == 'display') {
@@ -134,11 +134,11 @@ function matchesUserTags(gameId) {
 }
 
 function loadImages(baseGameId) {
-  var r_gems = document.getElementById('r_gems').className == 'toggle'
-  var r_tags = document.getElementById('r_tags').className == 'toggle'
-  var r_loose = document.getElementById('r_loose').className == 'toggle'
-  var r_reverse = document.getElementById('r_reverse').className == 'toggle'
-  var r_top = document.getElementById('r_top').className == 'toggle'
+  var r_gems = document.getElementById('r_gems').getAttribute('aria-pressed') == 'true'
+  var r_tags = document.getElementById('r_tags').getAttribute('aria-pressed') == 'true'
+  var r_loose = document.getElementById('r_loose').getAttribute('aria-pressed') == 'true'
+  var r_reverse = document.getElementById('r_reverse').getAttribute('aria-pressed') == 'true'
+  var r_top = document.getElementById('r_top').getAttribute('aria-pressed') == 'true'
 
   var num_enabled = (r_gems ? 1 : 0) + (r_tags ? 1 : 0) + (r_loose ? 1 : 0) + (r_reverse ? 1 : 0) + (r_top ? 1 : 0)
   var per_category = num_enabled == 0 ? 8 : Math.ceil(8 / num_enabled)
@@ -247,14 +247,14 @@ function loadImages(baseGameId) {
 
   if (pageNo > 0) { // If there are still previous pages
     set('back', 'title', `Previous results for ${globalGameData.get(baseGameId).name}`)
-    set('back', 'class', 'navigation')
+    set('back', 'aria-disabled', false)
   } else if (previousGames.length > 0) { // Otherwise, this button goes back to the previous game
     var previousGame = previousGames[previousGames.length - 1]
     set('back', 'title', `Back to results for ${globalGameData.get(previousGame).name}`)
-    set('back', 'class', 'navigation')
+    set('back', 'aria-disabled', false)
   } else {
     set('back', 'title', '')
-    set('back', 'class', 'navigation-disabled')
+    set('back', 'aria-disabled', true)
   }
 
   set('more', 'title', `More results for ${globalGameData.get(baseGameId).name}`)
@@ -262,12 +262,7 @@ function loadImages(baseGameId) {
 
 function setupButtons(gameId) {
   var toggleRecommender = function() {
-    if (this.className === 'toggle') {
-      this.className = 'toggle-off'
-    } else {
-      this.className = 'toggle'
-    }
-
+    this.setAttribute('aria-pressed', this.getAttribute('aria-pressed') != 'true')
     loadImages(gameId)
   }
 

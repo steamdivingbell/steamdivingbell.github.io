@@ -37,19 +37,12 @@
       background: white;
       color: black;
       cursor: pointer;
+      border: none;
     }
     
-    .navigation-disabled {
-      padding: 5px 25px 5px 25px;
-      font-family: Roboto, sans-serif;
-      font-weight: bold;
-      font-size: 25px;
-      background: white;
-      color: gray;
-      cursor: default;
-    }
+    .navigation[aria-disabled="true"] { color: gray; cursor: default }
 
-    .toggle, .toggle-off {
+    .toggle {
       padding: 5px 10px 5px 10px;
       border-radius: 5px;
       font-family: Roboto, sans-serif;
@@ -58,9 +51,11 @@
       color: black;
       background: #66bbff;
       cursor: pointer;
+      border: none;
+      font-size: inherit;
     }
 
-    .toggle-off { background: #335d7f }
+    .toggle[aria-pressed="false"] { background: #335d7f }
   </style>
 </head>
 <body style="background: rgb(27, 40, 56); font-family: Helvetica, Arial, sans-serif; color: white">
@@ -71,54 +66,54 @@
           <td id="tl-cell" style="width: 33%">
             <div id="tl-title" style="float: left; padding: 5px"></div>
             <div id="tl-note"  style="float: right; padding: 5px"></div>
-            <img id="tl-image" style="max-width: 100%; max-height: 100%"></img>
+            <input type="image" id="tl-image" style="max-width: 100%; max-height: 100%">
           </td><td id="tm-cell" style="width: 33%">
             <div id="tm-title" style="float: left; padding: 5px"></div>
             <div id="tm-note"  style="float: right; padding: 5px"></div>
-            <img id="tm-image" style="max-width: 100%; max-height: 100%"></img>
+            <input type="image" id="tm-image" style="max-width: 100%; max-height: 100%">
           </td><td id="tr-cell" style="width: 33%">
             <div id="tr-title" style="float: left; padding: 5px"></div>
             <div id="tr-note"  style="float: right; padding: 5px"></div>
-            <img id="tr-image" style="max-width: 100%; max-height: 100%"></img>
+            <input type="image" id="tr-image" style="max-width: 100%; max-height: 100%">
           </td>
         </tr><tr>          
           <td id="ml-cell" style="width: 33%">
             <div id="ml-title" style="float: left; padding: 5px"></div>
             <div id="ml-note"  style="float: right; padding: 5px"></div>
-            <img id="ml-image" style="max-width: 100%; max-height: 100%"></img>
+            <input type="image" id="ml-image" style="max-width: 100%; max-height: 100%">
           </td><td id="mm-cell" style="width: 33%">
             <div id="mm-title" style="float: left; padding: 5px"></div>
             <div id="mm-note"  style="float: right; padding: 5px"></div>
-            <img id="mm-image" style="max-width: 100%; max-height: 100%"></img>
+            <input type="image" id="mm-image" style="max-width: 100%; max-height: 100%">
           </td><td id="mr-cell" style="width: 33%">
             <div id="mr-title" style="float: left; padding: 5px"></div>
             <div id="mr-note"  style="float: right; padding: 5px"></div>
-            <img id="mr-image" style="max-width: 100%; max-height: 100%"></img>
+            <input type="image" id="mr-image" style="max-width: 100%; max-height: 100%">
           </td>
         </tr><tr>          
           <td id="bl-cell" style="width: 33%">
             <div id="bl-title" style="float: left; padding: 5px"></div>
             <div id="bl-note"  style="float: right; padding: 5px"></div>
-            <img id="bl-image" style="max-width: 100%; max-height: 100%"></img>
+            <input type="image" id="bl-image" style="max-width: 100%; max-height: 100%">
           </td><td id="bm-cell" style="width: 33%">
             <div id="bm-title" style="float: left; padding: 5px"></div>
             <div id="bm-note"  style="float: right; padding: 5px"></div>
-            <img id="bm-image" style="max-width: 100%; max-height: 100%"></img>
+            <input type="image" id="bm-image" style="max-width: 100%; max-height: 100%">
           </td><td id="br-cell" style="width: 33%">
             <div id="br-title" style="float: left; padding: 5px"></div>
             <div id="br-note"  style="float: right; padding: 5px"></div>
-            <img id="br-image" style="max-width: 100%; max-height: 100%"></img>
+            <input type="image" id="br-image" style="max-width: 100%; max-height: 100%">
           </td>
         </tr>
       </table>
       <div id="controls" style="display: flex; width: 100%; justify-content: space-between">
-        <div id="back" class="navigation" style="border-top-right-radius: 5px">Back</div>
-        <div id="r_gems" class="toggle">Gems</div>
-        <div id="r_tags" class="toggle">Tags</div>
-        <div id="r_loose" class="toggle">Loose</div>
-        <div id="r_reverse" class="toggle">Reverse</div>
-        <div id="r_top" class="toggle-off">Top</div>
-        <div id="more" class="navigation" style="border-top-left-radius: 5px">More</div>
+        <button id="back" class="navigation" style="border-top-right-radius: 5px">Back</button>
+        <button id="r_gems" class="toggle" aria-pressed="true">Gems</button>
+        <button id="r_tags" class="toggle" aria-pressed="true">Tags</button>
+        <button id="r_loose" class="toggle" aria-pressed="true">Loose</button>
+        <button id="r_reverse" class="toggle" aria-pressed="true">Reverse</button>
+        <button id="r_top" class="toggle" aria-pressed="false">Top</button>
+        <button id="more" class="navigation" style="border-top-left-radius: 5px">More</button>
       </div>
     </div>
     <div id="rightside" style="flex: 1 1 600px; display: block; padding: 0.5em">
