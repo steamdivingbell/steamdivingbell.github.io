@@ -59,6 +59,7 @@ var pageNo = 0 // Keep track of each page of results so that we can use 'more' t
 var includedTags = new Set() // Tags which must be included on all games
 var excludedTags = new Set() // Tags which must NOT be included on all games
 var gamesOffset = 0 // Global value which tracks how far the games dropdown is scrolled
+var gamesHighlight = 0 // Global value which tracks the currently highlighted entry in the games dropdown
 var includedTagOffset = 0 // Global value which tracks how far the included tags dropdown is scrolled
 var excludedTagOffset = 0 // Global value which tracks how far the excluded tags dropdown is scrolled
 var activeGameId = 0 // Global storage of the active game so that we can reload recommenders as needed.
@@ -93,6 +94,7 @@ function setImageCard(loc, data) {
 
   var gameName = globalGameData.get(gameId).name
   var baseGameName = globalGameData.get(baseGameId).name
+  set(loc + '-image', 'alt', gameName)
 
   var titleText = {
     'Selected': ``,
@@ -347,12 +349,14 @@ function setupDropdowns() {
     gameSearch.value = ''
     gameSearch.style.color = 'black'
     gameSearchList.style.display = null
-    gamesOffset = 0 // Reset offset when opening the dropdown
+    gamesOffset = 0 // Reset offset and highlight when opening the dropdown
+    gamesHighlight = 0
     populateGamesDropdown()
   })
 
   gameSearch.addEventListener('input', () => {
-    gamesOffset = 0 // Reset offset when typing text
+    gamesOffset = 0 // Reset offset and highlight when typing text
+    gamesHighlight = 0
     populateGamesDropdown()
   })
 
@@ -435,6 +439,7 @@ function populateGamesDropdown() {
     if (window.game_names[game].toUpperCase() == filter) { // Always list exact matches
       entries.unshift(game)
     } else if (filter == null || window.game_names[game].toUpperCase().includes(filter)) {
+      // If the dropdown is scrolled, skip entries until we reach the scroll offset.
       if (skipped < gamesOffset) {
         skipped++
         continue
@@ -447,13 +452,28 @@ function populateGamesDropdown() {
     /*prefix*/'search_games',
     /*entries*/entries,
     /*getInnerText*/(entry) => window.game_names[entry],
-    /*isSelected*/(entry) => false,
+    /*isChecked*/(entry) => false,
     /*onclick*/(entry) => {
       var gameSearch = document.getElementById('search_games_input')
       gameSearch.blur(null)
       setActiveGame(entry)
     },
     /*onwheel*/(offset) => {
+      // Highlighting entry 10 (of 10-19), offset = -1
+      // -> 9, 9
+      // Highlighting entry 11 (of 10-19), offset = -1
+      // -> 10, 10
+      // Highlighting entry 12 (of 10-19), offset = -1
+      // -> 11, 10
+
+      // Highlighting entry 17 (of 10-19), offset = +1
+      // -> 18, 10
+      // Highlighting entry 18 (of 10-19), offset = +1
+      // -> 19, 10
+      // Highlighting entry 19 (of 10-19), offset = +1
+      // -> 20, 11
+      // Hmm. This means we need to know how many entries there are, maximum. Which is one of the things we were trying to avoid.
+
       gamesOffset = Math.max(0, gamesOffset + offset)
       populateGamesDropdown()
     })
@@ -482,7 +502,7 @@ function populateIncludeTagDropdown() {
     /*prefix*/'search_include',
     /*entries*/entries,
     /*getInnerText*/(entry) => window.tags[entry]['name'],
-    /*isSelected*/(entry) => includedTags.has(entry),
+    /*isChecked*/(entry) => includedTags.has(entry),
     /*onclick*/(entry) => {
       if (includedTags.has(entry)) includedTags.delete(entry)
       else                         includedTags.add(entry)
@@ -518,7 +538,7 @@ function populateExcludeTagDropdown() {
     /*prefix*/'search_exclude',
     /*entries*/entries,
     /*getInnerText*/(entry) => window.tags[entry]['name'],
-    /*isSelected*/(entry) => excludedTags.has(entry),
+    /*isChecked*/(entry) => excludedTags.has(entry),
     /*onclick*/(entry) => {
       if (excludedTags.has(entry)) excludedTags.delete(entry)
       else                         excludedTags.add(entry)
@@ -531,7 +551,32 @@ function populateExcludeTagDropdown() {
     })
 }
 
-function populateDropdown(prefix, entries, getInnerText, isSelected, onclick, onwheel) {
+function populateDropdown(prefix, entries, getInnerText, isChecked, isHighlighted, onclick, onwheel) {
+  // All of the key events will be on the actual textbox, since it's holding the focus.
+  var dropdownText = document.getElementById(prefix + '_input')
+  dropdownText.onkeydown = (event) => {
+    if (event.key == 'ArrowDown') {
+      event.preventDefault()
+      onwheel(1)
+    } else if (event.key == 'ArrowUp') {
+      event.preventDefault()
+      onwheel(-1)
+    } else if (event.key == 'Enter') {
+      event.preventDefault()
+      // TODO: We need some concept of 'current' here. Copilot suggests an attribute on the input box itself.
+      // We'll also (probably) need to scroll through the list a bit more intelligently, since the 'wheel' event doesn't page through the pinned items.
+      // The simplest fix is (I think) to allow the pinned items to scroll offscreen, although I don't like the idea.
+      // *If* I did that, it would be easy enough to always highlight the first list element.
+      //
+      // The other option is the (fancier and) more conventional one, where you can highlight index 0-9, and if you push 'down' from index 9 it scrolls you down once,
+      // and index 9 stays highlighted. Ditto for scrolling up from index 0. This would (probably?) work better with an always-pin, because you could just say the "sticky"
+      // elements are above the scrollable section, i.e. you have to scroll up from 0 to select them.
+      // Hmm. How does this layer know that we've reached the top, though?
+      // I also don't love leaking indices into this layer -- it's really supposed to know "I have X slots to fill, so I've filled them with X elements".
+      // Yeah, this layer doesn't know about pinned entries.
+    }
+  }
+
   for (var i = 0; i < 10; i++) {
     var dropdownEntry = document.getElementById(prefix + '_' + i)
     if (dropdownEntry == null) break
@@ -540,20 +585,25 @@ function populateDropdown(prefix, entries, getInnerText, isSelected, onclick, on
       dropdownEntry.innerText = getInnerText(entries[i])
       dropdownEntry.setAttribute('entry', entries[i])
 
-      if (isSelected(entries[i])) {
+      if (isChecked(entries[i])) {
         dropdownEntry.style.background = 'blue'
         dropdownEntry.onmouseleave = (event) => event.currentTarget.style.background = 'blue'
       } else {
         dropdownEntry.style.background = 'white'
         dropdownEntry.onmouseleave = (event) => event.currentTarget.style.background = 'white'
       }
-      if (dropdownEntry.matches(':hover')) dropdownEntry.style.background = 'lightblue' // Persist 'hover' color even as the list changes
+      if (isHighlighted(entries[i])) {
+        dropdownEntry.style.background = 'lightblue'
+      }
       dropdownEntry.onmouseenter = (event) => event.currentTarget.style.background = 'lightblue'
       dropdownEntry.onpointerdown = (event) => {
         event.preventDefault()
         onclick(event.currentTarget.getAttribute('entry'))
       }
-      dropdownEntry.onwheel = (event) => onwheel(Math.sign(event.deltaY))
+      dropdownEntry.onwheel = (event) => {
+        event.preventDefault()
+        onwheel(Math.sign(event.deltaY))
+      }
     } else {
       dropdownEntry.style.display = 'none'
       dropdownEntry.innerText = ''
