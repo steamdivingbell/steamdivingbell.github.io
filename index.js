@@ -434,19 +434,15 @@ function populateGamesDropdown() {
   var filter = document.getElementById('search_games_input').value
   if (filter != null) filter = filter.toUpperCase()
   var entries = []
-  var skipped = 0
   for (var game of window.top_games()) {
-    if (window.game_names[game].toUpperCase() == filter) { // Always list exact matches
+    if (window.game_names[game].toUpperCase() == filter) { // Always list an exact match first, 
       entries.unshift(game)
     } else if (filter == null || window.game_names[game].toUpperCase().includes(filter)) {
-      // If the dropdown is scrolled, skip entries until we reach the scroll offset.
-      if (skipped < gamesOffset) {
-        skipped++
-        continue
-      }
       entries.push(game)
     }
   }
+  // Skip entries to the scroll offset
+  entries = entries.slice(gamesOffset)
 
   populateDropdown(
     /*prefix*/'search_games',
@@ -459,21 +455,6 @@ function populateGamesDropdown() {
       setActiveGame(entry)
     },
     /*onwheel*/(offset) => {
-      // Highlighting entry 10 (of 10-19), offset = -1
-      // -> 9, 9
-      // Highlighting entry 11 (of 10-19), offset = -1
-      // -> 10, 10
-      // Highlighting entry 12 (of 10-19), offset = -1
-      // -> 11, 10
-
-      // Highlighting entry 17 (of 10-19), offset = +1
-      // -> 18, 10
-      // Highlighting entry 18 (of 10-19), offset = +1
-      // -> 19, 10
-      // Highlighting entry 19 (of 10-19), offset = +1
-      // -> 20, 11
-      // Hmm. This means we need to know how many entries there are, maximum. Which is one of the things we were trying to avoid.
-
       gamesOffset = Math.max(0, gamesOffset + offset)
       populateGamesDropdown()
     })
@@ -554,26 +535,29 @@ function populateExcludeTagDropdown() {
 function populateDropdown(prefix, entries, getInnerText, isChecked, isHighlighted, onclick, onwheel) {
   // All of the key events will be on the actual textbox, since it's holding the focus.
   var dropdownText = document.getElementById(prefix + '_input')
+  var currentSelection = parseInt(dropdownText.getAttribute('aria-selected'), 10)
   dropdownText.onkeydown = (event) => {
     if (event.key == 'ArrowDown') {
       event.preventDefault()
-      onwheel(1)
+      if (document.getElementById(prefix + '_' + (currentSelection + 1)) != null) {
+        currentSelection++
+        dropdownText.setAttribute('aria-selected', currentSelection)
+      } else {
+        onwheel(1)
+      }
     } else if (event.key == 'ArrowUp') {
       event.preventDefault()
-      onwheel(-1)
+      if (document.getElementById(prefix + '_' + (currentSelection - 1)) != null) {
+        currentSelection++
+        dropdownText.setAttribute('aria-selected', currentSelection)
+      } else {
+        onwheel(-1)
+      }
     } else if (event.key == 'Enter') {
       event.preventDefault()
-      // TODO: We need some concept of 'current' here. Copilot suggests an attribute on the input box itself.
-      // We'll also (probably) need to scroll through the list a bit more intelligently, since the 'wheel' event doesn't page through the pinned items.
-      // The simplest fix is (I think) to allow the pinned items to scroll offscreen, although I don't like the idea.
-      // *If* I did that, it would be easy enough to always highlight the first list element.
-      //
-      // The other option is the (fancier and) more conventional one, where you can highlight index 0-9, and if you push 'down' from index 9 it scrolls you down once,
-      // and index 9 stays highlighted. Ditto for scrolling up from index 0. This would (probably?) work better with an always-pin, because you could just say the "sticky"
-      // elements are above the scrollable section, i.e. you have to scroll up from 0 to select them.
-      // Hmm. How does this layer know that we've reached the top, though?
-      // I also don't love leaking indices into this layer -- it's really supposed to know "I have X slots to fill, so I've filled them with X elements".
-      // Yeah, this layer doesn't know about pinned entries.
+      var currentElement = document.getElementById(prefix + '_' + currentSelection)
+      debugger;
+      onclick(currentElement.getAttribute('entry'))
     }
   }
 
