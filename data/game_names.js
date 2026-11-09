@@ -198328,6 +198328,7 @@ window.game_names = {
 	"2870750":"Add Astra",
 	"2870760":"Zaque's Game",
 	"2870770":"DragonMirroreD with Hyoga & Magma",
+	"2870790":"Dumpster Gang",
 	"2870810":"Syuukun in Mirror World",
 	"2870840":"Ale & Tale Tavern: First Pints",
 	"2870880":"10 Dead Doves - Supporter Edition",
