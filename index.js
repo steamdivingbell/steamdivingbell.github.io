@@ -59,7 +59,6 @@ var pageNo = 0 // Keep track of each page of results so that we can use 'more' t
 var includedTags = new Set() // Tags which must be included on all games
 var excludedTags = new Set() // Tags which must NOT be included on all games
 var gamesOffset = 0 // Global value which tracks how far the games dropdown is scrolled
-var gamesHighlight = 0 // Global value which tracks the currently highlighted entry in the games dropdown
 var includedTagOffset = 0 // Global value which tracks how far the included tags dropdown is scrolled
 var excludedTagOffset = 0 // Global value which tracks how far the excluded tags dropdown is scrolled
 var activeGameId = 0 // Global storage of the active game so that we can reload recommenders as needed.
@@ -349,14 +348,14 @@ function setupDropdowns() {
     gameSearch.value = ''
     gameSearch.style.color = 'black'
     gameSearchList.style.display = null
-    gamesOffset = 0 // Reset offset and highlight when opening the dropdown
-    gamesHighlight = 0
+    gamesOffset = 0 // Reset offset and selection when opening the dropdown
+    gameSearch.setAttribute('aria-selected', 0)
     populateGamesDropdown()
   })
 
   gameSearch.addEventListener('input', () => {
-    gamesOffset = 0 // Reset offset and highlight when typing text
-    gamesHighlight = 0
+    gamesOffset = 0 // Reset offset and selection when typing text
+    gameSearch.setAttribute('aria-selected', 0)
     populateGamesDropdown()
   })
 
@@ -366,22 +365,25 @@ function setupDropdowns() {
     gameSearch.style.color = 'gray'
     gameSearchList.style.display = 'none'
   })
-
+  
   var includeTagSearch = document.getElementById('search_include_input')
   var includeTagSearchList = document.getElementById('search_include_list')
   includeTagSearch.addEventListener('focus', () => {
     includeTagSearch.value = ''
     includeTagSearch.style.color = 'black'
     includeTagSearchList.style.display = null
-    includedTagOffset = 0 // Reset offset when opening the dropdown
+    includedTagOffset = 0 // Reset offset and selection when opening the dropdown
+    includeTagSearch.setAttribute('aria-selected', 0)
     populateIncludeTagDropdown()
   })
 
   includeTagSearch.addEventListener('input', () => {
-    includedTagOffset = 0 // Reset offset when typing text
+    includedTagOffset = 0 // Reset offset and selection when typing text
+    includeTagSearch.setAttribute('aria-selected', 0)
     populateIncludeTagDropdown()
   })
 
+  /*
   includeTagSearch.addEventListener('blur', (event) => {
     if (includeTagSearch.contains(event.relatedTarget)) return // Actually a user was clicking on a list entry
     if (includedTags.size === 0) {
@@ -397,6 +399,7 @@ function setupDropdowns() {
 
     includeTagSearchList.style.display = 'none'
   })
+  */
 
   var excludeTagSearch = document.getElementById('search_exclude_input')
   var excludeTagSearchList = document.getElementById('search_exclude_list')
@@ -404,12 +407,14 @@ function setupDropdowns() {
     excludeTagSearch.value = ''
     excludeTagSearch.style.color = 'black'
     excludeTagSearchList.style.display = null
-    excludedTagOffset = 0 // Reset offset when opening the dropdown
+    excludedTagOffset = 0 // Reset offset and selection when opening the dropdown
+    excludeTagSearch.setAttribute('aria-selected', 0)
     populateExcludeTagDropdown()
   })
 
   excludeTagSearch.addEventListener('input', () => {
-    excludedTagOffset = 0 // Reset offset when typing text
+    excludedTagOffset = 0 // Reset offset and selection when typing text
+    excludeTagSearch.setAttribute('aria-selected', 0)
     populateExcludeTagDropdown()
   })
 
@@ -435,20 +440,18 @@ function populateGamesDropdown() {
   if (filter != null) filter = filter.toUpperCase()
   var entries = []
   for (var game of window.top_games()) {
-    if (window.game_names[game].toUpperCase() == filter) { // Always list an exact match first, 
+    if (window.game_names[game].toUpperCase() == filter) { // Always list an exact match first 
       entries.unshift(game)
     } else if (filter == null || window.game_names[game].toUpperCase().includes(filter)) {
       entries.push(game)
     }
   }
-  // Skip entries to the scroll offset
-  entries = entries.slice(gamesOffset)
 
   populateDropdown(
     /*prefix*/'search_games',
-    /*entries*/entries,
+    /*entries*/entries.slice(gamesOffset),
     /*getInnerText*/(entry) => window.game_names[entry],
-    /*isChecked*/(entry) => false,
+    /*isSelected*/(entry) => false,
     /*onclick*/(entry) => {
       var gameSearch = document.getElementById('search_games_input')
       gameSearch.blur(null)
@@ -456,6 +459,7 @@ function populateGamesDropdown() {
     },
     /*onwheel*/(offset) => {
       gamesOffset = Math.max(0, gamesOffset + offset)
+      gamesOffset = Math.min(entries.size, gamesOffset)
       populateGamesDropdown()
     })
 }
@@ -464,26 +468,21 @@ function populateIncludeTagDropdown() {
   var filter = document.getElementById('search_include_input').value
   if (filter != null) filter = filter.toUpperCase()
   var entries = []
-  var skipped = 0
   for (var tagId in window.tags) { // TODO: Sort somehow? Maybe just alpha is enough?
     if (includedTags.has(tagId)) {
       entries.unshift(tagId)
     } else if (excludedTags.has(tagId)) {
       continue // Don't list tags in both lists at the same time
     } else if (filter == null || window.tags[tagId]['name'].toUpperCase().includes(filter)) {
-      if (skipped < includedTagOffset) {
-        skipped++
-        continue
-      }
       entries.push(tagId)
     }
   }
 
   populateDropdown(
     /*prefix*/'search_include',
-    /*entries*/entries,
+    /*entries*/entries.slice(includedTagOffset),
     /*getInnerText*/(entry) => window.tags[entry]['name'],
-    /*isChecked*/(entry) => includedTags.has(entry),
+    /*isSelected*/(entry) => includedTags.has(entry),
     /*onclick*/(entry) => {
       if (includedTags.has(entry)) includedTags.delete(entry)
       else                         includedTags.add(entry)
@@ -492,6 +491,7 @@ function populateIncludeTagDropdown() {
     },
     /*onwheel*/(offset) => {
       includedTagOffset = Math.max(0, includedTagOffset + offset)
+      includedTagOffset = Math.min(entries.size, includedTagOffset)
       populateIncludeTagDropdown()
     })
 }
@@ -500,26 +500,21 @@ function populateExcludeTagDropdown() {
   var filter = document.getElementById('search_exclude_input').value
   if (filter != null) filter = filter.toUpperCase()
   var entries = []
-  var skipped = 0
   for (var tagId in window.tags) { // TODO: Sort somehow? Maybe just alpha is enough?
     if (excludedTags.has(tagId)) {
       entries.unshift(tagId)
     } else if (includedTags.has(tagId)) {
       continue // Don't list tags in both lists at the same time
     } else if (filter == null || window.tags[tagId]['name'].toUpperCase().includes(filter)) {
-      if (skipped < excludedTagOffset) {
-        skipped++
-        continue
-      }
       entries.push(tagId)
     }
   }
 
   populateDropdown(
     /*prefix*/'search_exclude',
-    /*entries*/entries,
+    /*entries*/entries.slice(excludedTagOffset),
     /*getInnerText*/(entry) => window.tags[entry]['name'],
-    /*isChecked*/(entry) => excludedTags.has(entry),
+    /*isSelected*/(entry) => excludedTags.has(entry),
     /*onclick*/(entry) => {
       if (excludedTags.has(entry)) excludedTags.delete(entry)
       else                         excludedTags.add(entry)
@@ -528,39 +523,39 @@ function populateExcludeTagDropdown() {
     },
     /*onwheel*/(offset) => {
       excludedTagOffset = Math.max(0, excludedTagOffset + offset)
+      excludedTagOffset = Math.min(entries.size, excludedTagOffset)
       populateExcludeTagDropdown()
     })
 }
 
-function populateDropdown(prefix, entries, getInnerText, isChecked, isHighlighted, onclick, onwheel) {
+function populateDropdown(prefix, entries, getInnerText, isSelected, onclick, onwheel) {
   // All of the key events will be on the actual textbox, since it's holding the focus.
+  // (this is not where the event listeners usually live...)
   var dropdownText = document.getElementById(prefix + '_input')
-  var currentSelection = parseInt(dropdownText.getAttribute('aria-selected'), 10)
   dropdownText.onkeydown = (event) => {
-    if (event.key == 'ArrowDown') {
+    var selectedIndex = parseInt(dropdownText.getAttribute('aria-selected'), 10)
+    var selectedEntry = document.getElementById(prefix + '_' + selectedIndex)
+    if (event.key == 'ArrowDown' || event.key == 'ArrowUp') {
+      var delta = (event.key == 'ArrowUp' ? -1 : 1)
       event.preventDefault()
-      if (document.getElementById(prefix + '_' + (currentSelection + 1)) != null) {
-        currentSelection++
-        dropdownText.setAttribute('aria-selected', currentSelection)
-      } else {
-        onwheel(1)
+      var newlySelected = document.getElementById(prefix + '_' + (selectedIndex + delta))
+      if (newlySelected == null || newlySelected.style.display == 'none') {
+        // Attempted to move the selection outside the visible menu, scroll instead
+        onwheel(delta)
+        return
       }
-    } else if (event.key == 'ArrowUp') {
-      event.preventDefault()
-      if (document.getElementById(prefix + '_' + (currentSelection - 1)) != null) {
-        currentSelection++
-        dropdownText.setAttribute('aria-selected', currentSelection)
-      } else {
-        onwheel(-1)
-      }
+      
+      selectedEntry.style.background = isSelected(selectedEntry.getAttribute('entry')) ? 'blue' : 'white'
+      newlySelected.style.background = 'lightblue'
+      dropdownText.setAttribute('aria-selected', selectedIndex + delta)
+
     } else if (event.key == 'Enter') {
       event.preventDefault()
-      var currentElement = document.getElementById(prefix + '_' + currentSelection)
-      debugger;
-      onclick(currentElement.getAttribute('entry'))
+      onclick(selectedEntry.getAttribute('entry'))
     }
   }
 
+  var selectedIndex = parseInt(dropdownText.getAttribute('aria-selected'), 10)
   for (var i = 0; i < 10; i++) {
     var dropdownEntry = document.getElementById(prefix + '_' + i)
     if (dropdownEntry == null) break
@@ -569,15 +564,15 @@ function populateDropdown(prefix, entries, getInnerText, isChecked, isHighlighte
       dropdownEntry.innerText = getInnerText(entries[i])
       dropdownEntry.setAttribute('entry', entries[i])
 
-      if (isChecked(entries[i])) {
+      if (isSelected(entries[i])) {
         dropdownEntry.style.background = 'blue'
         dropdownEntry.onmouseleave = (event) => event.currentTarget.style.background = 'blue'
       } else {
         dropdownEntry.style.background = 'white'
         dropdownEntry.onmouseleave = (event) => event.currentTarget.style.background = 'white'
       }
-      if (isHighlighted(entries[i])) {
-        dropdownEntry.style.background = 'lightblue'
+      if (dropdownEntry.matches(':hover') || i == selectedIndex) {
+        dropdownEntry.style.background = 'lightblue' // Persist 'hover' color even as the list changes
       }
       dropdownEntry.onmouseenter = (event) => event.currentTarget.style.background = 'lightblue'
       dropdownEntry.onpointerdown = (event) => {
