@@ -33,14 +33,14 @@ function set(id, key, value) {
   if (key == 'innerText') {
     elem.innerText = value
   } else if (key == 'hover') {
-    elem.onmouseenter = () => {
-      // Once the mouse enters this element, wait for 0.5 seconds of no mouse movement, then call the callback.
+    elem.onmouseenter = elem.onfocus = () => {
+      // Once the mouse enters (or focuses) this element, wait for 0.5 seconds of no mouse movement, then call the callback.
       var timer = setTimeout(value, 500)
       elem.onmousemove = () => {
         clearTimeout(timer)
         timer = setTimeout(value, 500)
       }
-      elem.onmouseleave = () => { clearTimeout(timer) }
+      elem.onmouseleave = elem.onblur = () => { clearTimeout(timer) }
     }
   } else if (key == 'click') {
     elem.onclick = value
@@ -76,13 +76,13 @@ var styles = {
   'Similar tags':   'background: darkgreen;   color: white; font-weight: bold; font-size: 20px',
   'Loose match':    'background: sienna;      color: white; font-weight: bold; font-size: 20px',
   'Reverse match':  'background: darkmagenta; color: white; font-weight: bold; font-size: 20px',
-  'Top match':      'background: turqouise;   color: white; font-weight: bold; font-size: 20px',
+  'Top match':      'background: turquoise;   color: white; font-weight: bold; font-size: 20px',
   'Default match':  'background: darkred;     color: white; font-weight: bold; font-size: 20px',
 }
 
 function setImageCard(loc, data) {
   var [gameId, recommender, baseGameId] = data
-  set(loc + '-cell', 'hover', () => loadAboutGame(gameId))
+  set(loc + '-image', 'hover', () => loadAboutGame(gameId))
   set(loc + '-cell', 'click', () => { previousGames.push(baseGameId); setActiveGame(gameId) })
   set(loc + '-cell', 'style', styles[recommender])
   set(loc + '-title', 'innerText', recommender)
@@ -332,6 +332,7 @@ function loadAboutGame(gameId) {
       if (i < max_photos && r.screenshots.length > i) {
         set('photo-' + i, 'display', null)
         set('photo-' + i, 'src', r.screenshots[i])
+        set('photo-' + i, 'alt', `Promotional screenshot ${i+1} for game '${globalGameData.get(gameId).name}'`)
       } else {
         set('photo-' + i, 'display', 'none')
         set('photo-' + i, 'src', '')
@@ -346,23 +347,21 @@ function setupDropdowns() {
   var gameSearchList = document.getElementById('search_games_list')
   gameSearch.addEventListener('focus', () => {
     gameSearch.value = ''
-    gameSearch.style.color = 'black'
     gameSearchList.style.display = null
     gamesOffset = 0 // Reset offset and selection when opening the dropdown
-    gameSearch.setAttribute('aria-selected', 0)
+    gameSearch.setAttribute('aria-activedescendant', 'search_games_0')
     populateGamesDropdown()
   })
 
   gameSearch.addEventListener('input', () => {
     gamesOffset = 0 // Reset offset and selection when typing text
-    gameSearch.setAttribute('aria-selected', 0)
+    gameSearch.setAttribute('aria-activedescendant', 'search_games_0')
     populateGamesDropdown()
   })
 
   gameSearch.addEventListener('blur', (event) => {
     if (event != null && gameSearch.contains(event.relatedTarget)) return // Actually a user was clicking on a list entry
-    gameSearch.value = 'Search for game'
-    gameSearch.style.color = 'gray'
+    gameSearch.value = ''
     gameSearchList.style.display = 'none'
   })
   
@@ -370,65 +369,55 @@ function setupDropdowns() {
   var includeTagSearchList = document.getElementById('search_include_list')
   includeTagSearch.addEventListener('focus', () => {
     includeTagSearch.value = ''
-    includeTagSearch.style.color = 'black'
     includeTagSearchList.style.display = null
     includedTagOffset = 0 // Reset offset and selection when opening the dropdown
-    includeTagSearch.setAttribute('aria-selected', 0)
+    includeTagSearch.setAttribute('aria-activedescendant', 'search_include_0')
     populateIncludeTagDropdown()
   })
 
   includeTagSearch.addEventListener('input', () => {
     includedTagOffset = 0 // Reset offset and selection when typing text
-    includeTagSearch.setAttribute('aria-selected', 0)
+    includeTagSearch.setAttribute('aria-activedescendant', 'search_include_0')
     populateIncludeTagDropdown()
   })
 
-  /*
   includeTagSearch.addEventListener('blur', (event) => {
     if (includeTagSearch.contains(event.relatedTarget)) return // Actually a user was clicking on a list entry
     if (includedTags.size === 0) {
-      includeTagSearch.value = 'Include tags'
-      includeTagSearch.style.color = 'gray'
+      includeTagSearch.value = ''
     } else if (includedTags.size === 1) {
       includeTagSearch.value = 'Including 1 tag'
-      includeTagSearch.style.color = 'black'
     } else {
       includeTagSearch.value = `Including ${includedTags.size} tags`
-      includeTagSearch.style.color = 'black'
     }
 
     includeTagSearchList.style.display = 'none'
   })
-  */
 
   var excludeTagSearch = document.getElementById('search_exclude_input')
   var excludeTagSearchList = document.getElementById('search_exclude_list')
   excludeTagSearch.addEventListener('focus', () => {
     excludeTagSearch.value = ''
-    excludeTagSearch.style.color = 'black'
     excludeTagSearchList.style.display = null
     excludedTagOffset = 0 // Reset offset and selection when opening the dropdown
-    excludeTagSearch.setAttribute('aria-selected', 0)
+    excludeTagSearch.setAttribute('aria-activedescendant', 'search_exclude_0')
     populateExcludeTagDropdown()
   })
 
   excludeTagSearch.addEventListener('input', () => {
     excludedTagOffset = 0 // Reset offset and selection when typing text
-    excludeTagSearch.setAttribute('aria-selected', 0)
+    excludeTagSearch.setAttribute('aria-activedescendant', 'search_exclude_0')
     populateExcludeTagDropdown()
   })
 
   excludeTagSearch.addEventListener('blur', (event) => {
     if (excludeTagSearch.contains(event.relatedTarget)) return // Actually a user was clicking on a list entry
     if (excludedTags.size === 0) {
-      excludeTagSearch.value = 'Exclude tags'
-      excludeTagSearch.style.color = 'gray'
+      excludeTagSearch.value = ''
     } else if (excludedTags.size === 1) {
       excludeTagSearch.value = 'Excluding 1 tag'
-      excludeTagSearch.style.color = 'black'
     } else {
       excludeTagSearch.value = `Excluding ${excludedTags.size} tags`
-      excludeTagSearch.style.color = 'black'
     }
 
     excludeTagSearchList.style.display = 'none'
@@ -533,12 +522,11 @@ function populateDropdown(prefix, entries, getInnerText, isSelected, onclick, on
   // (this is not where the event listeners usually live...)
   var dropdownText = document.getElementById(prefix + '_input')
   dropdownText.onkeydown = (event) => {
-    var selectedIndex = parseInt(dropdownText.getAttribute('aria-selected'), 10)
-    var selectedEntry = document.getElementById(prefix + '_' + selectedIndex)
+    var selectedEntry = document.getElementById(dropdownText.getAttribute('aria-activedescendant'))
     if (event.key == 'ArrowDown' || event.key == 'ArrowUp') {
       var delta = (event.key == 'ArrowUp' ? -1 : 1)
       event.preventDefault()
-      var newlySelected = document.getElementById(prefix + '_' + (selectedIndex + delta))
+      var newlySelected = (delta == -1 ? selectedEntry.previousElementSibling : selectedEntry.nextElementSibling)
       if (newlySelected == null || newlySelected.style.display == 'none') {
         // Attempted to move the selection outside the visible menu, scroll instead
         onwheel(delta)
@@ -547,15 +535,19 @@ function populateDropdown(prefix, entries, getInnerText, isSelected, onclick, on
       
       selectedEntry.style.background = isSelected(selectedEntry.getAttribute('entry')) ? 'blue' : 'white'
       newlySelected.style.background = 'lightblue'
-      dropdownText.setAttribute('aria-selected', selectedIndex + delta)
+      dropdownText.setAttribute('aria-activedescendant', newlySelected.id)
 
     } else if (event.key == 'Enter') {
       event.preventDefault()
-      onclick(selectedEntry.getAttribute('entry'))
+      if (selectedEntry.style.display != 'none') onclick(selectedEntry.getAttribute('entry'))
+
+    } else if (event.key == 'Escape') {
+      event.preventDefault()
+      dropdownText.blur()
     }
   }
 
-  var selectedIndex = parseInt(dropdownText.getAttribute('aria-selected'), 10)
+  var selectedEntry = document.getElementById(dropdownText.getAttribute('aria-activedescendant'))
   for (var i = 0; i < 10; i++) {
     var dropdownEntry = document.getElementById(prefix + '_' + i)
     if (dropdownEntry == null) break
@@ -571,14 +563,12 @@ function populateDropdown(prefix, entries, getInnerText, isSelected, onclick, on
         dropdownEntry.style.background = 'white'
         dropdownEntry.onmouseleave = (event) => event.currentTarget.style.background = 'white'
       }
-      if (dropdownEntry.matches(':hover') || i == selectedIndex) {
+      if (dropdownEntry.matches(':hover') || selectedEntry == dropdownEntry) {
         dropdownEntry.style.background = 'lightblue' // Persist 'hover' color even as the list changes
       }
       dropdownEntry.onmouseenter = (event) => event.currentTarget.style.background = 'lightblue'
-      dropdownEntry.onpointerdown = (event) => {
-        event.preventDefault()
-        onclick(event.currentTarget.getAttribute('entry'))
-      }
+      dropdownEntry.onmousedown = (event) => event.preventDefault() // Defer until onclick fires for accessibility reasons
+      dropdownEntry.onclick = (event) => onclick(event.currentTarget.getAttribute('entry'))
       dropdownEntry.onwheel = (event) => {
         event.preventDefault()
         onwheel(Math.sign(event.deltaY))
