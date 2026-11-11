@@ -359,8 +359,7 @@ function setupDropdowns() {
     populateGamesDropdown()
   })
 
-  gameSearch.addEventListener('blur', (event) => {
-    if (event != null && gameSearch.contains(event.relatedTarget)) return // Actually a user was clicking on a list entry
+  gameSearch.addEventListener('blur', () => {
     gameSearch.value = ''
     gameSearchList.style.display = 'none'
   })
@@ -381,8 +380,7 @@ function setupDropdowns() {
     populateIncludeTagDropdown()
   })
 
-  includeTagSearch.addEventListener('blur', (event) => {
-    if (includeTagSearch.contains(event.relatedTarget)) return // Actually a user was clicking on a list entry
+  includeTagSearch.addEventListener('blur', () => {
     if (includedTags.size === 0) {
       includeTagSearch.value = ''
     } else if (includedTags.size === 1) {
@@ -410,8 +408,7 @@ function setupDropdowns() {
     populateExcludeTagDropdown()
   })
 
-  excludeTagSearch.addEventListener('blur', (event) => {
-    if (excludeTagSearch.contains(event.relatedTarget)) return // Actually a user was clicking on a list entry
+  excludeTagSearch.addEventListener('blur', () => {
     if (excludedTags.size === 0) {
       excludeTagSearch.value = ''
     } else if (excludedTags.size === 1) {
@@ -443,12 +440,12 @@ function populateGamesDropdown() {
     /*isSelected*/(entry) => false,
     /*onclick*/(entry) => {
       var gameSearch = document.getElementById('search_games_input')
-      gameSearch.blur(null)
+      gameSearch.blur()
       setActiveGame(entry)
     },
     /*onwheel*/(offset) => {
       gamesOffset = Math.max(0, gamesOffset + offset)
-      gamesOffset = Math.min(entries.size, gamesOffset)
+      gamesOffset = Math.min(entries.length - 10, gamesOffset)
       populateGamesDropdown()
     })
 }
@@ -480,7 +477,7 @@ function populateIncludeTagDropdown() {
     },
     /*onwheel*/(offset) => {
       includedTagOffset = Math.max(0, includedTagOffset + offset)
-      includedTagOffset = Math.min(entries.size, includedTagOffset)
+      includedTagOffset = Math.min(entries.length - 10, includedTagOffset)
       populateIncludeTagDropdown()
     })
 }
@@ -512,7 +509,7 @@ function populateExcludeTagDropdown() {
     },
     /*onwheel*/(offset) => {
       excludedTagOffset = Math.max(0, excludedTagOffset + offset)
-      excludedTagOffset = Math.min(entries.size, excludedTagOffset)
+      excludedTagOffset = Math.min(entries.length - 10, excludedTagOffset)
       populateExcludeTagDropdown()
     })
 }
