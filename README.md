@@ -2,7 +2,7 @@
 
 This is a fork of the semi-functional-but-eventually-deprecated [steam diving bell](https://github.com/larsiusprime/divingbell) project.
 
-I have taken the original source code (and done some heavy reading of [the literature](https://www.fortressofdoors.com/steam-diving-bell)) and done my best to recreate this project in a semi-functional form.
+I have taken the original source code (and done some heavy reading of [the literature](https://www.fortressofdoors.com/steam-diving-bell)) and done my best to recreate this project in a working form.
 
 The current state of this project is:
 - [ ] Not working
