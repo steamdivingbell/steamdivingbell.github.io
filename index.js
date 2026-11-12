@@ -33,17 +33,17 @@ function set(id, key, value) {
   if (key == 'innerText') {
     elem.innerText = value
   } else if (key == 'hover') {
-    elem.onmouseenter = () => {
-      // Once the mouse enters this element, wait for 0.5 seconds of no mouse movement, then call the callback.
+    elem.onmouseenter = elem.onfocus = () => {
+      // Once the mouse enters (or focuses) this element, wait for 0.5 seconds of no mouse movement, then call the callback.
       var timer = setTimeout(value, 500)
       elem.onmousemove = () => {
         clearTimeout(timer)
         timer = setTimeout(value, 500)
       }
-      elem.onmouseleave = () => { clearTimeout(timer) }
+      elem.onmouseleave = elem.onblur = () => { clearTimeout(timer) }
     }
   } else if (key == 'click') {
-    elem.onpointerdown = value
+    elem.onclick = value
   } else if (key == 'style') {
     elem.style = value
   } else if (key == 'display') {
@@ -76,13 +76,13 @@ var styles = {
   'Similar tags':   'background: darkgreen;   color: white; font-weight: bold; font-size: 20px',
   'Loose match':    'background: sienna;      color: white; font-weight: bold; font-size: 20px',
   'Reverse match':  'background: darkmagenta; color: white; font-weight: bold; font-size: 20px',
-  'Top match':      'background: turqouise;   color: white; font-weight: bold; font-size: 20px',
+  'Top match':      'background: turquoise;   color: white; font-weight: bold; font-size: 20px',
   'Default match':  'background: darkred;     color: white; font-weight: bold; font-size: 20px',
 }
 
 function setImageCard(loc, data) {
   var [gameId, recommender, baseGameId] = data
-  set(loc + '-cell', 'hover', () => loadAboutGame(gameId))
+  set(loc + '-image', 'hover', () => loadAboutGame(gameId))
   set(loc + '-cell', 'click', () => { previousGames.push(baseGameId); setActiveGame(gameId) })
   set(loc + '-cell', 'style', styles[recommender])
   set(loc + '-title', 'innerText', recommender)
@@ -93,6 +93,7 @@ function setImageCard(loc, data) {
 
   var gameName = globalGameData.get(gameId).name
   var baseGameName = globalGameData.get(baseGameId).name
+  set(loc + '-image', 'alt', gameName)
 
   var titleText = {
     'Selected': ``,
@@ -134,11 +135,11 @@ function matchesUserTags(gameId) {
 }
 
 function loadImages(baseGameId) {
-  var r_gems = document.getElementById('r_gems').className == 'toggle'
-  var r_tags = document.getElementById('r_tags').className == 'toggle'
-  var r_loose = document.getElementById('r_loose').className == 'toggle'
-  var r_reverse = document.getElementById('r_reverse').className == 'toggle'
-  var r_top = document.getElementById('r_top').className == 'toggle'
+  var r_gems = document.getElementById('r_gems').getAttribute('aria-pressed') == 'true'
+  var r_tags = document.getElementById('r_tags').getAttribute('aria-pressed') == 'true'
+  var r_loose = document.getElementById('r_loose').getAttribute('aria-pressed') == 'true'
+  var r_reverse = document.getElementById('r_reverse').getAttribute('aria-pressed') == 'true'
+  var r_top = document.getElementById('r_top').getAttribute('aria-pressed') == 'true'
 
   var num_enabled = (r_gems ? 1 : 0) + (r_tags ? 1 : 0) + (r_loose ? 1 : 0) + (r_reverse ? 1 : 0) + (r_top ? 1 : 0)
   var per_category = num_enabled == 0 ? 8 : Math.ceil(8 / num_enabled)
@@ -247,14 +248,14 @@ function loadImages(baseGameId) {
 
   if (pageNo > 0) { // If there are still previous pages
     set('back', 'title', `Previous results for ${globalGameData.get(baseGameId).name}`)
-    set('back', 'class', 'navigation')
+    set('back', 'aria-disabled', false)
   } else if (previousGames.length > 0) { // Otherwise, this button goes back to the previous game
     var previousGame = previousGames[previousGames.length - 1]
     set('back', 'title', `Back to results for ${globalGameData.get(previousGame).name}`)
-    set('back', 'class', 'navigation')
+    set('back', 'aria-disabled', false)
   } else {
     set('back', 'title', '')
-    set('back', 'class', 'navigation-disabled')
+    set('back', 'aria-disabled', true)
   }
 
   set('more', 'title', `More results for ${globalGameData.get(baseGameId).name}`)
@@ -262,12 +263,7 @@ function loadImages(baseGameId) {
 
 function setupButtons(gameId) {
   var toggleRecommender = function() {
-    if (this.className === 'toggle') {
-      this.className = 'toggle-off'
-    } else {
-      this.className = 'toggle'
-    }
-
+    this.setAttribute('aria-pressed', this.getAttribute('aria-pressed') != 'true')
     loadImages(gameId)
   }
 
@@ -336,6 +332,7 @@ function loadAboutGame(gameId) {
       if (i < max_photos && r.screenshots.length > i) {
         set('photo-' + i, 'display', null)
         set('photo-' + i, 'src', r.screenshots[i])
+        set('photo-' + i, 'alt', `Promotional screenshot ${i+1} for game '${globalGameData.get(gameId).name}'`)
       } else {
         set('photo-' + i, 'display', 'none')
         set('photo-' + i, 'src', '')
@@ -350,50 +347,46 @@ function setupDropdowns() {
   var gameSearchList = document.getElementById('search_games_list')
   gameSearch.addEventListener('focus', () => {
     gameSearch.value = ''
-    gameSearch.style.color = 'black'
     gameSearchList.style.display = null
-    gamesOffset = 0 // Reset offset when opening the dropdown
+    gamesOffset = 0 // Reset offset and selection when opening the dropdown
+    gameSearch.setAttribute('aria-activedescendant', 'search_games_0')
     populateGamesDropdown()
   })
 
   gameSearch.addEventListener('input', () => {
-    gamesOffset = 0 // Reset offset when typing text
+    gamesOffset = 0 // Reset offset and selection when typing text
+    gameSearch.setAttribute('aria-activedescendant', 'search_games_0')
     populateGamesDropdown()
   })
 
-  gameSearch.addEventListener('blur', (event) => {
-    if (event != null && gameSearch.contains(event.relatedTarget)) return // Actually a user was clicking on a list entry
-    gameSearch.value = 'Search for game'
-    gameSearch.style.color = 'gray'
+  gameSearch.addEventListener('blur', () => {
+    gameSearch.value = ''
     gameSearchList.style.display = 'none'
   })
-
+  
   var includeTagSearch = document.getElementById('search_include_input')
   var includeTagSearchList = document.getElementById('search_include_list')
   includeTagSearch.addEventListener('focus', () => {
     includeTagSearch.value = ''
-    includeTagSearch.style.color = 'black'
     includeTagSearchList.style.display = null
-    includedTagOffset = 0 // Reset offset when opening the dropdown
+    includedTagOffset = 0 // Reset offset and selection when opening the dropdown
+    includeTagSearch.setAttribute('aria-activedescendant', 'search_include_0')
     populateIncludeTagDropdown()
   })
 
   includeTagSearch.addEventListener('input', () => {
-    includedTagOffset = 0 // Reset offset when typing text
+    includedTagOffset = 0 // Reset offset and selection when typing text
+    includeTagSearch.setAttribute('aria-activedescendant', 'search_include_0')
     populateIncludeTagDropdown()
   })
 
-  includeTagSearch.addEventListener('blur', (event) => {
-    if (includeTagSearch.contains(event.relatedTarget)) return // Actually a user was clicking on a list entry
+  includeTagSearch.addEventListener('blur', () => {
     if (includedTags.size === 0) {
-      includeTagSearch.value = 'Include tags'
-      includeTagSearch.style.color = 'gray'
+      includeTagSearch.value = ''
     } else if (includedTags.size === 1) {
       includeTagSearch.value = 'Including 1 tag'
-      includeTagSearch.style.color = 'black'
     } else {
       includeTagSearch.value = `Including ${includedTags.size} tags`
-      includeTagSearch.style.color = 'black'
     }
 
     includeTagSearchList.style.display = 'none'
@@ -403,28 +396,25 @@ function setupDropdowns() {
   var excludeTagSearchList = document.getElementById('search_exclude_list')
   excludeTagSearch.addEventListener('focus', () => {
     excludeTagSearch.value = ''
-    excludeTagSearch.style.color = 'black'
     excludeTagSearchList.style.display = null
-    excludedTagOffset = 0 // Reset offset when opening the dropdown
+    excludedTagOffset = 0 // Reset offset and selection when opening the dropdown
+    excludeTagSearch.setAttribute('aria-activedescendant', 'search_exclude_0')
     populateExcludeTagDropdown()
   })
 
   excludeTagSearch.addEventListener('input', () => {
-    excludedTagOffset = 0 // Reset offset when typing text
+    excludedTagOffset = 0 // Reset offset and selection when typing text
+    excludeTagSearch.setAttribute('aria-activedescendant', 'search_exclude_0')
     populateExcludeTagDropdown()
   })
 
-  excludeTagSearch.addEventListener('blur', (event) => {
-    if (excludeTagSearch.contains(event.relatedTarget)) return // Actually a user was clicking on a list entry
+  excludeTagSearch.addEventListener('blur', () => {
     if (excludedTags.size === 0) {
-      excludeTagSearch.value = 'Exclude tags'
-      excludeTagSearch.style.color = 'gray'
+      excludeTagSearch.value = ''
     } else if (excludedTags.size === 1) {
       excludeTagSearch.value = 'Excluding 1 tag'
-      excludeTagSearch.style.color = 'black'
     } else {
       excludeTagSearch.value = `Excluding ${excludedTags.size} tags`
-      excludeTagSearch.style.color = 'black'
     }
 
     excludeTagSearchList.style.display = 'none'
@@ -435,31 +425,27 @@ function populateGamesDropdown() {
   var filter = document.getElementById('search_games_input').value
   if (filter != null) filter = filter.toUpperCase()
   var entries = []
-  var skipped = 0
   for (var game of window.top_games()) {
-    if (window.game_names[game].toUpperCase() == filter) { // Always list exact matches
+    if (window.game_names[game].toUpperCase() == filter) { // Always list an exact match first 
       entries.unshift(game)
     } else if (filter == null || window.game_names[game].toUpperCase().includes(filter)) {
-      if (skipped < gamesOffset) {
-        skipped++
-        continue
-      }
       entries.push(game)
     }
   }
 
   populateDropdown(
     /*prefix*/'search_games',
-    /*entries*/entries,
+    /*entries*/entries.slice(gamesOffset),
     /*getInnerText*/(entry) => window.game_names[entry],
     /*isSelected*/(entry) => false,
     /*onclick*/(entry) => {
       var gameSearch = document.getElementById('search_games_input')
-      gameSearch.blur(null)
+      gameSearch.blur()
       setActiveGame(entry)
     },
     /*onwheel*/(offset) => {
       gamesOffset = Math.max(0, gamesOffset + offset)
+      gamesOffset = Math.min(entries.length - 10, gamesOffset)
       populateGamesDropdown()
     })
 }
@@ -468,24 +454,19 @@ function populateIncludeTagDropdown() {
   var filter = document.getElementById('search_include_input').value
   if (filter != null) filter = filter.toUpperCase()
   var entries = []
-  var skipped = 0
   for (var tagId in window.tags) { // TODO: Sort somehow? Maybe just alpha is enough?
     if (includedTags.has(tagId)) {
       entries.unshift(tagId)
     } else if (excludedTags.has(tagId)) {
       continue // Don't list tags in both lists at the same time
     } else if (filter == null || window.tags[tagId]['name'].toUpperCase().includes(filter)) {
-      if (skipped < includedTagOffset) {
-        skipped++
-        continue
-      }
       entries.push(tagId)
     }
   }
 
   populateDropdown(
     /*prefix*/'search_include',
-    /*entries*/entries,
+    /*entries*/entries.slice(includedTagOffset),
     /*getInnerText*/(entry) => window.tags[entry]['name'],
     /*isSelected*/(entry) => includedTags.has(entry),
     /*onclick*/(entry) => {
@@ -496,6 +477,7 @@ function populateIncludeTagDropdown() {
     },
     /*onwheel*/(offset) => {
       includedTagOffset = Math.max(0, includedTagOffset + offset)
+      includedTagOffset = Math.min(entries.length - 10, includedTagOffset)
       populateIncludeTagDropdown()
     })
 }
@@ -504,24 +486,19 @@ function populateExcludeTagDropdown() {
   var filter = document.getElementById('search_exclude_input').value
   if (filter != null) filter = filter.toUpperCase()
   var entries = []
-  var skipped = 0
   for (var tagId in window.tags) { // TODO: Sort somehow? Maybe just alpha is enough?
     if (excludedTags.has(tagId)) {
       entries.unshift(tagId)
     } else if (includedTags.has(tagId)) {
       continue // Don't list tags in both lists at the same time
     } else if (filter == null || window.tags[tagId]['name'].toUpperCase().includes(filter)) {
-      if (skipped < excludedTagOffset) {
-        skipped++
-        continue
-      }
       entries.push(tagId)
     }
   }
 
   populateDropdown(
     /*prefix*/'search_exclude',
-    /*entries*/entries,
+    /*entries*/entries.slice(excludedTagOffset),
     /*getInnerText*/(entry) => window.tags[entry]['name'],
     /*isSelected*/(entry) => excludedTags.has(entry),
     /*onclick*/(entry) => {
@@ -532,11 +509,42 @@ function populateExcludeTagDropdown() {
     },
     /*onwheel*/(offset) => {
       excludedTagOffset = Math.max(0, excludedTagOffset + offset)
+      excludedTagOffset = Math.min(entries.length - 10, excludedTagOffset)
       populateExcludeTagDropdown()
     })
 }
 
 function populateDropdown(prefix, entries, getInnerText, isSelected, onclick, onwheel) {
+  // All of the key events will be on the actual textbox, since it's holding the focus.
+  // (this is not where the event listeners usually live...)
+  var dropdownText = document.getElementById(prefix + '_input')
+  dropdownText.onkeydown = (event) => {
+    var selectedEntry = document.getElementById(dropdownText.getAttribute('aria-activedescendant'))
+    if (event.key == 'ArrowDown' || event.key == 'ArrowUp') {
+      var delta = (event.key == 'ArrowUp' ? -1 : 1)
+      event.preventDefault()
+      var newlySelected = (delta == -1 ? selectedEntry.previousElementSibling : selectedEntry.nextElementSibling)
+      if (newlySelected == null || newlySelected.style.display == 'none') {
+        // Attempted to move the selection outside the visible menu, scroll instead
+        onwheel(delta)
+        return
+      }
+      
+      selectedEntry.style.background = isSelected(selectedEntry.getAttribute('entry')) ? 'blue' : 'white'
+      newlySelected.style.background = 'lightblue'
+      dropdownText.setAttribute('aria-activedescendant', newlySelected.id)
+
+    } else if (event.key == 'Enter') {
+      event.preventDefault()
+      if (selectedEntry.style.display != 'none') onclick(selectedEntry.getAttribute('entry'))
+
+    } else if (event.key == 'Escape') {
+      event.preventDefault()
+      dropdownText.blur()
+    }
+  }
+
+  var selectedEntry = document.getElementById(dropdownText.getAttribute('aria-activedescendant'))
   for (var i = 0; i < 10; i++) {
     var dropdownEntry = document.getElementById(prefix + '_' + i)
     if (dropdownEntry == null) break
@@ -552,13 +560,16 @@ function populateDropdown(prefix, entries, getInnerText, isSelected, onclick, on
         dropdownEntry.style.background = 'white'
         dropdownEntry.onmouseleave = (event) => event.currentTarget.style.background = 'white'
       }
-      if (dropdownEntry.matches(':hover')) dropdownEntry.style.background = 'lightblue' // Persist 'hover' color even as the list changes
-      dropdownEntry.onmouseenter = (event) => event.currentTarget.style.background = 'lightblue'
-      dropdownEntry.onpointerdown = (event) => {
-        event.preventDefault()
-        onclick(event.currentTarget.getAttribute('entry'))
+      if (dropdownEntry.matches(':hover') || selectedEntry == dropdownEntry) {
+        dropdownEntry.style.background = 'lightblue' // Persist 'hover' color even as the list changes
       }
-      dropdownEntry.onwheel = (event) => onwheel(Math.sign(event.deltaY))
+      dropdownEntry.onmouseenter = (event) => event.currentTarget.style.background = 'lightblue'
+      dropdownEntry.onmousedown = (event) => event.preventDefault() // Defer until onclick fires for accessibility reasons
+      dropdownEntry.onclick = (event) => onclick(event.currentTarget.getAttribute('entry'))
+      dropdownEntry.onwheel = (event) => {
+        event.preventDefault()
+        onwheel(Math.sign(event.deltaY))
+      }
     } else {
       dropdownEntry.style.display = 'none'
       dropdownEntry.innerText = ''

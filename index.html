@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Steam Diving Bell</title>
@@ -37,19 +37,12 @@
       background: white;
       color: black;
       cursor: pointer;
+      border: none;
     }
     
-    .navigation-disabled {
-      padding: 5px 25px 5px 25px;
-      font-family: Roboto, sans-serif;
-      font-weight: bold;
-      font-size: 25px;
-      background: white;
-      color: gray;
-      cursor: default;
-    }
+    .navigation[aria-disabled="true"] { color: gray; cursor: default }
 
-    .toggle, .toggle-off {
+    .toggle {
       padding: 5px 10px 5px 10px;
       border-radius: 5px;
       font-family: Roboto, sans-serif;
@@ -58,9 +51,13 @@
       color: black;
       background: #66bbff;
       cursor: pointer;
+      border: none;
+      font-size: inherit;
     }
 
-    .toggle-off { background: #335d7f }
+    .toggle[aria-pressed="false"] { background: #335d7f }
+
+    input:focus::placeholder { color: transparent }
   </style>
 </head>
 <body style="background: rgb(27, 40, 56); font-family: Helvetica, Arial, sans-serif; color: white">
@@ -71,107 +68,108 @@
           <td id="tl-cell" style="width: 33%">
             <div id="tl-title" style="float: left; padding: 5px"></div>
             <div id="tl-note"  style="float: right; padding: 5px"></div>
-            <img id="tl-image" style="max-width: 100%; max-height: 100%"></img>
+            <input type="image" id="tl-image" style="max-width: 100%; max-height: 100%">
           </td><td id="tm-cell" style="width: 33%">
             <div id="tm-title" style="float: left; padding: 5px"></div>
             <div id="tm-note"  style="float: right; padding: 5px"></div>
-            <img id="tm-image" style="max-width: 100%; max-height: 100%"></img>
+            <input type="image" id="tm-image" style="max-width: 100%; max-height: 100%">
           </td><td id="tr-cell" style="width: 33%">
             <div id="tr-title" style="float: left; padding: 5px"></div>
             <div id="tr-note"  style="float: right; padding: 5px"></div>
-            <img id="tr-image" style="max-width: 100%; max-height: 100%"></img>
+            <input type="image" id="tr-image" style="max-width: 100%; max-height: 100%">
           </td>
         </tr><tr>          
           <td id="ml-cell" style="width: 33%">
             <div id="ml-title" style="float: left; padding: 5px"></div>
             <div id="ml-note"  style="float: right; padding: 5px"></div>
-            <img id="ml-image" style="max-width: 100%; max-height: 100%"></img>
+            <input type="image" id="ml-image" style="max-width: 100%; max-height: 100%">
           </td><td id="mm-cell" style="width: 33%">
             <div id="mm-title" style="float: left; padding: 5px"></div>
             <div id="mm-note"  style="float: right; padding: 5px"></div>
-            <img id="mm-image" style="max-width: 100%; max-height: 100%"></img>
+            <input type="image" id="mm-image" style="max-width: 100%; max-height: 100%">
           </td><td id="mr-cell" style="width: 33%">
             <div id="mr-title" style="float: left; padding: 5px"></div>
             <div id="mr-note"  style="float: right; padding: 5px"></div>
-            <img id="mr-image" style="max-width: 100%; max-height: 100%"></img>
+            <input type="image" id="mr-image" style="max-width: 100%; max-height: 100%">
           </td>
         </tr><tr>          
           <td id="bl-cell" style="width: 33%">
             <div id="bl-title" style="float: left; padding: 5px"></div>
             <div id="bl-note"  style="float: right; padding: 5px"></div>
-            <img id="bl-image" style="max-width: 100%; max-height: 100%"></img>
+            <input type="image" id="bl-image" style="max-width: 100%; max-height: 100%">
           </td><td id="bm-cell" style="width: 33%">
             <div id="bm-title" style="float: left; padding: 5px"></div>
             <div id="bm-note"  style="float: right; padding: 5px"></div>
-            <img id="bm-image" style="max-width: 100%; max-height: 100%"></img>
+            <input type="image" id="bm-image" style="max-width: 100%; max-height: 100%">
           </td><td id="br-cell" style="width: 33%">
             <div id="br-title" style="float: left; padding: 5px"></div>
             <div id="br-note"  style="float: right; padding: 5px"></div>
-            <img id="br-image" style="max-width: 100%; max-height: 100%"></img>
+            <input type="image" id="br-image" style="max-width: 100%; max-height: 100%">
           </td>
         </tr>
       </table>
       <div id="controls" style="display: flex; width: 100%; justify-content: space-between">
-        <div id="back" class="navigation" style="border-top-right-radius: 5px">Back</div>
-        <div id="r_gems" class="toggle">Gems</div>
-        <div id="r_tags" class="toggle">Tags</div>
-        <div id="r_loose" class="toggle">Loose</div>
-        <div id="r_reverse" class="toggle">Reverse</div>
-        <div id="r_top" class="toggle-off">Top</div>
-        <div id="more" class="navigation" style="border-top-left-radius: 5px">More</div>
+        <button id="back" class="navigation" style="border-top-right-radius: 5px">Back</button>
+        <button id="r_gems" class="toggle" aria-pressed="true">Gems</button>
+        <button id="r_tags" class="toggle" aria-pressed="true">Tags</button>
+        <button id="r_loose" class="toggle" aria-pressed="true">Loose</button>
+        <button id="r_reverse" class="toggle" aria-pressed="true">Reverse</button>
+        <button id="r_top" class="toggle" aria-pressed="false">Top</button>
+        <button id="more" class="navigation" style="border-top-left-radius: 5px">More</button>
       </div>
     </div>
     <div id="rightside" style="flex: 1 1 600px; display: block; padding: 0.5em">
       <div id="searchbars" style="display: flex; justify-content: space-around">
-        <a target="_blank" href="https://www.github.com/steamdivingbell/divingbell">About</a>
+        <a target="_blank" href="https://www.github.com/steamdivingbell/divingbell" style="color: #66bbff">About</a>
         <div style="position:relative; width: 150px;">
-          <input id="search_games_input" type="text" value="Search for game" autocomplete="off" style="color: gray; width: 100%; margin: 0px; padding: 0px">
+          <input id="search_games_input" type="text" placeholder="Search for game" autocomplete="off" style="width: 100%; margin: 0px; padding: 0px">
           <div id="search_games_list" style="position: absolute; min-width: 150px; height: 90px; display:none">
-            <div id="search_games_0" tabIndex="10" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
-            <div id="search_games_1" tabIndex="11" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
-            <div id="search_games_2" tabIndex="12" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
-            <div id="search_games_3" tabIndex="13" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
-            <div id="search_games_4" tabIndex="14" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
-            <div id="search_games_5" tabIndex="15" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
-            <div id="search_games_6" tabIndex="16" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
-            <div id="search_games_7" tabIndex="17" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
-            <div id="search_games_8" tabIndex="18" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
-            <div id="search_games_9" tabIndex="19" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>          </div>
-        </div>
-        <div style="position:relative; width: 150px;">
-          <input id="search_include_input" type="text" value="Include tags" autocomplete="off" style="color: gray; width: 100%;">
-          <div id="search_include_list" style="position: absolute; width: 100%; height: 500px; display:none">
-            <div id="search_include_0" tabIndex="20" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
-            <div id="search_include_1" tabIndex="21" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
-            <div id="search_include_2" tabIndex="22" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
-            <div id="search_include_3" tabIndex="23" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
-            <div id="search_include_4" tabIndex="24" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
-            <div id="search_include_5" tabIndex="25" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
-            <div id="search_include_6" tabIndex="26" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
-            <div id="search_include_7" tabIndex="27" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
-            <div id="search_include_8" tabIndex="28" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
-            <div id="search_include_9" tabIndex="29" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_games_0" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_games_1" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_games_2" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_games_3" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_games_4" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_games_5" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_games_6" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_games_7" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_games_8" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_games_9" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
           </div>
         </div>
         <div style="position:relative; width: 150px;">
-          <input id="search_exclude_input" type="text" value="Exclude tags" autocomplete="off" style="color: gray; width: 100%;">
-          <div id="search_exclude_list" style="position: absolute; width: 100%; height: 500px; display:none">
-            <div id="search_exclude_0" tabIndex="30" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
-            <div id="search_exclude_1" tabIndex="31" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
-            <div id="search_exclude_2" tabIndex="32" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
-            <div id="search_exclude_3" tabIndex="33" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
-            <div id="search_exclude_4" tabIndex="34" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
-            <div id="search_exclude_5" tabIndex="35" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
-            <div id="search_exclude_6" tabIndex="36" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
-            <div id="search_exclude_7" tabIndex="37" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
-            <div id="search_exclude_8" tabIndex="38" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
-            <div id="search_exclude_9" tabIndex="39" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+          <input id="search_include_input" type="text" placeholder="Include tags" autocomplete="off" style="width: 100%;">
+          <div id="search_include_list" style="position: absolute; min-width: 150px; height: 500px; display:none">
+            <div id="search_include_0" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_include_1" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_include_2" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_include_3" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_include_4" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_include_5" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_include_6" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_include_7" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_include_8" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_include_9" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+          </div>
+        </div>
+        <div style="position:relative; width: 150px;">
+          <input id="search_exclude_input" type="text" placeholder="Exclude tags" autocomplete="off" style="width: 100%;">
+          <div id="search_exclude_list" style="position: absolute; min-width: 150px; height: 500px; display:none">
+            <div id="search_exclude_0" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_exclude_1" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_exclude_2" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_exclude_3" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_exclude_4" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_exclude_5" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_exclude_6" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_exclude_7" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_exclude_8" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
+            <div id="search_exclude_9" style="background:white; color: black; cursor:pointer; white-space: nowrap"></div>
           </div>
         </div>
       </div>
       <hr width="100%">
       <div id="title-and-links" style="display: flex">
-        <h1 id="game-title" style="flex-grow: 1"></h1>
+        <h1 id="game-title" style="flex-grow: 1" aria-live="polite"></h1>
         <a id="open-web" target="_blank" class="steamlink">Open on the web</a>
         <a id="open-app" class="steamlink">Open in steam</a>
       </div>
