@@ -19653,7 +19653,7 @@ window.game_names = {
 	"396320":"Tank Battle: 1944",
 	"396350":"Bleed 2",
 	"396360":"LocoSoccer Classic",
-	"396420":"The Spookening",
+	"396420":"",
 	"396430":"RTK13 - Bonus Officer CG \u201cLiu Bei\u201d \u300c\u5289\u5099\u300d\u7279\u5178\u6b66\u5c06CG",
 	"396431":"RTK13 - Bonus Officer CG \u201cZhang Fei\u201d \u300c\u5f35\u98db\u300d\u7279\u5178\u6b66\u5c06CG",
 	"396432":"RTK13 - Bonus Officer CG \u201cGuan Yu\u201d \u300c\u95a2\u7fbd\u300d\u7279\u5178\u6b66\u5c06CG",
