@@ -32,11 +32,12 @@ This project is a web app that helps you find new games on steam. The basic idea
 
 
 
+
 # Statistics
 ```
-Total games in the database:  258261
-Games with >10,000 reviews:   1952 (0.7558245340953531 %)
-Games with >75% review score: 37301 (14.443140853632565 %)
+Total games in the database:  258936
+Games with >10,000 reviews:   2086 (0.805604473692341 %)
+Games with >75% review score: 38956 (15.044644236413632 %)
 
-Last updated: 2026-04-01 03:59:08.422342
+Last updated: 2026-11-15 02:07:22.832018
 ```
