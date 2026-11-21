@@ -6,9 +6,8 @@ function default_matches(baseGameId) {
 // "Reverse" is just "more like this" but inverse-lookup, which we have already indexed
 function reverse_matches(baseGameId) {
   var games = []
-  for (var gameId in window.similar_games) {
-    if (!globalRatingData.has(gameId)) continue // TODO: Incomplete data
-    if (globalRatingData.get(gameId).isLowRated) continue // Don't recommend poorly-rated games
+  for (var [gameId, data] of globalRatingData.entries()) {
+    if (data.isLowRated) continue // Don't recommend poorly-rated games
     if (window.similar_games[gameId].split(',').includes(baseGameId)) games.push(gameId)
   }
   return sort_games_by_tags(games, baseGameId)
@@ -90,21 +89,27 @@ function top_matches(baseGameId) {
   return sort_games_by_tags(games, baseGameId)
 }
 
+var topGames = null
 function top_games() {
-  // Order games by adjusted gem rating, ignoring games with <500 reviews
-  var games = []
-  for (var [gameId, data] of window.globalRatingData.entries()) {
-    if (!data.isLowRated) games.push(gameId)
+  if (topGames == null) {
+    // Order games by adjusted gem rating, ignoring games with <500 reviews
+    topGames = []
+    for (var [gameId, data] of window.globalRatingData.entries()) {
+      if (!data.isLowRated) topGames.push(gameId)
+    }
+    topGames.sort((a, b) => Math.sign(window.globalRatingData.get(b).sortKey - window.globalRatingData.get(a).sortKey))
   }
-  games.sort((a, b) => Math.sign(window.globalRatingData.get(b).sortKey - window.globalRatingData.get(a).sortKey))
-  return games
+  return topGames.slice()
 }
 
 // Used in many places for tie breaks, also used directly for the tag recommender
 function sort_games_by_tags(games, baseGameId) {
+  var gameWeights = new Map()
+  for (var gameId of games) gameWeights.set(gameId, compare_candidates(baseGameId, gameId))
+
   // Inverse sort so that the largest numbers (highest matches) are topmost. Ties broken by adjusted positive rating.
   games.sort((a, b) =>
-    Math.sign(compare_candidates(baseGameId, b) - compare_candidates(baseGameId, a))
+    Math.sign(gameWeights.get(b) - gameWeights.get(a))
     || Math.sign(globalRatingData.get(b).sortKey - globalRatingData.get(a).sortKey))
   return games
 }

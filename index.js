@@ -144,11 +144,11 @@ function loadImages(baseGameId) {
   var num_enabled = (r_gems ? 1 : 0) + (r_tags ? 1 : 0) + (r_loose ? 1 : 0) + (r_reverse ? 1 : 0) + (r_top ? 1 : 0)
   var per_category = num_enabled == 0 ? 8 : Math.ceil(8 / num_enabled)
 
-  var gems = gem_matches(baseGameId)
-  var tags = tag_matches(baseGameId)
-  var loose = loose_matches(baseGameId)
-  var reverse = reverse_matches(baseGameId)
-  var top_ = top_matches(baseGameId)
+  var gems = r_gems ? gem_matches(baseGameId) : []
+  var tags = r_tags ? tag_matches(baseGameId) : []
+  var loose = r_loose ? loose_matches(baseGameId) : []
+  var reverse = r_reverse ? reverse_matches(baseGameId) : []
+  var top_ = r_top ? top_matches(baseGameId) : []
   var similar = default_matches(baseGameId)
 
   var shownGames = new Set()
