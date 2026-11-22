@@ -25,6 +25,7 @@ window.header_images = {
 	"503360":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/503360/0e1869b047a6ba9acee0185195f3bdabed3afa73/header.jpg?t=1785515505",
 	"503540":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/503540/10c930066b1460b2145ce515750f35770eaeb32b/header.jpg?t=1791811530",
 	"510770":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/510770/a74637a9e16cbc6d68724e0d59dd477d2fb4d55f/header.jpg?t=1754488621",
+	"521180":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/521180/87ab4d44602d71e07bdaa5fb250ba46497ff00db/header.jpg?t=1791440521",
 	"523630":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/523630/2b35daf40e92a9d13afd10e9ed31a96b62b5a73a/header.jpg?t=1761257436",
 	"562770":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/562770/d44e061c0361bed24ee92f65c487626e683b5eec/header.jpg?t=1786216565",
 	"592770":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/592770/2fd1c2181a81b2c4ec99dbe63b953adf316a9ab9/header.jpg?t=1773015059",
