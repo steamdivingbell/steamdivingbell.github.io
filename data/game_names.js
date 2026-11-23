@@ -95501,6 +95501,7 @@ window.game_names = {
 	"1442210":"Cyber Crush 2069: 18+ Content (Uncensored)",
 	"1442220":"Virtual Happiness: 18+ Content (Uncensored)",
 	"1442240":"Save the Pirate: Sea Story",
+	"1442250":"Sus Squad",
 	"1442260":"Filmmaker Tycoon Demo",
 	"1442280":"Star Conflict - Starter Pack. Pterosaur",
 	"1442281":"Star Conflict - Starter Pack. Dainsleif",
