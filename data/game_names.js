@@ -98871,7 +98871,7 @@ window.game_names = {
 	"1489640":"Do You See the Waving Cape Demo",
 	"1489650":"Winter Survival Demo",
 	"1489660":"Copy Editor: A RegEx Puzzle",
-	"1489680":"Pixross",
+	"1489680":"Pixross Remastered",
 	"1489750":"Live Labyrinth Soundtrack",
 	"1489760":"Copy Editor Preview",
 	"1489780":"Mysterious",
