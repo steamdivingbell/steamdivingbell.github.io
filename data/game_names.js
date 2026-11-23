@@ -93682,6 +93682,7 @@ window.game_names = {
 	"1419951":"Mutant Football League: Gnashville Lycans",
 	"1419952":"Mutant Football League: Snuffalo Thrills",
 	"1419960":"Interstellar Space: Genesis - Natural Law",
+	"1419970":"ZULMARASH: Echoes of Zaltar",
 	"1419980":"INTERASTRA: Planet Survival",
 	"1420030":"Black Chapter - Art & Soundtrack Pack",
 	"1420050":"Loot Grind Simulator",
