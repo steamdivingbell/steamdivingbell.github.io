@@ -97885,7 +97885,7 @@ window.game_names = {
 	"1475800":"Learning Factory Playtest",
 	"1475810":"Ghostwire: Tokyo",
 	"1475820":"Dark Blocks Demo",
-	"1475830":"Space Engineers - Warfare 1",
+	"1475830":"Space Engineers - Warfare 1 Pack",
 	"1475840":"Rhythm Sprout: Sick Beats & Bad Sweets",
 	"1475850":"Rugby 22",
 	"1475860":"Pulsar: They listen",
