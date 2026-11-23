@@ -91157,7 +91157,7 @@ window.game_names = {
 	"1384390":"Photo Studio",
 	"1384400":"LA Monsters",
 	"1384410":"Werewolf: The Apocalypse - Heart of the Forest Demo",
-	"1384420":"Android Lode-Runner",
+	"1384420":"Gold Runner",
 	"1384440":"The Call Centre",
 	"1384450":"Jungles of Maxtheria",
 	"1384470":"LeftWay 2 Demo",
