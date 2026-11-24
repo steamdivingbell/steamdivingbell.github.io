@@ -114530,6 +114530,7 @@ window.game_names = {
 	"1699260":"Atlas Wept",
 	"1699280":"Hammerheart",
 	"1699290":"Cult of Personality",
+	"1699300":"Caboosh",
 	"1699310":"Hammerheart Demo",
 	"1699320":"You Have to Play This Game",
 	"1699330":"RPG Maker MZ - Skyforge Battlepack",
