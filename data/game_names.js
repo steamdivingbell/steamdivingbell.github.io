@@ -113917,6 +113917,7 @@ window.game_names = {
 	"1693190":"Cursed House",
 	"1693200":"Make a Path for the Chicken",
 	"1693210":"Hodl Simulator",
+	"1693220":"N-Studio",
 	"1693230":"Puzzle Soccer",
 	"1693250":"Ancient Wars: Sparta Definitive Edition",
 	"1693260":"Yugo Puzzle",
