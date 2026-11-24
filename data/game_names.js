@@ -105916,7 +105916,7 @@ window.game_names = {
 	"1588700":"Race me now",
 	"1588720":"Ion Fury: Aftershock",
 	"1588730":"Manascape",
-	"1588760":"Switchball HD",
+	"1588760":"Switchball",
 	"1588780":"Laser Droplets",
 	"1588790":"Puzzle Dazzle",
 	"1588800":"Anvil Saga Demo",
