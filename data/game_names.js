@@ -114952,6 +114952,7 @@ window.game_names = {
 	"1702620":"Nautilus Epoch",
 	"1702630":"Arcadian Rift",
 	"1702640":"Wanba Warriors DLC - Character Pack 4",
+	"1702660":"\u4e91\u4e0a\u6709\u9c7c",
 	"1702670":"Game of Lust",
 	"1702680":"Reboot: Froth",
 	"1702690":"Knights of the Silver Table Playtest",
