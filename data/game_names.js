@@ -103464,6 +103464,7 @@ window.game_names = {
 	"1555640":"Time Jumper",
 	"1555650":"HEXCRAFT: Harlequin Fair",
 	"1555660":"\u5362\u6c9f\u6865\u4e8b\u53d8",
+	"1555680":"Sphere Wars",
 	"1555690":"RESEARCH and DESTROY - Zero Escape: Virtue's Last Reward Costume Pack",
 	"1555691":"RESEARCH and DESTROY - AI: The Somnium Files Costume Pack",
 	"1555710":"OMFG: One Million Fatal Guns",
