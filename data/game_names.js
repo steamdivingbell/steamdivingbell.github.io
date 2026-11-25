@@ -135303,7 +135303,7 @@ window.game_names = {
 	"1961950":"CHAOS;HEAD NOAH",
 	"1961960":"Haunt Monster",
 	"1961970":"Akumi Wars",
-	"1962010":"Space Scavenger 2",
+	"1962010":"Galactic Scavenger",
 	"1962020":"Space Tournament",
 	"1962030":"Blade Jumper",
 	"1962040":"Blade Jumper Demo",
