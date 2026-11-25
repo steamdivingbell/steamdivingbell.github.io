@@ -121599,6 +121599,7 @@ window.game_names = {
 	"1782170":"DJMAX RESPECT V - NEXON PACK",
 	"1782180":"Metaisland",
 	"1782190":"Farlife",
+	"1782200":"You Are Rich: Art you can buy the author's right to",
 	"1782210":"Crab Game",
 	"1782220":"OF2 - Scarlett: Donation DLC",
 	"1782230":"Cooks Girls",
