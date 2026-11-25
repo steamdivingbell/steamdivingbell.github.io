@@ -121740,7 +121740,7 @@ window.game_names = {
 	"1783720":"\u56de\u5bb6 - Homeward - \u5c0f\u5c0f\u570b\u738b\u9020\u578b\u5305 Little King skin bundles",
 	"1783740":"Essence Of The Tjikko - Prologue",
 	"1783750":"Winds & Leaves",
-	"1783760":"Space Engineers - Warfare 2",
+	"1783760":"Space Engineers - Warfare 2 Pack",
 	"1783770":"Vacation Adventures: Cruise Director 5",
 	"1783780":"OHV",
 	"1783790":"First Class Trouble Wedding Pack",
