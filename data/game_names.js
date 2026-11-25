@@ -140268,7 +140268,7 @@ window.game_names = {
 	"2050400":"3D PUZZLE - Japan",
 	"2050410":"DINO MERCS Demo",
 	"2050420":"ARK 2",
-	"2050430":"Starting Life In Another World Naked",
+	"2050430":"Vaelora",
 	"2050440":"Guilded",
 	"2050450":"THE MADMAN",
 	"2050460":"HordounD",
