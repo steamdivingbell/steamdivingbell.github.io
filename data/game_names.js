@@ -125240,6 +125240,7 @@ window.game_names = {
 	"1828410":"Survive The Island",
 	"1828420":"Survive The Island Online",
 	"1828450":"Squirrel Knight",
+	"1828470":"Lost In Socks",
 	"1828480":"The Lonely Helmet Demo",
 	"1828490":"Gomu",
 	"1828510":"Childlike(\ucc28\uc77c\ub4dc\ub77c\uc774\ud06c)",
