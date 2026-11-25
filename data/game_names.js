@@ -133000,6 +133000,7 @@ window.game_names = {
 	"1934360":"Succubus Melnea",
 	"1934370":"Unbridled: Horse Designer",
 	"1934420":"Die Die Die And Try",
+	"1934430":"MonMon High",
 	"1934440":"PARTICLE OF GOD",
 	"1934460":"World of Epicia Demo",
 	"1934470":"Loyal Size Cube",
