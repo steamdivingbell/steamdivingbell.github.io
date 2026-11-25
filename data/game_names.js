@@ -130144,6 +130144,7 @@ window.game_names = {
 	"1894850":"Fireball Wizard Demo",
 	"1894860":"R is for Rachel",
 	"1894880":"Dark Desire 1",
+	"1894890":"Beckon",
 	"1894900":"Ghost Marriage Matchmaking - Original Soundtrack",
 	"1894910":"Seeds of Unity",
 	"1894920":"Voice over",
