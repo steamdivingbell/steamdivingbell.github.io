@@ -119764,7 +119764,7 @@ window.game_names = {
 	"1757300":"Jump Space",
 	"1757350":"ILL",
 	"1757360":"Shifting Dungeon",
-	"1757380":"One More Wipe",
+	"1757380":"One More Wipe : Raid Night",
 	"1757390":"Gridform Demo",
 	"1757400":"The Last Will",
 	"1757410":"Work In Progress",
