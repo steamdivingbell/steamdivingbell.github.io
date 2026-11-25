@@ -123036,6 +123036,7 @@ window.game_names = {
 	"1800210":"FUN Platformer  DLC 2",
 	"1800220":"Moon Dancer Playtest",
 	"1800230":"Alternate Universe",
+	"1800240":"SoulRoad",
 	"1800250":"Void Soul Awakening",
 	"1800270":"Vylan Demo",
 	"1800290":"Bolt Action",
