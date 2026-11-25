@@ -126420,7 +126420,7 @@ window.game_names = {
 	"1843650":"Purgatory Heroes",
 	"1843660":"RetroArch - Beetle Cygne",
 	"1843690":"Darkion",
-	"1843710":"PURGE - Three vs Blood",
+	"1843710":"Three vs Blood",
 	"1843720":"Skullborn Playtest",
 	"1843730":"Last Group Out",
 	"1843750":"Sphere Game Epic",
