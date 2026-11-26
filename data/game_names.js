@@ -147737,6 +147737,7 @@ window.game_names = {
 	"2151700":"Yokai's Wish",
 	"2151710":"Singularity Runner",
 	"2151720":"Coral Cove Demo",
+	"2151730":"\u8fd9\u4e0d\u662f\u7f57\u9a6c",
 	"2151740":"Treasure Trap",
 	"2151750":"NOeSIS-\u8bc9\u8bf4\u8c0e\u8a00\u7684\u8bb0\u5fc6\u4e4b\u7269\u8bed \uff08\u8d85\u9ad8\u6e05FHD\u7248\uff09",
 	"2151770":"Fusion Paradox \ud83d\udd2b",
