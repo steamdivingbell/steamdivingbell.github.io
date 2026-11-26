@@ -151731,7 +151731,7 @@ window.game_names = {
 	"2204730":"Once upon a Dungeon II",
 	"2204750":"Happy Town",
 	"2204760":"Cat Life",
-	"2204770":"Language Adventure",
+	"2204770":"Language Adventure - Learn English",
 	"2204780":"Return to li World - Chinese expansion pack",
 	"2204810":"Backrooms - Surreality",
 	"2204820":"Cerebral",
