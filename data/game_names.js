@@ -144619,6 +144619,7 @@ window.game_names = {
 	"2109990":"Bugz Bows and Curses Playtest",
 	"2110000":"All Systems Dance",
 	"2110010":"\u30a2\u30d7\u30ea\u30f4\u30a1\u30eb\u30e2\u30ce\u30ce\u6751\u958b\u62d3\u65e5\u8a18 Demo",
+	"2110020":"\u7b2c\u4e8c\u516c\u4e3b\u7684\u9b54\u5854The magic tower of the second princess",
 	"2110030":"Magenta Horizon Act 1",
 	"2110060":"Curse Crackers: For Whom the Belle Toils Soundtrack",
 	"2110080":"Play with Me 2: Po drugiej stronie Demo",
