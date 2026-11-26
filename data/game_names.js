@@ -152743,6 +152743,7 @@ window.game_names = {
 	"2218290":"\u7406\u60f3\u306e\u604b\u4eba\u306b\u306a\u308a\u306a\u3055\u3044\u3063\uff01- My Dream Lover -",
 	"2218300":"\u30e1\u30f3\u30d8\u30e9\u30a2\u30f3\u30b5\u30f3\u30d6\u30eb - Needy Girlfriends -",
 	"2218320":"BooBsxBooBs",
+	"2218330":"\u5982\u679c\u8fd9\u4e2a\u4e16\u754c\u6709\u795e\u660e\u5927\u4eba\u5b58\u5728\u7684\u8bdd",
 	"2218340":"Ideal Gas",
 	"2218350":"RPG Maker 3D Character Converter",
 	"2218370":"Thunderbolt Poker",
