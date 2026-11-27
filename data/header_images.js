@@ -52,6 +52,7 @@ window.header_images = {
 	"668330":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/668330/19b98d30e7efcec3953fce4758a600289808384f/header.jpg?t=1785482370",
 	"668750":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/668750/30f17df9b53bebcacb641b6d6a46fd5cc3141a6f/header.jpg?t=1795629870",
 	"683390":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/683390/18a2f01fcd8707b2381173267bcaf119fedc8a40/header.jpg?t=1795623637",
+	"689540":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/689540/99a9369c9dffe7f40ee4b568dbe6aa31b5e4d7e9/header.jpg?t=1794489187",
 	"694320":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/694320/2314d3e3ce3e4c6d2e5d140ef416eb9e509dda21/header.jpg?t=1761864158",
 	"710810":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/710810/dab874fc5ba94af7f35d754c01bab28b9bda3c15/header.jpg?t=1771518693",
 	"740690":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/740690/57b8e4cc044d3d8697baec762906d0176f9e2df1/header.jpg?t=1775935117",
