@@ -171195,6 +171195,7 @@ window.game_names = {
 	"2465150":"Dethroned Demo",
 	"2465160":"INITIAL D Playtest",
 	"2465200":"Sons Of The Forest Dedicated Server",
+	"2465230":"Crafted Legends",
 	"2465240":"harmony",
 	"2465250":"Super Dungeon Designer Demo",
 	"2465260":"Idling Gears Playtest",
