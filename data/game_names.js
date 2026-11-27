@@ -162141,7 +162141,7 @@ window.game_names = {
 	"2345290":"Automatonics",
 	"2345300":"King Of Swords",
 	"2345310":"Cat Jigsaw Puzzle Games - Expansion Pack 9",
-	"2345340":"Space Travellers",
+	"2345340":"Space",
 	"2345360":"Dungeon of Insanity",
 	"2345370":"Digs Mini Icy",
 	"2345380":"100% Challenge",
