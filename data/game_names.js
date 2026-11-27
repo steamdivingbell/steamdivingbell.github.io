@@ -179923,6 +179923,7 @@ window.game_names = {
 	"2592710":"\u4e07\u5316\u4e4b\u68ee",
 	"2592940":"Cosmic PANIC",
 	"2593030":"666",
+	"2593060":"Witches' Grove: The Game Show Autobattler",
 	"2593070":"Zeitghast",
 	"2593080":"Tank Mayhem",
 	"2593090":"Minicars: Road to the city!",
