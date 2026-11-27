@@ -168618,7 +168618,7 @@ window.game_names = {
 	"2430800":"Laser Survivor",
 	"2430810":"Roll the Dark Heart",
 	"2430820":"Squab",
-	"2430830":"Strongblade - Puzzle Quest and Match-3 Adventure",
+	"2430830":"Strongblade - Match-3 Adventure",
 	"2430860":"Sea of Chaos",
 	"2430880":"Stagehand Survival Simulator Demo",
 	"2430890":"I Wani Hug that Gator! Demo",
