@@ -166507,7 +166507,7 @@ window.game_names = {
 	"2402990":"Not In My Cave",
 	"2403000":"\u5e7b\u6b32\u6e38\u4e50\u56ed",
 	"2403020":"A Priest Walks Into a Graveyard",
-	"2403040":"Unsung Chicken",
+	"2403040":"Infinite Flow",
 	"2403050":"Below the Surface:Assassin's Prison",
 	"2403060":"Dinosaur Land Aerial Photograph",
 	"2403070":"Sexal Massage Ship - AKARI - Trial version",
