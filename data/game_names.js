@@ -170426,7 +170426,7 @@ window.game_names = {
 	"2454480":"\u53ea\u56e0\u5144\u5f1f(BroChicken)",
 	"2454490":"Paragon Pioneers 2 Playtest",
 	"2454500":"Covid19 - Toilet Paper Run",
-	"2454510":"Dan Factory",
+	"2454510":"Danfang: The Elixir Shop",
 	"2454540":"FATPETS",
 	"2454550":"ROBOHUNT",
 	"2454560":"Girls Divers Soundtrack",
