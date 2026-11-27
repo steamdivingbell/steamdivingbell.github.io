@@ -167721,7 +167721,7 @@ window.game_names = {
 	"2418490":"Trakonius",
 	"2418500":"Clutter RefleXIVe: The Diceman Cometh - Collector's Edition",
 	"2418520":"Farm Together 2",
-	"2418530":"Kofoin - Swarm Defense",
+	"2418530":"Kofoin: Swarm Defense",
 	"2418550":"My Hypnotized Family [Episode 1]",
 	"2418560":"Clear Mosaic - Video support",
 	"2418561":"Clear Mosaic - 4K Images",
