@@ -160488,7 +160488,7 @@ window.game_names = {
 	"2322170":"Stages of Life",
 	"2322180":"A Tiny Sticker Tale",
 	"2322240":"ART MUSEUM: The Paintings of Pallavi Demo",
-	"2322260":"Don't Kill Them All",
+	"2322260":"Don't Kill Them All - Orc Slay Prevention Sim",
 	"2322270":"Minigame Game Demo",
 	"2322280":"Hentai Cheerleader",
 	"2322290":"The Legend of Chibi Ninja Playtest",
