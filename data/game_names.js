@@ -199590,7 +199590,7 @@ window.game_names = {
 	"2875590":"Skye: The Misty Isle Demo",
 	"2875610":"Jerez's Arena \u2162",
 	"2875630":"\u8ff7\u2606\u63a2\u5075\u306e\u52a9\u624b-Remaster-",
-	"2875640":"My Corp Cargo Simulator : Prologue",
+	"2875640":"Out For Life: Prologue",
 	"2875650":"\u66ae\u96e8\u6d41\u82b1",
 	"2875660":"THE ART STORY OF NOCTUARY",
 	"2875670":"Battle for Ercaton: Robot Uprising",
