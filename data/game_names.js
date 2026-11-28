@@ -185580,7 +185580,7 @@ window.game_names = {
 	"2672410":"SteamWorld Build Soundtrack",
 	"2672420":"Summer of Love (Captain Kitty) - Walkthrough",
 	"2672430":"Guardians of Eden",
-	"2672470":"UnLoop",
+	"2672470":"UnLoop VR",
 	"2672500":"Become an Adventurer",
 	"2672510":"Kinky Cosplay Heroes",
 	"2672520":"Versebound",
