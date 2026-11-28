@@ -184572,7 +184572,7 @@ window.game_names = {
 	"2658160":"Crowncity",
 	"2658180":"The Unknown",
 	"2658190":"Deep Sleep Playtest",
-	"2658230":"\u5922\u904a\u908a\u5883 Dream of Limbo",
+	"2658230":"Dream of Limbo",
 	"2658250":"Eschatology",
 	"2658260":"Trophy Hunt",
 	"2658270":"Terminal V Demo",
