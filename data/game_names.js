@@ -180951,6 +180951,7 @@ window.game_names = {
 	"2607310":"TheLastCommander",
 	"2607320":"Illegal Mahjong",
 	"2607330":"BIKE RIDE 3D",
+	"2607340":"VPet - Travel Pet",
 	"2607350":"VPet - Pancake Cat Skin package",
 	"2607360":"Night Breaker",
 	"2607380":"Another Crusade Soundtrack",
